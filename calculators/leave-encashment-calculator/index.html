@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Encashment Calculator – Calculate Leave Payout | UtilityDesk.in</title>
+  <meta name="description" content="Calculate leave encashment amount instantly using salary and unused leave balance. Free online tool for Indian employees.">
+  <meta name="keywords" content="leave encashment calculator, leave payout calculator, leave salary calculator, India leave encashment, unused leave calculation">
+  <meta name="author" content="UtilityDesk.in">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://utilitydesk.in/calculators/leave-encashment-calculator/">
+  <meta property="og:title" content="Leave Encashment Calculator – Calculate Leave Payout">
+  <meta property="og:description" content="Calculate leave encashment amount instantly using salary and unused leave balance.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://utilitydesk.in/calculators/leave-encashment-calculator/">
+  <meta property="og:site_name" content="UtilityDesk.in">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1f2e'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23f0a830'>U</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Leave Encashment Calculator",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "description": "Calculate leave encashment amount instantly using salary and unused leave balance."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://utilitydesk.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculators",
+        "item": "https://utilitydesk.in/calculators/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leave Encashment Calculator",
+        "item": "https://utilitydesk.in/calculators/leave-encashment-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is leave encashment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Leave encashment is the process of converting unused leave days into monetary compensation. When an employee has accumulated leave days that they haven't used, the employer pays the equivalent salary for those days. This can be done during service or at the time of retirement/resignation, depending on company policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is leave encashment calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Leave encashment is calculated using the formula: Leave Encashment = (Basic Salary + DA) / Number of working days in a month × Number of unused leave days. For example, if your monthly salary is ₹60,000, working days are 26, and you have 15 unused leave days, the encashment would be (₹60,000 / 26) × 15 = ₹34,615."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which leaves can be encashed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally, only earned leaves (also called privilege leaves or annual leaves) can be encashed. Casual leaves, sick leaves, and compensatory off leaves typically cannot be encashed. The specific types of leaves eligible for encashment depend on company policy and the applicable labor laws."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a limit on leave encashment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, there are limits on leave encashment. For government employees, the maximum leave that can be encashed at retirement is 300 days. For private sector employees, the limit varies by company policy, typically ranging from 30 to 90 days. Some companies allow encashment of accumulated leaves up to a certain limit each year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is leave encashment taxable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Leave encashment taxability depends on the employee type and timing. For government employees, leave encashment at retirement is fully exempt from tax. For non-government employees, leave encashment at retirement is exempt up to ₹30 lakhs (as per Section 10(10AA)). Leave encashment during service is fully taxable for all employees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I encash leaves during my service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, many companies allow employees to encash a portion of their accumulated leaves during their service. This is subject to company policy and usually has limits on how many days can be encashed per year. Some companies allow encashment once or twice a year, while others may have specific windows for leave encashment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to unused leaves when I resign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When you resign, most companies will encash your unused earned leaves and include the amount in your full and final settlement. The calculation is based on your last drawn salary. However, this depends on company policy - some companies may have a cap on the number of days that can be encashed at resignation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do all companies offer leave encashment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not all companies offer leave encashment. While it's mandatory for government establishments under the Central Civil Rules, private companies are not legally required to offer leave encashment unless specified in the employment contract or company policy. Most reputed private companies do offer this benefit as part of their compensation structure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is per day salary calculated for leave encashment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Per day salary for leave encashment is calculated by dividing your monthly salary (Basic + DA) by the number of working days in a month. The number of working days varies by company - some use 26 days, others use 30 days, and some use the actual number of working days (usually 21-22 days). Check your company policy for the specific calculation method."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can leave encashment be carried forward to the next year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, unused earned leaves can typically be carried forward to the next year, subject to a maximum accumulation limit. For government employees, the maximum leave that can be accumulated is 300 days. For private sector employees, the carry-forward limit varies by company policy, usually ranging from 30 to 90 days. Casual and sick leaves generally cannot be carried forward."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --slate-950: #0f1219;
+      --slate-900: #1a1f2e;
+      --slate-800: #252b3d;
+      --slate-700: #353d54;
+      --slate-600: #4a5270;
+      --slate-400: #8891a8;
+      --slate-300: #b0b7c8;
+      --slate-200: #d1d5e0;
+      --slate-100: #ebedf3;
+      --slate-50: #f5f6f9;
+      --white: #ffffff;
+      --amber-500: #f0a830;
+      --amber-400: #f5bc54;
+      --amber-600: #d4901a;
+      --amber-100: #fef3d6;
+      --emerald-500: #34b876;
+      --emerald-100: #d6f5e6;
+      --blue-500: #4a7cf7;
+      --blue-100: #dbe6fe;
+      --rose-500: #e85d6f;
+      --rose-100: #fde2e6;
+      --purple-500: #8b5cf6;
+      --purple-600: #7c3aed;
+      --purple-100: #ede9fe;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --nav-h: 72px;
+      --max-w: 1200px;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow-sm: 0 1px 3px rgba(15,18,25,.06), 0 1px 2px rgba(15,18,25,.04);
+      --shadow-md: 0 4px 16px rgba(15,18,25,.08), 0 2px 4px rgba(15,18,25,.04);
+      --shadow-lg: 0 12px 40px rgba(15,18,25,.12), 0 4px 12px rgba(15,18,25,.06);
+      --transition: .25s cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-body); color: var(--slate-900); background: var(--slate-50); line-height: 1.6; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); background: rgba(255,255,255,.92); backdrop-filter: blur(16px) saturate(1.4); -webkit-backdrop-filter: blur(16px) saturate(1.4); border-bottom: 1px solid var(--slate-100); transition: box-shadow var(--transition); }
+    .nav.scrolled { box-shadow: var(--shadow-sm); }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; height: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.5rem; color: var(--slate-900); }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--slate-900); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--amber-500); font-family: var(--font-display); font-size: 1.25rem; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links a { padding: 8px 14px; border-radius: 8px; font-size: .875rem; font-weight: 500; color: var(--slate-600); transition: all var(--transition); }
+    .nav-links a:hover, .nav-links a.active { color: var(--slate-900); background: var(--slate-100); }
+    .nav-cta { padding: 9px 20px; border-radius: 8px; font-size: .875rem; font-weight: 600; background: var(--slate-900); color: var(--white); transition: all var(--transition); }
+    .nav-cta:hover { background: var(--slate-800); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--slate-900); border-radius: 2px; transition: all .3s; }
+    .mobile-menu { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0; background: var(--white); z-index: 99; padding: 24px; flex-direction: column; gap: 4px; overflow-y: auto; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { padding: 14px 16px; border-radius: 10px; font-size: 1.05rem; font-weight: 500; color: var(--slate-700); transition: all var(--transition); }
+    .mobile-menu a:hover { background: var(--slate-50); color: var(--slate-900); }
+
+    /* PAGE HEADER */
+    .page-header { padding: calc(var(--nav-h) + 48px) 24px 48px; text-align: center; background: linear-gradient(175deg, var(--white) 0%, var(--slate-50) 100%); border-bottom: 1px solid var(--slate-100); }
+    .breadcrumb { display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; font-size: .85rem; color: var(--slate-400); }
+    .breadcrumb a { color: var(--slate-600); transition: color var(--transition); }
+    .breadcrumb a:hover { color: var(--amber-600); }
+    .breadcrumb span { color: var(--slate-400); }
+    .page-header h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--slate-950); margin-bottom: 12px; line-height: 1.2; }
+    .page-header p { font-size: 1.05rem; color: var(--slate-600); max-width: 600px; margin: 0 auto; }
+    .last-updated { font-size: .85rem; color: var(--slate-400); margin-top: 12px; }
+
+    /* CALCULATOR */
+    .calc-section { padding: 64px 24px; }
+    .calc-container { max-width: 900px; margin: 0 auto; }
+    .calc-card { background: var(--white); border-radius: 16px; padding: 48px; box-shadow: var(--shadow-md); border: 1px solid var(--slate-100); }
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .calc-inputs { display: flex; flex-direction: column; gap: 24px; }
+    .input-group { display: flex; flex-direction: column; gap: 8px; }
+    .input-group label { font-size: .875rem; font-weight: 600; color: var(--slate-700); }
+    .input-group input { padding: 14px 16px; border: 2px solid var(--slate-200); border-radius: 10px; font-size: 1rem; font-family: var(--font-body); background: var(--white); color: var(--slate-900); transition: all var(--transition); outline: none; }
+    .input-group input:focus { border-color: var(--amber-500); box-shadow: 0 0 0 4px rgba(240,168,48,.1); }
+    .input-group input::placeholder { color: var(--slate-400); }
+    .input-hint { font-size: .75rem; color: var(--slate-400); margin-top: 2px; }
+    .calc-btn { padding: 16px 32px; border-radius: 10px; font-size: 1rem; font-weight: 600; background: var(--slate-900); color: var(--white); transition: all var(--transition); margin-top: 8px; }
+    .calc-btn:hover { background: var(--slate-800); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .calc-results { display: flex; flex-direction: column; gap: 16px; }
+    .result-card { padding: 20px; border-radius: 12px; background: var(--slate-50); border: 1px solid var(--slate-100); }
+    .result-label { font-size: .75rem; font-weight: 600; color: var(--slate-400); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+    .result-value { font-size: 1.5rem; font-weight: 700; color: var(--slate-950); font-family: var(--font-display); }
+    .result-value.highlight { color: var(--emerald-500); }
+    .result-sub { font-size: .8rem; color: var(--slate-600); margin-top: 4px; }
+
+    /* ADSENSE */
+    .adsense-placeholder { max-width: 900px; margin: 0 auto 48px; padding: 24px; background: var(--slate-100); border: 2px dashed var(--slate-200); border-radius: 12px; text-align: center; color: var(--slate-400); font-size: .9rem; }
+
+    /* CONTENT */
+    .content-section { padding: 64px 24px; background: var(--white); }
+    .content-container { max-width: 800px; margin: 0 auto; }
+    .content-section h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.75rem; color: var(--slate-950); margin-bottom: 16px; }
+    .content-section h3 { font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin: 32px 0 12px; }
+    .content-section p { font-size: 1rem; color: var(--slate-600); line-height: 1.8; margin-bottom: 16px; }
+    .content-section ul { margin: 16px 0; padding-left: 24px; }
+    .content-section li { font-size: 1rem; color: var(--slate-600); line-height: 1.8; margin-bottom: 8px; }
+
+    /* FAQ */
+    .faq-section { padding: 64px 24px; }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header h2 { font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--slate-950); margin-bottom: 12px; }
+    .faq-header p { font-size: 1rem; color: var(--slate-600); }
+    .faq-item { background: var(--white); border-radius: 12px; margin-bottom: 12px; border: 1px solid var(--slate-100); overflow: hidden; transition: all var(--transition); }
+    .faq-item:hover { box-shadow: var(--shadow-sm); }
+    .faq-question { padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--slate-900); transition: all var(--transition); }
+    .faq-question:hover { color: var(--amber-600); }
+    .faq-icon { width: 24px; height: 24px; border-radius: 6px; background: var(--slate-100); display: flex; align-items: center; justify-content: center; transition: all var(--transition); flex-shrink: 0; margin-left: 16px; }
+    .faq-item.active .faq-icon { background: var(--amber-500); color: var(--white); transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-answer-inner { padding: 0 24px 20px; font-size: .95rem; color: var(--slate-600); line-height: 1.7; }
+
+    /* RELATED TOOLS */
+    .related-section { padding: 64px 24px; background: var(--slate-50); }
+    .related-container { max-width: var(--max-w); margin: 0 auto; }
+    .related-header { text-align: center; margin-bottom: 48px; }
+    .related-header h2 { font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--slate-950); margin-bottom: 12px; }
+    .related-header p { font-size: 1rem; color: var(--slate-600); }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { padding: 28px; background: var(--white); border-radius: 12px; border: 1px solid var(--slate-100); transition: all var(--transition); }
+    .related-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: transparent; }
+    .related-card-tag { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 4px 10px; border-radius: 6px; margin-bottom: 12px; }
+    .related-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--slate-900); margin-bottom: 8px; }
+    .related-card p { font-size: .85rem; color: var(--slate-600); line-height: 1.6; }
+
+    /* FOOTER */
+    .footer { background: var(--slate-950); color: var(--slate-400); padding: 64px 24px 32px; }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; font-family: var(--font-display); font-size: 1.35rem; color: var(--white); }
+    .footer-logo-icon { width: 32px; height: 32px; background: var(--slate-800); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: var(--amber-500); font-family: var(--font-display); font-size: 1.1rem; }
+    .footer-brand p { font-size: .85rem; line-height: 1.7; max-width: 260px; }
+    .footer-col h4 { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--slate-300); margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: .86rem; transition: color var(--transition); }
+    .footer-col a:hover { color: var(--amber-500); }
+    .footer-bottom { max-width: var(--max-w); margin: 48px auto 0; padding-top: 24px; border-top: 1px solid var(--slate-800); display: flex; justify-content: space-between; align-items: center; font-size: .8rem; }
+    .footer-social { display: flex; gap: 12px; }
+    .footer-social a { width: 36px; height: 36px; border-radius: 8px; background: var(--slate-800); display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+    .footer-social a:hover { background: var(--amber-500); color: var(--slate-950); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .calc-grid { grid-template-columns: 1fr; gap: 32px; }
+      .calc-card { padding: 32px 24px; }
+      .related-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="UtilityDesk.in Home">
+        <span class="nav-logo-icon">U</span>
+        UtilityDesk<span style="color:var(--amber-500)">.</span>in
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/calculators/" class="active">Calculators</a></li>
+        <li><a href="/pdf-tools/">PDF Tools</a></li>
+        <li><a href="/document-generators/">Document Generators</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="/calculators/" class="nav-cta">Browse Tools</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/calculators/">Calculators</a>
+    <a href="/pdf-tools/">PDF Tools</a>
+    <a href="/document-generators/">Document Generators</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="/calculators/" style="background:var(--slate-900);color:var(--white);text-align:center;border-radius:10px;margin-top:8px;font-weight:600;">Browse Tools</a>
+  </div>
+
+  <header class="page-header">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/calculators/">Calculators</a>
+      <span>/</span>
+      <span>Leave Encashment Calculator</span>
+    </div>
+    <h1>Leave Encashment Calculator</h1>
+    <p>Calculate your leave encashment amount based on unused leave days and salary</p>
+    <div class="last-updated">Last Updated: June 2026</div>
+  </header>
+
+  <section class="calc-section">
+    <div class="calc-container">
+      <div class="calc-card">
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="input-group">
+              <label for="basicSalary">Basic Salary (₹ per month)</label>
+              <input type="number" id="basicSalary" placeholder="e.g., 50000" min="0">
+              <span class="input-hint">Your monthly basic salary</span>
+            </div>
+            <div class="input-group">
+              <label for="da">Dearness Allowance (₹ per month)</label>
+              <input type="number" id="da" placeholder="e.g., 10000" min="0">
+              <span class="input-hint">Monthly DA component</span>
+            </div>
+            <div class="input-group">
+              <label for="unusedLeave">Unused Leave Days</label>
+              <input type="number" id="unusedLeave" placeholder="e.g., 15" min="0">
+              <span class="input-hint">Number of earned leaves not used</span>
+            </div>
+            <div class="input-group">
+              <label for="workingDays">Monthly Working Days</label>
+              <input type="number" id="workingDays" placeholder="e.g., 26" min="1" max="31" value="26">
+              <span class="input-hint">Working days in a month (usually 26 or 30)</span>
+            </div>
+            <button class="calc-btn" id="calculateBtn">Calculate Leave Encashment</button>
+          </div>
+          <div class="calc-results" id="results">
+            <div class="result-card">
+              <div class="result-label">Per Day Salary</div>
+              <div class="result-value" id="perDaySalary">—</div>
+              <div class="result-sub" id="perDaySalarySub">Based on your monthly salary</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Leave Encashment Amount</div>
+              <div class="result-value highlight" id="encashmentAmount">—</div>
+              <div class="result-sub" id="encashmentSub">For your unused leave days</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Total Payout</div>
+              <div class="result-value highlight" id="totalPayout">—</div>
+              <div class="result-sub" id="totalPayoutSub">Before tax deductions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="adsense-placeholder">
+    <p>Advertisement</p>
+  </div>
+
+  <section class="content-section">
+    <div class="content-container">
+      <h2>What is Leave Encashment?</h2>
+      <p>Leave encashment is a valuable employee benefit that allows you to convert your unused earned leaves into monetary compensation. When employees accumulate leave days that they haven't utilized, companies offer the option to encash these leaves, providing a financial reward for unused time off. This benefit serves as both an incentive for employees to maintain their leave balance and a way to compensate them for not taking their entitled time off.</p>
+      
+      <p>In India, leave encashment is governed by company policies and, for government employees, by the Central Civil Services (Leave) Rules. The practice is common across both public and private sectors, though the specific rules and limits vary significantly between organizations. Leave encashment can be availed during service or at the time of retirement/resignation, depending on the company's policy and the employee's preference.</p>
+
+      <h3>Types of Leaves Eligible for Encashment</h3>
+      <p>Not all types of leaves can be encashed. Generally, only earned leaves (also known as privilege leaves or annual leaves) are eligible for encashment. Here's a breakdown of different leave types and their encashment eligibility:</p>
+      <ul>
+        <li><strong>Earned Leaves / Privilege Leaves:</strong> These are the primary leaves eligible for encashment. They accumulate over time and can be carried forward to the next year</li>
+        <li><strong>Casual Leaves:</strong> Typically cannot be encashed or carried forward. They must be used within the year</li>
+        <li><strong>Sick Leaves:</strong> Generally not eligible for encashment. Some companies may allow accumulation but not encashment</li>
+        <li><strong>Compensatory Off:</strong> Usually must be availed within a specified period and cannot be encashed</li>
+        <li><strong>Maternity / Paternity Leave:</strong> Statutory leaves that cannot be encashed</li>
+      </ul>
+
+      <h2>Eligibility for Leave Encashment</h2>
+      <p>Leave encashment eligibility varies based on employment type, company policy, and the specific circumstances of the employee. Understanding these eligibility criteria helps you plan your leaves and finances effectively.</p>
+
+      <h3>Government Employees</h3>
+      <p>For central and state government employees, leave encashment is governed by the Central Civil Services (Leave) Rules. Key eligibility criteria include:</p>
+      <ul>
+        <li><strong>Minimum service:</strong> No minimum service requirement for encashment during service</li>
+        <li><strong>Leave accumulation:</strong> Maximum 300 days of earned leave can be accumulated</li>
+        <li><strong>Encashment limit:</strong> Up to 10 days can be encashed in a year during service</li>
+        <li><strong>At retirement:</strong> All accumulated earned leaves (up to 300 days) can be encashed</li>
+        <li><strong>Eligible employees:</strong> All regular government employees, including those on deputation</li>
+      </ul>
+
+      <h3>Private Sector Employees</h3>
+      <p>In the private sector, leave encashment policies are determined by individual companies. Common eligibility criteria include:</p>
+      <ul>
+        <li><strong>Minimum service:</strong> Many companies require completion of 1 year of service before allowing encashment</li>
+        <li><strong>Leave balance:</strong> Only earned leaves beyond a certain threshold (usually 5-15 days) can be encashed</li>
+        <li><strong>Encashment frequency:</strong> Most companies allow encashment once or twice a year</li>
+        <li><strong>Maximum days:</strong> Companies typically cap the number of days that can be encashed per year (usually 15-30 days)</li>
+        <li><strong>At resignation:</strong> Most companies encash all unused earned leaves at the time of separation</li>
+      </ul>
+
+      <h3>Special Circumstances</h3>
+      <p>Certain situations may affect leave encashment eligibility:</p>
+      <ul>
+        <li><strong>Termination:</strong> Employees terminated for misconduct may forfeit their leave encashment</li>
+        <li><strong>Death in service:</strong> In case of employee's death, accumulated leave encashment is paid to the nominee/legal heir</li>
+        <li><strong>Transfer:</strong> When employees are transferred between government departments, their leave balance is transferred</li>
+        <li><strong>Deputation:</strong> Employees on deputation may have different encashment rules based on the borrowing department's policy</li>
+      </ul>
+
+      <h2>Leave Encashment Formula and Calculation</h2>
+      <p>Understanding how leave encashment is calculated helps you estimate the amount you'll receive and plan your finances accordingly. The calculation is straightforward but depends on several factors.</p>
+
+      <h3>The Basic Formula</h3>
+      <p>Leave encashment is calculated using the following formula:</p>
+      <p><strong>Leave Encashment = (Basic Salary + Dearness Allowance) / Number of working days in a month × Number of unused leave days</strong></p>
+      
+      <p>Where:</p>
+      <ul>
+        <li><strong>Basic Salary + DA:</strong> Your monthly salary components that are considered for leave encashment. Some companies may include other allowances as well</li>
+        <li><strong>Number of working days:</strong> This varies by company. Government organizations typically use 30 days, while private companies may use 26 days or the actual number of working days (usually 21-22 days)</li>
+        <li><strong>Unused leave days:</strong> The number of earned leaves you haven't utilized and are eligible to encash</li>
+      </ul>
+
+      <h3>Step-by-Step Calculation</h3>
+      <p>Let's break down the calculation with a practical example:</p>
+      <ul>
+        <li><strong>Step 1:</strong> Calculate your per day salary: (Basic Salary + DA) / Number of working days</li>
+        <li><strong>Step 2:</strong> Multiply the per day salary by the number of unused leave days</li>
+        <li><strong>Step 3:</strong> The result is your leave encashment amount before tax</li>
+      </ul>
+
+      <h3>Example Calculation</h3>
+      <p>Let's understand with a detailed example:</p>
+      <ul>
+        <li>Basic Salary: ₹50,000 per month</li>
+        <li>Dearness Allowance: ₹10,000 per month</li>
+        <li>Monthly Working Days: 26 days</li>
+        <li>Unused Leave Days: 15 days</li>
+      </ul>
+      <p><strong>Calculation:</strong></p>
+      <p>Per Day Salary = (₹50,000 + ₹10,000) / 26 = ₹60,000 / 26 = ₹2,307.69</p>
+      <p>Leave Encashment = ₹2,307.69 × 15 = ₹34,615.38</p>
+      <p><strong>Leave Encashment Amount = ₹34,615</strong></p>
+
+      <h3>Factors Affecting the Calculation</h3>
+      <p>Several factors can influence your leave encashment calculation:</p>
+      <ul>
+        <li><strong>Salary components:</strong> Different companies include different salary components. Some include only Basic + DA, while others may include other fixed allowances</li>
+        <li><strong>Working days calculation:</strong> The number of working days used (26, 30, or actual) significantly impacts the per day salary and final amount</li>
+        <li><strong>Leave balance:</strong> Companies may have minimum leave balance requirements before allowing encashment</li>
+        <li><strong>Encashment limits:</strong> Annual caps on the number of days that can be encashed may limit the total amount</li>
+        <li><strong>Salary revisions:</strong> If your salary has been revised recently, companies may use the current salary or the salary at the time of leave accrual</li>
+      </ul>
+
+      <h2>Tax Rules for Leave Encashment</h2>
+      <p>The tax treatment of leave encashment is an important consideration when planning your finances. The taxability depends on whether you're a government or non-government employee, and whether the encashment is during service or at retirement.</p>
+
+      <h3>Tax Treatment for Government Employees</h3>
+      <p>For employees of the central government, state governments, and local authorities:</p>
+      <ul>
+        <li><strong>Leave encashment at retirement:</strong> Fully exempt from tax under Section 10(10AA) of the Income Tax Act</li>
+        <li><strong>Leave encashment during service:</strong> Fully taxable and added to your salary income</li>
+        <li><strong>No maximum limit:</strong> There's no cap on the exempt amount for government employees at retirement</li>
+      </ul>
+
+      <h3>Tax Treatment for Non-Government Employees</h3>
+      <p>For employees in the private sector and public sector undertakings:</p>
+      <ul>
+        <li><strong>Leave encashment at retirement:</strong> Exempt up to ₹30 lakhs under Section 10(10AA). This limit was increased from ₹3 lakhs to ₹25 lakhs in 2018, and further to ₹30 lakhs in 2023</li>
+        <li><strong>Leave encashment during service:</strong> Fully taxable and added to your salary income</li>
+        <li><strong>Exemption calculation:</strong> The least of the following is exempt: (a) ₹30 lakhs, (b) Actual leave encashment received, or (c) Average salary of last 10 months × number of leave days / 30</li>
+      </ul>
+
+      <h3>Tax Planning Strategies</h3>
+      <p>To optimize your tax liability on leave encashment:</p>
+      <ul>
+        <li><strong>Time your encashment:</strong> If possible, encash leaves in a year when your other income is lower to stay in a lower tax bracket</li>
+        <li><strong>Spread encashment:</strong> Instead of encashing all leaves at once, consider encashing in multiple years to spread the tax impact</li>
+        <li><strong>Retirement planning:</strong> For non-government employees, plan to encash leaves at retirement to avail the ₹30 lakh exemption</li>
+        <li><strong>Invest tax savings:</strong> If you receive a large encashment amount, consider investing in tax-saving instruments under Section 80C</li>
+      </ul>
+
+      <h2>HR Policies on Leave Encashment</h2>
+      <p>Companies have different policies regarding leave encashment, and understanding these policies helps you make informed decisions about when and how much to encash.</p>
+
+      <h3>Common Policy Elements</h3>
+      <p>Most company leave encashment policies include the following elements:</p>
+      <ul>
+        <li><strong>Eligibility criteria:</strong> Minimum service period, leave balance requirements, and employee categories eligible for encashment</li>
+        <li><strong>Encashment windows:</strong> Specific periods during the year when employees can apply for leave encashment</li>
+        <li><strong>Maximum limits:</strong> Caps on the number of days that can be encashed per year or per instance</li>
+        <li><strong>Salary calculation:</strong> Which salary components are considered and how per day salary is calculated</li>
+        <li><strong>Approval process:</strong> The workflow for applying and getting approval for leave encashment</li>
+        <li><strong>Payment timeline:</strong> When the encashment amount will be paid (usually with the next month's salary)</li>
+      </ul>
+
+      <h3>Leave Encashment at Resignation</h3>
+      <p>When an employee resigns, most companies encash all unused earned leaves as part of the full and final settlement. Key aspects include:</p>
+      <ul>
+        <li><strong>Automatic encashment:</strong> Most companies automatically encash unused leaves at resignation without requiring a separate application</li>
+        <li><strong>Calculation basis:</strong> The encashment is calculated based on the last drawn salary</li>
+        <li><strong>Payment timeline:</strong> The amount is paid along with other full and final settlement components, usually within 30-45 days of last working day</li>
+        <li><strong>Tax deduction:</strong> TDS is deducted on the encashment amount as it's considered part of salary income</li>
+      </ul>
+
+      <h3>Leave Encashment at Retirement</h3>
+      <p>For retiring employees, leave encashment is a significant component of the retirement benefits:</p>
+      <ul>
+        <li><strong>Maximum accumulation:</strong> Government employees can accumulate up to 300 days, while private sector limits vary</li>
+        <li><strong>Tax benefits:</strong> Retirement encashment enjoys tax exemption up to specified limits</li>
+        <li><strong>Payment timeline:</strong> Usually paid along with other retirement benefits like gratuity and PF</li>
+        <li><strong>Nomination:</strong> In case of death before encashment, the amount is paid to the nominee</li>
+      </ul>
+
+      <h2>Best Practices for Leave Management</h2>
+      <p>Effective leave management helps you maximize the benefits of leave encashment while ensuring you take adequate time off for rest and personal matters.</p>
+
+      <h3>Balancing Leave Usage and Encashment</h3>
+      <p>While leave encashment provides financial benefits, it's important to maintain a healthy work-life balance:</p>
+      <ul>
+        <li><strong>Take regular breaks:</strong> Don't accumulate leaves solely for encashment. Regular breaks are essential for mental and physical health</li>
+        <li><strong>Use sick leaves:</strong> Don't hesitate to use sick leaves when needed. They're meant for your wellbeing</li>
+        <li><strong>Plan vacations:</strong> Use your earned leaves for vacations and personal time. The health benefits often outweigh the financial gains from encashment</li>
+        <li><strong>Encash surplus:</strong> Once you've maintained a comfortable leave buffer, encash the surplus leaves</li>
+      </ul>
+
+      <h3>Tracking Your Leave Balance</h3>
+      <p>Keep track of your leave balance to make informed decisions:</p>
+      <ul>
+        <li><strong>Regular monitoring:</strong> Check your leave balance regularly through your company's HR portal</li>
+        <li><strong>Understand accrual:</strong> Know how leaves accrue in your company (monthly, quarterly, or annually)</li>
+        <li><strong>Track expiry:</strong> Some leaves may expire if not used within a certain period</li>
+        <li><strong>Plan ahead:</strong> Plan your leave usage and encashment based on your balance and company policies</li>
+      </ul>
+
+      <h3>Documentation and Records</h3>
+      <p>Maintain proper documentation for your leave encashment:</p>
+      <ul>
+        <li><strong>Keep payslips:</strong> Retain payslips showing leave encashment payments for tax filing</li>
+        <li><strong>Save approval emails:</strong> Keep copies of leave encashment approval communications</li>
+        <li><strong>Track tax deductions:</strong> Monitor TDS deducted on leave encashment and include it in your tax filings</li>
+        <li><strong>Maintain leave records:</strong> Keep a personal record of your leave balance and encashment history</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="adsense-placeholder">
+    <p>Advertisement</p>
+  </div>
+
+  <section class="faq-section">
+    <div class="faq-container">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about leave encashment calculation and policies</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is leave encashment?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Leave encashment is the process of converting unused leave days into monetary compensation. When an employee has accumulated leave days that they haven't used, the employer pays the equivalent salary for those days. This can be done during service or at the time of retirement/resignation, depending on company policy.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How is leave encashment calculated?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Leave encashment is calculated using the formula: Leave Encashment = (Basic Salary + DA) / Number of working days in a month × Number of unused leave days. For example, if your monthly salary is ₹60,000, working days are 26, and you have 15 unused leave days, the encashment would be (₹60,000 / 26) × 15 = ₹34,615.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Which leaves can be encashed?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Generally, only earned leaves (also called privilege leaves or annual leaves) can be encashed. Casual leaves, sick leaves, and compensatory off leaves typically cannot be encashed. The specific types of leaves eligible for encashment depend on company policy and the applicable labor laws.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is there a limit on leave encashment?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, there are limits on leave encashment. For government employees, the maximum leave that can be encashed at retirement is 300 days. For private sector employees, the limit varies by company policy, typically ranging from 30 to 90 days. Some companies allow encashment of accumulated leaves up to a certain limit each year.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is leave encashment taxable?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Leave encashment taxability depends on the employee type and timing. For government employees, leave encashment at retirement is fully exempt from tax. For non-government employees, leave encashment at retirement is exempt up to ₹30 lakhs (as per Section 10(10AA)). Leave encashment during service is fully taxable for all employees.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can I encash leaves during my service?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, many companies allow employees to encash a portion of their accumulated leaves during their service. This is subject to company policy and usually has limits on how many days can be encashed per year. Some companies allow encashment once or twice a year, while others may have specific windows for leave encashment.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What happens to unused leaves when I resign?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">When you resign, most companies will encash your unused earned leaves and include the amount in your full and final settlement. The calculation is based on your last drawn salary. However, this depends on company policy - some companies may have a cap on the number of days that can be encashed at resignation.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do all companies offer leave encashment?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Not all companies offer leave encashment. While it's mandatory for government establishments under the Central Civil Rules, private companies are not legally required to offer leave encashment unless specified in the employment contract or company policy. Most reputed private companies do offer this benefit as part of their compensation structure.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How is per day salary calculated for leave encashment?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Per day salary for leave encashment is calculated by dividing your monthly salary (Basic + DA) by the number of working days in a month. The number of working days varies by company - some use 26 days, others use 30 days, and some use the actual number of working days (usually 21-22 days). Check your company policy for the specific calculation method.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can leave encashment be carried forward to the next year?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, unused earned leaves can typically be carried forward to the next year, subject to a maximum accumulation limit. For government employees, the maximum leave that can be accumulated is 300 days. For private sector employees, the carry-forward limit varies by company policy, usually ranging from 30 to 90 days. Casual and sick leaves generally cannot be carried forward.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-section">
+    <div class="related-container">
+      <div class="related-header">
+        <h2>Related Calculators</h2>
+        <p>More tools to help you plan your retirement and finances</p>
+      </div>
+      <div class="related-grid">
+        <a href="/calculators/pf-calculator/" class="related-card">
+          <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">Retirement</span>
+          <h3>PF Calculator</h3>
+          <p>Calculate your Provident Fund contributions and estimated corpus at retirement.</p>
+        </a>
+        <a href="/calculators/gratuity-calculator/" class="related-card">
+          <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">Retirement</span>
+          <h3>Gratuity Calculator</h3>
+          <p>Calculate your gratuity amount based on salary and years of service.</p>
+        </a>
+        <a href="/calculators/salary-hike/" class="related-card">
+          <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">Salary</span>
+          <h3>Salary Hike Calculator</h3>
+          <p>Calculate your salary increment percentage and new CTC after a raise.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">U</span>
+          UtilityDesk<span style="color:var(--amber-500)">.</span>in
+        </div>
+        <p>Free calculators, PDF tools, document generators, and productivity tools built for Indian professionals. No signup required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/calculators/salary-hike/">Salary Hike Calculator</a></li>
+          <li><a href="/calculators/pf-calculator/">PF Calculator</a></li>
+          <li><a href="/calculators/gratuity-calculator/">Gratuity Calculator</a></li>
+          <li><a href="/calculators/leave-encashment-calculator/">Leave Encashment Calculator</a></li>
+          <li><a href="/calculators/gst/">GST Calculator</a></li>
+          <li><a href="/calculators/hra/">HRA Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>PDF Tools</h4>
+        <ul>
+          <li><a href="/pdf-tools/merge-pdf/">Merge PDF</a></li>
+          <li><a href="/pdf-tools/split-pdf/">Split PDF</a></li>
+          <li><a href="/pdf-tools/compress-pdf/">Compress PDF</a></li>
+          <li><a href="/pdf-tools/jpg-to-pdf/">JPG to PDF</a></li>
+          <li><a href="/pdf-tools/pdf-to-jpg/">PDF to JPG</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Document Generators</h4>
+        <ul>
+          <li><a href="/document-generators/offer-letter/">Offer Letter</a></li>
+          <li><a href="/document-generators/invoice/">Invoice Generator</a></li>
+          <li><a href="/document-generators/purchase-order/">Purchase Order</a></li>
+          <li><a href="/document-generators/nda/">NDA Generator</a></li>
+          <li><a href="/document-generators/resignation/">Resignation Letter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms & Conditions</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 UtilityDesk.in. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://twitter.com/utilitydesk" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/utilitydesk" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://youtube.com/@utilitydesk" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isActive = item.classList.contains('active');
+        
+        document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-answer').style.maxHeight = '0';
+        });
+        
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Calculator logic
+    const basicSalaryInput = document.getElementById('basicSalary');
+    const daInput = document.getElementById('da');
+    const unusedLeaveInput = document.getElementById('unusedLeave');
+    const workingDaysInput = document.getElementById('workingDays');
+    const calculateBtn = document.getElementById('calculateBtn');
+
+    const perDaySalaryEl = document.getElementById('perDaySalary');
+    const perDaySalarySubEl = document.getElementById('perDaySalarySub');
+    const encashmentAmountEl = document.getElementById('encashmentAmount');
+    const encashmentSubEl = document.getElementById('encashmentSub');
+    const totalPayoutEl = document.getElementById('totalPayout');
+    const totalPayoutSubEl = document.getElementById('totalPayoutSub');
+
+    function formatCurrency(amount) {
+      if (amount >= 10000000) {
+        return '₹' + (amount / 10000000).toFixed(2) + ' Cr';
+      } else if (amount >= 100000) {
+        return '₹' + (amount / 100000).toFixed(2) + ' L';
+      } else {
+        return '₹' + amount.toLocaleString('en-IN');
+      }
+    }
+
+    function calculateLeaveEncashment() {
+      const basicSalary = parseFloat(basicSalaryInput.value);
+      const da = parseFloat(daInput.value) || 0;
+      const unusedLeave = parseFloat(unusedLeaveInput.value);
+      const workingDays = parseFloat(workingDaysInput.value);
+
+      if (!basicSalary || !unusedLeave || !workingDays || basicSalary <= 0 || unusedLeave <= 0 || workingDays <= 0) {
+        perDaySalaryEl.textContent = '—';
+        perDaySalarySubEl.textContent = 'Please enter valid values';
+        encashmentAmountEl.textContent = '—';
+        encashmentAmountEl.className = 'result-value';
+        encashmentSubEl.textContent = 'For your unused leave days';
+        totalPayoutEl.textContent = '—';
+        totalPayoutEl.className = 'result-value';
+        totalPayoutSubEl.textContent = 'Before tax deductions';
+        return;
+      }
+
+      // Calculate per day salary
+      const monthlySalary = basicSalary + da;
+      const perDaySalary = monthlySalary / workingDays;
+      
+      // Calculate leave encashment
+      const encashmentAmount = perDaySalary * unusedLeave;
+      
+      // Display results
+      perDaySalaryEl.textContent = formatCurrency(perDaySalary);
+      perDaySalarySubEl.textContent = `₹${monthlySalary.toLocaleString('en-IN')} / ${workingDays} days`;
+      
+      encashmentAmountEl.textContent = formatCurrency(encashmentAmount);
+      encashmentAmountEl.className = 'result-value highlight';
+      encashmentSubEl.textContent = `For ${unusedLeave} unused leave days`;
+      
+      totalPayoutEl.textContent = formatCurrency(encashmentAmount);
+      totalPayoutEl.className = 'result-value highlight';
+      totalPayoutSubEl.textContent = 'Before tax deductions';
+    }
+
+    calculateBtn.addEventListener('click', calculateLeaveEncashment);
+    
+    // Calculate on Enter key
+    [basicSalaryInput, daInput, unusedLeaveInput, workingDaysInput].forEach(input => {
+      input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') calculateLeaveEncashment();
+      });
+    });
+
+    // Auto-calculate on input (with debounce)
+    let debounceTimer;
+    [basicSalaryInput, daInput, unusedLeaveInput, workingDaysInput].forEach(input => {
+      input.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(calculateLeaveEncashment, 500);
+      });
+    });
+  </script>
+</body>
+</html>

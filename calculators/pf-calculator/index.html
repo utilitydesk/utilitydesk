@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PF Calculator – Calculate Employee Provident Fund Online | UtilityDesk.in</title>
+  <meta name="description" content="Free PF Calculator for Indian employees. Calculate EPF contributions, employer contribution, employee contribution, monthly PF deductions and estimated corpus instantly.">
+  <meta name="keywords" content="PF calculator, EPF calculator, provident fund calculator, employee provident fund, PF contribution calculator, EPF corpus calculator, India PF calculator">
+  <meta name="author" content="UtilityDesk.in">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://utilitydesk.in/calculators/pf-calculator/">
+  <meta property="og:title" content="PF Calculator – Calculate Employee Provident Fund Online">
+  <meta property="og:description" content="Free PF Calculator for Indian employees. Calculate EPF contributions and estimated corpus instantly.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://utilitydesk.in/calculators/pf-calculator/">
+  <meta property="og:site_name" content="UtilityDesk.in">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1f2e'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23f0a830'>U</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PF Calculator",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "description": "Free PF Calculator for Indian employees. Calculate EPF contributions, employer contribution, employee contribution, and estimated corpus instantly."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://utilitydesk.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculators",
+        "item": "https://utilitydesk.in/calculators/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "PF Calculator",
+        "item": "https://utilitydesk.in/calculators/pf-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is EPF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EPF (Employee Provident Fund) is a mandatory retirement savings scheme managed by the Employees' Provident Fund Organisation (EPFO) in India. Both employees and employers contribute a fixed percentage of the basic salary monthly, which accumulates with interest until retirement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PF mandatory?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, PF is mandatory for all establishments with 20 or more employees. Employees earning basic salary up to ₹15,000 per month must contribute. Those earning above ₹15,000 can voluntarily join or opt out with employer consent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is current EPF contribution rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The current EPF contribution rate is 12% of basic salary from both employee and employer. The employer's 12% is split: 8.33% goes to Employee Pension Scheme (EPS) and 3.67% to EPF. Employees can contribute more through VPF (Voluntary Provident Fund)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I withdraw PF before retirement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, partial PF withdrawal is allowed for specific purposes: medical emergencies, marriage, education, house construction/purchase, or after 2 months of unemployment. Full withdrawal is allowed at age 58 or after being unemployed for 2+ months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PF taxable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PF withdrawals are tax-free if you've completed 5 years of continuous service. If withdrawn before 5 years, the amount is taxable. Interest earned is tax-free up to ₹5 lakh annual contribution. Above that, interest is taxable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is PF interest calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PF interest is calculated monthly on the running balance using simple interest. The annual rate is divided by 12 and applied to the monthly closing balance. Interest is compounded annually and credited at the end of the financial year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I increase my PF contribution?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can increase your PF contribution through VPF (Voluntary Provident Fund). You can contribute any amount above the mandatory 12%. VPF earns the same interest rate as EPF and offers tax benefits under Section 80C."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is VPF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VPF (Voluntary Provident Fund) allows employees to contribute more than the mandatory 12% to their PF account. It earns the same interest rate as EPF, offers tax benefits under Section 80C, and helps build a larger retirement corpus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when changing jobs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When changing jobs, you should transfer your PF balance to the new employer's PF account using UAN (Universal Account Number). This maintains continuity of service and keeps your retirement savings intact. You can also withdraw if unemployed for 2+ months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to transfer PF account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To transfer PF: 1) Activate your UAN and link Aadhaar/PAN, 2) Login to EPFO member portal, 3) Go to Online Services > One Member One EPF Account Transfer Request, 4) Fill details and submit. The transfer is processed within 20 days after approval from both employers."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --slate-950: #0f1219;
+      --slate-900: #1a1f2e;
+      --slate-800: #252b3d;
+      --slate-700: #353d54;
+      --slate-600: #4a5270;
+      --slate-400: #8891a8;
+      --slate-300: #b0b7c8;
+      --slate-200: #d1d5e0;
+      --slate-100: #ebedf3;
+      --slate-50: #f5f6f9;
+      --white: #ffffff;
+      --amber-500: #f0a830;
+      --amber-400: #f5bc54;
+      --amber-600: #d4901a;
+      --amber-100: #fef3d6;
+      --emerald-500: #34b876;
+      --emerald-100: #d6f5e6;
+      --blue-500: #4a7cf7;
+      --blue-100: #dbe6fe;
+      --rose-500: #e85d6f;
+      --rose-100: #fde2e6;
+      --purple-500: #8b5cf6;
+      --purple-600: #7c3aed;
+      --purple-100: #ede9fe;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --nav-h: 72px;
+      --max-w: 1200px;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow-sm: 0 1px 3px rgba(15,18,25,.06), 0 1px 2px rgba(15,18,25,.04);
+      --shadow-md: 0 4px 16px rgba(15,18,25,.08), 0 2px 4px rgba(15,18,25,.04);
+      --shadow-lg: 0 12px 40px rgba(15,18,25,.12), 0 4px 12px rgba(15,18,25,.06);
+      --transition: .25s cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-body); color: var(--slate-900); background: var(--slate-50); line-height: 1.6; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); background: rgba(255,255,255,.92); backdrop-filter: blur(16px) saturate(1.4); -webkit-backdrop-filter: blur(16px) saturate(1.4); border-bottom: 1px solid var(--slate-100); transition: box-shadow var(--transition); }
+    .nav.scrolled { box-shadow: var(--shadow-sm); }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; height: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.5rem; color: var(--slate-900); }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--slate-900); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--amber-500); font-family: var(--font-display); font-size: 1.25rem; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links a { padding: 8px 14px; border-radius: 8px; font-size: .875rem; font-weight: 500; color: var(--slate-600); transition: all var(--transition); }
+    .nav-links a:hover, .nav-links a.active { color: var(--slate-900); background: var(--slate-100); }
+    .nav-cta { padding: 9px 20px; border-radius: 8px; font-size: .875rem; font-weight: 600; background: var(--slate-900); color: var(--white); transition: all var(--transition); }
+    .nav-cta:hover { background: var(--slate-800); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--slate-900); border-radius: 2px; transition: all .3s; }
+    .mobile-menu { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0; background: var(--white); z-index: 99; padding: 24px; flex-direction: column; gap: 4px; overflow-y: auto; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { padding: 14px 16px; border-radius: 10px; font-size: 1.05rem; font-weight: 500; color: var(--slate-700); transition: all var(--transition); }
+    .mobile-menu a:hover { background: var(--slate-50); color: var(--slate-900); }
+
+    /* PAGE HEADER */
+    .page-header { padding: calc(var(--nav-h) + 48px) 24px 48px; text-align: center; background: linear-gradient(175deg, var(--white) 0%, var(--slate-50) 100%); border-bottom: 1px solid var(--slate-100); }
+    .breadcrumb { display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; font-size: .85rem; color: var(--slate-400); }
+    .breadcrumb a { color: var(--slate-600); transition: color var(--transition); }
+    .breadcrumb a:hover { color: var(--amber-600); }
+    .breadcrumb span { color: var(--slate-400); }
+    .page-header h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--slate-950); margin-bottom: 12px; line-height: 1.2; }
+    .page-header p { font-size: 1.05rem; color: var(--slate-600); max-width: 600px; margin: 0 auto; }
+    .last-updated { font-size: .85rem; color: var(--slate-400); margin-top: 12px; }
+
+    /* CALCULATOR */
+    .calc-section { padding: 64px 24px; }
+    .calc-container { max-width: 900px; margin: 0 auto; }
+    .calc-card { background: var(--white); border-radius: 16px; padding: 48px; box-shadow: var(--shadow-md); border: 1px solid var(--slate-100); }
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .calc-inputs { display: flex; flex-direction: column; gap: 24px; }
+    .input-group { display: flex; flex-direction: column; gap: 8px; }
+    .input-group label { font-size: .875rem; font-weight: 600; color: var(--slate-700); }
+    .input-group input { padding: 14px 16px; border: 2px solid var(--slate-200); border-radius: 10px; font-size: 1rem; font-family: var(--font-body); background: var(--white); color: var(--slate-900); transition: all var(--transition); outline: none; }
+    .input-group input:focus { border-color: var(--amber-500); box-shadow: 0 0 0 4px rgba(240,168,48,.1); }
+    .input-group input::placeholder { color: var(--slate-400); }
+    .input-hint { font-size: .75rem; color: var(--slate-400); margin-top: 2px; }
+    .calc-btn { padding: 16px 32px; border-radius: 10px; font-size: 1rem; font-weight: 600; background: var(--slate-900); color: var(--white); transition: all var(--transition); margin-top: 8px; }
+    .calc-btn:hover { background: var(--slate-800); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .calc-results { display: flex; flex-direction: column; gap: 16px; }
+    .result-card { padding: 20px; border-radius: 12px; background: var(--slate-50); border: 1px solid var(--slate-100); }
+    .result-label { font-size: .75rem; font-weight: 600; color: var(--slate-400); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+    .result-value { font-size: 1.5rem; font-weight: 700; color: var(--slate-950); font-family: var(--font-display); }
+    .result-value.highlight { color: var(--emerald-500); }
+    .result-sub { font-size: .8rem; color: var(--slate-600); margin-top: 4px; }
+
+    /* ADSENSE */
+    .adsense-placeholder { max-width: 900px; margin: 0 auto 48px; padding: 24px; background: var(--slate-100); border: 2px dashed var(--slate-200); border-radius: 12px; text-align: center; color: var(--slate-400); font-size: .9rem; }
+
+    /* CONTENT */
+    .content-section { padding: 64px 24px; background: var(--white); }
+    .content-container { max-width: 800px; margin: 0 auto; }
+    .content-section h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.75rem; color: var(--slate-950); margin-bottom: 16px; }
+    .content-section h3 { font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin: 32px 0 12px; }
+    .content-section p { font-size: 1rem; color: var(--slate-600); line-height: 1.8; margin-bottom: 16px; }
+    .content-section ul { margin: 16px 0; padding-left: 24px; }
+    .content-section li { font-size: 1rem; color: var(--slate-600); line-height: 1.8; margin-bottom: 8px; }
+
+    /* FAQ */
+    .faq-section { padding: 64px 24px; }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header h2 { font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--slate-950); margin-bottom: 12px; }
+    .faq-header p { font-size: 1rem; color: var(--slate-600); }
+    .faq-item { background: var(--white); border-radius: 12px; margin-bottom: 12px; border: 1px solid var(--slate-100); overflow: hidden; transition: all var(--transition); }
+    .faq-item:hover { box-shadow: var(--shadow-sm); }
+    .faq-question { padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--slate-900); transition: all var(--transition); }
+    .faq-question:hover { color: var(--amber-600); }
+    .faq-icon { width: 24px; height: 24px; border-radius: 6px; background: var(--slate-100); display: flex; align-items: center; justify-content: center; transition: all var(--transition); flex-shrink: 0; margin-left: 16px; }
+    .faq-item.active .faq-icon { background: var(--amber-500); color: var(--white); transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-answer-inner { padding: 0 24px 20px; font-size: .95rem; color: var(--slate-600); line-height: 1.7; }
+
+    /* RELATED TOOLS */
+    .related-section { padding: 64px 24px; background: var(--slate-50); }
+    .related-container { max-width: var(--max-w); margin: 0 auto; }
+    .related-header { text-align: center; margin-bottom: 48px; }
+    .related-header h2 { font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--slate-950); margin-bottom: 12px; }
+    .related-header p { font-size: 1rem; color: var(--slate-600); }
+    .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .related-card { padding: 28px; background: var(--white); border-radius: 12px; border: 1px solid var(--slate-100); transition: all var(--transition); }
+    .related-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: transparent; }
+    .related-card-tag { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 4px 10px; border-radius: 6px; margin-bottom: 12px; }
+    .related-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--slate-900); margin-bottom: 8px; }
+    .related-card p { font-size: .85rem; color: var(--slate-600); line-height: 1.6; }
+
+    /* FOOTER */
+    .footer { background: var(--slate-950); color: var(--slate-400); padding: 64px 24px 32px; }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; font-family: var(--font-display); font-size: 1.35rem; color: var(--white); }
+    .footer-logo-icon { width: 32px; height: 32px; background: var(--slate-800); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: var(--amber-500); font-family: var(--font-display); font-size: 1.1rem; }
+    .footer-brand p { font-size: .85rem; line-height: 1.7; max-width: 260px; }
+    .footer-col h4 { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--slate-300); margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: .86rem; transition: color var(--transition); }
+    .footer-col a:hover { color: var(--amber-500); }
+    .footer-bottom { max-width: var(--max-w); margin: 48px auto 0; padding-top: 24px; border-top: 1px solid var(--slate-800); display: flex; justify-content: space-between; align-items: center; font-size: .8rem; }
+    .footer-social { display: flex; gap: 12px; }
+    .footer-social a { width: 36px; height: 36px; border-radius: 8px; background: var(--slate-800); display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+    .footer-social a:hover { background: var(--amber-500); color: var(--slate-950); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .calc-grid { grid-template-columns: 1fr; gap: 32px; }
+      .calc-card { padding: 32px 24px; }
+      .related-grid { grid-template-columns: 1fr 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .related-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="UtilityDesk.in Home">
+        <span class="nav-logo-icon">U</span>
+        UtilityDesk<span style="color:var(--amber-500)">.</span>in
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/calculators/" class="active">Calculators</a></li>
+        <li><a href="/pdf-tools/">PDF Tools</a></li>
+        <li><a href="/document-generators/">Document Generators</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="/calculators/" class="nav-cta">Browse Tools</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/calculators/">Calculators</a>
+    <a href="/pdf-tools/">PDF Tools</a>
+    <a href="/document-generators/">Document Generators</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="/calculators/" style="background:var(--slate-900);color:var(--white);text-align:center;border-radius:10px;margin-top:8px;font-weight:600;">Browse Tools</a>
+  </div>
+  
+  <header class="page-header">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/calculators/">Calculators</a>
+      <span>/</span>
+      <span>PF Calculator</span>
+    </div>
+    <h1>PF Calculator</h1>
+    <p>Calculate your Employee Provident Fund contributions, employer matching, and estimated retirement corpus</p>
+    <div class="last-updated">Last Updated: June 2026</div>
+  </header>
+  
+  <section class="calc-section">
+    <div class="calc-container">
+      <div class="calc-card">
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="input-group">
+              <label for="monthlyBasic">Monthly Basic Salary (₹)</label>
+              <input type="number" id="monthlyBasic" placeholder="e.g., 25000" min="0">
+              <span class="input-hint">Enter your monthly basic salary</span>
+            </div>
+            <div class="input-group">
+              <label for="employeePF">Employee PF Contribution (%)</label>
+              <input type="number" id="employeePF" value="12" min="0" max="100" step="0.01">
+              <span class="input-hint">Default: 12% of basic salary</span>
+            </div>
+            <div class="input-group">
+              <label for="employerPF">Employer PF Contribution (%)</label>
+              <input type="number" id="employerPF" value="12" min="0" max="100" step="0.01">
+              <span class="input-hint">Default: 12% of basic salary</span>
+            </div>
+            <div class="input-group">
+              <label for="yearsOfService">Years of Service</label>
+              <input type="number" id="yearsOfService" placeholder="e.g., 25" min="0" max="50">
+              <span class="input-hint">Total years until retirement</span>
+            </div>
+            <div class="input-group">
+              <label for="interestRate">Expected Annual Interest Rate (%)</label>
+              <input type="number" id="interestRate" value="8.25" min="0" max="20" step="0.01">
+              <span class="input-hint">Current EPF rate: 8.25% (FY 2024-25)</span>
+            </div>
+            <button class="calc-btn" id="calculateBtn">Calculate PF</button>
+          </div>
+          <div class="calc-results" id="results">
+            <div class="result-card">
+              <div class="result-label">Monthly Employee Contribution</div>
+              <div class="result-value" id="monthlyEmployee">—</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Monthly Employer Contribution</div>
+              <div class="result-value" id="monthlyEmployer">—</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Total Monthly PF Contribution</div>
+              <div class="result-value" id="totalMonthly">—</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Total Contributions Made</div>
+              <div class="result-value" id="totalContributions">—</div>
+              <div class="result-sub" id="totalContributionsSub">Over service period</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Estimated PF Corpus</div>
+              <div class="result-value highlight" id="pfCorpus">—</div>
+              <div class="result-sub" id="pfCorpusSub">At retirement</div>
+            </div>
+            <div class="result-card">
+              <div class="result-label">Interest Earned</div>
+              <div class="result-value" id="interestEarned">—</div>
+              <div class="result-sub" id="interestEarnedSub">Total interest accumulated</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="adsense-placeholder">
+    <p>Advertisement</p>
+    <!-- AdSense Code Goes Here -->
+  </div>
+  
+  <section class="content-section">
+    <div class="content-container">
+      <h2>What is EPF?</h2>
+      <p>The Employee Provident Fund (EPF) is a mandatory retirement savings scheme managed by the Employees' Provident Fund Organisation (EPFO) under the Ministry of Labour and Employment, Government of India. Established in 1952, the EPF scheme is one of the largest social security organizations in the world, serving over 60 million subscribers across India.</p>
+      
+      <p>EPF is designed to provide financial security to employees during their retirement years by accumulating a corpus through regular monthly contributions from both employees and employers. The scheme ensures that workers have a substantial nest egg when they stop earning a regular salary, helping them maintain their standard of living post-retirement.</p>
+
+      <h3>Employee Contribution</h3>
+      <p>Under the EPF scheme, employees contribute a fixed percentage of their basic salary plus dearness allowance (DA) every month. The standard contribution rate is 12% of basic salary + DA. This contribution is deducted directly from the employee's salary before disbursement, making it a forced savings mechanism that builds wealth over time.</p>
+      
+      <p>For example, if your monthly basic salary is ₹25,000, your monthly EPF contribution would be ₹3,000 (12% of ₹25,000). This amount is deducted from your salary and deposited into your EPF account. The beauty of this system is that it encourages disciplined savings without requiring any conscious effort from the employee.</p>
+
+      <h3>Employer Contribution</h3>
+      <p>Employers are also required to contribute an equal amount (12% of basic salary + DA) on behalf of their employees. However, the employer's contribution is split into two parts:</p>
+      <ul>
+        <li><strong>3.67% goes to EPF:</strong> This portion is added to the employee's provident fund account and earns interest</li>
+        <li><strong>8.33% goes to EPS (Employee Pension Scheme):</strong> This portion funds the pension scheme that provides monthly pension after retirement</li>
+      </ul>
+      
+      <p>The EPS has a salary ceiling of ₹15,000 per month for pension calculations. If your basic salary exceeds ₹15,000, the employer's contribution to EPS is capped at ₹1,250 per month (8.33% of ₹15,000), and the remaining amount goes to your EPF account.</p>
+
+      <h3>Interest Accumulation</h3>
+      <p>The EPF account earns interest compounded annually at a rate declared by the EPFO each financial year. The interest rate is typically higher than regular savings accounts and is tax-free under certain conditions. For FY 2024-25, the EPF interest rate is 8.25% per annum.</p>
+      
+      <p>Interest is calculated monthly on the running balance but credited annually at the end of the financial year (March 31). The monthly calculation ensures that contributions made early in the year earn more interest than those made later, rewarding early and consistent contributions.</p>
+      
+      <p>The power of compound interest means that even small monthly contributions can grow into a substantial corpus over 25-30 years of service. For instance, a monthly contribution of ₹6,000 (employee + employer) at 8.25% interest over 25 years can grow to approximately ₹55-60 lakhs, even without salary increments.</p>
+
+      <h3>Retirement Benefits</h3>
+      <p>Upon retirement at age 58, employees can withdraw their entire EPF corpus, which includes their contributions, employer contributions, and accumulated interest. This lump sum amount provides financial security during retirement years when regular income stops.</p>
+      
+      <p>Additionally, employees who have completed at least 10 years of service are eligible for monthly pension under the Employee Pension Scheme (EPS). The pension amount depends on the years of service and the average salary during the last 60 months of employment.</p>
+      
+      <p>The EPF scheme also provides financial protection in case of unfortunate events. In case of the employee's death, the entire corpus is paid to the nominated family member, providing crucial financial support during difficult times. The scheme also offers partial withdrawal facilities for specific needs like medical emergencies, marriage, education, and house construction.</p>
+
+      <h2>How PF is Calculated</h2>
+      <p>Understanding how PF is calculated helps you plan your retirement savings better. The calculation is straightforward but involves multiple components that work together to build your retirement corpus.</p>
+
+      <h3>PF Calculation Formula</h3>
+      <p>The PF calculation follows these formulas:</p>
+      <ul>
+        <li><strong>Employee Contribution = Basic Salary × Employee PF %</strong></li>
+        <li><strong>Employer Contribution (EPF portion) = Basic Salary × 3.67%</strong></li>
+        <li><strong>Employer Contribution (EPS portion) = Basic Salary × 8.33% (capped at ₹15,000)</strong></li>
+        <li><strong>Total Monthly PF = Employee Contribution + Employer EPF Contribution</strong></li>
+      </ul>
+
+      <h3>Example Calculation</h3>
+      <p>Let's understand with a practical example. Suppose your monthly basic salary is ₹30,000:</p>
+      <ul>
+        <li><strong>Employee Contribution:</strong> ₹30,000 × 12% = ₹3,600 per month</li>
+        <li><strong>Employer EPF Contribution:</strong> ₹30,000 × 3.67% = ₹1,101 per month</li>
+        <li><strong>Employer EPS Contribution:</strong> ₹15,000 × 8.33% = ₹1,250 per month (capped)</li>
+        <li><strong>Total Monthly PF Deposit:</strong> ₹3,600 + ₹1,101 = ₹4,701 per month</li>
+      </ul>
+      
+      <p>This ₹4,701 is deposited into your EPF account every month and earns interest at the declared rate. Over a year, without considering interest, you accumulate ₹56,412. With compound interest at 8.25% over 25 years, this grows to approximately ₹45-50 lakhs.</p>
+
+      <h3>Impact of Salary Increments</h3>
+      <p>As your salary increases through annual increments and promotions, your PF contributions also increase proportionally. This means your retirement corpus grows faster in later years when your salary is higher. Even a modest 5-10% annual salary increase can significantly boost your final PF corpus due to the combined effect of higher contributions and compound interest.</p>
+
+      <h2>EPF Benefits</h2>
+      <p>The Employee Provident Fund offers numerous benefits that make it one of the most attractive retirement savings instruments in India:</p>
+
+      <h3>Retirement Corpus</h3>
+      <p>EPF helps you build a substantial retirement corpus through disciplined monthly savings. The combination of employee contribution, employer matching, and compound interest creates a powerful wealth-building mechanism. Most employees accumulate 30-40 times their annual salary by retirement age, providing financial independence when regular income stops.</p>
+
+      <h3>Tax Benefits</h3>
+      <p>EPF offers triple tax advantages:</p>
+      <ul>
+        <li><strong>Employee contribution:</strong> Eligible for tax deduction under Section 80C (up to ₹1.5 lakh per year)</li>
+        <li><strong>Employer contribution:</strong> Tax-free up to 12% of salary</li>
+        <li><strong>Interest earned:</strong> Completely tax-free</li>
+        <li><strong>Maturity amount:</strong> Tax-free if withdrawn after 5 years of continuous service</li>
+      </ul>
+      
+      <p>This EEE (Exempt-Exempt-Exempt) tax status makes EPF one of the most tax-efficient investment options available in India.</p>
+
+      <h3>Financial Security</h3>
+      <p>EPF provides financial security in multiple ways. Besides retirement benefits, it offers partial withdrawal facilities for emergencies, medical treatment, children's education, marriage, and house construction. In case of the employee's death, the entire corpus goes to the nominee, providing crucial financial support to the family.</p>
+
+      <h3>Compound Growth</h3>
+      <p>The power of compound interest working over 25-30 years transforms modest monthly contributions into a substantial corpus. The interest is calculated monthly and compounded annually, ensuring that your money grows exponentially over time. Early and consistent contributions benefit the most from this compounding effect.</p>
+
+      <h3>Guaranteed Returns</h3>
+      <p>Unlike market-linked instruments, EPF offers guaranteed returns backed by the Government of India. The interest rate is reviewed annually and typically remains competitive, ranging from 8% to 8.5% in recent years. This makes EPF a safe and reliable investment option for risk-averse individuals.</p>
+
+      <h3>Portability</h3>
+      <p>EPF accounts are portable through the Universal Account Number (UAN) system. When you change jobs, you can easily transfer your PF balance to the new employer, maintaining continuity of your retirement savings. This portability ensures that your savings remain intact throughout your career, regardless of job changes.</p>
+    </div>
+  </section>
+  
+  <div class="adsense-placeholder">
+    <p>Advertisement</p>
+    <!-- AdSense Code Goes Here -->
+  </div>
+  
+  <section class="faq-section">
+    <div class="faq-container">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Employee Provident Fund in India</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is EPF?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">EPF (Employee Provident Fund) is a mandatory retirement savings scheme managed by the Employees' Provident Fund Organisation (EPFO) in India. Both employees and employers contribute a fixed percentage of the basic salary monthly, which accumulates with interest until retirement.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is PF mandatory?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, PF is mandatory for all establishments with 20 or more employees. Employees earning basic salary up to ₹15,000 per month must contribute. Those earning above ₹15,000 can voluntarily join or opt out with employer consent.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is current EPF contribution rate?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">The current EPF contribution rate is 12% of basic salary from both employee and employer. The employer's 12% is split: 8.33% goes to Employee Pension Scheme (EPS) and 3.67% to EPF. Employees can contribute more through VPF (Voluntary Provident Fund).</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can I withdraw PF before retirement?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, partial PF withdrawal is allowed for specific purposes: medical emergencies, marriage, education, house construction/purchase, or after 2 months of unemployment. Full withdrawal is allowed at age 58 or after being unemployed for 2+ months.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is PF taxable?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">PF withdrawals are tax-free if you've completed 5 years of continuous service. If withdrawn before 5 years, the amount is taxable. Interest earned is tax-free up to ₹5 lakh annual contribution. Above that, interest is taxable.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How is PF interest calculated?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">PF interest is calculated monthly on the running balance using simple interest. The annual rate is divided by 12 and applied to the monthly closing balance. Interest is compounded annually and credited at the end of the financial year.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can I increase my PF contribution?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, you can increase your PF contribution through VPF (Voluntary Provident Fund). You can contribute any amount above the mandatory 12%. VPF earns the same interest rate as EPF and offers tax benefits under Section 80C.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is VPF?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">VPF (Voluntary Provident Fund) allows employees to contribute more than the mandatory 12% to their PF account. It earns the same interest rate as EPF, offers tax benefits under Section 80C, and helps build a larger retirement corpus.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What happens when changing jobs?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">When changing jobs, you should transfer your PF balance to the new employer's PF account using UAN (Universal Account Number). This maintains continuity of service and keeps your retirement savings intact. You can also withdraw if unemployed for 2+ months.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How to transfer PF account?</span>
+          <div class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">To transfer PF: 1) Activate your UAN and link Aadhaar/PAN, 2) Login to EPFO member portal, 3) Go to Online Services > One Member One EPF Account Transfer Request, 4) Fill details and submit. The transfer is processed within 20 days after approval from both employers.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="related-section">
+    <div class="related-container">
+      <div class="related-header">
+        <h2>Related Calculators</h2>
+        <p>More tools to help you plan your retirement and finances</p>
+      </div>
+      <div class="related-grid">
+        <a href="/calculators/salary-hike/" class="related-card">
+          <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">Salary</span>
+          <h3>Salary Hike Calculator</h3>
+          <p>Calculate your salary increment percentage and new CTC after a raise or promotion.</p>
+        </a>
+        <a href="/calculators/gratuity/" class="related-card">
+          <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">Retirement</span>
+          <h3>Gratuity Calculator</h3>
+          <p>Calculate gratuity amount based on your last drawn salary and years of service.</p>
+        </a>
+        <a href="/calculators/leave-encashment/" class="related-card">
+          <span class="related-card-tag" style="background:var(--blue-100);color:var(--blue-500)">HR</span>
+          <h3>Leave Encashment Calculator</h3>
+          <p>Calculate the amount you'll receive for unused leave days when leaving a company.</p>
+        </a>
+        <a href="/calculators/income-tax/" class="related-card">
+          <span class="related-card-tag" style="background:var(--emerald-100);color:var(--emerald-500)">Finance</span>
+          <h3>Income Tax Calculator</h3>
+          <p>Calculate your income tax liability under old and new tax regimes for FY 2025-26.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">U</span>
+          UtilityDesk<span style="color:var(--amber-500)">.</span>in
+        </div>
+        <p>Free calculators, PDF tools, document generators, and productivity tools built for Indian professionals. No signup required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/calculators/salary-hike/">Salary Hike Calculator</a></li>
+          <li><a href="/calculators/pf-calculator/">PF Calculator</a></li>
+          <li><a href="/calculators/gst/">GST Calculator</a></li>
+          <li><a href="/calculators/hra/">HRA Calculator</a></li>
+          <li><a href="/calculators/tds/">TDS Calculator</a></li>
+          <li><a href="/calculators/emi/">EMI Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>PDF Tools</h4>
+        <ul>
+          <li><a href="/pdf-tools/merge/">Merge PDF</a></li>
+          <li><a href="/pdf-tools/split/">Split PDF</a></li>
+          <li><a href="/pdf-tools/compress/">Compress PDF</a></li>
+          <li><a href="/pdf-tools/jpg-to-pdf/">JPG to PDF</a></li>
+          <li><a href="/pdf-tools/pdf-to-jpg/">PDF to JPG</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Document Generators</h4>
+        <ul>
+          <li><a href="/document-generators/offer-letter/">Offer Letter</a></li>
+          <li><a href="/document-generators/invoice/">Invoice Generator</a></li>
+          <li><a href="/document-generators/purchase-order/">Purchase Order</a></li>
+          <li><a href="/document-generators/nda/">NDA Generator</a></li>
+          <li><a href="/document-generators/resignation/">Resignation Letter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms & Conditions</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 UtilityDesk.in. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://twitter.com/utilitydesk" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/utilitydesk" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://youtube.com/@utilitydesk" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isActive = item.classList.contains('active');
+        
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-answer').style.maxHeight = '0';
+        });
+        
+        // Open clicked if wasn't active
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Calculator logic
+    const monthlyBasicInput = document.getElementById('monthlyBasic');
+    const employeePFInput = document.getElementById('employeePF');
+    const employerPFInput = document.getElementById('employerPF');
+    const yearsOfServiceInput = document.getElementById('yearsOfService');
+    const interestRateInput = document.getElementById('interestRate');
+    const calculateBtn = document.getElementById('calculateBtn');
+
+    const monthlyEmployeeEl = document.getElementById('monthlyEmployee');
+    const monthlyEmployerEl = document.getElementById('monthlyEmployer');
+    const totalMonthlyEl = document.getElementById('totalMonthly');
+    const totalContributionsEl = document.getElementById('totalContributions');
+    const totalContributionsSubEl = document.getElementById('totalContributionsSub');
+    const pfCorpusEl = document.getElementById('pfCorpus');
+    const pfCorpusSubEl = document.getElementById('pfCorpusSub');
+    const interestEarnedEl = document.getElementById('interestEarned');
+    const interestEarnedSubEl = document.getElementById('interestEarnedSub');
+
+    function formatCurrency(amount) {
+      if (amount >= 10000000) {
+        return '₹' + (amount / 10000000).toFixed(2) + ' Cr';
+      } else if (amount >= 100000) {
+        return '₹' + (amount / 100000).toFixed(2) + ' L';
+      } else {
+        return '₹' + amount.toLocaleString('en-IN');
+      }
+    }
+
+    function calculatePF() {
+      const monthlyBasic = parseFloat(monthlyBasicInput.value);
+      const employeePF = parseFloat(employeePFInput.value);
+      const employerPF = parseFloat(employerPFInput.value);
+      const years = parseFloat(yearsOfServiceInput.value);
+      const interestRate = parseFloat(interestRateInput.value);
+
+      if (!monthlyBasic || !years || monthlyBasic <= 0 || years <= 0) {
+        monthlyEmployeeEl.textContent = '—';
+        monthlyEmployerEl.textContent = '—';
+        totalMonthlyEl.textContent = '—';
+        totalContributionsEl.textContent = '—';
+        pfCorpusEl.textContent = '—';
+        interestEarnedEl.textContent = '—';
+        return;
+      }
+
+      // Monthly contributions
+      const monthlyEmployee = (monthlyBasic * employeePF) / 100;
+      const monthlyEmployer = (monthlyBasic * employerPF) / 100;
+      const totalMonthly = monthlyEmployee + monthlyEmployer;
+
+      // Total contributions over service period
+      const totalContributions = totalMonthly * 12 * years;
+
+      // PF corpus calculation with compound interest
+      // Monthly contribution with annual compounding
+      const annualContribution = totalMonthly * 12;
+      const rate = interestRate / 100;
+      let corpus = 0;
+      
+      // Calculate year by year with annual compounding
+      for (let i = 0; i < years; i++) {
+        corpus = (corpus + annualContribution) * (1 + rate);
+      }
+
+      // Interest earned
+      const interestEarned = corpus - totalContributions;
+
+      // Display results
+      monthlyEmployeeEl.textContent = formatCurrency(monthlyEmployee);
+      monthlyEmployerEl.textContent = formatCurrency(monthlyEmployer);
+      totalMonthlyEl.textContent = formatCurrency(totalMonthly);
+      
+      totalContributionsEl.textContent = formatCurrency(totalContributions);
+      totalContributionsSubEl.textContent = `Over ${years} years of service`;
+      
+      pfCorpusEl.textContent = formatCurrency(corpus);
+      pfCorpusSubEl.textContent = `At ${interestRate}% interest`;
+      
+      interestEarnedEl.textContent = formatCurrency(interestEarned);
+      interestEarnedSubEl.textContent = `Total interest accumulated`;
+    }
+
+    calculateBtn.addEventListener('click', calculatePF);
+    
+    // Calculate on Enter key
+    [monthlyBasicInput, yearsOfServiceInput].forEach(input => {
+      input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') calculatePF();
+      });
+    });
+
+    // Auto-calculate on input (with debounce)
+    let debounceTimer;
+    [monthlyBasicInput, employeePFInput, employerPFInput, yearsOfServiceInput, interestRateInput].forEach(input => {
+      input.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(calculatePF, 500);
+      });
+    });
+  </script>
+</body>
+</html>
