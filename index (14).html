@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UtilityDesk.in — Free Calculators, PDF Tools &amp; Document Generators for Indian Professionals</title>
+  <meta name="description" content="Free online calculators, PDF tools, document generators, and productivity tools built for Indian professionals. Salary, finance, HR, training, and operations tools. No signup required.">
+  <meta name="keywords" content="Indian salary calculator, HRA calculator, GST calculator, PDF merge, PDF split, document generator, PF calculator, India productivity tools, HR tools India, training calculator">
+  <meta name="author" content="UtilityDesk.in">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://utilitydesk.in/">
+  <meta property="og:title" content="UtilityDesk.in — Free Calculators, PDF Tools &amp; Document Generators">
+  <meta property="og:description" content="Free calculators, PDF tools, document generators &amp; productivity tools built for India. Salary, finance, HR, training, and operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://utilitydesk.in/">
+  <meta property="og:site_name" content="UtilityDesk.in">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UtilityDesk.in — Free Calculators, PDF Tools &amp; Document Generators">
+  <meta name="twitter:description" content="Free calculators, PDF tools, document generators &amp; productivity tools built for India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1f2e'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23f0a830'>U</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "UtilityDesk.in",
+    "url": "https://utilitydesk.in/",
+    "description": "Free calculators, PDF tools, document generators, and productivity tools for Indian professionals.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://utilitydesk.in/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --slate-950: #0f1219;
+      --slate-900: #1a1f2e;
+      --slate-800: #252b3d;
+      --slate-700: #353d54;
+      --slate-600: #4a5270;
+      --slate-400: #8891a8;
+      --slate-300: #b0b7c8;
+      --slate-200: #d1d5e0;
+      --slate-100: #ebedf3;
+      --slate-50: #f5f6f9;
+      --white: #ffffff;
+      --amber-500: #f0a830;
+      --amber-400: #f5bc54;
+      --amber-600: #d4901a;
+      --amber-100: #fef3d6;
+      --emerald-500: #34b876;
+      --emerald-100: #d6f5e6;
+      --blue-500: #4a7cf7;
+      --blue-100: #dbe6fe;
+      --rose-500: #e85d6f;
+      --rose-100: #fde2e6;
+      --purple-500: #8b5cf6;
+      --purple-600: #7c3aed;
+      --purple-100: #ede9fe;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --nav-h: 72px;
+      --max-w: 1200px;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow-sm: 0 1px 3px rgba(15,18,25,.06), 0 1px 2px rgba(15,18,25,.04);
+      --shadow-md: 0 4px 16px rgba(15,18,25,.08), 0 2px 4px rgba(15,18,25,.04);
+      --shadow-lg: 0 12px 40px rgba(15,18,25,.12), 0 4px 12px rgba(15,18,25,.06);
+      --transition: .25s cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-body); color: var(--slate-900); background: var(--slate-50); line-height: 1.6; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); background: rgba(255,255,255,.92); backdrop-filter: blur(16px) saturate(1.4); -webkit-backdrop-filter: blur(16px) saturate(1.4); border-bottom: 1px solid var(--slate-100); transition: box-shadow var(--transition); }
+    .nav.scrolled { box-shadow: var(--shadow-sm); }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; height: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.5rem; color: var(--slate-900); }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--slate-900); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--amber-500); font-family: var(--font-display); font-size: 1.25rem; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links a { padding: 8px 14px; border-radius: 8px; font-size: .875rem; font-weight: 500; color: var(--slate-600); transition: all var(--transition); }
+    .nav-links a:hover, .nav-links a.active { color: var(--slate-900); background: var(--slate-100); }
+    .nav-cta { padding: 9px 20px; border-radius: 8px; font-size: .875rem; font-weight: 600; background: var(--slate-900); color: var(--white); transition: all var(--transition); }
+    .nav-cta:hover { background: var(--slate-800); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--slate-900); border-radius: 2px; transition: all .3s; }
+    .mobile-menu { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0; background: var(--white); z-index: 99; padding: 24px; flex-direction: column; gap: 4px; overflow-y: auto; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { padding: 14px 16px; border-radius: 10px; font-size: 1.05rem; font-weight: 500; color: var(--slate-700); transition: all var(--transition); }
+    .mobile-menu a:hover { background: var(--slate-50); color: var(--slate-900); }
+
+    /* HERO */
+    .hero { padding: calc(var(--nav-h) + 64px) 24px 80px; text-align: center; position: relative; overflow: hidden; background: linear-gradient(175deg, var(--white) 0%, var(--slate-50) 60%, var(--amber-100) 100%); }
+    .hero::before { content: ''; position: absolute; top: -120px; right: -120px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(240,168,48,.08) 0%, transparent 70%); pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -80px; left: -80px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(139,92,246,.06) 0%, transparent 70%); pointer-events: none; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px 6px 8px; border-radius: 100px; background: var(--white); border: 1px solid var(--slate-200); font-size: .8rem; font-weight: 600; color: var(--slate-600); margin-bottom: 28px; box-shadow: var(--shadow-sm); }
+    .hero-badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald-500); animation: pulse-dot 2s ease infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .6; transform: scale(1.3); } }
+    .hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.15; color: var(--slate-950); max-width: 740px; margin: 0 auto 20px; letter-spacing: -.01em; }
+    .hero h1 em { font-style: italic; background: linear-gradient(135deg, var(--amber-500), var(--amber-600)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { font-size: clamp(1rem, 2vw, 1.15rem); color: var(--slate-600); max-width: 580px; margin: 0 auto 40px; line-height: 1.7; }
+    .hero-search { max-width: 580px; margin: 0 auto; position: relative; }
+    .hero-search input { width: 100%; padding: 18px 56px 18px 24px; border: 2px solid var(--slate-200); border-radius: 14px; font-size: 1rem; font-family: var(--font-body); background: var(--white); color: var(--slate-900); box-shadow: var(--shadow-md); transition: all var(--transition); outline: none; }
+    .hero-search input::placeholder { color: var(--slate-400); }
+    .hero-search input:focus { border-color: var(--amber-500); box-shadow: var(--shadow-lg), 0 0 0 4px rgba(240,168,48,.12); }
+    .hero-search-btn { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 10px; background: var(--slate-900); color: var(--white); display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+    .hero-search-btn:hover { background: var(--slate-800); }
+    .hero-search-btn svg { width: 18px; height: 18px; }
+    .hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 20px; }
+    .hero-tags a { padding: 6px 14px; border-radius: 100px; font-size: .8rem; font-weight: 500; background: var(--white); border: 1px solid var(--slate-200); color: var(--slate-600); transition: all var(--transition); }
+    .hero-tags a:hover { border-color: var(--amber-500); color: var(--amber-600); background: var(--amber-100); }
+    .hero-features { display: flex; justify-content: center; gap: 40px; margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--slate-200); max-width: 600px; margin-left: auto; margin-right: auto; }
+    .hero-feature { display: flex; align-items: center; gap: 10px; }
+    .hero-feature-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hero-feature span { font-size: .84rem; font-weight: 600; color: var(--slate-700); text-align: left; }
+
+    /* SECTION COMMON */
+    .section { padding: 80px 24px; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-label { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--amber-600); margin-bottom: 12px; }
+    .section-title { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.75rem, 3.5vw, 2.5rem); color: var(--slate-950); line-height: 1.2; margin-bottom: 12px; }
+    .section-desc { font-size: .95rem; color: var(--slate-600); max-width: 540px; margin: 0 auto; }
+    .container { max-width: var(--max-w); margin: 0 auto; }
+
+    /* CATEGORIES */
+    .categories-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+    .cat-card { background: var(--white); border-radius: var(--radius); padding: 28px 20px; border: 1px solid var(--slate-100); transition: all var(--transition); position: relative; overflow: hidden; display: block; }
+    .cat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .35s cubic-bezier(.4,0,.2,1); }
+    .cat-card:hover::before { transform: scaleX(1); }
+    .cat-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: transparent; }
+    .cat-icon { width: 44px; height: 44px; border-radius: 11px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .cat-card h3 { font-size: .98rem; font-weight: 700; margin-bottom: 8px; color: var(--slate-900); }
+    .cat-card p { font-size: .82rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 14px; }
+    .cat-tools-list { list-style: none; display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+    .cat-tools-list li { font-size: .78rem; color: var(--slate-400); font-weight: 500; padding-left: 14px; position: relative; }
+    .cat-tools-list li::before { content: ''; position: absolute; left: 0; top: 7px; width: 5px; height: 5px; border-radius: 50%; background: var(--slate-200); }
+    .cat-count { font-size: .76rem; font-weight: 600; color: var(--slate-400); }
+
+    /* FEATURED TOOLS */
+    .tools-section { background: var(--white); }
+    .tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .tool-card { padding: 28px; border-radius: var(--radius); border: 1px solid var(--slate-100); background: var(--slate-50); transition: all var(--transition); display: flex; flex-direction: column; gap: 12px; position: relative; }
+    .tool-card:hover { background: var(--white); box-shadow: var(--shadow-md); border-color: transparent; transform: translateY(-2px); }
+    .tool-card-top { display: flex; align-items: center; justify-content: space-between; }
+    .tool-cat-tag { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 4px 10px; border-radius: 6px; }
+    .tool-arrow { width: 32px; height: 32px; border-radius: 8px; background: var(--slate-100); display: flex; align-items: center; justify-content: center; transition: all var(--transition); color: var(--slate-400); }
+    .tool-card:hover .tool-arrow { background: var(--slate-900); color: var(--white); }
+    .tool-card h3 { font-size: 1rem; font-weight: 700; color: var(--slate-900); }
+    .tool-card p { font-size: .84rem; color: var(--slate-600); line-height: 1.6; }
+    .tool-card-footer { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 8px; }
+    .tool-card-footer span { font-size: .75rem; color: var(--slate-400); font-weight: 500; }
+
+    /* WHY SECTION */
+    .why-section { background: var(--slate-50); }
+    .why-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+    .why-card { text-align: center; padding: 32px 16px; background: var(--white); border-radius: var(--radius); border: 1px solid var(--slate-100); transition: all var(--transition); }
+    .why-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+    .why-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+    .why-card h3 { font-size: .92rem; font-weight: 700; color: var(--slate-900); margin-bottom: 6px; }
+    .why-card p { font-size: .8rem; color: var(--slate-600); line-height: 1.55; }
+
+    /* ARTICLES */
+    .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .article-card { background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--slate-100); transition: all var(--transition); }
+    .article-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: transparent; }
+    .article-img { height: 180px; position: relative; overflow: hidden; }
+    .article-img-inner { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; transition: transform .4s cubic-bezier(.4,0,.2,1); }
+    .article-card:hover .article-img-inner { transform: scale(1.05); }
+    .article-body { padding: 24px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .article-tag { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; padding: 3px 8px; border-radius: 5px; }
+    .article-date { font-size: .78rem; color: var(--slate-400); }
+    .article-body h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.4; color: var(--slate-900); margin-bottom: 8px; }
+    .article-body p { font-size: .85rem; color: var(--slate-600); line-height: 1.6; }
+    .article-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: .84rem; font-weight: 600; color: var(--amber-600); transition: gap var(--transition); }
+    .article-link:hover { gap: 10px; }
+
+    /* CTA BANNER */
+    .cta-banner { margin: 0 24px 80px; max-width: var(--max-w); margin-left: auto; margin-right: auto; background: var(--slate-900); border-radius: 20px; padding: 64px 48px; text-align: center; position: relative; overflow: hidden; }
+    .cta-banner::before { content: ''; position: absolute; top: -60%; right: -10%; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(240,168,48,.15), transparent 70%); }
+    .cta-banner h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--white); margin-bottom: 12px; position: relative; }
+    .cta-banner p { color: var(--slate-400); font-size: .95rem; margin-bottom: 32px; position: relative; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 10px; font-size: .95rem; font-weight: 600; background: var(--amber-500); color: var(--slate-950); transition: all var(--transition); position: relative; }
+    .cta-btn:hover { background: var(--amber-400); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,168,48,.3); }
+
+    /* FOOTER */
+    .footer { background: var(--slate-950); color: var(--slate-400); padding: 64px 24px 32px; }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; font-family: var(--font-display); font-size: 1.35rem; color: var(--white); }
+    .footer-logo-icon { width: 32px; height: 32px; background: var(--slate-800); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: var(--amber-500); font-family: var(--font-display); font-size: 1.1rem; }
+    .footer-brand p { font-size: .85rem; line-height: 1.7; max-width: 260px; }
+    .footer-col h4 { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--slate-300); margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: .86rem; transition: color var(--transition); }
+    .footer-col a:hover { color: var(--amber-500); }
+    .footer-bottom { max-width: var(--max-w); margin: 48px auto 0; padding-top: 24px; border-top: 1px solid var(--slate-800); display: flex; justify-content: space-between; align-items: center; font-size: .8rem; }
+    .footer-social { display: flex; gap: 12px; }
+    .footer-social a { width: 36px; height: 36px; border-radius: 8px; background: var(--slate-800); display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+    .footer-social a:hover { background: var(--amber-500); color: var(--slate-950); }
+
+    /* ANIMATIONS */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s cubic-bezier(.4,0,.2,1), transform .6s cubic-bezier(.4,0,.2,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .25s; }
+    .reveal-delay-4 { transition-delay: .35s; }
+    .reveal-delay-5 { transition-delay: .4s; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .categories-grid { grid-template-columns: repeat(3, 1fr); }
+      .why-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .hero { padding: calc(var(--nav-h) + 40px) 20px 56px; }
+      .hero-features { flex-direction: column; gap: 16px; align-items: center; }
+      .section { padding: 56px 20px; }
+      .categories-grid { grid-template-columns: repeat(2, 1fr); }
+      .tools-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .articles-grid { grid-template-columns: 1fr; }
+      .cta-banner { padding: 48px 28px; margin: 0 16px 56px; border-radius: 16px; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.9rem; }
+      .categories-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+    
+    /* Button styles */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: var(--slate-900);
+      color: var(--white);
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all var(--transition);
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: var(--slate-800);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="UtilityDesk.in Home">
+        <span class="nav-logo-icon">U</span>
+        UtilityDesk<span style="color:var(--amber-500)">.</span>in
+      </a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/calculators/">Calculators</a></li>
+        <li><a href="/pdf-tools/">PDF Tools</a></li>
+        <li><a href="/document-generators/">Document Generators</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="/calculators/" class="nav-cta">Browse Tools</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/calculators/">Calculators</a>
+    <a href="/pdf-tools/">PDF Tools</a>
+    <a href="/document-generators/">Document Generators</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="/calculators/" style="background:var(--slate-900);color:var(--white);text-align:center;border-radius:10px;margin-top:8px;font-weight:600;">Browse Tools</a>
+  </div>
+
+  <header class="hero" role="banner">
+    <div class="hero-badge reveal">
+      <span class="hero-badge-dot"></span>
+      100% Free — No Signup Required
+    </div>
+    <h1 class="reveal reveal-delay-1">Free Calculators, PDF Tools &amp;<br><em>Document Generators</em></h1>
+    <p class="hero-sub reveal reveal-delay-2">UtilityDesk helps Indian professionals save time with free calculators, PDF tools, templates, and document generators.</p>
+    <div class="hero-search reveal reveal-delay-3" role="search">
+      <label for="heroSearch" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Search tools</label>
+      <input type="search" id="heroSearch" placeholder="Search calculators, PDF tools, templates, and generators..." autocomplete="off">
+      <button class="hero-search-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <div class="hero-tags reveal reveal-delay-4">
+      <a href="/calculators/salary-hike">Salary Hike Calculator</a>
+      <a href="/calculators/pf">PF Calculator</a>
+      <a href="/calculators/gst">GST Calculator</a>
+      <a href="/pdf-tools/merge">Merge PDF</a>
+      <a href="/document-generators/purchase-order">Purchase Order</a>
+      <a href="/document-generators/offer-letter">Offer Letter</a>
+    </div>
+    <div class="hero-features reveal">
+      <div class="hero-feature">
+        <div class="hero-feature-icon" style="background:var(--emerald-100);color:var(--emerald-500)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>100% Free Tools</span>
+      </div>
+      <div class="hero-feature">
+        <div class="hero-feature-icon" style="background:var(--blue-100);color:var(--blue-500)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>No Signup Required</span>
+      </div>
+      <div class="hero-feature">
+        <div class="hero-feature-icon" style="background:var(--amber-100);color:var(--amber-600)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>Built for India</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="categories" aria-labelledby="categories-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Browse by Category</span>
+        <h2 class="section-title reveal reveal-delay-1" id="categories-title">Tools for every part of your workflow</h2>
+        <p class="section-desc reveal reveal-delay-2">From payroll to PDFs, find the right tool in seconds.</p>
+      </div>
+      <div class="categories-grid">
+        <a href="/calculators/" class="cat-card reveal" style="--accent:var(--amber-500)">
+          <div class="cat-icon" style="background:var(--amber-100);color:var(--amber-600)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>
+          </div>
+          <h3>Calculators</h3>
+          <p>Salary, HRA, PF, GST, TDS, EMI, and income tax calculators for Indian professionals.</p>
+          <span class="cat-count">15+ tools →</span>
+        </a>
+        <a href="/pdf-tools/" class="cat-card reveal reveal-delay-1" style="--accent:var(--purple-500)">
+          <div class="cat-icon" style="background:var(--purple-100);color:var(--purple-600)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15v-2h2a1 1 0 1 0 0-2H9v6"/></svg>
+          </div>
+          <h3>PDF Tools</h3>
+          <p>Merge, split, compress, and convert PDF files online. Fast and secure.</p>
+          <ul class="cat-tools-list">
+            <li>Merge PDF</li>
+            <li>Split PDF</li>
+            <li>Compress PDF</li>
+            <li>JPG to PDF</li>
+            <li>PDF to JPG</li>
+          </ul>
+          <span class="cat-count">8+ tools →</span>
+        </a>
+        <a href="/document-generators/" class="cat-card reveal reveal-delay-2" style="--accent:var(--blue-500)">
+          <div class="cat-icon" style="background:var(--blue-100);color:var(--blue-500)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Document Generators</h3>
+          <p>Offer letters, invoices, NDAs, purchase orders, and resignation letters — ready in seconds.</p>
+          <span class="cat-count">10+ tools →</span>
+        </a>
+        <a href="/calculators/" class="cat-card reveal reveal-delay-3" style="--accent:var(--emerald-500)">
+          <div class="cat-icon" style="background:var(--emerald-100);color:var(--emerald-500)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Finance</h3>
+          <p>GST, TDS, income tax, EMI, SIP, and investment calculators for smart money decisions.</p>
+          <span class="cat-count">12+ tools →</span>
+        </a>
+        <a href="/training-tools/" class="cat-card reveal reveal-delay-4" style="--accent:var(--rose-500)">
+          <div class="cat-icon" style="background:var(--rose-100);color:var(--rose-500)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Training &amp; Operations</h3>
+          <p>Professional tools for training teams and managing operations efficiently.</p>
+          <ul class="cat-tools-list">
+            <li>Training Budget Calculator</li>
+            <li>Venue Cost Calculator</li>
+            <li>Batch Size Calculator</li>
+            <li>Attendance Sheet Generator</li>
+          </ul>
+          <span class="cat-count">8+ tools →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tools-section" id="popular-tools" aria-labelledby="tools-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Most Popular</span>
+        <h2 class="section-title reveal reveal-delay-1" id="tools-title">Most Popular Tools</h2>
+        <p class="section-desc reveal reveal-delay-2">The tools Indian professionals reach for every day.</p>
+      </div>
+      <div class="tools-grid">
+        <a href="/calculators/salary-hike" class="tool-card reveal">
+          <div class="tool-card-top">
+            <span class="tool-cat-tag" style="background:var(--amber-100);color:var(--amber-600)">Calculators</span>
+            <span class="tool-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <h3>Salary Hike Calculator</h3>
+          <p>Calculate your salary increment percentage and new CTC after a raise or promotion.</p>
+          <div class="tool-card-footer">
+            <span>Instant result</span>
+            <span>•</span>
+            <span>No signup</span>
+          </div>
+        </a>
+        <a href="/calculators/pf" class="tool-card reveal reveal-delay-1">
+          <div class="tool-card-top">
+            <span class="tool-cat-tag" style="background:var(--amber-100);color:var(--amber-600)">Calculators</span>
+            <span class="tool-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <h3>PF Calculator</h3>
+          <p>Estimate your Provident Fund corpus at retirement with employer and employee contributions.</p>
+          <div class="tool-card-footer">
+            <span>EPF &amp; VPF</span>
+            <span>•</span>
+            <span>Instant result</span>
+          </div>
+        </a>
+        <a href="/calculators/gst" class="tool-card reveal reveal-delay-2">
+          <div class="tool-card-top">
+            <span class="tool-cat-tag" style="background:var(--emerald-100);color:var(--emerald-500)">Finance</span>
+            <span class="tool-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <h3>GST Calculator</h3>
+          <p>Calculate GST-inclusive and exclusive prices. Supports all slab rates — 5%, 12%, 18%, 28%.</p>
+          <div class="tool-card-footer">
+            <span>All GST slabs</span>
+            <span>•</span>
+            <span>Export PDF</span>
+          </div>
+        </a>
+        <a href="/pdf-tools/merge" class="tool-card reveal">
+          <div class="tool-card-top">
+            <span class="tool-cat-tag" style="background:var(--purple-100);color:var(--purple-600)">PDF Tools</span>
+            <span class="tool-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <h3>Merge PDF</h3>
+          <p>Combine multiple PDF files into a single document. Fast, secure, and works in your browser.</p>
+          <div class="tool-card-footer">
+            <span>Drag &amp; drop</span>
+            <span>•</span>
+            <span>Secure</span>
+          </div>
+        </a>
+        <a href="/document-generators/purchase-order" class="tool-card reveal reveal-delay-1">
+          <div class="tool-card-top">
+            <span class="tool-cat-tag" style="background:var(--blue-100);color:var(--blue-500)">Generators</span>
+            <span class="tool-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <h3>Purchase Order Generator</h3>
+          <p>Create professional purchase orders with item details, quantities, and vendor information.</p>
+          <div class="tool-card-footer">
+            <span>PDF download</span>
+            <span>•</span>
+            <span>Customizable</span>
+          </div>
+        </a>
+        <a href="/document-generators/offer-letter" class="tool-card reveal reveal-delay-2">
+          <div class="tool-card-top">
+            <span class="tool-cat-tag" style="background:var(--blue-100);color:var(--blue-500)">Generators</span>
+            <span class="tool-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <h3>Offer Letter Generator</h3>
+          <p>Generate professional offer letters with CTC breakup, terms, and company branding.</p>
+          <div class="tool-card-footer">
+            <span>Word &amp; PDF</span>
+            <span>•</span>
+            <span>Customizable</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-section" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Why UtilityDesk?</span>
+        <h2 class="section-title reveal reveal-delay-1" id="why-title">Built for Indian professionals</h2>
+        <p class="section-desc reveal reveal-delay-2">Everything you need to work smarter — no downloads, no signups, no hassle.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon" style="background:var(--emerald-100);color:var(--emerald-500)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Free for Everyone</h3>
+          <p>All tools are completely free. No hidden charges, no premium plans.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon" style="background:var(--blue-100);color:var(--blue-500)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>No Installation</h3>
+          <p>Works directly in your browser. No software to download or install.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon" style="background:var(--amber-100);color:var(--amber-600)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Mobile Friendly</h3>
+          <p>Fully responsive design. Use on your phone, tablet, or desktop.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-icon" style="background:var(--purple-100);color:var(--purple-600)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Fast &amp; Accurate</h3>
+          <p>Instant calculations with precise results. Built for speed and reliability.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-4">
+          <div class="why-icon" style="background:var(--rose-100);color:var(--rose-500)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>For Every Team</h3>
+          <p>Useful for HR, Finance, Operations, Training, and Business users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="articles" aria-labelledby="articles-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">From the Blog</span>
+        <h2 class="section-title reveal reveal-delay-1" id="articles-title">Latest articles &amp; guides</h2>
+        <p class="section-desc reveal reveal-delay-2">Practical insights on salary, taxes, compliance, and workplace productivity in India.</p>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card reveal">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--amber-100),var(--amber-500))">
+            <div class="article-img-inner">📊</div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag" style="background:var(--emerald-100);color:var(--emerald-500)">Finance</span>
+              <span class="article-date">Jun 15, 2026</span>
+            </div>
+            <h3>Old vs New Tax Regime 2026: Which One Saves You More?</h3>
+            <p>A detailed comparison with real salary examples to help you decide the right tax regime for FY 2026-27.</p>
+            <a href="/blog/finance/old-vs-new-tax-regime-2026/" class="article-link">Read more <span>→</span></a>
+          </div>
+        </article>
+        <article class="article-card reveal reveal-delay-1">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--emerald-100),var(--emerald-500))">
+            <div class="article-img-inner">💼</div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag" style="background:var(--amber-100);color:var(--amber-600)">HR</span>
+              <span class="article-date">Jun 12, 2026</span>
+            </div>
+            <h3>10 Salary Negotiation Tips for Indian Professionals</h3>
+            <p>Proven strategies to negotiate better compensation packages during appraisals and job switches.</p>
+            <a href="/blog/hr/salary-negotiation-tips/" class="article-link">Read more <span>→</span></a>
+          </div>
+        </article>
+        <article class="article-card reveal reveal-delay-2">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--emerald-100),var(--emerald-500))">
+            <div class="article-img-inner">🧾</div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag" style="background:var(--emerald-100);color:var(--emerald-500)">Finance</span>
+              <span class="article-date">Jun 10, 2026</span>
+            </div>
+            <h3>GST Invoice Rules: Everything Freelancers Need to Know</h3>
+            <p>From invoice numbering to mandatory fields — a complete guide to GST-compliant invoicing for freelancers.</p>
+            <a href="/blog/finance/gst-invoice-rules-freelancers/" class="article-link">Read more <span>→</span></a>
+          </div>
+        </article>
+        <article class="article-card reveal">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--blue-100),var(--blue-500))">
+            <div class="article-img-inner">📝</div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag" style="background:var(--amber-100);color:var(--amber-600)">HR</span>
+              <span class="article-date">Jun 5, 2026</span>
+            </div>
+            <h3>How to Write an Offer Letter That Protects Your Company</h3>
+            <p>Key clauses, legal safeguards, and CTC structuring tips every HR professional should include.</p>
+            <a href="/blog/hr/offer-letter-best-practices/" class="article-link">Read more <span>→</span></a>
+          </div>
+        </article>
+        <article class="article-card reveal reveal-delay-1">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--purple-100),var(--purple-500))">
+            <div class="article-img-inner">📄</div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag" style="background:var(--purple-100);color:var(--purple-600)">PDF Tools</span>
+              <span class="article-date">Jun 2, 2026</span>
+            </div>
+            <h3>How to Merge PDF Files: A Complete Guide</h3>
+            <p>Learn how to combine multiple PDFs into one document with our step-by-step guide.</p>
+            <a href="/blog/pdf-tools/merge-pdf-guide/" class="article-link">Read more <span>→</span></a>
+          </div>
+        </article>
+        <article class="article-card reveal reveal-delay-2">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--blue-100),var(--blue-500))">
+            <div class="article-img-inner">🏢</div>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag" style="background:var(--blue-100);color:var(--blue-500)">Business</span>
+              <span class="article-date">May 28, 2026</span>
+            </div>
+            <h3>Purchase Order Best Practices for Indian Businesses</h3>
+            <p>Streamline your procurement process with these proven PO management strategies.</p>
+            <a href="/blog/business/purchase-order-best-practices/" class="article-link">Read more <span>→</span></a>
+          </div>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="/blog/" class="btn">View All Articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner reveal">
+    <h2>Save time on everyday tasks.</h2>
+    <p>Calculators, PDF tools, and document generators — all in one place, completely free.</p>
+    <a href="/calculators/" class="cta-btn">
+      Browse All Tools
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">U</span>
+          UtilityDesk<span style="color:var(--amber-500)">.</span>in
+        </div>
+        <p>Free calculators, PDF tools, document generators, and productivity tools built for Indian professionals. No signup required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/calculators/salary-hike">Salary Hike Calculator</a></li>
+          <li><a href="/calculators/pf">PF Calculator</a></li>
+          <li><a href="/calculators/gst">GST Calculator</a></li>
+          <li><a href="/calculators/hra">HRA Calculator</a></li>
+          <li><a href="/calculators/tds">TDS Calculator</a></li>
+          <li><a href="/calculators/emi">EMI Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>PDF Tools</h4>
+        <ul>
+          <li><a href="/pdf-tools/merge">Merge PDF</a></li>
+          <li><a href="/pdf-tools/split">Split PDF</a></li>
+          <li><a href="/pdf-tools/compress">Compress PDF</a></li>
+          <li><a href="/pdf-tools/jpg-to-pdf">JPG to PDF</a></li>
+          <li><a href="/pdf-tools/pdf-to-jpg">PDF to JPG</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Document Generators</h4>
+        <ul>
+          <li><a href="/document-generators/offer-letter">Offer Letter</a></li>
+          <li><a href="/document-generators/invoice">Invoice Generator</a></li>
+          <li><a href="/document-generators/purchase-order">Purchase Order</a></li>
+          <li><a href="/document-generators/nda">NDA Generator</a></li>
+          <li><a href="/document-generators/resignation">Resignation Letter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms &amp; Conditions</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 UtilityDesk.in. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://twitter.com/utilitydesk" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/utilitydesk" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://youtube.com/@utilitydesk" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+    } else { revealEls.forEach(el => el.classList.add('visible')); }
+
+    const searchInput = document.getElementById('heroSearch');
+    const searchBtn = document.querySelector('.hero-search-btn');
+    function doSearch() { const q = searchInput.value.trim(); if (q) window.location.href = '/search?q=' + encodeURIComponent(q); }
+    searchBtn.addEventListener('click', doSearch);
+    searchInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') doSearch(); });
+  </script>
+</body>
+</html>
