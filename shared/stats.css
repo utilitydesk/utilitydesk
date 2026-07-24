@@ -1,0 +1,114 @@
+/* UtilityDesk.in - Statistics Section Component */
+
+.ud-stats {
+  padding: var(--ud-spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--ud-primary) 0%, #2a3142 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.ud-stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(240, 168, 48, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.ud-stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--ud-spacing-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.ud-stats-header {
+  text-align: center;
+  margin-bottom: var(--ud-spacing-2xl);
+}
+
+.ud-stats-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: var(--ud-spacing-md);
+  color: white;
+}
+
+.ud-stats-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ud-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--ud-spacing-xl);
+}
+
+.ud-stat-card {
+  text-align: center;
+  padding: var(--ud-spacing-xl);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--ud-radius-lg);
+  transition: var(--ud-transition);
+}
+
+.ud-stat-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  border-color: var(--ud-accent);
+}
+
+.ud-stat-number {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--ud-accent);
+  margin-bottom: var(--ud-spacing-sm);
+  line-height: 1;
+}
+
+.ud-stat-label {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* Animated counter */
+.ud-stat-number[data-count] {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: countUp 0.6s ease-out forwards;
+}
+
+@keyframes countUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ud-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--ud-spacing-lg);
+  }
+  
+  .ud-stat-card {
+    padding: var(--ud-spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .ud-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

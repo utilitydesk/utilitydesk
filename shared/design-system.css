@@ -1,0 +1,170 @@
+/* UtilityDesk.in - Concept 3 Design System */
+
+:root {
+  /* Brand Colors */
+  --ud-primary: #1A1F2E;
+  --ud-accent: #F0A830;
+  --ud-accent-hover: #E09820;
+  --ud-background: #F8F9FC;
+  --ud-card: #FFFFFF;
+  --ud-text: #1A1F2E;
+  --ud-text-secondary: #64748B;
+  --ud-border: #E2E8F0;
+  
+  /* Typography */
+  --ud-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ud-font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing */
+  --ud-spacing-xs: 4px;
+  --ud-spacing-sm: 8px;
+  --ud-spacing-md: 16px;
+  --ud-spacing-lg: 24px;
+  --ud-spacing-xl: 32px;
+  --ud-spacing-2xl: 48px;
+  --ud-spacing-3xl: 64px;
+  
+  /* Border Radius */
+  --ud-radius-sm: 8px;
+  --ud-radius-md: 12px;
+  --ud-radius-lg: 16px;
+  --ud-radius-xl: 24px;
+  
+  /* Shadows */
+  --ud-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --ud-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --ud-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --ud-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --ud-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--ud-font-primary);
+  color: var(--ud-text);
+  background: var(--ud-background);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ud-font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ud-text);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h4 { font-size: 1.25rem; }
+
+p {
+  color: var(--ud-text-secondary);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--ud-primary);
+  text-decoration: none;
+  transition: var(--ud-transition);
+}
+
+a:hover {
+  color: var(--ud-accent);
+}
+
+/* Container */
+.ud-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--ud-spacing-lg);
+}
+
+/* Buttons */
+.ud-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ud-spacing-sm);
+  padding: 12px 24px;
+  border-radius: var(--ud-radius-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--ud-transition);
+  border: none;
+  text-decoration: none;
+}
+
+.ud-btn-primary {
+  background: var(--ud-primary);
+  color: white;
+}
+
+.ud-btn-primary:hover {
+  background: var(--ud-accent);
+  color: var(--ud-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--ud-shadow-lg);
+}
+
+.ud-btn-secondary {
+  background: white;
+  color: var(--ud-primary);
+  border: 2px solid var(--ud-border);
+}
+
+.ud-btn-secondary:hover {
+  border-color: var(--ud-accent);
+  color: var(--ud-accent);
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.ud-card {
+  background: var(--ud-card);
+  border-radius: var(--ud-radius-md);
+  padding: var(--ud-spacing-lg);
+  box-shadow: var(--ud-shadow-sm);
+  transition: var(--ud-transition);
+  border: 1px solid var(--ud-border);
+}
+
+.ud-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ud-shadow-lg);
+  border-color: var(--ud-accent);
+}
+
+/* Utility Classes */
+.ud-text-center { text-align: center; }
+.ud-text-accent { color: var(--ud-accent); }
+.ud-mt-lg { margin-top: var(--ud-spacing-lg); }
+.ud-mb-lg { margin-bottom: var(--ud-spacing-lg); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ud-container {
+    padding: 0 var(--ud-spacing-md);
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+}

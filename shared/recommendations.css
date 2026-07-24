@@ -1,0 +1,191 @@
+/* UtilityDesk Recommendation Engine Styles */
+
+.ud-recommendations {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.ud-rec-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.ud-rec-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 2.5rem;
+  color: #1a1f2e;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.ud-rec-section {
+  margin-bottom: 48px;
+}
+
+.ud-rec-section:last-child {
+  margin-bottom: 0;
+}
+
+.ud-rec-section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1f2e;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0a830;
+}
+
+.ud-rec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.ud-rec-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+}
+
+.ud-rec-card:hover {
+  background: #ffffff;
+  border-color: #f0a830;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(240, 168, 48, 0.15);
+}
+
+.ud-rec-card-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.ud-rec-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ud-rec-card-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1f2e;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.ud-rec-card-desc {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ud-recommendations {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  .ud-rec-container {
+    padding: 24px;
+  }
+
+  .ud-rec-title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+
+  .ud-rec-section {
+    margin-bottom: 36px;
+  }
+
+  .ud-rec-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  .ud-rec-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ud-rec-card {
+    padding: 20px;
+  }
+
+  .ud-rec-card-icon {
+    font-size: 2rem;
+  }
+
+  .ud-rec-card-title {
+    font-size: 1rem;
+  }
+
+  .ud-rec-card-desc {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ud-rec-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .ud-rec-container {
+    background: #1e293b;
+  }
+
+  .ud-rec-title,
+  .ud-rec-section-title,
+  .ud-rec-card-title {
+    color: #f1f5f9;
+  }
+
+  .ud-rec-card {
+    background: #334155;
+  }
+
+  .ud-rec-card:hover {
+    background: #1e293b;
+    border-color: #f0a830;
+  }
+
+  .ud-rec-card-desc {
+    color: #94a3b8;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ud-rec-card {
+    transition: none;
+  }
+
+  .ud-rec-card:hover {
+    transform: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .ud-recommendations {
+    display: none;
+  }
+}

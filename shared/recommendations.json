@@ -1,0 +1,860 @@
+{
+  "calculators": {
+    "sip-calculator": {
+      "title": "SIP Calculator",
+      "category": "investment",
+      "icon": "📈",
+      "description": "Calculate SIP returns on mutual fund investments",
+      "related": ["lumpsum-calculator", "compound-interest-calculator", "fd-calculator", "retirement-calculator"],
+      "blogs": ["/blog/investment/sip-vs-lumpsum/", "/blog/investment/sip-investment-guide/"],
+      "keywords": ["sip", "mutual-fund", "investment", "returns"]
+    },
+    "lumpsum-calculator": {
+      "title": "Lumpsum Investment Calculator",
+      "category": "investment",
+      "icon": "💰",
+      "description": "Calculate returns on one-time investments",
+      "related": ["sip-calculator", "compound-interest-calculator", "fd-calculator", "roi-calculator"],
+      "blogs": ["/blog/investment/lumpsum-investment-guide/", "/blog/investment/sip-vs-lumpsum/"],
+      "keywords": ["lumpsum", "investment", "one-time", "returns"]
+    },
+    "ppf-calculator": {
+      "title": "PPF Calculator",
+      "category": "investment",
+      "icon": "🏦",
+      "description": "Calculate Public Provident Fund maturity",
+      "related": ["fd-calculator", "nps", "income-tax", "retirement-calculator"],
+      "blogs": ["/blog/investment/ppf-rules-and-benefits/", "/blog/investment/ppf-vs-epf/"],
+      "keywords": ["ppf", "provident-fund", "tax-free", "retirement"]
+    },
+    "fd-calculator": {
+      "title": "FD Calculator",
+      "category": "investment",
+      "icon": "🏦",
+      "description": "Calculate Fixed Deposit maturity value",
+      "related": ["rd-calculator", "ppf-calculator", "compound-interest-calculator", "simple-interest-calculator"],
+      "blogs": ["/blog/investment/fd-interest-rates-2025/", "/blog/investment/fd-vs-mutual-funds/"],
+      "keywords": ["fd", "fixed-deposit", "interest", "maturity"]
+    },
+    "rd-calculator": {
+      "title": "RD Calculator",
+      "category": "investment",
+      "icon": "📊",
+      "description": "Calculate Recurring Deposit maturity value",
+      "related": ["fd-calculator", "sip-calculator", "compound-interest-calculator"],
+      "blogs": ["/blog/investment/rd-vs-sip/", "/blog/investment/recurring-deposit-guide/"],
+      "keywords": ["rd", "recurring-deposit", "monthly", "savings"]
+    },
+    "compound-interest-calculator": {
+      "title": "Compound Interest Calculator",
+      "category": "investment",
+      "icon": "📈",
+      "description": "Calculate compound interest on investments",
+      "related": ["simple-interest-calculator", "sip-calculator", "fd-calculator", "lumpsum-calculator"],
+      "blogs": ["/blog/investment/power-of-compounding/", "/blog/investment/compound-interest-formula/"],
+      "keywords": ["compound-interest", "ci", "interest", "compounding"]
+    },
+    "simple-interest-calculator": {
+      "title": "Simple Interest Calculator",
+      "category": "investment",
+      "icon": "📊",
+      "description": "Calculate simple interest on loans and investments",
+      "related": ["compound-interest-calculator", "fd-calculator", "rd-calculator"],
+      "blogs": ["/blog/investment/simple-vs-compound-interest/", "/blog/investment/interest-calculation-basics/"],
+      "keywords": ["simple-interest", "si", "interest", "calculation"]
+    },
+    "inflation-calculator": {
+      "title": "Inflation Calculator",
+      "category": "investment",
+      "icon": "📉",
+      "description": "Calculate impact of inflation on money",
+      "related": ["retirement-calculator", "sip-calculator", "fd-calculator", "fires-calculator"],
+      "blogs": ["/blog/investment/inflation-impact-on-savings/", "/blog/investment/beating-inflation-guide/"],
+      "keywords": ["inflation", "purchasing-power", "money-value"]
+    },
+    "net-worth-calculator": {
+      "title": "Net Worth Calculator",
+      "category": "investment",
+      "icon": "💎",
+      "description": "Calculate your total net worth",
+      "related": ["fires-calculator", "retirement-calculator", "sip-calculator"],
+      "blogs": ["/blog/investment/how-to-calculate-net-worth/", "/blog/investment/net-worth-tracking-guide/"],
+      "keywords": ["net-worth", "assets", "liabilities", "wealth"]
+    },
+    "fires-calculator": {
+      "title": "Financial Independence Calculator",
+      "category": "investment",
+      "icon": "🔥",
+      "description": "Plan your path to financial freedom",
+      "related": ["retirement-calculator", "sip-calculator", "inflation-calculator", "net-worth-calculator"],
+      "blogs": ["/blog/investment/fire-movement-india/", "/blog/investment/early-retirement-planning/"],
+      "keywords": ["fire", "financial-independence", "retire-early", "freedom"]
+    },
+    "home-loan-calculator": {
+      "title": "Home Loan Calculator",
+      "category": "loan",
+      "icon": "🏠",
+      "description": "Calculate home loan EMI with amortization",
+      "related": ["emi", "stamp-duty-calculator", "loan-prepayment-calculator", "balance-transfer-calculator"],
+      "blogs": ["/blog/loan/home-loan-tax-benefits/", "/blog/loan/floating-vs-fixed-rate/"],
+      "keywords": ["home-loan", "housing-loan", "mortgage", "emi"]
+    },
+    "car-loan-calculator": {
+      "title": "Car Loan Calculator",
+      "category": "loan",
+      "icon": "🚗",
+      "description": "Calculate car loan EMI",
+      "related": ["emi", "fuel-cost-calculator", "mileage-calculator", "loan-eligibility-calculator"],
+      "blogs": ["/blog/loan/car-loan-vs-personal-loan/", "/blog/loan/new-vs-used-car-loan/"],
+      "keywords": ["car-loan", "auto-loan", "vehicle-loan", "emi"]
+    },
+    "personal-loan-calculator": {
+      "title": "Personal Loan Calculator",
+      "category": "loan",
+      "icon": "💳",
+      "description": "Calculate personal loan EMI",
+      "related": ["emi", "loan-eligibility-calculator", "loan-affordability-calculator", "balance-transfer-calculator"],
+      "blogs": ["/blog/loan/personal-loan-guide/", "/blog/loan/when-to-take-personal-loan/"],
+      "keywords": ["personal-loan", "unsecured-loan", "emi"]
+    },
+    "education-loan-calculator": {
+      "title": "Education Loan Calculator",
+      "category": "loan",
+      "icon": "🎓",
+      "description": "Calculate education loan EMI with moratorium",
+      "related": ["emi", "loan-eligibility-calculator", "loan-affordability-calculator"],
+      "blogs": ["/blog/loan/education-loan-tax-benefits/", "/blog/loan/study-abroad-loan-guide/"],
+      "keywords": ["education-loan", "student-loan", "study-loan"]
+    },
+    "business-loan-calculator": {
+      "title": "Business Loan Calculator",
+      "category": "loan",
+      "icon": "💼",
+      "description": "Calculate business loan EMI",
+      "related": ["emi", "loan-eligibility-calculator", "roi-calculator", "break-even-calculator"],
+      "blogs": ["/blog/loan/business-loan-guide/", "/blog/loan/msme-loan-schemes/"],
+      "keywords": ["business-loan", "commercial-loan", "msme-loan"]
+    },
+    "loan-eligibility-calculator": {
+      "title": "Loan Eligibility Calculator",
+      "category": "loan",
+      "icon": "✅",
+      "description": "Check how much loan you qualify for",
+      "related": ["loan-affordability-calculator", "emi", "home-loan-calculator", "personal-loan-calculator"],
+      "blogs": ["/blog/loan/improve-loan-eligibility/", "/blog/loan/cibil-score-guide/"],
+      "keywords": ["loan-eligibility", "qualification", "cibil", "credit-score"]
+    },
+    "loan-affordability-calculator": {
+      "title": "Loan Affordability Calculator",
+      "category": "loan",
+      "icon": "💰",
+      "description": "Check what EMI you can afford",
+      "related": ["loan-eligibility-calculator", "emi", "home-loan-calculator", "rent-vs-buy-calculator"],
+      "blogs": ["/blog/loan/how-much-home-can-i-afford/", "/blog/loan/emi-to-income-ratio/"],
+      "keywords": ["loan-affordability", "emi-affordability", "budget"]
+    },
+    "loan-prepayment-calculator": {
+      "title": "Loan Prepayment Calculator",
+      "category": "loan",
+      "icon": "⚡",
+      "description": "See savings from loan prepayment",
+      "related": ["emi", "home-loan-calculator", "balance-transfer-calculator", "interest-vs-principal-calculator"],
+      "blogs": ["/blog/loan/loan-prepayment-guide/", "/blog/loan/when-to-prepay-loan/"],
+      "keywords": ["prepayment", "foreclosure", "loan-closure", "savings"]
+    },
+    "balance-transfer-calculator": {
+      "title": "Balance Transfer Calculator",
+      "category": "loan",
+      "icon": "🔄",
+      "description": "Compare balance transfer offers",
+      "related": ["loan-prepayment-calculator", "home-loan-calculator", "emi", "interest-vs-principal-calculator"],
+      "blogs": ["/blog/loan/balance-transfer-guide/", "/blog/loan/when-to-transfer-loan/"],
+      "keywords": ["balance-transfer", "loan-transfer", "refinance"]
+    },
+    "interest-vs-principal-calculator": {
+      "title": "Interest vs Principal Calculator",
+      "category": "loan",
+      "icon": "📊",
+      "description": "See EMI component breakdown",
+      "related": ["emi", "loan-prepayment-calculator", "home-loan-calculator", "compound-interest-calculator"],
+      "blogs": ["/blog/loan/understanding-emi-breakdown/", "/blog/loan/how-loans-work/"],
+      "keywords": ["interest", "principal", "emi-breakdown", "amortization"]
+    },
+    "tds-calculator": {
+      "title": "TDS Calculator",
+      "category": "tax",
+      "icon": "📋",
+      "description": "Calculate tax deducted at source",
+      "related": ["income-tax", "advance-tax-calculator", "salary-hike", "in-hand-salary"],
+      "blogs": ["/blog/tax/tds-rules-guide/", "/blog/tax/tds-on-salary/"],
+      "keywords": ["tds", "tax-deducted", "source", "withholding"]
+    },
+    "advance-tax-calculator": {
+      "title": "Advance Tax Calculator",
+      "category": "tax",
+      "icon": "📅",
+      "description": "Calculate advance tax installments",
+      "related": ["income-tax", "tds-calculator", "tax-saving-calculator"],
+      "blogs": ["/blog/tax/advance-tax-guide/", "/blog/tax/when-to-pay-advance-tax/"],
+      "keywords": ["advance-tax", "installment", "quarterly-tax"]
+    },
+    "capital-gains-tax-calculator": {
+      "title": "Capital Gains Tax Calculator",
+      "category": "tax",
+      "icon": "📈",
+      "description": "Calculate tax on capital gains",
+      "related": ["income-tax", "sip-calculator", "lumpsum-calculator", "roi-calculator"],
+      "blogs": ["/blog/tax/capital-gains-tax-guide/", "/blog/tax/stcg-vs-ltcg/"],
+      "keywords": ["capital-gains", "stcg", "ltcg", "investment-tax"]
+    },
+    "crypto-tax-calculator": {
+      "title": "Crypto Tax Calculator",
+      "category": "tax",
+      "icon": "₿",
+      "description": "Calculate cryptocurrency tax",
+      "related": ["capital-gains-tax-calculator", "income-tax", "tds-calculator"],
+      "blogs": ["/blog/tax/crypto-tax-india/", "/blog/tax/virtual-digital-assets-tax/"],
+      "keywords": ["crypto", "bitcoin", "vda", "virtual-assets"]
+    },
+    "dividend-tax-calculator": {
+      "title": "Dividend Tax Calculator",
+      "category": "tax",
+      "icon": "💵",
+      "description": "Calculate tax on dividend income",
+      "related": ["income-tax", "capital-gains-tax-calculator", "sip-calculator"],
+      "blogs": ["/blog/tax/dividend-taxation/", "/blog/tax/mutual-fund-taxation/"],
+      "keywords": ["dividend", "income", "mutual-fund", "tax"]
+    },
+    "section-80c-planner": {
+      "title": "Section 80C Planner",
+      "category": "tax",
+      "icon": "📋",
+      "description": "Plan your 80C investments",
+      "related": ["income-tax", "tax-saving-calculator", "80d-calculator", "ppf-calculator"],
+      "blogs": ["/blog/tax/80c-investments-guide/", "/blog/tax/tax-saving-under-80c/"],
+      "keywords": ["80c", "tax-saving", "deductions", "investments"]
+    },
+    "80d-calculator": {
+      "title": "80D Calculator",
+      "category": "tax",
+      "icon": "🏥",
+      "description": "Calculate health insurance tax deduction",
+      "related": ["section-80c-planner", "income-tax", "tax-saving-calculator"],
+      "blogs": ["/blog/tax/80d-health-insurance/", "/blog/tax/tax-benefits-health-insurance/"],
+      "keywords": ["80d", "health-insurance", "medical", "deduction"]
+    },
+    "tax-saving-calculator": {
+      "title": "Tax Saving Calculator",
+      "category": "tax",
+      "icon": "💰",
+      "description": "Calculate total tax savings",
+      "related": ["income-tax", "section-80c-planner", "80d-calculator", "old-vs-new-regime-calculator"],
+      "blogs": ["/blog/tax/tax-saving-strategies/", "/blog/tax/reduce-income-tax/"],
+      "keywords": ["tax-saving", "deductions", "savings", "reduce-tax"]
+    },
+    "rebate-calculator": {
+      "title": "Rebate Calculator",
+      "category": "tax",
+      "icon": "🎁",
+      "description": "Calculate Section 87A rebate",
+      "related": ["income-tax", "tax-saving-calculator", "old-vs-new-regime-calculator"],
+      "blogs": ["/blog/tax/section-87a-rebate/", "/blog/tax/income-tax-rebate/"],
+      "keywords": ["rebate", "87a", "tax-relief", "exemption"]
+    },
+    "old-vs-new-regime-calculator": {
+      "title": "Old vs New Regime Calculator",
+      "category": "tax",
+      "icon": "⚖️",
+      "description": "Compare tax regimes",
+      "related": ["income-tax", "tax-saving-calculator", "rebate-calculator", "section-80c-planner"],
+      "blogs": ["/blog/tax/old-vs-new-tax-regime-2026/", "/blog/tax/which-regime-is-better/"],
+      "keywords": ["old-regime", "new-regime", "comparison", "tax-regime"]
+    },
+    "rent-vs-buy-calculator": {
+      "title": "Rent vs Buy Calculator",
+      "category": "property",
+      "icon": "🏠",
+      "description": "Compare renting vs buying property",
+      "related": ["home-loan-calculator", "home-affordability-calculator", "property-appreciation-calculator", "emi"],
+      "blogs": ["/blog/property/rent-vs-buy-india/", "/blog/property/property-investment-guide/"],
+      "keywords": ["rent", "buy", "property", "comparison"]
+    },
+    "property-appreciation-calculator": {
+      "title": "Property Appreciation Calculator",
+      "category": "property",
+      "icon": "📈",
+      "description": "Project property value growth",
+      "related": ["rent-vs-buy-calculator", "rental-yield-calculator", "home-loan-calculator"],
+      "blogs": ["/blog/property/property-appreciation-rates/", "/blog/property/real-estate-investment/"],
+      "keywords": ["appreciation", "property-value", "growth", "real-estate"]
+    },
+    "rental-yield-calculator": {
+      "title": "Rental Yield Calculator",
+      "category": "property",
+      "icon": "💰",
+      "description": "Calculate rental returns",
+      "related": ["property-appreciation-calculator", "rent-vs-buy-calculator", "roi-calculator"],
+      "blogs": ["/blog/property/rental-yield-guide/", "/blog/property/property-rental-income/"],
+      "keywords": ["rental-yield", "rental-income", "property-returns"]
+    },
+    "home-affordability-calculator": {
+      "title": "Home Affordability Calculator",
+      "category": "property",
+      "icon": "🏡",
+      "description": "Check what you can afford",
+      "related": ["rent-vs-buy-calculator", "home-loan-calculator", "loan-eligibility-calculator"],
+      "blogs": ["/blog/property/how-much-home-afford/", "/blog/property/home-buying-budget/"],
+      "keywords": ["affordability", "home-budget", "property-budget"]
+    },
+    "stamp-duty-calculator": {
+      "title": "Stamp Duty Calculator",
+      "category": "property",
+      "icon": "📋",
+      "description": "Calculate stamp duty",
+      "related": ["home-loan-calculator", "registration-charges-calculator", "property-tax-calculator"],
+      "blogs": ["/blog/property/stamp-duty-guide/", "/blog/property/property-registration-costs/"],
+      "keywords": ["stamp-duty", "property-tax", "registration"]
+    },
+    "registration-charges-calculator": {
+      "title": "Registration Charges Calculator",
+      "category": "property",
+      "icon": "📝",
+      "description": "Calculate registration fees",
+      "related": ["stamp-duty-calculator", "home-loan-calculator", "property-tax-calculator"],
+      "blogs": ["/blog/property/property-registration-guide/", "/blog/property/registration-charges-by-state/"],
+      "keywords": ["registration", "property-registration", "fees"]
+    },
+    "property-tax-calculator": {
+      "title": "Property Tax Calculator",
+      "category": "property",
+      "icon": "🏛️",
+      "description": "Calculate property tax",
+      "related": ["home-loan-calculator", "stamp-duty-calculator", "rental-yield-calculator"],
+      "blogs": ["/blog/property/property-tax-guide/", "/blog/property/reduce-property-tax/"],
+      "keywords": ["property-tax", "municipal-tax", "annual-tax"]
+    },
+    "construction-cost-calculator": {
+      "title": "Construction Cost Calculator",
+      "category": "property",
+      "icon": "🏗️",
+      "description": "Estimate construction cost",
+      "related": ["home-loan-calculator", "area-calculator", "volume-calculator"],
+      "blogs": ["/blog/property/construction-cost-guide/", "/blog/property/build-vs-buy/"],
+      "keywords": ["construction", "building-cost", "estimate"]
+    },
+    "power-consumption-calculator": {
+      "title": "Power Consumption Calculator",
+      "category": "utility",
+      "icon": "⚡",
+      "description": "Calculate power usage and cost",
+      "related": ["electricity-bill-calculator", "fuel-cost-calculator"],
+      "blogs": ["/blog/utility/reduce-electricity-bill/", "/blog/utility/power-consumption-guide/"],
+      "keywords": ["power", "electricity", "consumption", "kwh"]
+    },
+    "electricity-bill-calculator": {
+      "title": "Electricity Bill Calculator",
+      "category": "utility",
+      "icon": "💡",
+      "description": "Calculate electricity bills",
+      "related": ["power-consumption-calculator"],
+      "blogs": ["/blog/utility/electricity-bill-calculation/", "/blog/utility/save-electricity/"],
+      "keywords": ["electricity", "bill", "utility", "power"]
+    },
+    "fuel-cost-calculator": {
+      "title": "Fuel Cost Calculator",
+      "category": "utility",
+      "icon": "⛽",
+      "description": "Calculate fuel expenses",
+      "related": ["mileage-calculator", "speed-calculator"],
+      "blogs": ["/blog/utility/fuel-efficiency-guide/", "/blog/utility/reduce-fuel-cost/"],
+      "keywords": ["fuel", "petrol", "diesel", "cost"]
+    },
+    "mileage-calculator": {
+      "title": "Mileage Calculator",
+      "category": "utility",
+      "icon": "🚗",
+      "description": "Calculate vehicle mileage",
+      "related": ["fuel-cost-calculator", "speed-calculator"],
+      "blogs": ["/blog/utility/improve-vehicle-mileage/", "/blog/utility/fuel-efficiency-tips/"],
+      "keywords": ["mileage", "fuel-efficiency", "kmpl"]
+    },
+    "gst-split-calculator": {
+      "title": "GST Split Calculator",
+      "category": "tax",
+      "icon": "🧾",
+      "description": "Split GST into CGST, SGST, IGST",
+      "related": ["gst-profit-calculator", "sales-tax-calculator", "invoice-total-calculator"],
+      "blogs": ["/blog/tax/cgst-sgst-igst/", "/blog/tax/gst-calculation-guide/"],
+      "keywords": ["gst", "cgst", "sgst", "igst", "split"]
+    },
+    "area-calculator": {
+      "title": "Area Calculator",
+      "category": "math",
+      "icon": "📐",
+      "description": "Calculate areas of shapes",
+      "related": ["volume-calculator", "construction-cost-calculator"],
+      "blogs": ["/blog/math/area-calculation-guide/", "/blog/math/geometry-formulas/"],
+      "keywords": ["area", "geometry", "shapes", "calculation"]
+    },
+    "volume-calculator": {
+      "title": "Volume Calculator",
+      "category": "math",
+      "icon": "📦",
+      "description": "Calculate volumes of 3D shapes",
+      "related": ["area-calculator", "construction-cost-calculator"],
+      "blogs": ["/blog/math/volume-calculation-guide/", "/blog/math/3d-shapes-formulas/"],
+      "keywords": ["volume", "3d", "shapes", "geometry"]
+    },
+    "speed-calculator": {
+      "title": "Speed Calculator",
+      "category": "math",
+      "icon": "🏎️",
+      "description": "Calculate speed, distance, time",
+      "related": ["fuel-cost-calculator", "mileage-calculator"],
+      "blogs": ["/blog/math/speed-distance-time/", "/blog/math/velocity-calculation/"],
+      "keywords": ["speed", "distance", "time", "velocity"]
+    },
+    "data-storage-converter": {
+      "title": "Data Storage Converter",
+      "category": "technology",
+      "icon": "💾",
+      "description": "Convert data storage units",
+      "related": ["internet-speed-converter"],
+      "blogs": ["/blog/technology/data-storage-guide/", "/blog/technology/digital-units-explained/"],
+      "keywords": ["data", "storage", "gb", "mb", "kb"]
+    },
+    "internet-speed-converter": {
+      "title": "Internet Speed Converter",
+      "category": "technology",
+      "icon": "🌐",
+      "description": "Convert internet speeds",
+      "related": ["data-storage-converter", "speed-calculator"],
+      "blogs": ["/blog/technology/internet-speed-guide/", "/blog/technology/mbps-vs-mb/"],
+      "keywords": ["internet", "speed", "mbps", "bandwidth"]
+    },
+    "age-calculator": {
+      "title": "Age Calculator",
+      "category": "general",
+      "icon": "🎂",
+      "description": "Calculate exact age",
+      "related": ["date-difference-calculator", "time-calculator", "retirement-calculator"],
+      "blogs": ["/blog/general/age-calculation-guide/"],
+      "keywords": ["age", "birth-date", "calculator"]
+    },
+    "date-difference-calculator": {
+      "title": "Date Difference Calculator",
+      "category": "general",
+      "icon": "📅",
+      "description": "Calculate days between dates",
+      "related": ["age-calculator", "time-calculator", "business-days-calculator"],
+      "blogs": ["/blog/general/date-calculation-guide/"],
+      "keywords": ["date", "difference", "days", "between"]
+    },
+    "time-calculator": {
+      "title": "Time Calculator",
+      "category": "general",
+      "icon": "⏰",
+      "description": "Add and subtract time",
+      "related": ["age-calculator", "date-difference-calculator", "shift-hours-calculator"],
+      "blogs": ["/blog/general/time-calculation-guide/"],
+      "keywords": ["time", "hours", "minutes", "calculation"]
+    },
+    "percentage-calculator": {
+      "title": "Percentage Calculator",
+      "category": "math",
+      "icon": "%",
+      "description": "Calculate percentages",
+      "related": ["percentage-increase-calculator", "percentage-decrease-calculator", "discount-calculator"],
+      "blogs": ["/blog/math/percentage-calculation-guide/"],
+      "keywords": ["percentage", "percent", "calculation"]
+    },
+    "percentage-increase-calculator": {
+      "title": "Percentage Increase Calculator",
+      "category": "math",
+      "icon": "📈",
+      "description": "Calculate percentage increase",
+      "related": ["percentage-calculator", "percentage-decrease-calculator", "salary-hike"],
+      "blogs": ["/blog/math/percentage-increase-formula/"],
+      "keywords": ["percentage", "increase", "growth"]
+    },
+    "percentage-decrease-calculator": {
+      "title": "Percentage Decrease Calculator",
+      "category": "math",
+      "icon": "📉",
+      "description": "Calculate percentage decrease",
+      "related": ["percentage-calculator", "percentage-increase-calculator", "discount-calculator"],
+      "blogs": ["/blog/math/percentage-decrease-formula/"],
+      "keywords": ["percentage", "decrease", "decline"]
+    },
+    "ratio-calculator": {
+      "title": "Ratio Calculator",
+      "category": "math",
+      "icon": "⚖️",
+      "description": "Calculate ratios",
+      "related": ["percentage-calculator", "profit-margin-calculator"],
+      "blogs": ["/blog/math/ratio-calculation-guide/"],
+      "keywords": ["ratio", "proportion", "calculation"]
+    },
+    "bmi-calculator": {
+      "title": "BMI Calculator",
+      "category": "health",
+      "icon": "⚖️",
+      "description": "Calculate BMI",
+      "related": ["unit-converter"],
+      "blogs": ["/blog/health/bmi-calculation-guide/", "/blog/health/healthy-weight-range/"],
+      "keywords": ["bmi", "body-mass-index", "weight", "health"]
+    },
+    "unit-converter": {
+      "title": "Unit Converter",
+      "category": "general",
+      "icon": "🔄",
+      "description": "Convert units",
+      "related": ["data-storage-converter", "internet-speed-converter", "currency-converter"],
+      "blogs": ["/blog/general/unit-conversion-guide/"],
+      "keywords": ["unit", "conversion", "converter"]
+    },
+    "currency-converter": {
+      "title": "Currency Converter",
+      "category": "general",
+      "icon": "💱",
+      "description": "Convert currencies",
+      "related": ["unit-converter"],
+      "blogs": ["/blog/general/currency-conversion-guide/", "/blog/general/forex-basics/"],
+      "keywords": ["currency", "forex", "exchange", "conversion"]
+    },
+    "roi-calculator": {
+      "title": "ROI Calculator",
+      "category": "business",
+      "icon": "📈",
+      "description": "Calculate return on investment",
+      "related": ["sip-calculator", "lumpsum-calculator", "break-even-calculator", "business-growth-calculator"],
+      "blogs": ["/blog/business/roi-formula/", "/blog/business/investment-return-calculation/"],
+      "keywords": ["roi", "return", "investment", "profit"]
+    },
+    "break-even-calculator": {
+      "title": "Break-even Calculator",
+      "category": "business",
+      "icon": "⚖️",
+      "description": "Find break-even point",
+      "related": ["roi-calculator", "profit-margin-calculator", "business-growth-calculator", "markup-calculator"],
+      "blogs": ["/blog/business/break-even-analysis/", "/blog/business/business-profitability-guide/"],
+      "keywords": ["break-even", "profitability", "business"]
+    },
+    "profit-margin-calculator": {
+      "title": "Profit Margin Calculator",
+      "category": "business",
+      "icon": "💰",
+      "description": "Calculate profit margin",
+      "related": ["markup-calculator", "break-even-calculator", "gst-profit-calculator", "roi-calculator"],
+      "blogs": ["/blog/business/profit-margin-formula/", "/blog/business/improve-profit-margins/"],
+      "keywords": ["profit", "margin", "business", "profitability"]
+    },
+    "gst-profit-calculator": {
+      "title": "GST Profit Calculator",
+      "category": "business",
+      "icon": "🧾",
+      "description": "Calculate profit after GST",
+      "related": ["profit-margin-calculator", "gst-split-calculator", "markup-calculator", "sales-tax-calculator"],
+      "blogs": ["/blog/business/gst-calculation-guide/", "/blog/business/gst-for-business/"],
+      "keywords": ["gst", "profit", "business", "tax"]
+    },
+    "markup-calculator": {
+      "title": "Markup Calculator",
+      "category": "business",
+      "icon": "🏷️",
+      "description": "Calculate product markup",
+      "related": ["profit-margin-calculator", "discount-calculator", "gst-split-calculator"],
+      "blogs": ["/blog/business/markup-vs-margin/", "/blog/business/pricing-strategy-guide/"],
+      "keywords": ["markup", "pricing", "margin", "business"]
+    },
+    "discount-calculator": {
+      "title": "Discount Calculator",
+      "category": "business",
+      "icon": "🏷️",
+      "description": "Calculate discounts",
+      "related": ["markup-calculator", "profit-margin-calculator", "sales-tax-calculator"],
+      "blogs": ["/blog/business/discount-calculation/", "/blog/business/pricing-discounts/"],
+      "keywords": ["discount", "sale", "pricing", "business"]
+    },
+    "commission-calculator": {
+      "title": "Commission Calculator",
+      "category": "business",
+      "icon": "💵",
+      "description": "Calculate sales commission",
+      "related": ["salary-hike", "in-hand-salary", "income-tax"],
+      "blogs": ["/blog/business/commission-structure-guide/", "/blog/business/sales-compensation/"],
+      "keywords": ["commission", "sales", "compensation", "business"]
+    },
+    "sales-tax-calculator": {
+      "title": "Sales Tax Calculator",
+      "category": "business",
+      "icon": "🧾",
+      "description": "Calculate sales tax",
+      "related": ["gst-split-calculator", "gst-profit-calculator", "invoice-total-calculator"],
+      "blogs": ["/blog/business/sales-tax-guide/", "/blog/business/gst-calculation/"],
+      "keywords": ["sales-tax", "vat", "gst", "business"]
+    },
+    "invoice-total-calculator": {
+      "title": "Invoice Total Calculator",
+      "category": "business",
+      "icon": "📄",
+      "description": "Calculate invoice totals",
+      "related": ["gst-split-calculator", "sales-tax-calculator", "discount-calculator"],
+      "blogs": ["/blog/business/invoice-calculation-guide/", "/blog/business/gst-invoicing/"],
+      "keywords": ["invoice", "billing", "total", "business"]
+    },
+    "business-growth-calculator": {
+      "title": "Business Growth Calculator",
+      "category": "business",
+      "icon": "📈",
+      "description": "Project business growth",
+      "related": ["roi-calculator", "break-even-calculator", "profit-margin-calculator", "compound-interest-calculator"],
+      "blogs": ["/blog/business/business-growth-strategies/", "/blog/business/revenue-projection/"],
+      "keywords": ["growth", "business", "revenue", "projection"]
+    },
+    "salary-hike": {
+      "title": "Salary Hike Calculator",
+      "category": "salary",
+      "icon": "💰",
+      "description": "Calculate your salary increment percentage and new CTC",
+      "related": ["in-hand-salary", "income-tax", "hra-exemption", "pf-calculator"],
+      "blogs": ["/blog/hr/salary-hike-tips/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["salary", "increment", "hike", "appraisal", "ctc"]
+    },
+    "in-hand-salary": {
+      "title": "In-Hand Salary Calculator",
+      "category": "salary",
+      "icon": "💵",
+      "description": "Calculate your actual take-home salary after deductions",
+      "related": ["salary-hike", "income-tax", "pf-calculator", "hra-exemption"],
+      "blogs": ["/blog/hr/salary-structure-guide/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["salary", "take-home", "in-hand", "net-salary", "deductions"]
+    },
+    "income-tax": {
+      "title": "Income Tax Calculator",
+      "category": "tax",
+      "icon": "📊",
+      "description": "Calculate income tax under old and new regime",
+      "related": ["hra-exemption", "in-hand-salary", "salary-hike", "pf-calculator"],
+      "blogs": ["/blog/finance/old-vs-new-tax-regime-2026/", "/blog/hr/tax-saving-guide/"],
+      "keywords": ["tax", "income-tax", "old-regime", "new-regime", "87a"]
+    },
+    "hra-exemption": {
+      "title": "HRA Exemption Calculator",
+      "category": "tax",
+      "icon": "🏠",
+      "description": "Calculate House Rent Allowance tax exemption",
+      "related": ["income-tax", "in-hand-salary", "pf-calculator", "salary-hike"],
+      "blogs": ["/blog/finance/hra-exemption-guide/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["hra", "rent", "exemption", "allowance", "10(13a)"]
+    },
+    "pf-calculator": {
+      "title": "PF Calculator",
+      "category": "retirement",
+      "icon": "🏦",
+      "description": "Calculate Provident Fund corpus at retirement",
+      "related": ["nps", "income-tax", "gratuity-calculator", "leave-encashment-calculator"],
+      "blogs": ["/blog/finance/pf-withdrawal-guide/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["pf", "provident-fund", "epf", "retirement", "80c"]
+    },
+    "nps": {
+      "title": "NPS Calculator",
+      "category": "retirement",
+      "icon": "📈",
+      "description": "Calculate National Pension System returns",
+      "related": ["pf-calculator", "income-tax", "emi", "salary-hike"],
+      "blogs": ["/blog/finance/nps-vs-ppf/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["nps", "pension", "retirement", "80ccd", "annuity"]
+    },
+    "gratuity-calculator": {
+      "title": "Gratuity Calculator",
+      "category": "retirement",
+      "icon": "🎁",
+      "description": "Calculate gratuity amount as per Payment of Gratuity Act",
+      "related": ["pf-calculator", "leave-encashment-calculator", "income-tax", "nps"],
+      "blogs": ["/blog/hr/gratuity-rules/", "/blog/finance/retirement-planning/"],
+      "keywords": ["gratuity", "retirement", "benefits", "payment-of-gratuity-act"]
+    },
+    "leave-encashment-calculator": {
+      "title": "Leave Encashment Calculator",
+      "category": "retirement",
+      "icon": "📅",
+      "description": "Calculate leave encashment amount and tax",
+      "related": ["gratuity-calculator", "pf-calculator", "income-tax", "hra-exemption"],
+      "blogs": ["/blog/hr/leave-encashment-rules/", "/blog/finance/retirement-planning/"],
+      "keywords": ["leave", "encashment", "earned-leave", "privilege-leave"]
+    },
+    "emi": {
+      "title": "EMI Calculator",
+      "category": "loan",
+      "icon": "🏡",
+      "description": "Calculate loan EMI with amortization schedule",
+      "related": ["income-tax", "salary-hike", "in-hand-salary", "nps"],
+      "blogs": ["/blog/finance/home-loan-tax-benefits/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["emi", "loan", "home-loan", "car-loan", "amortization"]
+    },
+    "gst": {
+      "title": "GST Calculator",
+      "category": "business",
+      "icon": "🧾",
+      "description": "Calculate GST amount and split CGST/SGST/IGST",
+      "related": ["income-tax", "compliance-calendar-generator", "salary-hike", "in-hand-salary"],
+      "blogs": ["/blog/business/gst-guide/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["gst", "tax", "business", "cgst", "sgst", "igst"]
+    },
+    "job-switch-breakeven-calculator": {
+      "title": "Job Switch Break-Even Calculator",
+      "category": "career",
+      "icon": "💼",
+      "description": "Calculate if switching jobs is financially worth it",
+      "related": ["salary-hike", "in-hand-salary", "income-tax", "hra-exemption"],
+      "blogs": ["/blog/hr/job-switch-guide/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["job-switch", "career", "resignation", "offer", "break-even"]
+    },
+    "offer-letter-decoder": {
+      "title": "Offer Letter Decoder",
+      "category": "career",
+      "icon": "📄",
+      "description": "Decode CTC breakdown from offer letter",
+      "related": ["in-hand-salary", "income-tax", "hra-exemption", "pf-calculator"],
+      "blogs": ["/blog/hr/salary-negotiation/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["offer-letter", "ctc", "salary", "negotiation", "breakdown"]
+    },
+    "compliance-calendar-generator": {
+      "title": "Compliance Calendar Generator",
+      "category": "business",
+      "icon": "📅",
+      "description": "Generate PF, ESI, GST, TDS due dates calendar",
+      "related": ["gst", "pf-calculator", "income-tax", "salary-hike"],
+      "blogs": ["/blog/business/compliance-guide/", "/blog/finance/old-vs-new-tax-regime-2026/"],
+      "keywords": ["compliance", "calendar", "due-dates", "pf", "esi", "gst", "tds"]
+    }
+  },
+  "categories": {
+    "salary": {
+      "title": "Salary & Compensation",
+      "icon": "💰",
+      "calculators": ["salary-hike", "in-hand-salary", "job-switch-breakeven-calculator", "offer-letter-decoder"]
+    },
+    "tax": {
+      "title": "Tax Planning",
+      "icon": "📊",
+      "calculators": ["income-tax", "hra-exemption", "gst"]
+    },
+    "retirement": {
+      "title": "Retirement Planning",
+      "icon": "🏦",
+      "calculators": ["pf-calculator", "nps", "gratuity-calculator", "leave-encashment-calculator"]
+    },
+    "loan": {
+      "title": "Loans & EMIs",
+      "icon": "🏡",
+      "calculators": ["emi"]
+    },
+    "business": {
+      "title": "Business & Compliance",
+      "icon": "🧾",
+      "calculators": ["gst", "compliance-calendar-generator"]
+    },
+    "career": {
+      "title": "Career & Job Switch",
+      "icon": "💼",
+      "calculators": ["job-switch-breakeven-calculator", "offer-letter-decoder"]
+    }
+  },
+  "popular": ["income-tax", "salary-hike", "in-hand-salary", "emi", "hra-exemption"],
+  "topFinancial": ["income-tax", "pf-calculator", "nps", "emi", "hra-exemption", "salary-hike"],
+  "blogs": {
+    "old-vs-new-tax-regime-2026": {
+      "title": "Old vs New Tax Regime 2026: Complete Guide",
+      "url": "/blog/finance/old-vs-new-tax-regime-2026/",
+      "category": "Tax Planning",
+      "description": "Compare tax liability under both regimes with detailed examples and calculations.",
+      "relatedCalculators": ["income-tax", "hra-exemption", "salary-hike", "pf-calculator"]
+    },
+    "salary-hike-tips": {
+      "title": "10 Proven Tips to Get the Best Salary Hike in 2025",
+      "url": "/blog/hr/salary-hike-tips/",
+      "category": "HR & Salary",
+      "description": "Learn negotiation strategies, market research techniques, and timing tactics to maximize your salary increment.",
+      "relatedCalculators": ["salary-hike", "in-hand-salary", "income-tax", "offer-letter-decoder"]
+    },
+    "average-salary-increase": {
+      "title": "Average Salary Increase in India: Industry-wise Data for 2025",
+      "url": "/blog/hr/average-salary-increase/",
+      "category": "HR & Salary",
+      "description": "Comprehensive analysis of salary hike trends across IT, banking, manufacturing, healthcare, and other sectors.",
+      "relatedCalculators": ["salary-hike", "in-hand-salary", "job-switch-breakeven-calculator"]
+    },
+    "negotiating-salary": {
+      "title": "How to Negotiate Your Salary During Appraisal Season",
+      "url": "/blog/hr/negotiating-salary/",
+      "category": "HR & Salary",
+      "description": "Step-by-step guide to preparing your case, presenting data, and negotiating confidently with your manager.",
+      "relatedCalculators": ["salary-hike", "offer-letter-decoder", "in-hand-salary"]
+    },
+    "hra-exemption-guide": {
+      "title": "HRA Exemption: Complete Guide to Section 10(13A)",
+      "url": "/blog/finance/hra-exemption-guide/",
+      "category": "Tax Planning",
+      "description": "Learn how to claim HRA exemption, understand metro vs non-metro rules, and maximize your tax savings.",
+      "relatedCalculators": ["hra-exemption", "income-tax", "in-hand-salary"]
+    },
+    "pf-withdrawal-guide": {
+      "title": "PF Withdrawal Rules 2026: Complete Guide",
+      "url": "/blog/finance/pf-withdrawal-guide/",
+      "category": "Retirement",
+      "description": "Complete guide to PF withdrawal, partial withdrawal, and tax implications for different scenarios.",
+      "relatedCalculators": ["pf-calculator", "nps", "gratuity-calculator"]
+    },
+    "nps-vs-ppf": {
+      "title": "NPS vs PPF: Which is Better for Retirement Planning?",
+      "url": "/blog/finance/nps-vs-ppf/",
+      "category": "Retirement",
+      "description": "Compare National Pension System and Public Provident Fund across returns, tax benefits, and flexibility.",
+      "relatedCalculators": ["nps", "pf-calculator", "income-tax"]
+    },
+    "gratuity-rules": {
+      "title": "Gratuity Rules in India: Complete Guide for Employees",
+      "url": "/blog/hr/gratuity-rules/",
+      "category": "HR & Salary",
+      "description": "Understand gratuity eligibility, calculation formula, tax exemption rules, and recent amendments.",
+      "relatedCalculators": ["gratuity-calculator", "pf-calculator", "leave-encashment-calculator"]
+    },
+    "leave-encashment-rules": {
+      "title": "Leave Encashment Rules: Government vs Private Sector",
+      "url": "/blog/hr/leave-encashment-rules/",
+      "category": "HR & Salary",
+      "description": "Learn about leave encashment rules, tax treatment, and calculation method for different employment types.",
+      "relatedCalculators": ["leave-encashment-calculator", "gratuity-calculator", "income-tax"]
+    },
+    "home-loan-tax-benefits": {
+      "title": "Home Loan Tax Benefits: Section 24 and 80C Guide",
+      "url": "/blog/finance/home-loan-tax-benefits/",
+      "category": "Tax Planning",
+      "description": "Claim tax deductions on home loan interest and principal under Section 24 and 80C.",
+      "relatedCalculators": ["emi", "income-tax", "hra-exemption"]
+    },
+    "gst-guide": {
+      "title": "GST Guide for Indian Businesses",
+      "url": "/blog/business/gst-guide/",
+      "category": "Business",
+      "description": "Complete guide to GST registration, returns, compliance, and input tax credit for Indian businesses.",
+      "relatedCalculators": ["gst", "compliance-calendar-generator", "income-tax"]
+    },
+    "compliance-guide": {
+      "title": "Statutory Compliance Guide for Indian Businesses",
+      "url": "/blog/business/compliance-guide/",
+      "category": "Business",
+      "description": "Stay compliant with PF, ESI, GST, TDS, and other statutory requirements in India.",
+      "relatedCalculators": ["compliance-calendar-generator", "gst", "pf-calculator"]
+    },
+    "retirement-planning": {
+      "title": "Retirement Planning in India: PF, NPS, and More",
+      "url": "/blog/finance/retirement-planning/",
+      "category": "Retirement",
+      "description": "Comprehensive guide to retirement planning using PF, NPS, gratuity, and other instruments.",
+      "relatedCalculators": ["pf-calculator", "nps", "gratuity-calculator", "leave-encashment-calculator"]
+    }
+  }
+}

@@ -1,0 +1,282 @@
+/* UtilityDesk Social Sharing Widget Styles - Fixed Version */
+
+/* Widget Container - Fixed Position */
+.ud-social-share-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* Toggle Button */
+.ud-share-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #1a1f2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.ud-share-toggle:hover {
+  background: #252b3d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ud-share-toggle:focus {
+  outline: 2px solid #f0a830;
+  outline-offset: 2px;
+}
+
+.ud-share-toggle svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.ud-share-toggle-text {
+  display: inline-block;
+}
+
+/* Share Options Container */
+.ud-share-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ebedf3;
+  animation: ud-share-slide-up 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ud-social-share-widget:not(.ud-share-expanded) .ud-share-options {
+  display: none;
+}
+
+@keyframes ud-share-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Share Option Buttons */
+.ud-share-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #f5f6f9;
+  color: #1a1f2e;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.ud-share-option:hover {
+  transform: translateX(-4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ud-share-option:focus {
+  outline: 2px solid #f0a830;
+  outline-offset: 2px;
+}
+
+.ud-share-option svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Platform-specific colors */
+.ud-share-copy:hover {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.ud-share-whatsapp:hover {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.ud-share-facebook:hover {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.ud-share-linkedin:hover {
+  background: #0A66C2;
+  color: #ffffff;
+}
+
+.ud-share-twitter:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.ud-share-email:hover {
+  background: #EA4335;
+  color: #ffffff;
+}
+
+/* Notification */
+.ud-share-notification {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  background: #1a1f2e;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: ud-share-notification-show 0.3s ease;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.ud-share-notification-hide {
+  animation: ud-share-notification-hide 0.3s ease forwards;
+}
+
+@keyframes ud-share-notification-show {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ud-share-notification-hide {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ud-social-share-widget {
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+  }
+  
+  .ud-share-toggle {
+    padding: 14px 22px;
+    font-size: 1rem;
+  }
+  
+  .ud-share-toggle svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .ud-share-options {
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  .ud-share-option {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+  
+  .ud-share-option svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .ud-share-notification {
+    bottom: 90px;
+    right: 20px;
+    left: 20px;
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ud-social-share-widget {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .ud-share-toggle,
+  .ud-share-option,
+  .ud-share-options {
+    transition: none;
+    animation: none;
+  }
+  
+  .ud-share-toggle:hover,
+  .ud-share-option:hover {
+    transform: none;
+  }
+  
+  .ud-share-notification,
+  .ud-share-notification-hide {
+    animation: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .ud-share-toggle {
+    border: 2px solid #ffffff;
+  }
+  
+  .ud-share-option {
+    border: 1px solid #1a1f2e;
+  }
+  
+  .ud-share-toggle:focus,
+  .ud-share-option:focus {
+    outline-width: 3px;
+  }
+}
+
+/* Print - Hide widget */
+@media print {
+  .ud-social-share-widget,
+  .ud-share-notification {
+    display: none !important;
+  }
+}

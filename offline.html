@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UtilityDesk.in | Productivity Tools for India</title>
+  <meta name="description" content="UtilityDesk.in is currently offline. Please check your internet connection.">
+  <meta name="robots" content="noindex">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      background: white;
+      border-radius: 16px;
+      padding: 48px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+    
+    .icon {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      color: #1a202c;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    
+    p {
+      font-size: 1.125rem;
+      color: #4a5568;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .button:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    }
+    
+    .tips {
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid #e2e8f0;
+    }
+    
+    .tips h2 {
+      font-size: 1.25rem;
+      color: #2d3748;
+      margin-bottom: 16px;
+    }
+    
+    .tips ul {
+      list-style: none;
+      text-align: left;
+    }
+    
+    .tips li {
+      padding: 8px 0;
+      color: #4a5568;
+      position: relative;
+      padding-left: 28px;
+    }
+    
+    .tips li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #48bb78;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 24px;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="./premium.css">
+
+<style>
+svg {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+  <link rel="stylesheet" href="./shared/design-system-v2.css">
+  <link rel="stylesheet" href="./shared/header-v2.css">
+  <link rel="stylesheet" href="./shared/footer-v2.css">
+  <link rel="stylesheet" href="./assistant.css">
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📡</div>
+    <h1>You're Offline</h1>
+    <p>It looks like you've lost your internet connection. UtilityDesk requires an internet connection to load new tools and calculators.</p>
+    
+    <button class="button" onclick="window.location.reload()">
+      Try Again
+    </button>
+    
+    <div class="tips">
+      <h2>What you can do:</h2>
+      <ul>
+        <li>Check your internet connection</li>
+        <li>Move to an area with better signal</li>
+        <li>If using WiFi, try restarting your router</li>
+        <li>Previously visited calculators may still work</li>
+        <li>Try again in a few moments</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script>
+    // Check if we're back online
+    window.addEventListener('online', () => {
+      window.location.href = '/';
+    });
+    
+    // Register service worker if not already registered
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('SW registered:', registration.scope);
+        })
+        .catch((error) => {
+          console.log('SW registration failed:', error);
+        });
+    }
+  </script>
+<script src="./premium.js" defer></script>
+<script src="./shared/social.js"></script>
+<link rel="stylesheet" href="./shared/social.css">
+<script src="./shared/newsletter.js"></script>
+<link rel="stylesheet" href="./shared/newsletter.css">
+  <script src="./shared/header-v2.js"></script>
+  <script src="./shared/site-shell.js"></script>
+  <script src="./assistant.js"></script>
+</body>
+</html>

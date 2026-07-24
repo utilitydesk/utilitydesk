@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UtilityDesk.in | Productivity Tools for India</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Explore our free calculators and tools for Indian professionals.">
+    <link rel="stylesheet" href="./shared/categories.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .error-content {
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+        
+        .error-description {
+            font-size: 1.125rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .error-btn {
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+        
+        .error-btn-primary {
+            background: #2563eb;
+            color: #ffffff;
+        }
+        
+        .error-btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+        
+        .error-btn-secondary {
+            background: #ffffff;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        
+        .error-btn-secondary:hover {
+            background: #eff6ff;
+            transform: translateY(-2px);
+        }
+        
+        .error-search {
+            max-width: 500px;
+            margin: 0 auto 3rem;
+        }
+        
+        .error-search input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .error-search input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .popular-tools {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .popular-tools h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .popular-tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .popular-tool-link {
+            padding: 1rem;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #0f172a;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .popular-tool-link:hover {
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+        
+        .popular-tool-icon {
+            font-size: 1.5rem;
+        }
+        
+        .popular-tool-name {
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+        
+        @media (max-width: 640px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .error-description {
+                font-size: 1rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+            }
+            
+            .error-btn {
+                width: 100%;
+            }
+        }
+    </style>
+
+<style>
+svg {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+  <link rel="stylesheet" href="./shared/design-system-v2.css">
+  <link rel="stylesheet" href="./shared/header-v2.css">
+  <link rel="stylesheet" href="./shared/footer-v2.css">
+  <link rel="stylesheet" href="./assistant.css">
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-description">
+                Oops! The page you're looking for doesn't exist or has been moved. 
+                Let's get you back on track.
+            </p>
+            
+            <div class="error-search">
+                <input type="text" id="error-search-input" placeholder="Search for calculators, tools, or articles..." />
+            </div>
+            
+            <div class="error-actions">
+                <a href="/" class="error-btn error-btn-primary">Go to Homepage</a>
+                <a href="/categories/" class="error-btn error-btn-secondary">Browse Categories</a>
+            </div>
+            
+            <div class="popular-tools">
+                <h3>Popular Tools You Might Be Looking For</h3>
+                <div class="popular-tools-grid">
+                    <a href="/calculators/income-tax/" class="popular-tool-link">
+                        <span class="popular-tool-icon">💰</span>
+                        <span class="popular-tool-name">Income Tax Calculator</span>
+                    </a>
+                    <a href="/calculators/emi/" class="popular-tool-link">
+                        <span class="popular-tool-icon">🏡</span>
+                        <span class="popular-tool-name">EMI Calculator</span>
+                    </a>
+                    <a href="/calculators/salary-hike/" class="popular-tool-link">
+                        <span class="popular-tool-icon">💵</span>
+                        <span class="popular-tool-name">Salary Hike Calculator</span>
+                    </a>
+                    <a href="/calculators/hra-exemption/" class="popular-tool-link">
+                        <span class="popular-tool-icon">🏠</span>
+                        <span class="popular-tool-name">HRA Exemption Calculator</span>
+                    </a>
+                    <a href="/pdf-tools/merge-pdf/" class="popular-tool-link">
+                        <span class="popular-tool-icon">📑</span>
+                        <span class="popular-tool-name">Merge PDF</span>
+                    </a>
+                    <a href="/document-generators/offer-letter-generator/" class="popular-tool-link">
+                        <span class="popular-tool-icon">📄</span>
+                        <span class="popular-tool-name">Offer Letter Generator</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-redirect search to main search
+        document.getElementById('error-search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const query = this.value.trim();
+                if (query) {
+                    window.location.href = '/?search=' + encodeURIComponent(query);
+                }
+            }
+        });
+        
+        // Focus search input on load
+        document.getElementById('error-search-input').focus();
+    </script>
+<script src="./shared/newsletter.js"></script>
+<link rel="stylesheet" href="./shared/newsletter.css">
+  <script src="./shared/header-v2.js"></script>
+  <script src="./shared/site-shell.js"></script>
+  <script src="./assistant.js"></script>
+</body>
+</html>

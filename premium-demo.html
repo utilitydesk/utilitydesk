@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UtilityDesk.in | Productivity Tools for India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./premium.css">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+      padding: var(--space-8);
+    }
+    
+    .showcase {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .showcase-section {
+      background: white;
+      border-radius: var(--radius-2xl);
+      padding: var(--space-10);
+      margin-bottom: var(--space-8);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .showcase-title {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: var(--space-8);
+      background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .showcase-subtitle {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: var(--space-6);
+      color: #1e293b;
+    }
+    
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-6);
+      margin-bottom: var(--space-8);
+    }
+    
+    .demo-item {
+      padding: var(--space-6);
+      background: #f8fafc;
+      border-radius: var(--radius-lg);
+      text-align: center;
+    }
+    
+    .demo-label {
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-bottom: var(--space-3);
+    }
+    
+    .skeleton-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-6);
+    }
+    
+    .skeleton-card {
+      padding: var(--space-6);
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-2xl);
+      padding: var(--space-4) var(--space-6);
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      max-width: 400px;
+      transform: translateX(450px);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 10000;
+    }
+    
+    .notification.show {
+      transform: translateX(0);
+    }
+    
+    .notification-success { border-left: 4px solid #10b981; }
+    .notification-error { border-left: 4px solid #ef4444; }
+    .notification-warning { border-left: 4px solid #f59e0b; }
+    .notification-info { border-left: 4px solid #3b82f6; }
+    
+    .notification-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    
+    .notification-success .notification-icon { background: #ecfdf5; color: #10b981; }
+    .notification-error .notification-icon { background: #fef2f2; color: #ef4444; }
+    .notification-warning .notification-icon { background: #fffbeb; color: #f59e0b; }
+    .notification-info .notification-icon { background: #eff6ff; color: #3b82f6; }
+    
+    .notification-content {
+      flex: 1;
+    }
+    
+    .notification-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .tabs {
+      background: #f1f5f9;
+      border-radius: var(--radius-lg);
+      padding: var(--space-1);
+      display: inline-flex;
+      gap: var(--space-1);
+      margin-bottom: var(--space-6);
+    }
+    
+    .tab-button {
+      padding: var(--space-3) var(--space-6);
+      background: transparent;
+      border: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      color: #64748b;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .tab-button.active {
+      background: white;
+      color: #3b82f6;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .tab-panel {
+      display: none;
+      padding: var(--space-6);
+      background: #f8fafc;
+      border-radius: var(--radius-lg);
+    }
+    
+    .tab-panel.active {
+      display: block;
+    }
+    
+    .accordion-item {
+      background: white;
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-3);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .accordion-header {
+      padding: var(--space-5);
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+    
+    .accordion-header:hover {
+      background: #f8fafc;
+    }
+    
+    .accordion-header::after {
+      content: '▼';
+      transition: transform 0.3s;
+    }
+    
+    .accordion-item.open .accordion-header::after {
+      transform: rotate(180deg);
+    }
+    
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 var(--space-5);
+    }
+    
+    .accordion-item.open .accordion-content {
+      padding: var(--space-5);
+    }
+    
+    .progress-bar-container {
+      background: #e2e8f0;
+      border-radius: var(--radius-full);
+      height: 8px;
+      overflow: hidden;
+      margin: var(--space-4) 0;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+      border-radius: var(--radius-full);
+      transition: width 0.3s ease;
+    }
+    
+    @keyframes tooltip-fade-in {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes tooltip-fade-out {
+      from { opacity: 1; transform: translateY(0); }
+      to { opacity: 0; transform: translateY(4px); }
+    }
+    
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-10px); }
+      75% { transform: translateX(10px); }
+    }
+    
+    @keyframes tab-fade-in {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .counter {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .success-animation {
+      text-align: center;
+      padding: var(--space-10);
+    }
+    
+    .success-title {
+      margin-top: var(--space-6);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #10b981;
+    }
+  </style>
+
+<style>
+svg {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+  <link rel="stylesheet" href="./shared/design-system-v2.css">
+  <link rel="stylesheet" href="./shared/header-v2.css">
+  <link rel="stylesheet" href="./shared/footer-v2.css">
+  <link rel="stylesheet" href="./assistant.css">
+</head>
+<body>
+  <div class="showcase">
+    <h1 class="showcase-title">✨ Premium Design System Showcase</h1>
+    
+    <!-- Buttons Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Premium Buttons</h2>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-label">Primary Button</div>
+          <button class="btn btn-primary ripple">Click Me</button>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Secondary Button</div>
+          <button class="btn btn-secondary ripple">Secondary</button>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Ghost Button</div>
+          <button class="btn btn-ghost ripple">Ghost</button>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Large Button</div>
+          <button class="btn btn-primary btn-lg ripple">Large</button>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Small Button</div>
+          <button class="btn btn-primary btn-sm ripple">Small</button>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Icon Button</div>
+          <button class="btn btn-primary btn-icon ripple">🔍</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cards Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Premium Cards</h2>
+      <div class="demo-grid">
+        <div class="card card-tilt">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">Income Tax Calculator</h3>
+          <p class="card-description">Calculate your income tax for FY 2025-26 under old and new tax regimes</p>
+          <a href="#" class="card-link">Calculate Now</a>
+        </div>
+        <div class="card card-tilt">
+          <div class="card-icon">💰</div>
+          <h3 class="card-title">Salary Hike Calculator</h3>
+          <p class="card-description">Calculate your new salary after a hike with detailed breakdown</p>
+          <a href="#" class="card-link">Calculate Now</a>
+        </div>
+        <div class="card card-tilt">
+          <div class="card-icon">🏦</div>
+          <h3 class="card-title">PF Calculator</h3>
+          <p class="card-description">Estimate your Provident Fund corpus at retirement</p>
+          <a href="#" class="card-link">Calculate Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Loading States Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Loading Skeletons</h2>
+      <div class="skeleton-grid">
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-avatar"></div>
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text" style="width: 80%"></div>
+          <div class="skeleton skeleton-text" style="width: 60%"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-avatar"></div>
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text" style="width: 90%"></div>
+          <div class="skeleton skeleton-text" style="width: 70%"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton skeleton-avatar"></div>
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text" style="width: 75%"></div>
+          <div class="skeleton skeleton-text" style="width: 85%"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Badges Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Premium Badges</h2>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-label">Primary</div>
+          <span class="badge badge-primary">New Feature</span>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Success</div>
+          <span class="badge badge-success">Active</span>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Warning</div>
+          <span class="badge badge-warning">Pending</span>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Error</div>
+          <span class="badge badge-error">Failed</span>
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">NEW Badge</div>
+          <span class="badge badge-new">NEW</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Inputs Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Premium Inputs</h2>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-label">Default Input</div>
+          <input type="text" class="input" placeholder="Enter text...">
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Success Input</div>
+          <input type="text" class="input input-success" value="Valid input">
+        </div>
+        <div class="demo-item">
+          <div class="demo-label">Error Input</div>
+          <input type="text" class="input input-error" value="Invalid input">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Notifications Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Notifications</h2>
+      <div class="demo-grid">
+        <button class="btn btn-primary ripple" onclick="showNotification('Success message!', 'success')">Show Success</button>
+        <button class="btn btn-primary ripple" onclick="showNotification('Error message!', 'error')">Show Error</button>
+        <button class="btn btn-primary ripple" onclick="showNotification('Warning message!', 'warning')">Show Warning</button>
+        <button class="btn btn-primary ripple" onclick="showNotification('Info message!', 'info')">Show Info</button>
+      </div>
+    </div>
+    
+    <!-- Tabs Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Animated Tabs</h2>
+      <div class="tabs">
+        <button class="tab-button active">Tab 1</button>
+        <button class="tab-button">Tab 2</button>
+        <button class="tab-button">Tab 3</button>
+      </div>
+      <div class="tab-panel active">
+        <p>Content for Tab 1 - Notice the smooth fade-in animation when switching tabs.</p>
+      </div>
+      <div class="tab-panel">
+        <p>Content for Tab 2 - Each tab panel animates in smoothly.</p>
+      </div>
+      <div class="tab-panel">
+        <p>Content for Tab 3 - Premium micro-interactions make the experience feel polished.</p>
+      </div>
+    </div>
+    
+    <!-- Accordion Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Smooth Accordion</h2>
+      <div class="accordion-item">
+        <div class="accordion-header">What is this?</div>
+        <div class="accordion-content">
+          <p>This is a premium accordion component with smooth height transitions and rotation animation on the arrow icon.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">How does it work?</div>
+        <div class="accordion-content">
+          <p>Click any header to expand/collapse the content. Only one item can be open at a time for a clean user experience.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Why use accordions?</div>
+        <div class="accordion-content">
+          <p>Accordions help organize content and reduce cognitive load by showing only what the user needs to see.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Counter Animation Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Counter Animation</h2>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="counter" id="counter1">0</div>
+          <button class="btn btn-primary ripple" onclick="animateCounter(document.getElementById('counter1'), 0, 10000, 2000)">Animate to 10,000</button>
+        </div>
+        <div class="demo-item">
+          <div class="counter" id="counter2">0</div>
+          <button class="btn btn-primary ripple" onclick="animateCounter(document.getElementById('counter2'), 0, 50000, 2000)">Animate to 50,000</button>
+        </div>
+        <div class="demo-item">
+          <div class="counter" id="counter3">0</div>
+          <button class="btn btn-primary ripple" onclick="animateCounter(document.getElementById('counter3'), 0, 100000, 2000)">Animate to 100,000</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Progress Bar Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Progress Bar Animation</h2>
+      <div>
+        <div class="demo-label">Click to animate progress</div>
+        <button class="btn btn-primary ripple" onclick="animateProgress('progress1', 75, 1500)">Start Progress</button>
+        <div class="progress-bar-container" id="progress1">
+          <div class="progress-bar" style="width: 0%" aria-valuenow="0" role="progressbar"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Success State Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Success Animation</h2>
+      <button class="btn btn-primary ripple" onclick="showSuccess('success-demo')">Show Success</button>
+      <div id="success-demo"></div>
+    </div>
+    
+    <!-- Error State Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Error State</h2>
+      <button class="btn btn-primary ripple" onclick="showError('error-demo')">Show Error</button>
+      <div id="error-demo"></div>
+    </div>
+    
+    <!-- Empty State Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Empty State</h2>
+      <button class="btn btn-primary ripple" onclick="showEmptyState('empty-demo')">Show Empty State</button>
+      <div id="empty-demo"></div>
+    </div>
+    
+    <!-- Tooltip Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Tooltips</h2>
+      <div class="demo-grid">
+        <button class="btn btn-primary ripple" data-tooltip="This is a tooltip!">Hover Me</button>
+        <button class="btn btn-secondary ripple" data-tooltip="Another tooltip example">Hover Me Too</button>
+        <button class="btn btn-ghost ripple" data-tooltip="Tooltips are helpful!">And Me</button>
+      </div>
+    </div>
+    
+    <!-- Loading Demo Section -->
+    <div class="showcase-section">
+      <h2 class="showcase-subtitle">Loading Demo</h2>
+      <button class="btn btn-primary ripple" onclick="simulateLoading()">Simulate Loading</button>
+      <div id="loading-demo" style="margin-top: var(--space-6);"></div>
+    </div>
+  </div>
+  
+  <script src="./premium.js"></script>
+  <script>
+    function simulateLoading() {
+      showSkeleton('loading-demo');
+      setTimeout(() => {
+        hideSkeleton('loading-demo', `
+          <div class="demo-grid">
+            <div class="card card-tilt">
+              <div class="card-icon">📊</div>
+              <h3 class="card-title">Income Tax Calculator</h3>
+              <p class="card-description">Calculate your income tax for FY 2025-26</p>
+              <a href="#" class="card-link">Calculate Now</a>
+            </div>
+            <div class="card card-tilt">
+              <div class="card-icon">💰</div>
+              <h3 class="card-title">Salary Hike Calculator</h3>
+              <p class="card-description">Calculate your new salary after a hike</p>
+              <a href="#" class="card-link">Calculate Now</a>
+            </div>
+            <div class="card card-tilt">
+              <div class="card-icon">🏦</div>
+              <h3 class="card-title">PF Calculator</h3>
+              <p class="card-description">Estimate your Provident Fund corpus</p>
+              <a href="#" class="card-link">Calculate Now</a>
+            </div>
+          </div>
+        `);
+      }, 2000);
+    }
+  </script>
+<script src="./shared/social.js"></script>
+<link rel="stylesheet" href="./shared/social.css">
+<script src="./shared/newsletter.js"></script>
+<link rel="stylesheet" href="./shared/newsletter.css">
+  <script src="./shared/header-v2.js"></script>
+  <script src="./shared/site-shell.js"></script>
+  <script src="./assistant.js"></script>
+</body>
+</html>

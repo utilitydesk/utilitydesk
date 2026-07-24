@@ -1,0 +1,84 @@
+/* UtilityDesk.in - Features Section Component */
+
+.ud-features {
+  padding: var(--ud-spacing-3xl) 0;
+  background: var(--ud-background);
+}
+
+.ud-features-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--ud-spacing-lg);
+}
+
+.ud-features-header {
+  text-align: center;
+  margin-bottom: var(--ud-spacing-2xl);
+}
+
+.ud-features-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: var(--ud-spacing-md);
+  color: var(--ud-text);
+}
+
+.ud-features-subtitle {
+  font-size: 1.1rem;
+  color: var(--ud-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ud-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--ud-spacing-lg);
+}
+
+.ud-feature-card {
+  background: white;
+  border: 1px solid var(--ud-border);
+  border-radius: var(--ud-radius-lg);
+  padding: var(--ud-spacing-xl);
+  transition: var(--ud-transition);
+  text-align: center;
+}
+
+.ud-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ud-shadow-lg);
+  border-color: var(--ud-accent);
+}
+
+.ud-feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--ud-spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(240, 168, 48, 0.1) 0%, rgba(26, 31, 46, 0.05) 100%);
+  border-radius: var(--ud-radius-md);
+  font-size: 2rem;
+}
+
+.ud-feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--ud-spacing-sm);
+  color: var(--ud-text);
+}
+
+.ud-feature-description {
+  color: var(--ud-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ud-features-grid {
+    grid-template-columns: 1fr;
+  }
+}

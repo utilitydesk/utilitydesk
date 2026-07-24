@@ -1,0 +1,355 @@
+{
+  "calculators": [
+    {
+      "id": "salary-hike",
+      "title": "Salary Hike Calculator",
+      "url": "/calculators/salary-hike/",
+      "category": "Salary & Compensation",
+      "icon": "💰",
+      "description": "Calculate your salary increment percentage and new CTC after appraisal or job switch",
+      "keywords": ["salary hike", "increment", "raise", "appraisal", "ctc", "percentage", "new salary", "annual increment"],
+      "faq": [
+        "How is salary hike percentage calculated?",
+        "What is the average salary hike in India?",
+        "Is a 10% salary hike good?",
+        "How do I negotiate a better salary hike?"
+      ]
+    },
+    {
+      "id": "in-hand-salary",
+      "title": "In-Hand Salary Calculator",
+      "url": "/calculators/in-hand-salary/",
+      "category": "Salary & Compensation",
+      "icon": "💵",
+      "description": "Calculate your actual take-home salary after all deductions including PF, PT, TDS, and ESI",
+      "keywords": ["in hand salary", "take home", "net salary", "deductions", "pf", "tds", "professional tax", "esi"],
+      "faq": [
+        "What is the difference between CTC and in-hand salary?",
+        "How much is deducted from salary for PF?",
+        "What is professional tax and which states levy it?",
+        "How is TDS calculated on salary?"
+      ]
+    },
+    {
+      "id": "income-tax",
+      "title": "Income Tax Calculator",
+      "url": "/calculators/income-tax/",
+      "category": "Tax & Compliance",
+      "icon": "📊",
+      "description": "Calculate income tax for FY 2025-26 under old and new tax regime with deductions",
+      "keywords": ["income tax", "tax calculator", "old regime", "new regime", "tax slabs", "80c", "tds", "ay 2026-27"],
+      "faq": [
+        "What is the difference between old and new tax regime?",
+        "What is the standard deduction under new tax regime?",
+        "How to calculate income tax for FY 2025-26?",
+        "What are the tax slabs for new regime?"
+      ]
+    },
+    {
+      "id": "hra-exemption",
+      "title": "HRA Exemption Calculator",
+      "url": "/calculators/hra-exemption/",
+      "category": "Tax & Compliance",
+      "icon": "🏠",
+      "description": "Calculate House Rent Allowance tax exemption under Section 10(13A) for metro and non-metro cities",
+      "keywords": ["hra", "house rent allowance", "rent exemption", "section 10(13a)", "metro", "non-metro", "rent deduction"],
+      "faq": [
+        "How is HRA exemption calculated?",
+        "Which cities are considered metro for HRA?",
+        "Can I claim HRA if I own a house?",
+        "What documents are needed for HRA claim?"
+      ]
+    },
+    {
+      "id": "pf-calculator",
+      "title": "PF Calculator",
+      "url": "/calculators/pf-calculator/",
+      "category": "Retirement Planning",
+      "icon": "🏦",
+      "description": "Calculate Provident Fund corpus at retirement with employee and employer contributions",
+      "keywords": ["pf", "provident fund", "epf", "retirement corpus", "employer contribution", "interest rate", "8.25%"],
+      "faq": [
+        "What is the current PF interest rate?",
+        "How is PF calculated?",
+        "What is the difference between EPF, PPF, and GPF?",
+        "Can I withdraw PF before retirement?"
+      ]
+    },
+    {
+      "id": "nps-calculator",
+      "title": "NPS Calculator",
+      "url": "/calculators/nps-calculator/",
+      "category": "Retirement Planning",
+      "icon": "📈",
+      "description": "Calculate National Pension System returns and monthly pension at retirement",
+      "keywords": ["nps", "national pension system", "pension", "retirement", "annuity", "tier 1", "tier 2", "80ccd"],
+      "faq": [
+        "What is NPS?",
+        "What are the tax benefits of NPS?",
+        "What is the minimum contribution for NPS?",
+        "Can I withdraw from NPS before 60?"
+      ]
+    },
+    {
+      "id": "gratuity-calculator",
+      "title": "Gratuity Calculator",
+      "url": "/calculators/gratuity-calculator/",
+      "category": "Retirement Planning",
+      "icon": "🎁",
+      "description": "Calculate gratuity amount based on last drawn salary and years of service",
+      "keywords": ["gratuity", "retirement benefit", "last drawn salary", "years of service", "payment of gratuity act", "20 lakh exemption"],
+      "faq": [
+        "What is gratuity?",
+        "Who is eligible for gratuity?",
+        "What is the maximum gratuity amount?",
+        "Is gratuity taxable?"
+      ]
+    },
+    {
+      "id": "leave-encashment",
+      "title": "Leave Encashment Calculator",
+      "url": "/calculators/leave-encashment-calculator/",
+      "category": "Retirement Planning",
+      "icon": "📅",
+      "description": "Calculate leave encashment amount and tax exemption for government and private employees",
+      "keywords": ["leave encashment", "earned leave", "privilege leave", "tax exemption", "government employee", "private employee", "3 lakh limit"],
+      "faq": [
+        "What is leave encashment?",
+        "Is leave encashment taxable?",
+        "What is the tax exemption limit for leave encashment?",
+        "Can government employees claim leave encashment exemption?"
+      ]
+    },
+    {
+      "id": "emi-calculator",
+      "title": "EMI Calculator",
+      "url": "/calculators/emi-calculator/",
+      "category": "Loans & Finance",
+      "icon": "🏡",
+      "description": "Calculate monthly EMI for home loans, car loans, and personal loans with amortization schedule",
+      "keywords": ["emi", "equated monthly installment", "home loan", "car loan", "personal loan", "amortization", "interest rate", "loan tenure"],
+      "faq": [
+        "What is EMI?",
+        "How is EMI calculated?",
+        "Should I choose a longer or shorter loan tenure?",
+        "What is the difference between flat rate and reducing balance?"
+      ]
+    },
+    {
+      "id": "gst-calculator",
+      "title": "GST Calculator",
+      "url": "/calculators/gst-calculator/",
+      "category": "Tax & Compliance",
+      "icon": "🧾",
+      "description": "Calculate GST amount for products and services with CGST, SGST, and IGST breakdown",
+      "keywords": ["gst", "goods and services tax", "cgst", "sgst", "igst", "tax calculation", "gst rate", "intra-state", "inter-state"],
+      "faq": [
+        "What is GST?",
+        "What are the GST rate slabs in India?",
+        "What is the difference between CGST, SGST, and IGST?",
+        "How to calculate GST inclusive price?"
+      ]
+    },
+    {
+      "id": "sip-calculator",
+      "title": "SIP Calculator",
+      "url": "/calculators/sip-calculator/",
+      "category": "Investment & Wealth",
+      "icon": "💹",
+      "description": "Calculate returns on Systematic Investment Plan in mutual funds with compound growth",
+      "keywords": ["sip", "systematic investment plan", "mutual fund", "investment returns", "compound growth", "wealth creation"],
+      "faq": [
+        "What is SIP?",
+        "How are SIP returns calculated?",
+        "What is the average SIP return in India?",
+        "Is SIP better than lump sum investment?"
+      ]
+    },
+    {
+      "id": "fd-calculator",
+      "title": "FD Calculator",
+      "url": "/calculators/fd-calculator/",
+      "category": "Investment & Wealth",
+      "icon": "💰",
+      "description": "Calculate Fixed Deposit maturity amount and interest earned",
+      "keywords": ["fd", "fixed deposit", "maturity amount", "interest earned", "bank fd", "post office fd", "tds on fd"],
+      "faq": [
+        "How is FD interest calculated?",
+        "What is the current FD interest rate?",
+        "Is FD interest taxable?",
+        "Can I break FD before maturity?"
+      ]
+    },
+    {
+      "id": "job-switch-breakeven",
+      "title": "Job Switch Break-Even Calculator",
+      "url": "/calculators/job-switch-breakeven-calculator/",
+      "category": "Salary & Compensation",
+      "icon": "🔄",
+      "description": "Calculate if switching jobs is worth it after accounting for notice period buyout and lost benefits",
+      "keywords": ["job switch", "break-even", "notice period", "buyout", "lost bonus", "unvested stock", "relieving"],
+      "faq": [
+        "How to calculate job switch break-even?",
+        "Should I buy out my notice period?",
+        "What to consider before switching jobs?",
+        "How to negotiate joining bonus?"
+      ]
+    },
+    {
+      "id": "offer-letter-decoder",
+      "title": "Offer Letter Decoder",
+      "url": "/calculators/offer-letter-decoder/",
+      "category": "Salary & Compensation",
+      "icon": "📄",
+      "description": "Decode offer letter CTC to understand actual in-hand salary and hidden deductions",
+      "keywords": ["offer letter", "ctc breakdown", "salary structure", "variable pay", "joining bonus", "stock options", "esops"],
+      "faq": [
+        "What does CTC mean in offer letter?",
+        "How to decode offer letter CTC?",
+        "What is variable pay in salary?",
+        "Should I negotiate CTC or in-hand salary?"
+      ]
+    },
+    {
+      "id": "compliance-calendar",
+      "title": "Compliance Calendar Generator",
+      "url": "/calculators/compliance-calendar-generator/",
+      "category": "Tax & Compliance",
+      "icon": "📆",
+      "description": "Generate statutory compliance calendar for FY 2025-26 with PF, ESI, GST, TDS due dates",
+      "keywords": ["compliance calendar", "statutory compliance", "due dates", "pf due date", "esi due date", "gst return", "tds return", "fy 2025-26"],
+      "faq": [
+        "What is compliance calendar?",
+        "When is PF due date?",
+        "When is GST return due?",
+        "What are TDS return due dates?"
+      ]
+    }
+  ],
+  "pdfTools": [
+    {
+      "id": "merge-pdf",
+      "title": "Merge PDF",
+      "url": "/pdf-tools/merge-pdf/",
+      "category": "PDF Tools",
+      "icon": "🔗",
+      "description": "Combine multiple PDF files into one document online free",
+      "keywords": ["merge pdf", "combine pdf", "join pdf", "pdf merger", "multiple pdf to one"]
+    },
+    {
+      "id": "split-pdf",
+      "title": "Split PDF",
+      "url": "/pdf-tools/split-pdf/",
+      "category": "PDF Tools",
+      "icon": "✂️",
+      "description": "Split PDF into multiple files or extract specific pages",
+      "keywords": ["split pdf", "extract pages", "pdf splitter", "separate pdf pages", "remove pdf pages"]
+    },
+    {
+      "id": "compress-pdf",
+      "title": "Compress PDF",
+      "url": "/pdf-tools/compress-pdf/",
+      "category": "PDF Tools",
+      "icon": "🗜️",
+      "description": "Reduce PDF file size without losing quality",
+      "keywords": ["compress pdf", "reduce pdf size", "pdf compressor", "smaller pdf", "optimize pdf"]
+    }
+  ],
+  "documentGenerators": [
+    {
+      "id": "offer-letter-generator",
+      "title": "Offer Letter Generator",
+      "url": "/document-generators/offer-letter-generator/",
+      "category": "Document Generators",
+      "icon": "📝",
+      "description": "Generate professional offer letters for new hires with customizable templates",
+      "keywords": ["offer letter", "employment offer", "appointment letter", "hr document", "hiring document"]
+    },
+    {
+      "id": "purchase-order-generator",
+      "title": "Purchase Order Generator",
+      "url": "/document-generators/purchase-order-generator/",
+      "category": "Document Generators",
+      "icon": "🛒",
+      "description": "Create purchase orders for vendors and suppliers with itemized details",
+      "keywords": ["purchase order", "po", "vendor order", "procurement", "buying document"]
+    },
+    {
+      "id": "invoice-generator",
+      "title": "Invoice Generator",
+      "url": "/document-generators/invoice-generator/",
+      "category": "Document Generators",
+      "icon": "🧾",
+      "description": "Generate professional invoices with GST calculation and payment terms",
+      "keywords": ["invoice", "bill", "gst invoice", "tax invoice", "billing", "payment request"]
+    },
+    {
+      "id": "nda-generator",
+      "title": "NDA Generator",
+      "url": "/document-generators/nda-generator/",
+      "category": "Document Generators",
+      "icon": "🔒",
+      "description": "Create Non-Disclosure Agreements to protect confidential information",
+      "keywords": ["nda", "non-disclosure agreement", "confidentiality agreement", "legal document", "secrecy agreement"]
+    },
+    {
+      "id": "resignation-letter-generator",
+      "title": "Resignation Letter Generator",
+      "url": "/document-generators/resignation-letter-generator/",
+      "category": "Document Generators",
+      "icon": "👋",
+      "description": "Generate professional resignation letters with proper notice period and handover details",
+      "keywords": ["resignation letter", "quit letter", "notice period", "handover", "exit letter"]
+    }
+  ],
+  "blogs": [
+    {
+      "id": "old-vs-new-tax-regime-2026",
+      "title": "Old vs New Tax Regime 2026: Complete Guide",
+      "url": "/blog/finance/old-vs-new-tax-regime-2026/",
+      "category": "Tax Planning",
+      "icon": "📊",
+      "description": "Detailed comparison of old and new tax regime for FY 2025-26 with examples and calculators",
+      "keywords": ["old regime", "new regime", "tax regime comparison", "fy 2025-26", "ay 2026-27", "which regime is better"]
+    },
+    {
+      "id": "salary-hike-tips",
+      "title": "10 Proven Tips to Get the Best Salary Hike in 2025",
+      "url": "/blog/hr/salary-hike-tips/",
+      "category": "Career Growth",
+      "icon": "💡",
+      "description": "Negotiation strategies and market research techniques to maximize your salary increment",
+      "keywords": ["salary hike tips", "negotiation", "appraisal", "increment", "raise", "career growth"]
+    },
+    {
+      "id": "average-salary-increase",
+      "title": "Average Salary Increase in India: Industry-wise Data for 2025",
+      "url": "/blog/hr/average-salary-increase/",
+      "category": "Career Growth",
+      "icon": "📈",
+      "description": "Comprehensive analysis of salary hike trends across IT, banking, manufacturing, and healthcare sectors",
+      "keywords": ["average salary increase", "industry data", "salary trends", "hike percentage", "sector-wise salary"]
+    },
+    {
+      "id": "negotiating-salary",
+      "title": "How to Negotiate Your Salary During Appraisal Season",
+      "url": "/blog/hr/negotiating-salary/",
+      "category": "Career Growth",
+      "icon": "🤝",
+      "description": "Step-by-step guide to preparing your case and negotiating confidently with your manager",
+      "keywords": ["salary negotiation", "appraisal season", "negotiation tips", "salary discussion", "raise negotiation"]
+    }
+  ],
+  "popularSearches": [
+    "income tax calculator",
+    "salary hike",
+    "hra exemption",
+    "pf calculator",
+    "emi calculator",
+    "gst calculator",
+    "old vs new regime",
+    "in hand salary",
+    "merge pdf",
+    "offer letter"
+  ]
+}
