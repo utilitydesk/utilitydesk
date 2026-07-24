@@ -1,0 +1,13 @@
+{
+  "name": "utilitydesk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UtilityDesk - Productivity Tools for India",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.31.0"
+  }
+}
