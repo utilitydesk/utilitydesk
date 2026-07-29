@@ -124,7 +124,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .related-card p{font-size:.85rem;color:var(--slate-600);line-height:1.6}
 /* FOOTER */
 .footer{background:var(--slate-950);color:var(--slate-400);padding:56px 24px 28px}
-.footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:40px}
+.footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1.5fr repeat(5,1fr);gap:40px}
 @media(max-width:768px){.footer-inner{grid-template-columns:1fr 1fr;gap:28px}}
 @media(max-width:480px){.footer-inner{grid-template-columns:1fr}}
 .footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-family:var(--font-display);font-size:1.3rem;color:var(--white)}
@@ -151,9 +151,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       <li><a href="/calculators/">Calculators</a></li>
       <li><a href="/pdf-tools/">PDF Tools</a></li>
       <li><a href="/document-generators/" class="active">Document Generators</a></li>
+      <li><a href="/hr/">HR Suite</a></li>
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/about/">About</a></li>
-      <li><a href="/contact/">Contact</a></li>
     </ul>
     <a href="/document-generators/" class="nav-cta">Browse Tools</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -325,6 +325,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       <li><a href="/privacy-policy/">Privacy Policy</a></li>
       <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
       <li><a href="/disclaimer/">Disclaimer</a></li>
+      <li><a href="/hr/">All HR Tools →</a></li>
     </ul></div>
   </div>
   <div class="footer-bottom">
@@ -401,6 +402,103 @@ function resetForm(){
 
 // Init
 generate();
+</script>
+
+<!-- Floating Search Widget -->
+<div id="floatSearch" style="position:fixed;bottom:24px;right:24px;z-index:200;font-family:'Plus Jakarta Sans',system-ui,sans-serif">
+  <div id="floatPanel" style="display:none;width:320px;background:#fff;border:1.5px solid #d1d5e0;border-radius:16px;box-shadow:0 8px 32px rgba(15,18,25,.12);overflow:hidden;margin-bottom:10px">
+    <div style="padding:12px 14px;border-bottom:1px solid #ebedf3;display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:.8rem;font-weight:700;color:#353d54;text-transform:uppercase;letter-spacing:.06em">Search 153+ Tools</span>
+      <button onclick="toggleFloat()" style="background:none;border:none;cursor:pointer;color:#8891a8;font-size:18px;padding:0;line-height:1">&times;</button>
+    </div>
+    <div style="padding:10px 12px;position:relative">
+      <input id="fsi" type="search" placeholder="income tax, salary slip, PDF merge…" autocomplete="off"
+        style="width:100%;padding:9px 36px 9px 12px;border:1.5px solid #d1d5e0;border-radius:8px;font-size:.875rem;font-family:inherit;outline:none;transition:border-color .2s"
+        onfocus="this.style.borderColor='#f0a830'" onblur="this.style.borderColor='#d1d5e0'">
+      <svg style="position:absolute;right:20px;top:50%;transform:translateY(-50%);color:#8891a8;pointer-events:none" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </div>
+    <div id="fsr" style="max-height:260px;overflow-y:auto"></div>
+  </div>
+  <button onclick="toggleFloat()" id="floatBtn"
+    style="width:52px;height:52px;background:#1a1f2e;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.3rem;box-shadow:0 4px 16px rgba(15,18,25,.25);transition:all .2s;display:flex;align-items:center;justify-content:center;margin-left:auto"
+    title="Search all tools" aria-label="Search tools">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  const TOOLS=[
+    {t:'Income Tax Calculator',u:'/calculators/income-tax/',i:'🧾',c:'Calc'},
+    {t:'Salary Hike Calculator',u:'/calculators/salary-hike/',i:'💰',c:'Calc'},
+    {t:'In-Hand Salary',u:'/calculators/in-hand-salary/',i:'💳',c:'Calc'},
+    {t:'EMI Calculator',u:'/calculators/emi/',i:'🏦',c:'Calc'},
+    {t:'PF Calculator',u:'/calculators/pf-calculator/',i:'🏛️',c:'Calc'},
+    {t:'HRA Exemption',u:'/calculators/hra-exemption/',i:'🏠',c:'Calc'},
+    {t:'GST Calculator',u:'/calculators/gst/',i:'🧾',c:'Calc'},
+    {t:'SIP Calculator',u:'/calculators/sip-calculator/',i:'📈',c:'Calc'},
+    {t:'Gratuity Calculator',u:'/calculators/gratuity-calculator/',i:'🎁',c:'Calc'},
+    {t:'NPS Calculator',u:'/calculators/nps/',i:'🏛️',c:'Calc'},
+    {t:'Home Loan Calculator',u:'/calculators/home-loan-calculator/',i:'🏠',c:'Calc'},
+    {t:'FD Calculator',u:'/calculators/fd-calculator/',i:'🔒',c:'Calc'},
+    {t:'PPF Calculator',u:'/calculators/ppf-calculator/',i:'🏛️',c:'Calc'},
+    {t:'Offer Letter Decoder',u:'/calculators/offer-letter-decoder/',i:'📄',c:'Calc'},
+    {t:'JPG to PDF',u:'/pdf-tools/jpg-to-pdf/',i:'🖼️',c:'PDF'},
+    {t:'Protect PDF',u:'/pdf-tools/protect-pdf/',i:'🔒',c:'PDF'},
+    {t:'Merge PDF',u:'/pdf-tools/merge-pdf/',i:'🔗',c:'PDF'},
+    {t:'Watermark PDF',u:'/pdf-tools/watermark-pdf/',i:'💧',c:'PDF'},
+    {t:'Split PDF',u:'/pdf-tools/split-pdf/',i:'✂️',c:'PDF'},
+    {t:'Compress PDF',u:'/pdf-tools/compress-pdf/',i:'📦',c:'PDF'},
+    {t:'Delete Pages PDF',u:'/pdf-tools/delete-pages/',i:'🗑️',c:'PDF'},
+    {t:'Extract Pages PDF',u:'/pdf-tools/extract-pages/',i:'✂️',c:'PDF'},
+    {t:'Offer Letter',u:'/hr/offer-letter/',i:'📄',c:'HR'},
+    {t:'Appointment Letter',u:'/hr/appointment-letter/',i:'📋',c:'HR'},
+    {t:'Experience Letter',u:'/hr/experience-letter/',i:'🎖️',c:'HR'},
+    {t:'Relieving Letter',u:'/hr/relieving-letter/',i:'📤',c:'HR'},
+    {t:'Salary Slip Generator',u:'/hr/salary-slip/',i:'💰',c:'HR'},
+    {t:'Increment Letter',u:'/hr/increment-letter/',i:'📈',c:'HR'},
+    {t:'Warning Letter',u:'/hr/warning-letter/',i:'⚠️',c:'HR'},
+    {t:'Resume Builder',u:'/hr/resume-builder/',i:'📄',c:'HR'},
+    {t:'Cover Letter',u:'/hr/cover-letter/',i:'✉️',c:'HR'},
+    {t:'Exit Checklist',u:'/hr/exit-checklist/',i:'✅',c:'HR'},
+    {t:'Resume Rewrite AI',u:'/hr/resume-rewrite/',i:'✨',c:'AI'},
+    {t:'ATS Checker AI',u:'/hr/ats-checker/',i:'✅',c:'AI'},
+    {t:'ATS Score AI',u:'/hr/ats-score/',i:'🎯',c:'AI'},
+    {t:'Grammar Check AI',u:'/hr/grammar-check/',i:'✓',c:'AI'},
+    {t:'HR Policy Generator AI',u:'/hr/hr-policy-generator/',i:'📋',c:'AI'},
+    {t:'Interview Questions AI',u:'/hr/interview-questions/',i:'❓',c:'AI'},
+    {t:'Job Description AI',u:'/hr/job-description/',i:'💼',c:'AI'},
+    {t:'Resume Analyzer AI',u:'/hr/resume-analyzer/',i:'🔍',c:'AI'},
+    {t:'Invoice Generator',u:'/document-generators/invoice/',i:'🧾',c:'Doc'},
+    {t:'Purchase Order',u:'/document-generators/purchase-order/',i:'🛒',c:'Doc'},
+    {t:'Quotation Generator',u:'/document-generators/quotation/',i:'💼',c:'Doc'},
+    {t:'NDA Generator',u:'/document-generators/nda/',i:'🔒',c:'Doc'},
+    {t:'Resignation Letter',u:'/document-generators/resignation-letter/',i:'📝',c:'Doc'},
+  ];
+  const catBg={'Calc':'#dbe6fe','PDF':'#d6f5e6','HR':'#fef3d6','AI':'#ede9fe','Doc':'#fde2e6'};
+  const catTx={'Calc':'#1d4ed8','PDF':'#15803d','HR':'#92400e','AI':'#6d28d9','Doc':'#9f1239'};
+  let open=false;
+  window.toggleFloat=function(){
+    open=!open;
+    document.getElementById('floatPanel').style.display=open?'block':'none';
+    const btn=document.getElementById('floatBtn');
+    btn.style.background=open?'#f0a830':'#1a1f2e';
+    btn.innerHTML=open?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>':'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
+    if(open)setTimeout(()=>document.getElementById('fsi').focus(),50);
+  };
+  document.getElementById('fsi').addEventListener('input',function(){
+    const q=this.value.toLowerCase().trim();
+    const sr=document.getElementById('fsr');
+    if(!q){sr.innerHTML='';return}
+    const m=TOOLS.filter(t=>t.t.toLowerCase().includes(q)).slice(0,7);
+    if(!m.length){sr.innerHTML='<div style="padding:14px 16px;font-size:.825rem;color:#8891a8;text-align:center">No results — <a href="/calculators/" style="color:#4a7cf7">browse all</a></div>';return}
+    sr.innerHTML=m.map(t=>`<a href="${t.u}" style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #ebedf3;transition:background .15s;text-decoration:none;color:#1a1f2e" onmouseover="this.style.background='#f5f6f9'" onmouseout="this.style.background=''">
+      <span style="font-size:1.1rem;width:28px;text-align:center">${t.i}</span>
+      <span style="flex:1;font-size:.85rem;font-weight:600">${t.t}</span>
+      <span style="font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;background:${catBg[t.c]};color:${catTx[t.c]}">${t.c}</span>
+    </a>`).join('');
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)toggleFloat()});
+})();
 </script>
 </body>
 </html>
