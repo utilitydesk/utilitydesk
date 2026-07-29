@@ -240,3 +240,4 @@ resignation-letter, salary-slip
 | Browse all PDF tools | ❌ Only 3/15 shown | ✅ All 18 with search |
 | Find resume/career tools | ❌ No path from calculator pages | ✅ Cross-links on 7 top calculators |
 | Google crawl all tools | ❌ 82 calculators orphaned | ✅ All 164 URLs in sitemap |
+ 
