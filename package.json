@@ -1,4 +1,1 @@
-"scripts": {
-  "lint": "eslint .",
-  "html": "htmlhint \"**/*.html\""
-}
+{"name":"utilitydesk","version":"1.0.0","private":true} 
