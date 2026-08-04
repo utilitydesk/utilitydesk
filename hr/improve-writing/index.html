@@ -157,7 +157,7 @@ a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;b
 </header>
 <section class="generator-section"><div class="generator-container"><div class="generator-grid">
   <div class="panel"><h2>Enter Details</h2>
-    <div class="ai-notice">&#129302; <span>Powered by Claude AI — results generated in real time</span></div>
+    <div class="ai-notice">&#129302; <span>Powered by UtilityDesk AI — results generated in real time</span></div>
     
     <div class="form-group"><label>Paste Your Text</label>
       <textarea id="text" rows="10" placeholder="Paste the text you want to improve..."></textarea></div>
@@ -294,12 +294,24 @@ async function runAI(){
   const uc=buildPrompt();
   if(!uc){out.innerHTML='<div class="ai-error">Please fill in the required fields.</div>';return}
   btn.disabled=true;
-  out.innerHTML='<div class="ai-loading"><div class="ai-spinner"></div><span>Generating with Claude AI...</span></div>';
+  out.innerHTML='<div class="ai-loading"><div class="ai-spinner"></div><span>Generating with UtilityDesk AI...</span></div>';
   document.getElementById('copyRow').style.display='none';
   try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
+    const r=await fetch('/api/claude',{
       method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYS,messages:[{role:'user',content:uc}]})
+      body: JSON.stringify({
+            messages: [
+                {
+                    role: "system",
+                    content: SYS
+                },
+                {
+                    role: "user",
+                    content: uc
+                }
+            ],
+            max_tokens: 1000
+        })
     });
     const d=await r.json();
     if(d.error)throw new Error(d.error.message);
