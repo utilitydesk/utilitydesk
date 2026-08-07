@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -85,7 +85,7 @@
         "name": "How is EMI calculated?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "EMI is calculated using the formula: EMI = P × r × (1 + r)^n / [(1 + r)^n - 1], where P is the principal loan amount, r is the monthly interest rate (annual rate/12/100), and n is the loan tenure in months. The EMI remains constant, but the proportion of principal and interest changes each month."
+          "text": "EMI is calculated using the formula: EMI = P Ã— r Ã— (1 + r)^n / [(1 + r)^n - 1], where P is the principal loan amount, r is the monthly interest rate (annual rate/12/100), and n is the loan tenure in months. The EMI remains constant, but the proportion of principal and interest changes each month."
         }
       },
       {
@@ -109,7 +109,7 @@
         "name": "What is a good EMI to income ratio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Financial experts recommend that your total EMI obligations should not exceed 40-50% of your monthly income. For example, if your monthly income is ₹50,000, your total EMI (including all loans) should not exceed ₹20,000-25,000. This ensures you have enough income for other expenses and savings."
+          "text": "Financial experts recommend that your total EMI obligations should not exceed 40-50% of your monthly income. For example, if your monthly income is â‚¹50,000, your total EMI (including all loans) should not exceed â‚¹20,000-25,000. This ensures you have enough income for other expenses and savings."
         }
       },
       {
@@ -149,7 +149,7 @@
         "name": "How does loan tenure affect total interest?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Longer loan tenure reduces your monthly EMI but significantly increases the total interest paid over the life of the loan. For example, a ₹50 lakh home loan at 8.5% for 20 years costs ₹54.14 lakh in total interest, while the same loan for 15 years costs ₹43.08 lakh. Shorter tenure saves interest but requires higher monthly payments."
+          "text": "Longer loan tenure reduces your monthly EMI but significantly increases the total interest paid over the life of the loan. For example, a â‚¹50 lakh home loan at 8.5% for 20 years costs â‚¹54.14 lakh in total interest, while the same loan for 15 years costs â‚¹43.08 lakh. Shorter tenure saves interest but requires higher monthly payments."
         }
       },
       {
@@ -173,7 +173,7 @@
         "name": "What tax benefits are available on loan EMIs?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Under the Income Tax Act, home loan interest is deductible up to ₹2 lakh per year under Section 24(b), and principal repayment is deductible up to ₹1.5 lakh under Section 80C. First-time homebuyers can claim an additional ₹50,000 deduction under Section 80EE. Personal and car loan interest generally do not qualify for tax deductions unless used for specific purposes like business or home renovation."
+          "text": "Under the Income Tax Act, home loan interest is deductible up to â‚¹2 lakh per year under Section 24(b), and principal repayment is deductible up to â‚¹1.5 lakh under Section 80C. First-time homebuyers can claim an additional â‚¹50,000 deduction under Section 80EE. Personal and car loan interest generally do not qualify for tax deductions unless used for specific purposes like business or home renovation."
         }
       }
     ]
@@ -250,28 +250,28 @@ svg {
           </button>
           <div class="ud-nav-dropdown-menu">
             <a href="/calculators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📊</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“Š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Calculators</div>
                 <div class="ud-nav-dropdown-desc">100+ Financial Tools</div>
               </div>
             </a>
             <a href="/pdf-tools/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📄</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“„</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">PDF Tools</div>
                 <div class="ud-nav-dropdown-desc">Merge, Split, Convert</div>
               </div>
             </a>
             <a href="/document-generators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📑</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“‘</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Documents</div>
                 <div class="ud-nav-dropdown-desc">Professional Templates</div>
               </div>
             </a>
             <a href="/blog/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📚</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Blog</div>
                 <div class="ud-nav-dropdown-desc">Expert Guides</div>
@@ -331,7 +331,7 @@ svg {
         <div class="calc-grid">
           <div class="calc-inputs">
             <div class="input-group">
-              <label for="loanAmount">Loan Amount (₹)</label>
+              <label for="loanAmount">Loan Amount (â‚¹)</label>
               <input type="number" id="loanAmount" placeholder="e.g., 2500000" min="0">
               <span class="input-hint">Total loan amount you want to borrow</span>
             </div>
@@ -350,17 +350,17 @@ svg {
           <div class="calc-results" id="results">
             <div class="result-card">
               <div class="result-label">Monthly EMI</div>
-              <div class="result-value highlight" id="monthlyEMI">—</div>
+              <div class="result-value highlight" id="monthlyEMI">â€”</div>
               <div class="result-sub" id="emiSub">Fixed monthly payment</div>
             </div>
             <div class="result-card">
               <div class="result-label">Total Interest Payable</div>
-              <div class="result-value" id="totalInterest">—</div>
+              <div class="result-value" id="totalInterest">â€”</div>
               <div class="result-sub">Over the loan tenure</div>
             </div>
             <div class="result-card">
               <div class="result-label">Total Payment</div>
-              <div class="result-value" id="totalPayment">—</div>
+              <div class="result-value" id="totalPayment">â€”</div>
               <div class="result-sub">Principal + Interest</div>
             </div>
           </div>
@@ -380,7 +380,7 @@ svg {
   <section class="content-section" id="overview">
     <div class="content-container">
       <h2>What Is an EMI Calculator?</h2>
-      <p>An EMI Calculator is a free online financial tool that instantly computes your Equated Monthly Installment for any type of loan — including home loans, car loans, personal loans, education loans, and business loans. It breaks down your monthly payment into principal and interest components, shows the total interest payable over the loan tenure, and displays the total amount you will repay.</p>
+      <p>An EMI Calculator is a free online financial tool that instantly computes your Equated Monthly Installment for any type of loan â€” including home loans, car loans, personal loans, education loans, and business loans. It breaks down your monthly payment into principal and interest components, shows the total interest payable over the loan tenure, and displays the total amount you will repay.</p>
       <p>Whether you are planning to buy your first home, finance a new car, or take a personal loan for an emergency, understanding your EMI is the first step toward responsible borrowing. Our calculator uses the standard reducing-balance formula mandated by the Reserve Bank of India (RBI), giving you accurate results that match what banks and NBFCs quote.</p>
       <p>Using an EMI calculator before applying for a loan helps you compare offers from different lenders, choose the right tenure, plan your monthly budget, and avoid over-borrowing. It also lets you model prepayment scenarios to see how extra payments can save you lakhs in interest.</p>
     </div>
@@ -391,14 +391,14 @@ svg {
       <h2>EMI Formula Used</h2>
       <p>All banks and financial institutions in India use the following standard formula to compute your monthly EMI on a reducing-balance loan:</p>
       <div class="formula-box">
-        <div class="formula-text">EMI = P × r × (1 + r)<sup>n</sup> / [(1 + r)<sup>n</sup> − 1]</div>
+        <div class="formula-text">EMI = P Ã— r Ã— (1 + r)<sup>n</sup> / [(1 + r)<sup>n</sup> âˆ’ 1]</div>
         <div class="formula-vars">
           <span class="formula-var"><strong>P</strong> = Principal (loan amount)</span>
-          <span class="formula-var"><strong>r</strong> = Monthly interest rate (annual rate ÷ 12 ÷ 100)</span>
-          <span class="formula-var"><strong>n</strong> = Total number of months (tenure in years × 12)</span>
+          <span class="formula-var"><strong>r</strong> = Monthly interest rate (annual rate Ã· 12 Ã· 100)</span>
+          <span class="formula-var"><strong>n</strong> = Total number of months (tenure in years Ã— 12)</span>
         </div>
       </div>
-      <p>The formula accounts for the fact that interest is charged only on the outstanding principal balance, which decreases with every EMI you pay. This means your interest component shrinks over time while the principal component grows — even though the total EMI stays the same throughout the tenure.</p>
+      <p>The formula accounts for the fact that interest is charged only on the outstanding principal balance, which decreases with every EMI you pay. This means your interest component shrinks over time while the principal component grows â€” even though the total EMI stays the same throughout the tenure.</p>
     </div>
   </section>
 
@@ -407,20 +407,20 @@ svg {
       <h2>Step-by-Step Example</h2>
       <p>Let us walk through a real-world calculation so you can see exactly how the formula works in practice.</p>
       <div class="example-box">
-        <h4>Home Loan: ₹50,00,000 at 8.5% for 20 Years</h4>
+        <h4>Home Loan: â‚¹50,00,000 at 8.5% for 20 Years</h4>
         <div class="example-detail">
           <strong>Step 1:</strong> Identify the variables<br>
-          P = ₹50,00,000 &nbsp;|&nbsp; Annual Rate = 8.5% &nbsp;|&nbsp; Tenure = 20 years<br><br>
+          P = â‚¹50,00,000 &nbsp;|&nbsp; Annual Rate = 8.5% &nbsp;|&nbsp; Tenure = 20 years<br><br>
           <strong>Step 2:</strong> Convert to monthly values<br>
-          r = 8.5 ÷ 12 ÷ 100 = 0.007083<br>
-          n = 20 × 12 = 240 months<br><br>
+          r = 8.5 Ã· 12 Ã· 100 = 0.007083<br>
+          n = 20 Ã— 12 = 240 months<br><br>
           <strong>Step 3:</strong> Apply the formula<br>
-          EMI = 50,00,000 × 0.007083 × (1.007083)<sup>240</sup> / [(1.007083)<sup>240</sup> − 1]
+          EMI = 50,00,000 Ã— 0.007083 Ã— (1.007083)<sup>240</sup> / [(1.007083)<sup>240</sup> âˆ’ 1]
         </div>
-        <div class="example-result">EMI = ₹43,391 per month</div>
+        <div class="example-result">EMI = â‚¹43,391 per month</div>
         <div class="example-detail" style="margin-top:12px;">
-          Total Payment = ₹43,391 × 240 = <strong>₹1,04,13,840</strong><br>
-          Total Interest = ₹1,04,13,840 − ₹50,00,000 = <strong>₹54,13,840</strong>
+          Total Payment = â‚¹43,391 Ã— 240 = <strong>â‚¹1,04,13,840</strong><br>
+          Total Interest = â‚¹1,04,13,840 âˆ’ â‚¹50,00,000 = <strong>â‚¹54,13,840</strong>
         </div>
       </div>
       <p>This means you will pay back more than double the original loan amount over 20 years. That is why even a small reduction in interest rate or a strategic prepayment plan can save you lakhs.</p>
@@ -436,21 +436,21 @@ svg {
           <div class="step-number">1</div>
           <div class="step-content">
             <h4>Enter the Loan Amount</h4>
-            <p>Type the total amount you plan to borrow. For a home loan this might be ₹50 lakh, for a car loan ₹8 lakh, or for a personal loan ₹5 lakh.</p>
+            <p>Type the total amount you plan to borrow. For a home loan this might be â‚¹50 lakh, for a car loan â‚¹8 lakh, or for a personal loan â‚¹5 lakh.</p>
           </div>
         </div>
         <div class="step-item">
           <div class="step-number">2</div>
           <div class="step-content">
             <h4>Enter the Interest Rate</h4>
-            <p>Enter the annual interest rate offered by your lender. Check multiple banks — even a 0.25% difference can change your EMI by hundreds of rupees every month.</p>
+            <p>Enter the annual interest rate offered by your lender. Check multiple banks â€” even a 0.25% difference can change your EMI by hundreds of rupees every month.</p>
           </div>
         </div>
         <div class="step-item">
           <div class="step-number">3</div>
           <div class="step-content">
             <h4>Set the Loan Tenure</h4>
-            <p>Enter the repayment period in years. Home loans typically run 15–30 years, car loans 3–7 years, and personal loans 1–5 years.</p>
+            <p>Enter the repayment period in years. Home loans typically run 15â€“30 years, car loans 3â€“7 years, and personal loans 1â€“5 years.</p>
           </div>
         </div>
         <div class="step-item">
@@ -484,34 +484,34 @@ svg {
       <p>Avoid these pitfalls when choosing a loan or calculating your EMI:</p>
       <div class="mistakes-grid">
         <div class="mistake-card">
-          <div class="mistake-icon">⚠️</div>
+          <div class="mistake-icon">âš ï¸</div>
           <h4>Choosing the Lowest EMI</h4>
           <p>A lower EMI often means a longer tenure, which can double or triple the total interest you pay. Always compare total cost, not just monthly affordability.</p>
         </div>
         <div class="mistake-card">
-          <div class="mistake-icon">📊</div>
+          <div class="mistake-icon">ðŸ“Š</div>
           <h4>Not Comparing Effective Rates</h4>
           <p>Lenders quote attractive nominal rates but add processing fees, insurance, and hidden charges. The effective interest rate (EIR) tells you the true cost of borrowing.</p>
         </div>
         <div class="mistake-card">
-          <div class="mistake-icon">📋</div>
+          <div class="mistake-icon">ðŸ“‹</div>
           <h4>Ignoring Processing &amp; Legal Fees</h4>
-          <p>Processing fees (1–3% of loan amount), legal verification charges, and stamp duty can add up to lakhs. Factor these into your total cost before deciding.</p>
+          <p>Processing fees (1â€“3% of loan amount), legal verification charges, and stamp duty can add up to lakhs. Factor these into your total cost before deciding.</p>
         </div>
         <div class="mistake-card">
-          <div class="mistake-icon">🔄</div>
+          <div class="mistake-icon">ðŸ”„</div>
           <h4>Never Reviewing Floating Rates</h4>
           <p>If you have a floating-rate loan, your EMI changes with repo rate movements. Review your loan annually and consider switching lenders if rates are unfavourable.</p>
         </div>
         <div class="mistake-card">
-          <div class="mistake-icon">💰</div>
+          <div class="mistake-icon">ðŸ’°</div>
           <h4>Skipping Prepayment Opportunities</h4>
           <p>Even one extra EMI per year can shave years off your tenure and save lakhs in interest. Most floating-rate loans have zero prepayment penalties under RBI rules.</p>
         </div>
         <div class="mistake-card">
-          <div class="mistake-icon">🏦</div>
+          <div class="mistake-icon">ðŸ¦</div>
           <h4>Overlooking the EMI-to-Income Ratio</h4>
-          <p>Committing more than 40–50% of your income to EMIs leaves little room for emergencies, investments, or lifestyle expenses. Stay within the recommended ratio.</p>
+          <p>Committing more than 40â€“50% of your income to EMIs leaves little room for emergencies, investments, or lifestyle expenses. Stay within the recommended ratio.</p>
         </div>
       </div>
     </div>
@@ -531,9 +531,9 @@ svg {
       <div class="govt-rules-box">
         <h4>Home Loan Tax Benefits (FY 2025-26)</h4>
         <ul>
-          <li><strong>Section 80C:</strong> Deduction up to ₹1.5 lakh on principal repayment of home loan (available under old tax regime).</li>
-          <li><strong>Section 24(b):</strong> Deduction up to ₹2 lakh per year on home loan interest for self-occupied property.</li>
-          <li><strong>Section 80EE:</strong> Additional ₹50,000 deduction on home loan interest for first-time homebuyers (loan up to ₹35 lakh, property value up to ₹50 lakh).</li>
+          <li><strong>Section 80C:</strong> Deduction up to â‚¹1.5 lakh on principal repayment of home loan (available under old tax regime).</li>
+          <li><strong>Section 24(b):</strong> Deduction up to â‚¹2 lakh per year on home loan interest for self-occupied property.</li>
+          <li><strong>Section 80EE:</strong> Additional â‚¹50,000 deduction on home loan interest for first-time homebuyers (loan up to â‚¹35 lakh, property value up to â‚¹50 lakh).</li>
           <li><strong>Joint Home Loans:</strong> Each co-borrower can claim separate deductions under 80C and 24(b) based on their share of the loan.</li>
         </ul>
       </div>
@@ -578,7 +578,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">EMI is calculated using the formula: EMI = P × r × (1 + r)^n / [(1 + r)^n - 1], where P is the principal loan amount, r is the monthly interest rate (annual rate/12/100), and n is the loan tenure in months. The EMI remains constant, but the proportion of principal and interest changes each month.</div>
+          <div class="faq-answer-inner">EMI is calculated using the formula: EMI = P Ã— r Ã— (1 + r)^n / [(1 + r)^n - 1], where P is the principal loan amount, r is the monthly interest rate (annual rate/12/100), and n is the loan tenure in months. The EMI remains constant, but the proportion of principal and interest changes each month.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -611,7 +611,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Financial experts recommend that your total EMI obligations should not exceed 40-50% of your monthly income. For example, if your monthly income is ₹50,000, your total EMI (including all loans) should not exceed ₹20,000-25,000. This ensures you have enough income for other expenses and savings.</div>
+          <div class="faq-answer-inner">Financial experts recommend that your total EMI obligations should not exceed 40-50% of your monthly income. For example, if your monthly income is â‚¹50,000, your total EMI (including all loans) should not exceed â‚¹20,000-25,000. This ensures you have enough income for other expenses and savings.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -666,7 +666,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Longer loan tenure reduces your monthly EMI but significantly increases the total interest paid over the life of the loan. For example, a ₹50 lakh home loan at 8.5% for 20 years costs ₹54.14 lakh in total interest, while the same loan for 15 years costs ₹43.08 lakh. Shorter tenure saves interest but requires higher monthly payments. Choose a tenure that balances affordability with total cost.</div>
+          <div class="faq-answer-inner">Longer loan tenure reduces your monthly EMI but significantly increases the total interest paid over the life of the loan. For example, a â‚¹50 lakh home loan at 8.5% for 20 years costs â‚¹54.14 lakh in total interest, while the same loan for 15 years costs â‚¹43.08 lakh. Shorter tenure saves interest but requires higher monthly payments. Choose a tenure that balances affordability with total cost.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -699,7 +699,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Under the Income Tax Act, home loan interest is deductible up to ₹2 lakh per year under Section 24(b), and principal repayment is deductible up to ₹1.5 lakh under Section 80C. First-time homebuyers can claim an additional ₹50,000 deduction under Section 80EE. Personal and car loan interest generally do not qualify for tax deductions unless used for specific purposes like business or home renovation. Consult a tax advisor for your specific situation.</div>
+          <div class="faq-answer-inner">Under the Income Tax Act, home loan interest is deductible up to â‚¹2 lakh per year under Section 24(b), and principal repayment is deductible up to â‚¹1.5 lakh under Section 80C. First-time homebuyers can claim an additional â‚¹50,000 deduction under Section 80EE. Personal and car loan interest generally do not qualify for tax deductions unless used for specific purposes like business or home renovation. Consult a tax advisor for your specific situation.</div>
         </div>
       </div>
     </div>
@@ -747,19 +747,19 @@ svg {
           <span class="article-card-tag" style="background:var(--emerald-100);color:var(--emerald-500)">Home Loan</span>
           <h3>7 Proven Ways to Reduce Your Home Loan EMI</h3>
           <p>From making partial prepayments to switching lenders for a better rate, discover actionable strategies that can lower your monthly EMI burden and save lakhs over the loan tenure.</p>
-          <span class="article-link">Read Guide →</span>
+          <span class="article-link">Read Guide â†’</span>
         </a>
         <a href="/blog/" class="article-card">
           <span class="article-card-tag" style="background:var(--blue-100);color:var(--blue-500)">Interest Rates</span>
           <h3>Fixed vs Floating Interest Rate: Which Should You Choose?</h3>
           <p>A detailed comparison of fixed and floating interest rates for home, car, and personal loans. Learn which option saves more money based on the current rate cycle and your risk appetite.</p>
-          <span class="article-link">Read Guide →</span>
+          <span class="article-link">Read Guide â†’</span>
         </a>
         <a href="/blog/" class="article-card">
           <span class="article-card-tag" style="background:var(--amber-100);color:var(--amber-600)">Prepayment</span>
           <h3>The Complete Guide to Loan Prepayment in India</h3>
           <p>Should you prepay your loan or invest the surplus? This guide covers RBI rules on prepayment penalties, the right time to prepay, and how to choose between reducing EMI vs tenure.</p>
-          <span class="article-link">Read Guide →</span>
+          <span class="article-link">Read Guide â†’</span>
         </a>
       </div>
     </div>
@@ -785,12 +785,12 @@ svg {
       </div>
     </div>
   <div style="max-width:800px;margin:0 auto;padding:0 0 32px">
-  <h3 style="font-size:1rem;font-weight:700;color:var(--slate-900);margin-bottom:14px">📋 Related Document Tools</h3>
+  <h3 style="font-size:1rem;font-weight:700;color:var(--slate-900);margin-bottom:14px">ðŸ“‹ Related Document Tools</h3>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
-    <a href="/document-generators/invoice/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">🧾 Invoice Generator</a>
-    <a href="/document-generators/purchase-order/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">🛒 Purchase Order</a>
-    <a href="/hr/salary-slip/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">💰 Salary Slip Generator</a>
-    <a href="/pdf-tools/protect-pdf/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">🔒 Protect PDF</a>
+    <a href="/document-generators/invoice/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">ðŸ§¾ Invoice Generator</a>
+    <a href="/document-generators/purchase-order/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">ðŸ›’ Purchase Order</a>
+    <a href="/hr/salary-slip/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">ðŸ’° Salary Slip Generator</a>
+    <a href="/pdf-tools/protect-pdf/" style="padding:12px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:10px;font-size:.85rem;font-weight:600;color:var(--slate-800);display:block">ðŸ”’ Protect PDF</a>
   </div>
 </div>
 </section>
@@ -873,7 +873,7 @@ svg {
       
       <div class="ud-footer-bottom">
         <div class="ud-footer-copyright">
-          © 2026 UtilityDesk.in. All rights reserved.
+          Â© 2026 UtilityDesk.in. All rights reserved.
         </div>
         <ul class="ud-footer-legal">
           <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
@@ -884,7 +884,7 @@ svg {
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY > 20);},{passive: true});const hamburger=document.getElementById('hamburger');const mobileMenu=document.getElementById('mobileMenu');hamburger.addEventListener('click',()=>{const isOpen=mobileMenu.classList.toggle('open');hamburger.setAttribute('aria-expanded',isOpen);const spans=hamburger.querySelectorAll('span');if(isOpen){spans[0].style.transform='rotate(45deg)translate(5px,5px)';spans[1].style.opacity='0';spans[2].style.transform='rotate(-45deg)translate(5px,-5px)';}else{spans[0].style.transform='';spans[1].style.opacity='';spans[2].style.transform='';}});document.querySelectorAll('.faq-question').forEach(question=>{question.addEventListener('click',()=>{const item=question.parentElement;const answer=item.querySelector('.faq-answer');const isActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(faq=>{faq.classList.remove('active');faq.querySelector('.faq-answer').style.maxHeight='0';});if(!isActive){item.classList.add('active');answer.style.maxHeight=answer.scrollHeight+'px';}});});const loanAmountInput=document.getElementById('loanAmount');const interestRateInput=document.getElementById('interestRate');const tenureInput=document.getElementById('tenure');const calculateBtn=document.getElementById('calculateBtn');const monthlyEMIEl=document.getElementById('monthlyEMI');const emiSubEl=document.getElementById('emiSub');const totalInterestEl=document.getElementById('totalInterest');const totalPaymentEl=document.getElementById('totalPayment');function formatCurrency(amount){if(amount >=10000000){return '₹'+(amount/10000000).toFixed(2)+' Cr';}else if(amount >=100000){return '₹'+(amount/100000).toFixed(2)+' L';}else{return '₹'+amount.toLocaleString('en-IN');}}function calculateEMI(){const loanAmount=parseFloat(loanAmountInput.value);const interestRate=parseFloat(interestRateInput.value);const tenureYears=parseFloat(tenureInput.value);if(!loanAmount || !interestRate || !tenureYears || loanAmount <=0 || interestRate <=0 || tenureYears <=0){monthlyEMIEl.textContent='—';totalInterestEl.textContent='—';totalPaymentEl.textContent='—';return;}const monthlyRate=interestRate/12/100;const tenureMonths=tenureYears*12;const emi=(loanAmount*monthlyRate*Math.pow(1+monthlyRate,tenureMonths))/(Math.pow(1+monthlyRate,tenureMonths)-1);const totalPayment=emi*tenureMonths;const totalInterest=totalPayment-loanAmount;monthlyEMIEl.textContent=formatCurrency(Math.round(emi));emiSubEl.textContent=`For ${tenureYears}years at ${interestRate}%`;totalInterestEl.textContent=formatCurrency(Math.round(totalInterest));totalPaymentEl.textContent=formatCurrency(Math.round(totalPayment));}calculateBtn.addEventListener('click',calculateEMI);[loanAmountInput,interestRateInput,tenureInput].forEach(input=>{input.addEventListener('keypress',(e)=>{if(e.key==='Enter')calculateEMI();});});let debounceTimer;[loanAmountInput,interestRateInput,tenureInput].forEach(input=>{input.addEventListener('input',()=>{clearTimeout(debounceTimer);debounceTimer=setTimeout(calculateEMI,500);});});function printResults(){window.print();}function shareResults(){const emi=monthlyEMIEl.textContent;const interest=totalInterestEl.textContent;const total=totalPaymentEl.textContent;const shareText=`EMI Calculation:\nMonthly EMI: ${emi}\nTotal Interest: ${interest}\nTotal Payment: ${total}\n\nCalculate yours at: ${window.location.href}`;if(navigator.share){navigator.share({title: 'EMI Calculator Results',text: shareText,url: window.location.href});}else{navigator.clipboard.writeText(shareText).then(()=>{alert('Results copied to clipboard!');});}}function bookmarkPage(){if(window.sidebar && window.sidebar.addPanel){window.sidebar.addPanel(document.title,window.location.href,'');}else if(window.external &&('AddFavorite' in window.external)){window.external.AddFavorite(location.href,document.title);}else{alert('Press '+(navigator.userAgent.toLowerCase().indexOf('mac')!==-1 ? 'Cmd' : 'Ctrl')+'+D to bookmark this page.');}}function sharePage(){const shareText='Check out this free EMI Calculator — calculate your loan EMI instantly!\n\n'+window.location.href;if(navigator.share){navigator.share({title: 'EMI Calculator | UtilityDesk.in',text: 'Free EMI Calculator for home,car,and personal loans',url: window.location.href});}else{navigator.clipboard.writeText(shareText).then(()=>{alert('Link copied to clipboard! Share it with anyone planning to take a loan.');});}}</script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY > 20);},{passive: true});const hamburger=document.getElementById('hamburger');const mobileMenu=document.getElementById('mobileMenu');hamburger.addEventListener('click',()=>{const isOpen=mobileMenu.classList.toggle('open');hamburger.setAttribute('aria-expanded',isOpen);const spans=hamburger.querySelectorAll('span');if(isOpen){spans[0].style.transform='rotate(45deg)translate(5px,5px)';spans[1].style.opacity='0';spans[2].style.transform='rotate(-45deg)translate(5px,-5px)';}else{spans[0].style.transform='';spans[1].style.opacity='';spans[2].style.transform='';}});document.querySelectorAll('.faq-question').forEach(question=>{question.addEventListener('click',()=>{const item=question.parentElement;const answer=item.querySelector('.faq-answer');const isActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(faq=>{faq.classList.remove('active');faq.querySelector('.faq-answer').style.maxHeight='0';});if(!isActive){item.classList.add('active');answer.style.maxHeight=answer.scrollHeight+'px';}});});const loanAmountInput=document.getElementById('loanAmount');const interestRateInput=document.getElementById('interestRate');const tenureInput=document.getElementById('tenure');const calculateBtn=document.getElementById('calculateBtn');const monthlyEMIEl=document.getElementById('monthlyEMI');const emiSubEl=document.getElementById('emiSub');const totalInterestEl=document.getElementById('totalInterest');const totalPaymentEl=document.getElementById('totalPayment');function formatCurrency(amount){if(amount >=10000000){return 'â‚¹'+(amount/10000000).toFixed(2)+' Cr';}else if(amount >=100000){return 'â‚¹'+(amount/100000).toFixed(2)+' L';}else{return 'â‚¹'+amount.toLocaleString('en-IN');}}function calculateEMI(){const loanAmount=parseFloat(loanAmountInput.value);const interestRate=parseFloat(interestRateInput.value);const tenureYears=parseFloat(tenureInput.value);if(!loanAmount || !interestRate || !tenureYears || loanAmount <=0 || interestRate <=0 || tenureYears <=0){monthlyEMIEl.textContent='â€”';totalInterestEl.textContent='â€”';totalPaymentEl.textContent='â€”';return;}const monthlyRate=interestRate/12/100;const tenureMonths=tenureYears*12;const emi=(loanAmount*monthlyRate*Math.pow(1+monthlyRate,tenureMonths))/(Math.pow(1+monthlyRate,tenureMonths)-1);const totalPayment=emi*tenureMonths;const totalInterest=totalPayment-loanAmount;monthlyEMIEl.textContent=formatCurrency(Math.round(emi));emiSubEl.textContent=`For ${tenureYears}years at ${interestRate}%`;totalInterestEl.textContent=formatCurrency(Math.round(totalInterest));totalPaymentEl.textContent=formatCurrency(Math.round(totalPayment));}calculateBtn.addEventListener('click',calculateEMI);[loanAmountInput,interestRateInput,tenureInput].forEach(input=>{input.addEventListener('keypress',(e)=>{if(e.key==='Enter')calculateEMI();});});let debounceTimer;[loanAmountInput,interestRateInput,tenureInput].forEach(input=>{input.addEventListener('input',()=>{clearTimeout(debounceTimer);debounceTimer=setTimeout(calculateEMI,500);});});function printResults(){window.print();}function shareResults(){const emi=monthlyEMIEl.textContent;const interest=totalInterestEl.textContent;const total=totalPaymentEl.textContent;const shareText=`EMI Calculation:\nMonthly EMI: ${emi}\nTotal Interest: ${interest}\nTotal Payment: ${total}\n\nCalculate yours at: ${window.location.href}`;if(navigator.share){navigator.share({title: 'EMI Calculator Results',text: shareText,url: window.location.href});}else{navigator.clipboard.writeText(shareText).then(()=>{alert('Results copied to clipboard!');});}}function bookmarkPage(){if(window.sidebar && window.sidebar.addPanel){window.sidebar.addPanel(document.title,window.location.href,'');}else if(window.external &&('AddFavorite' in window.external)){window.external.AddFavorite(location.href,document.title);}else{alert('Press '+(navigator.userAgent.toLowerCase().indexOf('mac')!==-1 ? 'Cmd' : 'Ctrl')+'+D to bookmark this page.');}}function sharePage(){const shareText='Check out this free EMI Calculator â€” calculate your loan EMI instantly!\n\n'+window.location.href;if(navigator.share){navigator.share({title: 'EMI Calculator | UtilityDesk.in',text: 'Free EMI Calculator for home,car,and personal loans',url: window.location.href});}else{navigator.clipboard.writeText(shareText).then(()=>{alert('Link copied to clipboard! Share it with anyone planning to take a loan.');});}}</script>
   <div id="ud-widgets-container" class="ud-widgets"></div>
   <script src="../../shared/widgets.js"></script>
 

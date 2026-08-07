@@ -1,0 +1,1005 @@
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 2715106..1ed3be4 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -1,65 +1,65 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang=&#8221;en&#8221;>[m
+[32m+[m[32m﻿<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+ <head>[m
+ <meta charset="UTF-8">[m
+[31m-  <meta charset=&#8221;UTF-8&#8221;>[m
+[31m-  <meta name=&#8221;viewport&#8221; content=&#8221;width=device-width, initial-scale=1.0&#8221;>[m
+[32m+[m[32m  <meta charset="UTF-8">[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+   <title>UtilityDesk.in | Productivity Tools for India</title>[m
+[31m-  <meta name=&#8221;description&#8221; content=&#8221;Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.&#8221;>[m
+[31m-  <meta name=&#8221;keywords&#8221; content=&#8221;calculators, pdf tools, document generators, productivity tools, india&#8221;>[m
+[31m-  <meta name=&#8221;author&#8221; content=&#8221;UtilityDesk.in&#8221;>[m
+[31m-  <meta name=&#8221;robots&#8221; content=&#8221;index, follow&#8221;>[m
+[31m-  <link rel=&#8221;canonical&#8221; href=&#8221;https://utilitydesk.in/&#8221;>[m
+[32m+[m[32m  <meta name="description" content="Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.">[m
+[32m+[m[32m  <meta name="keywords" content="calculators, pdf tools, document generators, productivity tools, india">[m
+[32m+[m[32m  <meta name="author" content="UtilityDesk.in">[m
+[32m+[m[32m  <meta name="robots" content="index, follow">[m
+[32m+[m[32m  <link rel="canonical" href="https://utilitydesk.in/">[m
+   [m
+   <!-- Open Graph -->[m
+[31m-  <meta property=&#8221;og:title&#8221; content=&#8221;UtilityDesk.in | Productivity Tools for India&#8221;>[m
+[31m-  <meta property=&#8221;og:description&#8221; content=&#8221;Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.&#8221;>[m
+[31m-  <meta property=&#8221;og:type&#8221; content=&#8221;website&#8221;>[m
+[31m-  <meta property=&#8221;og:url&#8221; content=&#8221;https://utilitydesk.in/&#8221;>[m
+[31m-  <meta property=&#8221;og:site_name&#8221; content=&#8221;UtilityDesk.in&#8221;>[m
+[32m+[m[32m  <meta property="og:title" content="UtilityDesk.in | Productivity Tools for India">[m
+[32m+[m[32m  <meta property="og:description" content="Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.">[m
+[32m+[m[32m  <meta property="og:type" content="website">[m
+[32m+[m[32m  <meta property="og:url" content="https://utilitydesk.in/">[m
+[32m+[m[32m  <meta property="og:site_name" content="UtilityDesk.in">[m
+   [m
+   <!-- Twitter -->[m
+[31m-  <meta name=&#8221;twitter:card&#8221; content=&#8221;summary_large_image&#8221;>[m
+[31m-  <meta name=&#8221;twitter:title&#8221; content=&#8221;UtilityDesk.in | Productivity Tools for India&#8221;>[m
+[31m-  <meta name=&#8221;twitter:description&#8221; content=&#8221;Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.&#8221;>[m
+[32m+[m[32m  <meta name="twitter:card" content="summary_large_image">[m
+[32m+[m[32m  <meta name="twitter:title" content="UtilityDesk.in | Productivity Tools for India">[m
+[32m+[m[32m  <meta name="twitter:description" content="Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.">[m
+   [m
+   <!-- Favicon -->[m
+[31m-  <link rel=&#8221;icon&#8221; type=&#8221;image/svg+xml&#8221; href=&#8221;./assets/logo.svg&#8221;>[m
+[31m-  <link rel=&#8221;apple-touch-icon&#8221; href=&#8221;./assets/logo.svg&#8221;>[m
+[32m+[m[32m  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">[m
+[32m+[m[32m  <link rel="apple-touch-icon" href="./assets/logo.svg">[m
+   [m
+   <!-- Preconnect -->[m
+[31m-  <link rel=&#8221;preconnect&#8221; href=&#8221;https://fonts.googleapis.com&#8221;>[m
+[31m-  <link rel=&#8221;preconnect&#8221; href=&#8221;https://fonts.gstatic.com&#8221; crossorigin>[m
+[31m-  <link href=&#8221;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap&#8221; rel=&#8221;stylesheet&#8221;>[m
+[32m+[m[32m  <link rel="preconnect" href="https://fonts.googleapis.com">[m
+[32m+[m[32m  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>[m
+[32m+[m[32m  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">[m
+   [m
+   <!-- Design System -->[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/design-system.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/header.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/footer.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/hero.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/home-categories.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/stats.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/features.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/search-component.css&#8221;>[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/design-system.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/header.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/footer.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/hero.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/home-categories.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/stats.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/features.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/search-component.css">[m
+   [m
+   <!-- Structured Data -->[m
+[31m-  <script type=&#8221;application/ld+json&#8221;>[m
+[32m+[m[32m  <script type="application/ld+json">[m
+   {[m
+[31m-    &#8221;@context&#8221;: &#8221;https://schema.org&#8221;,[m
+[31m-    &#8221;@type&#8221;: &#8221;WebSite&#8221;,[m
+[31m-    &#8221;name&#8221;: &#8221;UtilityDesk.in&#8221;,[m
+[31m-    &#8221;description&#8221;: &#8221;Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.&#8221;,[m
+[31m-    &#8221;url&#8221;: &#8221;https://utilitydesk.in/&#8221;,[m
+[31m-    &#8221;potentialAction&#8221;: {[m
+[31m-      &#8221;@type&#8221;: &#8221;SearchAction&#8221;,[m
+[31m-      &#8221;target&#8221;: &#8221;https://utilitydesk.in/search?q={search_term_string}&#8221;,[m
+[31m-      &#8221;query-input&#8221;: &#8221;required name=search_term_string&#8221;[m
+[32m+[m[32m    "@context": "https://schema.org",[m
+[32m+[m[32m    "@type": "WebSite",[m
+[32m+[m[32m    "name": "UtilityDesk.in",[m
+[32m+[m[32m    "description": "Free productivity tools for India including calculators, PDF tools, document generators, templates and business utilities.",[m
+[32m+[m[32m    "url": "https://utilitydesk.in/",[m
+[32m+[m[32m    "potentialAction": {[m
+[32m+[m[32m      "@type": "SearchAction",[m
+[32m+[m[32m      "target": "https://utilitydesk.in/search?q={search_term_string}",[m
+[32m+[m[32m      "query-input": "required name=search_term_string"[m
+     }[m
+   }[m
+   </script>[m
+   [m
+   <!-- Analytics -->[m
+[31m-  <script async src=&#8221;https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF&#8221;></script>[m
+[32m+[m[32m  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script>[m
+   <script>[m
+     window.dataLayer = window.dataLayer || [];[m
+     function gtag(){dataLayer.push(arguments);}[m
+[36m@@ -76,307 +76,307 @@[m [msvg {[m
+   vertical-align: middle;[m
+ }[m
+ </style>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/design-system-v2.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/header-v2.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/footer-v2.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./shared/home-upgrade.css&#8221;>[m
+[31m-  <link rel=&#8221;stylesheet&#8221; href=&#8221;./assistant.css&#8221;>[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/design-system-v2.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/header-v2.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/footer-v2.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./shared/home-upgrade.css">[m
+[32m+[m[32m  <link rel="stylesheet" href="./assistant.css">[m
+ </head>[m
+ <body>[m
+   <!-- Header -->[m
+     <!-- Header -->[m
+[31m-  <header class=&#8221;ud-header&#8221;>[m
+[31m-    <div class=&#8221;ud-header-inner&#8221;>[m
+[31m-      <a href=&#8221;/&#8221; class=&#8221;ud-logo&#8221;>[m
+[31m-        <img src=&#8221;./assets/logo.svg&#8221; alt=&#8221;UtilityDesk.in&#8221; class=&#8221;ud-logo-img&#8221;>[m
+[31m-        <div class=&#8221;ud-logo-text&#8221;>[m
+[31m-          <div class=&#8221;ud-logo-title&#8221;>UtilityDesk.in</div>[m
+[31m-          <div class=&#8221;ud-logo-tagline&#8221;>Productivity Tools for India</div>[m
+[32m+[m[32m  <header class="ud-header">[m
+[32m+[m[32m    <div class="ud-header-inner">[m
+[32m+[m[32m      <a href="/" class="ud-logo">[m
+[32m+[m[32m        <img src="./assets/logo.svg" alt="UtilityDesk.in" class="ud-logo-img">[m
+[32m+[m[32m        <div class="ud-logo-text">[m
+[32m+[m[32m          <div class="ud-logo-title">UtilityDesk.in</div>[m
+[32m+[m[32m          <div class="ud-logo-tagline">Productivity Tools for India</div>[m
+         </div>[m
+       </a>[m
+       [m
+[31m-      <nav class=&#8221;ud-nav&#8221;>[m
+[31m-        <ul class=&#8221;ud-nav-links&#8221;>[m
+[31m-          <li><a href=&#8221;/&#8221; class=&#8221;ud-nav-link&#8221;>Home</a></li>[m
+[31m-          <li><a href=&#8221;/calculators/&#8221; class=&#8221;ud-nav-link&#8221;>Calculators</a></li>[m
+[31m-          <li><a href=&#8221;/pdf-tools/&#8221; class=&#8221;ud-nav-link&#8221;>PDF Tools</a></li>[m
+[31m-          <li><a href=&#8221;/hr/&#8221;>HR Suite</a></li>[m
+[31m-      <li class=&#8221;ud-nav-item&#8221;><a href=&#8221;/document-generators/&#8221; class=&#8221;ud-nav-link&#8221;>Documents</a></li>[m
+[31m-          <li><a href=&#8221;/blog/&#8221; class=&#8221;ud-nav-link&#8221;>Blog</a></li>[m
+[31m-          <li><a href=&#8221;/about/&#8221; class=&#8221;ud-nav-link&#8221;>About</a></li>[m
+[31m-          <li><a href=&#8221;/contact/&#8221; class=&#8221;ud-nav-link&#8221;>Contact</a></li>[m
+[32m+[m[32m      <nav class="ud-nav">[m
+[32m+[m[32m        <ul class="ud-nav-links">[m
+[32m+[m[32m          <li><a href="/" class="ud-nav-link">Home</a></li>[m
+[32m+[m[32m          <li><a href="/calculators/" class="ud-nav-link">Calculators</a></li>[m
+[32m+[m[32m          <li><a href="/pdf-tools/" class="ud-nav-link">PDF Tools</a></li>[m
+[32m+[m[32m          <li><a href="/hr/">HR Suite</a></li>[m
+[32m+[m[32m      <li class="ud-nav-item"><a href="/document-generators/" class="ud-nav-link">Documents</a></li>[m
+[32m+[m[32m          <li><a href="/blog/" class="ud-nav-link">Blog</a></li>[m
+[32m+[m[32m          <li><a href="/about/" class="ud-nav-link">About</a></li>[m
+[32m+[m[32m          <li><a href="/contact/" class="ud-nav-link">Contact</a></li>[m
+         </ul>[m
+         [m
+[31m-        <div class=&#8221;ud-nav-dropdown&#8221;>[m
+[31m-          <button class=&#8221;ud-nav-dropdown-trigger&#8221; aria-expanded=&#8221;false&#8221;>[m
+[32m+[m[32m        <div class="ud-nav-dropdown">[m
+[32m+[m[32m          <button class="ud-nav-dropdown-trigger" aria-expanded="false">[m
+             Browse Tools[m
+[31m-            <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M6 9l6 6 6-6&#8221;/>[m
+[32m+[m[32m            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M6 9l6 6 6-6"/>[m
+             </svg>[m
+           </button>[m
+[31m-          <div class=&#8221;ud-nav-dropdown-menu&#8221;>[m
+[31m-            <a href=&#8221;/calculators/&#8221; class=&#8221;ud-nav-dropdown-item&#8221;>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-icon&#8221;>&#128202;</div>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-content&#8221;>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-title&#8221;>Calculators</div>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-desc&#8221;>100+ Financial Tools</div>[m
+[32m+[m[32m          <div class="ud-nav-dropdown-menu">[m
+[32m+[m[32m            <a href="/calculators/" class="ud-nav-dropdown-item">[m
+[32m+[m[32m              <div class="ud-nav-dropdown-icon">&#128202;</div>[m
+[32m+[m[32m              <div class="ud-nav-dropdown-content">[m
+[32m+[m[32m                <div class="ud-nav-dropdown-title">Calculators</div>[m
+[32m+[m[32m                <div class="ud-nav-dropdown-desc">100+ Financial Tools</div>[m
+               </div>[m
+             </a>[m
+[31m-            <a href=&#8221;/pdf-tools/&#8221; class=&#8221;ud-nav-dropdown-item&#8221;>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-icon&#8221;>&#128196;</div>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-content&#8221;>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-title&#8221;>PDF Tools</div>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-desc&#8221;>Merge, Split, Convert</div>[m
+[32m+[m[32m            <a href="/pdf-tools/" class="ud-nav-dropdown-item">[m
+[32m+[m[32m              <div class="ud-nav-dropdown-icon">&#128196;</div>[m
+[32m+[m[32m              <div class="ud-nav-dropdown-content">[m
+[32m+[m[32m                <div class="ud-nav-dropdown-title">PDF Tools</div>[m
+[32m+[m[32m                <div class="ud-nav-dropdown-desc">Merge, Split, Convert</div>[m
+               </div>[m
+             </a>[m
+[31m-            <a href=&#8221;/document-generators/&#8221; class=&#8221;ud-nav-dropdown-item&#8221;>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-icon&#8221;>&#128273;</div>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-content&#8221;>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-title&#8221;>Documents</div>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-desc&#8221;>Professional Templates</div>[m
+[32m+[m[32m            <a href="/document-generators/" class="ud-nav-dropdown-item">[m
+[32m+[m[32m              <div class="ud-nav-dropdown-icon">&#128273;</div>[m
+[32m+[m[32m              <div class="ud-nav-dropdown-content">[m
+[32m+[m[32m                <div class="ud-nav-dropdown-title">Documents</div>[m
+[32m+[m[32m                <div class="ud-nav-dropdown-desc">Professional Templates</div>[m
+               </div>[m
+             </a>[m
+[31m-            <a href=&#8221;/blog/&#8221; class=&#8221;ud-nav-dropdown-item&#8221;>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-icon&#8221;>&#128218;</div>[m
+[31m-              <div class=&#8221;ud-nav-dropdown-content&#8221;>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-title&#8221;>Blog</div>[m
+[31m-                <div class=&#8221;ud-nav-dropdown-desc&#8221;>Expert Guides</div>[m
+[32m+[m[32m            <a href="/blog/" class="ud-nav-dropdown-item">[m
+[32m+[m[32m              <div class="ud-nav-dropdown-icon">&#128218;</div>[m
+[32m+[m[32m              <div class="ud-nav-dropdown-content">[m
+[32m+[m[32m                <div class="ud-nav-dropdown-title">Blog</div>[m
+[32m+[m[32m                <div class="ud-nav-dropdown-desc">Expert Guides</div>[m
+               </div>[m
+             </a>[m
+           </div>[m
+         </div>[m
+       </nav>[m
+       [m
+[31m-      <button class=&#8221;ud-mobile-toggle&#8221; aria-label=&#8221;Toggle menu&#8221; aria-expanded=&#8221;false&#8221;>[m
+[32m+[m[32m      <button class="ud-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">[m
+         <span></span>[m
+         <span></span>[m
+         <span></span>[m
+       </button>[m
+     </div>[m
+     [m
+[31m-    <div class=&#8221;ud-mobile-menu&#8221;>[m
+[31m-      <ul class=&#8221;ud-mobile-menu-links&#8221;>[m
+[31m-        <li><a href=&#8221;/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>Home</a></li>[m
+[31m-        <li><a href=&#8221;/calculators/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>Calculators</a></li>[m
+[31m-        <li><a href=&#8221;/pdf-tools/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>PDF Tools</a></li>[m
+[31m-        <li><a href=&#8221;/document-generators/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>Documents</a></li>[m
+[31m-        <li><a href=&#8221;/blog/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>Blog</a></li>[m
+[31m-        <li><a href=&#8221;/about/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>About</a></li>[m
+[31m-        <li><a href=&#8221;/contact/&#8221; class=&#8221;ud-mobile-menu-link&#8221;>Contact</a></li>[m
+[32m+[m[32m    <div class="ud-mobile-menu">[m
+[32m+[m[32m      <ul class="ud-mobile-menu-links">[m
+[32m+[m[32m        <li><a href="/" class="ud-mobile-menu-link">Home</a></li>[m
+[32m+[m[32m        <li><a href="/calculators/" class="ud-mobile-menu-link">Calculators</a></li>[m
+[32m+[m[32m        <li><a href="/pdf-tools/" class="ud-mobile-menu-link">PDF Tools</a></li>[m
+[32m+[m[32m        <li><a href="/document-generators/" class="ud-mobile-menu-link">Documents</a></li>[m
+[32m+[m[32m        <li><a href="/blog/" class="ud-mobile-menu-link">Blog</a></li>[m
+[32m+[m[32m        <li><a href="/about/" class="ud-mobile-menu-link">About</a></li>[m
+[32m+[m[32m        <li><a href="/contact/" class="ud-mobile-menu-link">Contact</a></li>[m
+       </ul>[m
+[31m-      <a href=&#8221;/calculators/&#8221; class=&#8221;ud-mobile-menu-cta&#8221;>Browse All Tools</a>[m
+[32m+[m[32m      <a href="/calculators/" class="ud-mobile-menu-cta">Browse All Tools</a>[m
+     </div>[m
+   </header>[m
+ [m
+   <!-- Hero Section -->[m
+[31m-  <section class=&#8221;ud-hero&#8221;>[m
+[31m-    <div class=&#8221;ud-hero-inner&#8221;>[m
+[31m-      <div class=&#8221;ud-hero-content&#8221;>[m
+[31m-        <div class=&#8221;ud-hero-badge&#8221;>[m
+[31m-          <span class=&#8221;ud-hero-badge-dot&#8221;></span>[m
+[32m+[m[32m  <section class="ud-hero">[m
+[32m+[m[32m    <div class="ud-hero-inner">[m
+[32m+[m[32m      <div class="ud-hero-content">[m
+[32m+[m[32m        <div class="ud-hero-badge">[m
+[32m+[m[32m          <span class="ud-hero-badge-dot"></span>[m
+           <span>100% Free &#8226; No Signup Required</span>[m
+         </div>[m
+         [m
+[31m-        <p class=&#8221;ud-hero-kicker&#8221;>CALCULATE &#183; CREATE &#183; GET THINGS DONE</p>[m
+[31m-        <h1 class=&#8221;ud-hero-title&#8221;>Your everyday work,<br><span>made lighter.</span></h1>[m
+[32m+[m[32m        <p class="ud-hero-kicker">CALCULATE &#183; CREATE &#183; GET THINGS DONE</p>[m
+[32m+[m[32m        <h1 class="ud-hero-title">Your everyday work,<br><span>made lighter.</span></h1>[m
+         [m
+[31m-        <p class=&#8221;ud-hero-subtitle&#8221;>Practical calculators, document tools and work utilities designed for the way India gets things done.</p>[m
+[32m+[m[32m        <p class="ud-hero-subtitle">Practical calculators, document tools and work utilities designed for the way India gets things done.</p>[m
+         [m
+[31m-        <div class=&#8221;ud-hero-buttons&#8221;>[m
+[31m-          <a href=&#8221;/calculators/&#8221; class=&#8221;ud-hero-btn ud-hero-btn-primary&#8221;>[m
+[32m+[m[32m        <div class="ud-hero-buttons">[m
+[32m+[m[32m          <a href="/calculators/" class="ud-hero-btn ud-hero-btn-primary">[m
+             Browse Tools[m
+[31m-            <svg width=&#8221;20&#8221; height=&#8221;20&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M5 12h14M12 5l7 7-7 7"/>[m
+             </svg>[m
+           </a>[m
+[31m-          <a href=&#8221;/calculators/&#8221; class=&#8221;ud-hero-btn ud-hero-btn-secondary&#8221;>[m
+[32m+[m[32m          <a href="/calculators/" class="ud-hero-btn ud-hero-btn-secondary">[m
+             Explore Calculators[m
+           </a>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-hero-trust&#8221;>[m
+[31m-          <div class=&#8221;ud-trust-item&#8221;>[m
+[31m-            <svg class=&#8221;ud-trust-icon&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M20 6L9 17l-5-5&#8221;/>[m
+[32m+[m[32m        <div class="ud-hero-trust">[m
+[32m+[m[32m          <div class="ud-trust-item">[m
+[32m+[m[32m            <svg class="ud-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M20 6L9 17l-5-5"/>[m
+             </svg>[m
+             <span>100% Free</span>[m
+           </div>[m
+[31m-          <div class=&#8221;ud-trust-item&#8221;>[m
+[31m-            <svg class=&#8221;ud-trust-icon&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M20 6L9 17l-5-5&#8221;/>[m
+[32m+[m[32m          <div class="ud-trust-item">[m
+[32m+[m[32m            <svg class="ud-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M20 6L9 17l-5-5"/>[m
+             </svg>[m
+             <span>No Signup Required</span>[m
+           </div>[m
+[31m-          <div class=&#8221;ud-trust-item&#8221;>[m
+[31m-            <svg class=&#8221;ud-trust-icon&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M20 6L9 17l-5-5&#8221;/>[m
+[32m+[m[32m          <div class="ud-trust-item">[m
+[32m+[m[32m            <svg class="ud-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M20 6L9 17l-5-5"/>[m
+             </svg>[m
+             <span>Mobile Friendly</span>[m
+           </div>[m
+[31m-          <div class=&#8221;ud-trust-item&#8221;>[m
+[31m-            <svg class=&#8221;ud-trust-icon&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M20 6L9 17l-5-5&#8221;/>[m
+[32m+[m[32m          <div class="ud-trust-item">[m
+[32m+[m[32m            <svg class="ud-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M20 6L9 17l-5-5"/>[m
+             </svg>[m
+             <span>Built for India</span>[m
+           </div>[m
+         </div>[m
+       </div>[m
+[31m-      <aside class=&#8221;ud-hero-toolboard&#8221; aria-label=&#8221;Popular tools&#8221;>[m
+[31m-        <div class=&#8221;ud-toolboard-top&#8221;><span>POPULAR RIGHT NOW</span><i></i></div>[m
+[31m-        <a href=&#8221;/calculators/income-tax/&#8221; class=&#8221;ud-toolboard-row&#8221;><b>01</b><span><strong>Income Tax</strong><small>Plan your taxes</small></span><em>&#8594;</em></a>[m
+[31m-        <a href=&#8221;/calculators/emi/&#8221; class=&#8221;ud-toolboard-row&#8221;><b>02</b><span><strong>EMI Calculator</strong><small>Know your monthly cost</small></span><em>&#8594;</em></a>[m
+[31m-        <a href=&#8221;/calculators/sip-calculator/&#8221; class=&#8221;ud-toolboard-row&#8221;><b>03</b><span><strong>SIP Calculator</strong><small>Invest with clarity</small></span><em>&#8594;</em></a>[m
+[31m-        <div class=&#8221;ud-toolboard-note&#8221;><span>&#10022;</span> Built for the real workday</div>[m
+[32m+[m[32m      <aside class="ud-hero-toolboard" aria-label="Popular tools">[m
+[32m+[m[32m        <div class="ud-toolboard-top"><span>POPULAR RIGHT NOW</span><i></i></div>[m
+[32m+[m[32m        <a href="/calculators/income-tax/" class="ud-toolboard-row"><b>01</b><span><strong>Income Tax</strong><small>Plan your taxes</small></span><em>&#8594;</em></a>[m
+[32m+[m[32m        <a href="/calculators/emi/" class="ud-toolboard-row"><b>02</b><span><strong>EMI Calculator</strong><small>Know your monthly cost</small></span><em>&#8594;</em></a>[m
+[32m+[m[32m        <a href="/calculators/sip-calculator/" class="ud-toolboard-row"><b>03</b><span><strong>SIP Calculator</strong><small>Invest with clarity</small></span><em>&#8594;</em></a>[m
+[32m+[m[32m        <div class="ud-toolboard-note"><span>&#10022;</span> Built for the real workday</div>[m
+       </aside>[m
+     </div>[m
+   </section>[m
+ [m
+   <!-- Search Section -->[m
+[31m-  <section class=&#8221;ud-search&#8221;>[m
+[31m-    <div class=&#8221;ud-search-inner&#8221;>[m
+[31m-      <div class=&#8221;ud-search-container&#8221;>[m
+[31m-        <div class=&#8221;ud-search-input-wrapper&#8221;>[m
+[31m-          <svg class=&#8221;ud-search-icon&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-            <circle cx=&#8221;11&#8221; cy=&#8221;11&#8221; r=&#8221;8&#8221;/>[m
+[31m-            <path d=&#8221;m21 21-4.35-4.35&#8221;/>[m
+[32m+[m[32m  <section class="ud-search">[m
+[32m+[m[32m    <div class="ud-search-inner">[m
+[32m+[m[32m      <div class="ud-search-container">[m
+[32m+[m[32m        <div class="ud-search-input-wrapper">[m
+[32m+[m[32m          <svg class="ud-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m            <circle cx="11" cy="11" r="8"/>[m
+[32m+[m[32m            <path d="m21 21-4.35-4.35"/>[m
+           </svg>[m
+           <input [m
+[31m-            type=&#8221;text&#8221; [m
+[31m-            class=&#8221;ud-search-input&#8221; [m
+[31m-            placeholder=&#8221;Search calculators, PDF tools, documents...&#8221;[m
+[31m-            autocomplete=&#8221;off&#8221;[m
+[32m+[m[32m            type="text"[m[41m [m
+[32m+[m[32m            class="ud-search-input"[m[41m [m
+[32m+[m[32m            placeholder="Search calculators, PDF tools, documents..."[m
+[32m+[m[32m            autocomplete="off"[m
+           >[m
+[31m-          <button class=&#8221;ud-search-clear&#8221; aria-label=&#8221;Clear search&#8221;>[m
+[31m-            <svg width=&#8221;20&#8221; height=&#8221;20&#8221; viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-              <path d=&#8221;M18 6L6 18M6 6l12 12&#8221;/>[m
+[32m+[m[32m          <button class="ud-search-clear" aria-label="Clear search">[m
+[32m+[m[32m            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m              <path d="M18 6L6 18M6 6l12 12"/>[m
+             </svg>[m
+           </button>[m
+         </div>[m
+[31m-        <div class=&#8221;ud-search-results&#8221;></div>[m
+[32m+[m[32m        <div class="ud-search-results"></div>[m
+       </div>[m
+       [m
+[31m-      <div class=&#8221;ud-popular-searches&#8221;>[m
+[31m-        <div class=&#8221;ud-popular-title&#8221;>Popular searches</div>[m
+[31m-        <div class=&#8221;ud-popular-tags&#8221;>[m
+[31m-          <a href=&#8221;/calculators/income-tax/&#8221; class=&#8221;ud-popular-tag&#8221;>Income Tax</a>[m
+[31m-          <a href=&#8221;/calculators/sip-calculator/&#8221; class=&#8221;ud-popular-tag&#8221;>SIP Calculator</a>[m
+[31m-          <a href=&#8221;/calculators/emi/&#8221; class=&#8221;ud-popular-tag&#8221;>EMI Calculator</a>[m
+[31m-          <a href=&#8221;/calculators/salary-hike/&#8221; class=&#8221;ud-popular-tag&#8221;>Salary Hike</a>[m
+[31m-          <a href=&#8221;/calculators/pf-calculator/&#8221; class=&#8221;ud-popular-tag&#8221;>PF Calculator</a>[m
+[32m+[m[32m      <div class="ud-popular-searches">[m
+[32m+[m[32m        <div class="ud-popular-title">Popular searches</div>[m
+[32m+[m[32m        <div class="ud-popular-tags">[m
+[32m+[m[32m          <a href="/calculators/income-tax/" class="ud-popular-tag">Income Tax</a>[m
+[32m+[m[32m          <a href="/calculators/sip-calculator/" class="ud-popular-tag">SIP Calculator</a>[m
+[32m+[m[32m          <a href="/calculators/emi/" class="ud-popular-tag">EMI Calculator</a>[m
+[32m+[m[32m          <a href="/calculators/salary-hike/" class="ud-popular-tag">Salary Hike</a>[m
+[32m+[m[32m          <a href="/calculators/pf-calculator/" class="ud-popular-tag">PF Calculator</a>[m
+         </div>[m
+       </div>[m
+     </div>[m
+   </section>[m
+ [m
+   <!-- Categories Section -->[m
+[31m-  <section class=&#8221;ud-home-categories&#8221;>[m
+[31m-    <div class=&#8221;ud-home-categories-inner&#8221;>[m
+[31m-      <div class=&#8221;ud-home-section-header&#8221;>[m
+[31m-        <h2 class=&#8221;ud-home-section-title&#8221;>Explore Our Tools</h2>[m
+[31m-        <p class=&#8221;ud-home-section-subtitle&#8221;>Discover powerful tools designed to boost your productivity</p>[m
+[32m+[m[32m  <section class="ud-home-categories">[m
+[32m+[m[32m    <div class="ud-home-categories-inner">[m
+[32m+[m[32m      <div class="ud-home-section-header">[m
+[32m+[m[32m        <h2 class="ud-home-section-title">Explore Our Tools</h2>[m
+[32m+[m[32m        <p class="ud-home-section-subtitle">Discover powerful tools designed to boost your productivity</p>[m
+       </div>[m
+       [m
+[31m-      <div class=&#8221;ud-home-categories-grid&#8221;>[m
+[31m-        <a href=&#8221;/calculators/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128202;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>Calculators</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Financial, tax, loan, and investment calculators for every need</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>100+ Tools</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m      <div class="ud-home-categories-grid">[m
+[32m+[m[32m        <a href="/calculators/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128202;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">Calculators</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Financial, tax, loan, and investment calculators for every need</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">100+ Tools</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+         </a>[m
+         [m
+[31m-        <a href=&#8221;/pdf-tools/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128196;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>PDF Tools</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Merge, split, compress, and convert PDF files with ease</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>18 Tools</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m        <a href="/pdf-tools/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128196;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">PDF Tools</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Merge, split, compress, and convert PDF files with ease</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">18 Tools</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+         </a>[m
+         [m
+[31m-        <a href=&#8221;/document-generators/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128273;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>Document Generators</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Create professional documents, letters, and templates instantly</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>11 Tools</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m        <a href="/document-generators/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128273;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">Document Generators</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Create professional documents, letters, and templates instantly</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">11 Tools</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+         </a>[m
+         [m
+         [m
+[31m-        <a href=&#8221;/hr/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128101;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>HR Suite</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Offer letters, salary slips, ATS checker, resume rewrite AI and more</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>23 Tools</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m        <a href="/hr/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128101;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">HR Suite</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Offer letters, salary slips, ATS checker, resume rewrite AI and more</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">23 Tools</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+         </a>[m
+[31m-        <a href=&#8221;/blog/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128218;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>Blog</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Expert guides, tutorials, and insights for Indian professionals</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>50+ Articles</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m        <a href="/blog/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128218;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">Blog</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Expert guides, tutorials, and insights for Indian professionals</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">50+ Articles</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+         </a>[m
+         [m
+[31m-        <a href=&#8221;/templates/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128450;&#65039;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>Templates</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Ready-to-use templates for business, HR, and personal use</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>30+ Templates</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m        <a href="/templates/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128450;&#65039;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">Templates</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Ready-to-use templates for business, HR, and personal use</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">30+ Templates</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+         </a>[m
+         [m
+[31m-        <a href=&#8221;/categories/business/&#8221; class=&#8221;ud-home-category-card&#8221;>[m
+[31m-          <div class=&#8221;ud-home-category-icon&#8221;>&#128188;</div>[m
+[31m-          <h3 class=&#8221;ud-home-category-title&#8221;>Business Utilities</h3>[m
+[31m-          <p class=&#8221;ud-home-category-description&#8221;>Tools for business planning, analysis, and management</p>[m
+[31m-          <div class=&#8221;ud-home-category-meta&#8221;>[m
+[31m-            <span class=&#8221;ud-home-category-count&#8221;>20+ Tools</span>[m
+[31m-            <span class=&#8221;ud-home-category-link&#8221;>[m
+[32m+[m[32m        <a href="/categories/business/" class="ud-home-category-card">[m
+[32m+[m[32m          <div class="ud-home-category-icon">&#128188;</div>[m
+[32m+[m[32m          <h3 class="ud-home-category-title">Business Utilities</h3>[m
+[32m+[m[32m          <p class="ud-home-category-description">Tools for business planning, analysis, and management</p>[m
+[32m+[m[32m          <div class="ud-home-category-meta">[m
+[32m+[m[32m            <span class="ud-home-category-count">20+ Tools</span>[m
+[32m+[m[32m            <span class="ud-home-category-link">[m
+               View All[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M5 12h14M12 5l7 7-7 7&#8221;/>[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M5 12h14M12 5l7 7-7 7"/>[m
+               </svg>[m
+             </span>[m
+           </div>[m
+[36m@@ -386,29 +386,29 @@[m [msvg {[m
+   </section>[m
+ [m
+   <!-- Statistics Section -->[m
+[31m-  <section class=&#8221;ud-stats&#8221;>[m
+[31m-    <div class=&#8221;ud-stats-inner&#8221;>[m
+[31m-      <div class=&#8221;ud-stats-header&#8221;>[m
+[31m-        <h2 class=&#8221;ud-stats-title&#8221;>Trusted by Thousands of Indian Professionals</h2>[m
+[31m-        <p class=&#8221;ud-stats-subtitle&#8221;>Join our growing community of users who rely on UtilityDesk every day</p>[m
+[32m+[m[32m  <section class="ud-stats">[m
+[32m+[m[32m    <div class="ud-stats-inner">[m
+[32m+[m[32m      <div class="ud-stats-header">[m
+[32m+[m[32m        <h2 class="ud-stats-title">Trusted by Thousands of Indian Professionals</h2>[m
+[32m+[m[32m        <p class="ud-stats-subtitle">Join our growing community of users who rely on UtilityDesk every day</p>[m
+       </div>[m
+       [m
+[31m-      <div class=&#8221;ud-stats-grid&#8221;>[m
+[31m-        <div class=&#8221;ud-stat-card&#8221;>[m
+[31m-          <div class=&#8221;ud-stat-number&#8221; data-count=&#8221;153&#8221;>153+</div>[m
+[31m-          <div class=&#8221;ud-stat-label&#8221;>Free Tools</div>[m
+[32m+[m[32m      <div class="ud-stats-grid">[m
+[32m+[m[32m        <div class="ud-stat-card">[m
+[32m+[m[32m          <div class="ud-stat-number" data-count="153">153+</div>[m
+[32m+[m[32m          <div class="ud-stat-label">Free Tools</div>[m
+         </div>[m
+[31m-        <div class=&#8221;ud-stat-card&#8221;>[m
+[31m-          <div class=&#8221;ud-stat-number&#8221; data-count=&#8221;50000&#8221;>50K+</div>[m
+[31m-          <div class=&#8221;ud-stat-label&#8221;>Monthly Users</div>[m
+[32m+[m[32m        <div class="ud-stat-card">[m
+[32m+[m[32m          <div class="ud-stat-number" data-count="50000">50K+</div>[m
+[32m+[m[32m          <div class="ud-stat-label">Monthly Users</div>[m
+         </div>[m
+[31m-        <div class=&#8221;ud-stat-card&#8221;>[m
+[31m-          <div class=&#8221;ud-stat-number&#8221;>100%</div>[m
+[31m-          <div class=&#8221;ud-stat-label&#8221;>Free Forever</div>[m
+[32m+[m[32m        <div class="ud-stat-card">[m
+[32m+[m[32m          <div class="ud-stat-number">100%</div>[m
+[32m+[m[32m          <div class="ud-stat-label">Free Forever</div>[m
+         </div>[m
+[31m-        <div class=&#8221;ud-stat-card&#8221;>[m
+[31m-          <div class=&#8221;ud-stat-number&#8221;>&#127470;&#127475;</div>[m
+[31m-          <div class=&#8221;ud-stat-label&#8221;>Made for India</div>[m
+[32m+[m[32m        <div class="ud-stat-card">[m
+[32m+[m[32m          <div class="ud-stat-number">&#127470;&#127475;</div>[m
+[32m+[m[32m          <div class="ud-stat-label">Made for India</div>[m
+         </div>[m
+       </div>[m
+     </div>[m
+[36m@@ -416,103 +416,103 @@[m [msvg {[m
+ [m
+   <!-- Features Section -->[m
+   [m
+[31m-  <section class=&#8221;ud-features&#8221; style=&#8221;background:linear-gradient(135deg,#1a1f2e 0%,#252b3d 100%);color:#fff&#8221;>[m
+[31m-    <div class=&#8221;ud-features-inner&#8221; style=&#8221;max-width:1200px;margin:0 auto;padding:64px 24px&#8221;>[m
+[31m-      <div class=&#8221;ud-features-header&#8221; style=&#8221;text-align:center;margin-bottom:48px&#8221;>[m
+[31m-        <h2 class=&#8221;ud-features-title&#8221; style=&#8221;color:#fff;font-size:2rem&#8221;>&#128203; HR Suite &#8212; 23 Free HR Tools</h2>[m
+[31m-        <p class=&#8221;ud-features-subtitle&#8221; style=&#8221;color:#8891a8&#8221;>Complete HR toolkit for Indian professionals and businesses &#8212; document generators, career tools, and AI-powered tools</p>[m
+[32m+[m[32m  <section class="ud-features" style="background:linear-gradient(135deg,#1a1f2e 0%,#252b3d 100%);color:#fff">[m
+[32m+[m[32m    <div class="ud-features-inner" style="max-width:1200px;margin:0 auto;padding:64px 24px">[m
+[32m+[m[32m      <div class="ud-features-header" style="text-align:center;margin-bottom:48px">[m
+[32m+[m[32m        <h2 class="ud-features-title" style="color:#fff;font-size:2rem">&#128203; HR Suite &#8212; 23 Free HR Tools</h2>[m
+[32m+[m[32m        <p class="ud-features-subtitle" style="color:#8891a8">Complete HR toolkit for Indian professionals and businesses &#8212; document generators, career tools, and AI-powered tools</p>[m
+       </div>[m
+[31m-      <div style=&#8221;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:36px&#8221;>[m
+[31m-        <a href=&#8221;/hr/offer-letter/&#8221; style=&#8221;padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#128196;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>Offer Letter</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#8891a8&#8221;>Professional job offer</div>[m
+[32m+[m[32m      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:36px">[m
+[32m+[m[32m        <a href="/hr/offer-letter/" style="padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#128196;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">Offer Letter</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#8891a8">Professional job offer</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/salary-slip/&#8221; style=&#8221;padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#128176;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>Salary Slip</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#8891a8&#8221;>Monthly payslip with PF &amp; TDS</div>[m
+[32m+[m[32m        <a href="/hr/salary-slip/" style="padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#128176;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">Salary Slip</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#8891a8">Monthly payslip with PF &amp; TDS</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/resume-builder/&#8221; style=&#8221;padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#128196;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>Resume Builder</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#8891a8&#8221;>ATS-friendly resume</div>[m
+[32m+[m[32m        <a href="/hr/resume-builder/" style="padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#128196;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">Resume Builder</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#8891a8">ATS-friendly resume</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/ats-checker/&#8221; style=&#8221;padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#10003;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>ATS Checker AI</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#8891a8&#8221;>Resume ATS compatibility</div>[m
+[32m+[m[32m        <a href="/hr/ats-checker/" style="padding:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#10003;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">ATS Checker AI</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#8891a8">Resume ATS compatibility</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/resume-rewrite/&#8221; style=&#8221;padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#10024;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>Resume Rewrite AI</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#c4b5fd&#8221;>Powered by Claude AI</div>[m
+[32m+[m[32m        <a href="/hr/resume-rewrite/" style="padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#10024;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">Resume Rewrite AI</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#c4b5fd">Powered by Claude AI</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/hr-policy-generator/&#8221; style=&#8221;padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#128203;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>HR Policy Generator AI</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#c4b5fd&#8221;>POSH, WFH, Leave policies</div>[m
+[32m+[m[32m        <a href="/hr/hr-policy-generator/" style="padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#128203;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">HR Policy Generator AI</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#c4b5fd">POSH, WFH, Leave policies</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/interview-questions/&#8221; style=&#8221;padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#10067;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>Interview Questions AI</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#c4b5fd&#8221;>Role-specific questions</div>[m
+[32m+[m[32m        <a href="/hr/interview-questions/" style="padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#10067;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">Interview Questions AI</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#c4b5fd">Role-specific questions</div>[m
+         </a>[m
+[31m-        <a href=&#8221;/hr/job-description/&#8221; style=&#8221;padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block&#8221;>[m
+[31m-          <div style=&#8221;font-size:1.5rem;margin-bottom:8px&#8221;>&#128188;</div>[m
+[31m-          <div style=&#8221;font-weight:600;font-size:.9rem;margin-bottom:4px&#8221;>Job Description AI</div>[m
+[31m-          <div style=&#8221;font-size:.78rem;color:#c4b5fd&#8221;>ATS-optimised JDs</div>[m
+[32m+[m[32m        <a href="/hr/job-description/" style="padding:16px;background:rgba(139,92,246,.2);border:1px solid rgba(139,92,246,.4);border-radius:12px;color:#fff;text-decoration:none;transition:all .2s;display:block">[m
+[32m+[m[32m          <div style="font-size:1.5rem;margin-bottom:8px">&#128188;</div>[m
+[32m+[m[32m          <div style="font-weight:600;font-size:.9rem;margin-bottom:4px">Job Description AI</div>[m
+[32m+[m[32m          <div style="font-size:.78rem;color:#c4b5fd">ATS-optimised JDs</div>[m
+         </a>[m
+       </div>[m
+[31m-      <div style=&#8221;text-align:center&#8221;>[m
+[31m-        <a href=&#8221;/hr/&#8221; style=&#8221;display:inline-flex;align-items:center;gap:8px;padding:13px 32px;background:#f0a830;color:#0f1219;border-radius:50px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .2s&#8221;>[m
+[32m+[m[32m      <div style="text-align:center">[m
+[32m+[m[32m        <a href="/hr/" style="display:inline-flex;align-items:center;gap:8px;padding:13px 32px;background:#f0a830;color:#0f1219;border-radius:50px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .2s">[m
+           View All 23 HR Tools &#8594;[m
+         </a>[m
+       </div>[m
+     </div>[m
+   </section>[m
+[31m-  <section class=&#8221;ud-features&#8221;>[m
+[31m-    <div class=&#8221;ud-features-inner&#8221;>[m
+[31m-      <div class=&#8221;ud-features-header&#8221;>[m
+[31m-        <h2 class=&#8221;ud-features-title&#8221;>Why Choose UtilityDesk?</h2>[m
+[31m-        <p class=&#8221;ud-features-subtitle&#8221;>Built with care for Indian professionals</p>[m
+[32m+[m[32m  <section class="ud-features">[m
+[32m+[m[32m    <div class="ud-features-inner">[m
+[32m+[m[32m      <div class="ud-features-header">[m
+[32m+[m[32m        <h2 class="ud-features-title">Why Choose UtilityDesk?</h2>[m
+[32m+[m[32m        <p class="ud-features-subtitle">Built with care for Indian professionals</p>[m
+       </div>[m
+       [m
+[31m-      <div class=&#8221;ud-features-grid&#8221;>[m
+[31m-        <div class=&#8221;ud-feature-card&#8221;>[m
+[31m-          <div class=&#8221;ud-feature-icon&#8221;>&#9889;</div>[m
+[31m-          <h3 class=&#8221;ud-feature-title&#8221;>Lightning Fast</h3>[m
+[31m-          <p class=&#8221;ud-feature-description&#8221;>Optimized for speed. Get instant results without waiting.</p>[m
+[32m+[m[32m      <div class="ud-features-grid">[m
+[32m+[m[32m        <div class="ud-feature-card">[m
+[32m+[m[32m          <div class="ud-feature-icon">&#9889;</div>[m
+[32m+[m[32m          <h3 class="ud-feature-title">Lightning Fast</h3>[m
+[32m+[m[32m          <p class="ud-feature-description">Optimized for speed. Get instant results without waiting.</p>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-feature-card&#8221;>[m
+[31m-          <div class=&#8221;ud-feature-icon&#8221;>&#128274;</div>[m
+[31m-          <h3 class=&#8221;ud-feature-title&#8221;>Privacy First</h3>[m
+[31m-          <p class=&#8221;ud-feature-description&#8221;>Your data stays on your device. No tracking, no data collection.</p>[m
+[32m+[m[32m        <div class="ud-feature-card">[m
+[32m+[m[32m          <div class="ud-feature-icon">&#128274;</div>[m
+[32m+[m[32m          <h3 class="ud-feature-title">Privacy First</h3>[m
+[32m+[m[32m          <p class="ud-feature-description">Your data stays on your device. No tracking, no data collection.</p>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-feature-card&#8221;>[m
+[31m-          <div class=&#8221;ud-feature-icon&#8221;>&#128683;</div>[m
+[31m-          <h3 class=&#8221;ud-feature-title&#8221;>No Registration</h3>[m
+[31m-          <p class=&#8221;ud-feature-description&#8221;>Start using tools immediately. No sign-up or login required.</p>[m
+[32m+[m[32m        <div class="ud-feature-card">[m
+[32m+[m[32m          <div class="ud-feature-icon">&#128683;</div>[m
+[32m+[m[32m          <h3 class="ud-feature-title">No Registration</h3>[m
+[32m+[m[32m          <p class="ud-feature-description">Start using tools immediately. No sign-up or login required.</p>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-feature-card&#8221;>[m
+[31m-          <div class=&#8221;ud-feature-icon&#8221;>&#128241;</div>[m
+[31m-          <h3 class=&#8221;ud-feature-title&#8221;>Mobile Friendly</h3>[m
+[31m-          <p class=&#8221;ud-feature-description&#8221;>Works perfectly on all devices - desktop, tablet, and mobile.</p>[m
+[32m+[m[32m        <div class="ud-feature-card">[m
+[32m+[m[32m          <div class="ud-feature-icon">&#128241;</div>[m
+[32m+[m[32m          <h3 class="ud-feature-title">Mobile Friendly</h3>[m
+[32m+[m[32m          <p class="ud-feature-description">Works perfectly on all devices - desktop, tablet, and mobile.</p>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-feature-card&#8221;>[m
+[31m-          <div class=&#8221;ud-feature-icon&#8221;>&#127470;&#127475;</div>[m
+[31m-          <h3 class=&#8221;ud-feature-title&#8221;>Built for India</h3>[m
+[31m-          <p class=&#8221;ud-feature-description&#8221;>Designed specifically for Indian professionals and businesses.</p>[m
+[32m+[m[32m        <div class="ud-feature-card">[m
+[32m+[m[32m          <div class="ud-feature-icon">&#127470;&#127475;</div>[m
+[32m+[m[32m          <h3 class="ud-feature-title">Built for India</h3>[m
+[32m+[m[32m          <p class="ud-feature-description">Designed specifically for Indian professionals and businesses.</p>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-feature-card&#8221;>[m
+[31m-          <div class=&#8221;ud-feature-icon&#8221;>&#128176;</div>[m
+[31m-          <h3 class=&#8221;ud-feature-title&#8221;>Always Free</h3>[m
+[31m-          <p class=&#8221;ud-feature-description&#8221;>All tools are 100% free. No hidden costs or premium features.</p>[m
+[32m+[m[32m        <div class="ud-feature-card">[m
+[32m+[m[32m          <div class="ud-feature-icon">&#128176;</div>[m
+[32m+[m[32m          <h3 class="ud-feature-title">Always Free</h3>[m
+[32m+[m[32m          <p class="ud-feature-description">All tools are 100% free. No hidden costs or premium features.</p>[m
+         </div>[m
+       </div>[m
+     </div>[m
+[36m@@ -520,109 +520,110 @@[m [msvg {[m
+ [m
+   <!-- Footer -->[m
+     <!-- Footer -->[m
+[31m-  <footer class=&#8221;ud-footer&#8221;>[m
+[31m-    <div class=&#8221;ud-footer-inner&#8221;>[m
+[31m-      <div class=&#8221;ud-footer-grid&#8221;>[m
+[31m-        <div class=&#8221;ud-footer-brand&#8221;>[m
+[31m-          <a href=&#8221;/&#8221; class=&#8221;ud-footer-logo&#8221;>[m
+[31m-            <img src=&#8221;./assets/logo.svg&#8221; alt=&#8221;UtilityDesk.in&#8221; class=&#8221;ud-footer-logo-img&#8221;>[m
+[31m-            <div class=&#8221;ud-footer-logo-text&#8221;>[m
+[31m-              <div class=&#8221;ud-footer-logo-title&#8221;>UtilityDesk.in</div>[m
+[31m-              <div class=&#8221;ud-footer-logo-tagline&#8221;>Productivity Tools for India</div>[m
+[32m+[m[32m  <footer class="ud-footer">[m
+[32m+[m[32m    <div class="ud-footer-inner">[m
+[32m+[m[32m      <div class="ud-footer-grid">[m
+[32m+[m[32m        <div class="ud-footer-brand">[m
+[32m+[m[32m          <a href="/" class="ud-footer-logo">[m
+[32m+[m[32m            <img src="./assets/logo.svg" alt="UtilityDesk.in" class="ud-footer-logo-img">[m
+[32m+[m[32m            <div class="ud-footer-logo-text">[m
+[32m+[m[32m              <div class="ud-footer-logo-title">UtilityDesk.in</div>[m
+[32m+[m[32m              <div class="ud-footer-logo-tagline">Productivity Tools for India</div>[m
+             </div>[m
+           </a>[m
+[31m-          <p class=&#8221;ud-footer-description&#8221;>Free calculators, PDF tools, HR tools, and document generators for Indian professionals. 153+ tools, no signup required.</p>[m
+[31m-          <div class=&#8221;ud-footer-social&#8221;>[m
+[31m-            <a href=&#8221;/cdn-cgi/l/email-protection#3f5c50514b5e5c4b7f4a4b5653564b465b5a4c54115651&#8221; class=&#8221;ud-social-link&#8221; aria-label=&#8221;Email&#8221;>[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;none&#8221; stroke=&#8221;currentColor&#8221; stroke-width=&#8221;2&#8221;>[m
+[31m-                <path d=&#8221;M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z&#8221;/>[m
+[31m-                <polyline points=&#8221;22,6 12,13 2,6&#8221;/>[m
+[32m+[m[32m          <p class="ud-footer-description">Free calculators, PDF tools, HR tools, and document generators for Indian professionals. 153+ tools, no signup required.</p>[m
+[32m+[m[32m          <div class="ud-footer-social">[m
+[32m+[m[32m            <a href="/cdn-cgi/l/email-protection#3f5c50514b5e5c4b7f4a4b5653564b465b5a4c54115651" class="ud-social-link" aria-label="Email">[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">[m
+[32m+[m[32m                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>[m
+[32m+[m[32m                <polyline points="22,6 12,13 2,6"/>[m
+               </svg>[m
+             </a>[m
+[31m-            <a href=&#8221;https://github.com/utilitydesk&#8221; class=&#8221;ud-social-link&#8221; aria-label=&#8221;GitHub&#8221;>[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;currentColor&#8221;>[m
+[31m-                <path d=&#8221;M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z&#8221;/>[m
+[32m+[m[32m            <a href="https://github.com/utilitydesk" class="ud-social-link" aria-label="GitHub">[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="currentColor">[m
+[32m+[m[32m                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>[m
+               </svg>[m
+             </a>[m
+[31m-            <a href=&#8221;https://linkedin.com/company/utilitydesk&#8221; class=&#8221;ud-social-link&#8221; aria-label=&#8221;LinkedIn&#8221;>[m
+[31m-              <svg viewBox=&#8221;0 0 24 24&#8221; fill=&#8221;currentColor&#8221;>[m
+[31m-                <path d=&#8221;M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z&#8221;/>[m
+[32m+[m[32m            <a href="https://linkedin.com/company/utilitydesk" class="ud-social-link" aria-label="LinkedIn">[m
+[32m+[m[32m              <svg viewBox="0 0 24 24" fill="currentColor">[m
+[32m+[m[32m                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>[m
+               </svg>[m
+             </a>[m
+           </div>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-footer-column&#8221;>[m
+[31m-          <h4 class=&#8221;ud-footer-title&#8221;>HR Suite</h4>[m
+[31m-          <ul class=&#8221;ud-footer-links&#8221;>[m
+[31m-            <li><a href=&#8221;/hr/resume-builder/&#8221; class=&#8221;ud-footer-link&#8221;>Resume Builder</a></li>[m
+[31m-            <li><a href=&#8221;/hr/ats-checker/&#8221; class=&#8221;ud-footer-link&#8221;>ATS Checker AI</a></li>[m
+[31m-            <li><a href=&#8221;/hr/offer-letter/&#8221; class=&#8221;ud-footer-link&#8221;>Offer Letter</a></li>[m
+[31m-            <li><a href=&#8221;/hr/salary-slip/&#8221; class=&#8221;ud-footer-link&#8221;>Salary Slip</a></li>[m
+[31m-            <li><a href=&#8221;/hr/hr-policy-generator/&#8221; class=&#8221;ud-footer-link&#8221;>HR Policy AI</a></li>[m
+[31m-            <li><a href=&#8221;/hr/&#8221; class=&#8221;ud-footer-link&#8221;>All HR Tools &#8594;</a></li>[m
+[32m+[m[32m        <div class="ud-footer-column">[m
+[32m+[m[32m          <h4 class="ud-footer-title">HR Suite</h4>[m
+[32m+[m[32m          <ul class="ud-footer-links">[m
+[32m+[m[32m            <li><a href="/hr/resume-builder/" class="ud-footer-link">Resume Builder</a></li>[m
+[32m+[m[32m            <li><a href="/hr/ats-checker/" class="ud-footer-link">ATS Checker AI</a></li>[m
+[32m+[m[32m            <li><a href="/hr/offer-letter/" class="ud-footer-link">Offer Letter</a></li>[m
+[32m+[m[32m            <li><a href="/hr/salary-slip/" class="ud-footer-link">Salary Slip</a></li>[m
+[32m+[m[32m            <li><a href="/hr/hr-policy-generator/" class="ud-footer-link">HR Policy AI</a></li>[m
+[32m+[m[32m            <li><a href="/hr/" class="ud-footer-link">All HR Tools &#8594;</a></li>[m
+           </ul>[m
+         </div>[m
+[31m-        <div class=&#8221;ud-footer-column&#8221;>[m
+[31m-          <h4 class=&#8221;ud-footer-title&#8221;>Quick Links</h4>[m
+[31m-          <ul class=&#8221;ud-footer-links&#8221;>[m
+[31m-            <li><a href=&#8221;/calculators/&#8221; class=&#8221;ud-footer-link&#8221;>Calculators</a></li>[m
+[31m-            <li><a href=&#8221;/pdf-tools/&#8221; class=&#8221;ud-footer-link&#8221;>PDF Tools</a></li>[m
+[31m-            <li><a href=&#8221;/document-generators/&#8221; class=&#8221;ud-footer-link&#8221;>Documents</a></li>[m
+[31m-            <li><a href=&#8221;/blog/&#8221; class=&#8221;ud-footer-link&#8221;>Blog</a></li>[m
+[32m+[m[32m        <div class="ud-footer-column">[m
+[32m+[m[32m          <h4 class="ud-footer-title">Quick Links</h4>[m
+[32m+[m[32m          <ul class="ud-footer-links">[m
+[32m+[m[32m            <li><a href="/calculators/" class="ud-footer-link">Calculators</a></li>[m
+[32m+[m[32m            <li><a href="/pdf-tools/" class="ud-footer-link">PDF Tools</a></li>[m
+[32m+[m[32m            <li><a href="/document-generators/" class="ud-footer-link">Documents</a></li>[m
+[32m+[m[32m            <li><a href="/blog/" class="ud-footer-link">Blog</a></li>[m
+           </ul>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-footer-column&#8221;>[m
+[31m-          <h4 class=&#8221;ud-footer-title&#8221;>Popular Tools</h4>[m
+[31m-          <ul class=&#8221;ud-footer-links&#8221;>[m
+[31m-            <li><a href=&#8221;/calculators/income-tax/&#8221; class=&#8221;ud-footer-link&#8221;>Income Tax</a></li>[m
+[31m-            <li><a href=&#8221;/calculators/salary-hike/&#8221; class=&#8221;ud-footer-link&#8221;>Salary Hike</a></li>[m
+[31m-            <li><a href=&#8221;/calculators/gst/&#8221; class=&#8221;ud-footer-link&#8221;>GST Calculator</a></li>[m
+[31m-            <li><a href=&#8221;/calculators/sip-calculator/&#8221; class=&#8221;ud-footer-link&#8221;>SIP Calculator</a></li>[m
+[31m-            <li><a href=&#8221;/calculators/emi/&#8221; class=&#8221;ud-footer-link&#8221;>EMI Calculator</a></li>[m
+[32m+[m[32m        <div class="ud-footer-column">[m
+[32m+[m[32m          <h4 class="ud-footer-title">Popular Tools</h4>[m
+[32m+[m[32m          <ul class="ud-footer-links">[m
+[32m+[m[32m            <li><a href="/calculators/income-tax/" class="ud-footer-link">Income Tax</a></li>[m
+[32m+[m[32m            <li><a href="/calculators/salary-hike/" class="ud-footer-link">Salary Hike</a></li>[m
+[32m+[m[32m            <li><a href="/calculators/gst/" class="ud-footer-link">GST Calculator</a></li>[m
+[32m+[m[32m            <li><a href="/calculators/sip-calculator/" class="ud-footer-link">SIP Calculator</a></li>[m
+[32m+[m[32m            <li><a href="/calculators/emi/" class="ud-footer-link">EMI Calculator</a></li>[m
+           </ul>[m
+         </div>[m
+         [m
+[31m-        <div class=&#8221;ud-footer-column&#8221;>[m
+[31m-          <h4 class=&#8221;ud-footer-title&#8221;>Company</h4>[m
+[31m-          <ul class=&#8221;ud-footer-links&#8221;>[m
+[31m-            <li><a href=&#8221;/about/&#8221; class=&#8221;ud-footer-link&#8221;>About</a></li>[m
+[31m-            <li><a href=&#8221;/contact/&#8221; class=&#8221;ud-footer-link&#8221;>Contact</a></li>[m
+[31m-            <li><a href=&#8221;/privacy-policy/&#8221; class=&#8221;ud-footer-link&#8221;>Privacy Policy</a></li>[m
+[31m-            <li><a href=&#8221;/terms-and-conditions/&#8221; class=&#8221;ud-footer-link&#8221;>Terms & Conditions</a></li>[m
+[31m-            <li><a href=&#8221;/disclaimer/&#8221; class=&#8221;ud-footer-link&#8221;>Disclaimer</a></li>[m
+[31m-            <li><a href=&#8221;/sitemap.xml&#8221; class=&#8221;ud-footer-link&#8221;>Sitemap</a></li>[m
+[32m+[m[32m        <div class="ud-footer-column">[m
+[32m+[m[32m          <h4 class="ud-footer-title">Company</h4>[m
+[32m+[m[32m          <ul class="ud-footer-links">[m
+[32m+[m[32m            <li><a href="/about/" class="ud-footer-link">About</a></li>[m
+[32m+[m[32m            <li><a href="/contact/" class="ud-footer-link">Contact</a></li>[m
+[32m+[m[32m            <li><a href="/privacy-policy/" class="ud-footer-link">Privacy Policy</a></li>[m
+[32m+[m[32m            <li><a href="/terms-and-conditions/" class="ud-footer-link">Terms & Conditions</a></li>[m
+[32m+[m[32m            <li><a href="/disclaimer/" class="ud-footer-link">Disclaimer</a></li>[m
+[32m+[m[32m            <li><a href="/sitemap.xml" class="ud-footer-link">Sitemap</a></li>[m
+           </ul>[m
+           [m
+[31m-          <div class=&#8221;ud-footer-newsletter&#8221;>[m
+[31m-            <div class=&#8221;ud-newsletter-title&#8221;>Stay Updated</div>[m
+[31m-            <form class=&#8221;ud-newsletter-form&#8221; onsubmit=&#8221;event.preventDefault(); alert('Thanks for subscribing!');&#8221;>[m
+[31m-              <input type=&#8221;email&#8221; class=&#8221;ud-newsletter-input&#8221; placeholder=&#8221;Your email&#8221; required>[m
+[31m-              <button type=&#8221;submit&#8221; class=&#8221;ud-newsletter-btn&#8221;>Subscribe</button>[m
+[32m+[m[32m          <div class="ud-footer-newsletter">[m
+[32m+[m[32m            <div class="ud-newsletter-title">Stay Updated</div>[m
+[32m+[m[32m            <form class="ud-newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">[m
+[32m+[m[32m              <input type="email" class="ud-newsletter-input" placeholder="Your email" required>[m
+[32m+[m[32m              <button type="submit" class="ud-newsletter-btn">Subscribe</button>[m
+             </form>[m
+           </div>[m
+         </div>[m
+       </div>[m
+       [m
+[31m-      <div class=&#8221;ud-footer-bottom&#8221;>[m
+[31m-        <div class=&#8221;ud-footer-copyright&#8221;>[m
+[32m+[m[32m      <div class="ud-footer-bottom">[m
+[32m+[m[32m        <div class="ud-footer-copyright">[m
+           &#169; 2026 UtilityDesk.in. All rights reserved.[m
+         </div>[m
+[31m-        <ul class=&#8221;ud-footer-legal&#8221;>[m
+[31m-          <li><a href=&#8221;/privacy-policy/&#8221; class=&#8221;ud-footer-legal-link&#8221;>Privacy</a></li>[m
+[31m-          <li><a href=&#8221;/terms-and-conditions/&#8221; class=&#8221;ud-footer-legal-link&#8221;>Terms</a></li>[m
+[31m-          <li><a href=&#8221;/disclaimer/&#8221; class=&#8221;ud-footer-legal-link&#8221;>Disclaimer</a></li>[m
+[32m+[m[32m        <ul class="ud-footer-legal">[m
+[32m+[m[32m          <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>[m
+[32m+[m[32m          <li><a href="/terms-and-conditions/" class="ud-footer-legal-link">Terms</a></li>[m
+[32m+[m[32m          <li><a href="/disclaimer/" class="ud-footer-legal-link">Disclaimer</a></li>[m
+         </ul>[m
+       </div>[m
+     </div>[m
+   </footer>[m
+ [m
+   <!-- Scripts -->[m
+[31m-  <script data-cfasync=&#8221;false&#8221; src=&#8221;/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js&#8221;></script><script src=&#8221;./shared/header.js&#8221;></script>[m
+[31m-  <script src=&#8221;./shared/search-component.js&#8221;></script>[m
+[31m-  <script src=&#8221;./shared/header-v2.js&#8221;></script>[m
+[31m-  <script src=&#8221;./shared/site-shell.js&#8221;></script>[m
+[31m-  <script src=&#8221;./assistant.js&#8221;></script>[m
+[32m+[m[32m  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./shared/header.js"></script>[m
+[32m+[m[32m  <script src="./shared/search-component.js"></script>[m
+[32m+[m[32m  <script src="./shared/header-v2.js"></script>[m
+[32m+[m[32m  <script src="./shared/site-shell.js"></script>[m
+[32m+[m[32m  <script src="./assistant.js"></script>[m
+ </body>[m
+ </html>[m
+[41m+[m

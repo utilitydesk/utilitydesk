@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -103,7 +103,7 @@
         .breadcrumb ol{display:flex;flex-wrap:wrap;gap:4px;list-style:none;font-size:.85rem;color:var(--slate-400)}
         .breadcrumb a{color:var(--blue-500);transition:color var(--transition)}
         .breadcrumb a:hover{color:var(--blue-500)}
-        .breadcrumb li:not(:last-child)::after{content:'›';margin-left:8px;color:var(--slate-300)}
+        .breadcrumb li:not(:last-child)::after{content:'â€º';margin-left:8px;color:var(--slate-300)}
         .breadcrumb li:last-child{color:var(--slate-600);font-weight:500}
 
         .hero-section{padding:24px 24px 0;max-width:var(--max-w);margin:0 auto;text-align:center}
@@ -289,28 +289,28 @@ svg {
           </button>
           <div class="ud-nav-dropdown-menu">
             <a href="/calculators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📊</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“Š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Calculators</div>
                 <div class="ud-nav-dropdown-desc">100+ Financial Tools</div>
               </div>
             </a>
             <a href="/pdf-tools/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📄</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“„</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">PDF Tools</div>
                 <div class="ud-nav-dropdown-desc">Merge, Split, Convert</div>
               </div>
             </a>
             <a href="/document-generators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📑</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“‘</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Documents</div>
                 <div class="ud-nav-dropdown-desc">Professional Templates</div>
               </div>
             </a>
             <a href="/blog/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📚</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Blog</div>
                 <div class="ud-nav-dropdown-desc">Expert Guides</div>
@@ -360,7 +360,7 @@ svg {
     </nav>
 
     <header class="hero-section" role="banner">
-        <span class="hero-badge">💰 Free Calculator</span>
+        <span class="hero-badge">ðŸ’° Free Calculator</span>
         <h1 class="hero-title">Bonus Calculator</h1>
         <p class="hero-subtitle">Calculate your bonus amount, TDS deduction, net bonus after tax, and total annual income instantly. Supports both old and new tax regimes.</p>
     </header>
@@ -374,14 +374,14 @@ svg {
             <div class="calc-body">
                 <div class="calc-grid">
                     <div class="calc-group">
-                        <label class="calc-label" for="monthlyBasic">Monthly Basic Salary (₹) <span class="info-icon" title="Your monthly basic pay excluding allowances">?</span></label>
+                        <label class="calc-label" for="monthlyBasic">Monthly Basic Salary (â‚¹) <span class="info-icon" title="Your monthly basic pay excluding allowances">?</span></label>
                         <input type="number" id="monthlyBasic" class="calc-input" placeholder="e.g. 50000" min="0">
                     </div>
                     <div class="calc-group">
                         <label class="calc-label" for="bonusType">Bonus Type</label>
                         <select id="bonusType" class="calc-select">
                             <option value="percentage">% of Annual Basic</option>
-                            <option value="fixed">Fixed Amount (₹)</option>
+                            <option value="fixed">Fixed Amount (â‚¹)</option>
                             <option value="months">Number of Months</option>
                         </select>
                     </div>
@@ -420,22 +420,22 @@ svg {
                     <div class="result-grid">
                         <div class="result-item">
                             <div class="label">Gross Bonus</div>
-                            <div class="value" id="grossBonus">₹0</div>
+                            <div class="value" id="grossBonus">â‚¹0</div>
                             <div class="sub" id="grossBonusSub">per annum</div>
                         </div>
                         <div class="result-item tax-item">
                             <div class="label">TDS on Bonus</div>
-                            <div class="value" id="tdsBonus">₹0</div>
+                            <div class="value" id="tdsBonus">â‚¹0</div>
                             <div class="sub" id="tdsSub">tax deducted at source</div>
                         </div>
                         <div class="result-item highlight">
                             <div class="label">Net Bonus</div>
-                            <div class="value" id="netBonus">₹0</div>
+                            <div class="value" id="netBonus">â‚¹0</div>
                             <div class="sub">after tax</div>
                         </div>
                         <div class="result-item">
                             <div class="label">Total Annual Income</div>
-                            <div class="value" id="totalIncome">₹0</div>
+                            <div class="value" id="totalIncome">â‚¹0</div>
                             <div class="sub">including bonus (pre-tax)</div>
                         </div>
                     </div>
@@ -452,11 +452,11 @@ svg {
                     <div class="comparison-bar">
                         <div class="comparison-item pretax">
                             <div class="comp-label">Pre-Tax Bonus</div>
-                            <div class="comp-value" id="pretaxVal">₹0</div>
+                            <div class="comp-value" id="pretaxVal">â‚¹0</div>
                         </div>
                         <div class="comparison-item posttax">
                             <div class="comp-label">Post-Tax Bonus</div>
-                            <div class="comp-value" id="posttaxVal">₹0</div>
+                            <div class="comp-value" id="posttaxVal">â‚¹0</div>
                         </div>
                     </div>
 
@@ -473,7 +473,7 @@ svg {
 
                     <div class="result-item" style="margin-top:16px;background:var(--amber-50);border:1px solid var(--amber-100);text-align:left;padding:16px;border-radius:10px;">
                         <div style="font-size:.82rem;font-weight:600;color:var(--slate-700);margin-bottom:4px;">Monthly Bonus (In-Hand)</div>
-                        <div style="font-size:1.1rem;font-weight:700;color:var(--slate-900);" id="monthlyBonus">₹0/month</div>
+                        <div style="font-size:1.1rem;font-weight:700;color:var(--slate-900);" id="monthlyBonus">â‚¹0/month</div>
                         <div style="font-size:.78rem;color:var(--slate-400);margin-top:2px;" id="monthlyBonusSub">distributed evenly over 12 months</div>
                     </div>
                 </div>
@@ -517,8 +517,8 @@ svg {
             <h2>Tax Treatment of Bonus in India</h2>
             <p>Bonus income is fully taxable under the head "Income from Salary" as per Section 17(1) of the Income Tax Act. Here is how it works:</p>
             <ul>
-                <li><strong>Old Regime:</strong> Bonus is added to your salary income and taxed at slab rates. You can claim deductions under Section 80C (₹1.5 lakh), 80D, HRA exemption, and other provisions to reduce taxable income.</li>
-                <li><strong>New Regime:</strong> Bonus is added to salary income and taxed at slab rates with lower tax rates but fewer deductions. The standard deduction of ₹50,000 is available.</li>
+                <li><strong>Old Regime:</strong> Bonus is added to your salary income and taxed at slab rates. You can claim deductions under Section 80C (â‚¹1.5 lakh), 80D, HRA exemption, and other provisions to reduce taxable income.</li>
+                <li><strong>New Regime:</strong> Bonus is added to salary income and taxed at slab rates with lower tax rates but fewer deductions. The standard deduction of â‚¹50,000 is available.</li>
                 <li><strong>TDS Deduction:</strong> Employers deduct TDS under Section 192 at the time of bonus payment by adding it to your monthly salary and computing tax at average rates.</li>
             </ul>
             <p>It is important to note that the bonus is not taxed separately at a flat rate. It gets added to your total income and the applicable slab rate determines the tax outgo.</p>
@@ -528,11 +528,11 @@ svg {
             <h2>Bonus Calculation Formulas</h2>
             <p>The bonus calculation depends on the type of bonus structure your employer follows:</p>
             <h3>Percentage of Annual Basic</h3>
-            <p>Gross Bonus = (Monthly Basic Salary × 12) × Bonus Percentage / 100. For example, if your basic is ₹50,000/month and bonus is 100%, gross bonus = ₹6,00,000 × 100% = ₹6,00,000.</p>
+            <p>Gross Bonus = (Monthly Basic Salary Ã— 12) Ã— Bonus Percentage / 100. For example, if your basic is â‚¹50,000/month and bonus is 100%, gross bonus = â‚¹6,00,000 Ã— 100% = â‚¹6,00,000.</p>
             <h3>Fixed Amount</h3>
             <p>Gross Bonus = Fixed Amount specified by the employer. This is common for joining bonuses or special one-time incentives.</p>
             <h3>Number of Months</h3>
-            <p>Gross Bonus = Monthly Basic Salary × Number of Months. For example, 2 months bonus on ₹50,000 basic = ₹1,00,000.</p>
+            <p>Gross Bonus = Monthly Basic Salary Ã— Number of Months. For example, 2 months bonus on â‚¹50,000 basic = â‚¹1,00,000.</p>
         </div>
 
         <div class="seo-block">
@@ -545,8 +545,8 @@ svg {
             <h2>Payment of Bonus Act, 1965</h2>
             <p>The Payment of Bonus Act, 1965 governs bonus payments for employees in India. Key provisions include:</p>
             <ul>
-                <li><strong>Eligibility:</strong> Employees drawing wages up to ₹21,000 per month are eligible for statutory bonus.</li>
-                <li><strong>Minimum Bonus:</strong> 8.33% of wages or ₹100, whichever is higher, even if the establishment suffers losses.</li>
+                <li><strong>Eligibility:</strong> Employees drawing wages up to â‚¹21,000 per month are eligible for statutory bonus.</li>
+                <li><strong>Minimum Bonus:</strong> 8.33% of wages or â‚¹100, whichever is higher, even if the establishment suffers losses.</li>
                 <li><strong>Maximum Bonus:</strong> 20% of wages when allocable surplus exceeds the minimum amount.</li>
                 <li><strong>Time Limit:</strong> Bonus must be paid within 8 months from the close of the accounting year.</li>
             </ul>
@@ -556,9 +556,9 @@ svg {
             <h2>Tips to Optimize Your Bonus Tax</h2>
             <p>While bonus income is taxable, there are legal ways to optimize your tax liability:</p>
             <ul>
-                <li><strong>Invest in ELSS:</strong> Equity Linked Savings Schemes under Section 80C can save up to ₹46,800 in tax (₹1.5 lakh × 31.2% max rate).</li>
-                <li><strong>NPS Contribution:</strong> Additional deduction of ₹50,000 under Section 80CCD(1B) for NPS contributions.</li>
-                <li><strong>Health Insurance:</strong> Claim deduction up to ₹75,000 under Section 80D for health insurance premiums.</li>
+                <li><strong>Invest in ELSS:</strong> Equity Linked Savings Schemes under Section 80C can save up to â‚¹46,800 in tax (â‚¹1.5 lakh Ã— 31.2% max rate).</li>
+                <li><strong>NPS Contribution:</strong> Additional deduction of â‚¹50,000 under Section 80CCD(1B) for NPS contributions.</li>
+                <li><strong>Health Insurance:</strong> Claim deduction up to â‚¹75,000 under Section 80D for health insurance premiums.</li>
                 <li><strong>Choose Wisely:</strong> Compare old and new regime tax liability to pick the most beneficial option for your overall income including bonus.</li>
                 <li><strong>Timing Matters:</strong> If your bonus pushes you into a higher slab, consider discussing with your employer about staggered payments.</li>
             </ul>
@@ -586,7 +586,7 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>What is bonus salary?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Bonus salary is additional compensation paid by employers on top of the regular salary. It is usually based on company performance, individual performance, or festival occasions. Bonuses can be paid annually, quarterly, or as a one-time payment. Under the Payment of Bonus Act, 1965, eligible employees must receive a minimum bonus of 8.33% of their wages.</p>
@@ -595,7 +595,7 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>Is bonus taxable?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Yes, bonus is fully taxable under the Income Tax Act, 1961. It is treated as salary income under Section 17(1) and is added to your total income. The tax is calculated at your applicable slab rate, whether you opt for the old or new tax regime. There is no separate tax rate for bonus income in India.</p>
@@ -604,7 +604,7 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>What is the tax rate on bonus?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Bonus is taxed at your applicable income tax slab rate. Under the old regime, slab rates range from 0% to 30% depending on your total income. Under the new regime, rates range from 0% to 30% with different brackets. Additionally, a 4% health and education cess is applied on the tax amount. For high-income earners, surcharge may also apply.</p>
@@ -613,16 +613,16 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>How is bonus calculated?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Bonus calculation depends on the type: (1) Percentage of annual basic: Gross bonus = Monthly basic × 12 × percentage / 100. (2) Fixed amount: The employer specifies a fixed rupee amount. (3) Number of months: Gross bonus = Monthly basic × number of months. The actual amount depends on your employer's bonus policy and your performance rating.</p>
+                    <p>Bonus calculation depends on the type: (1) Percentage of annual basic: Gross bonus = Monthly basic Ã— 12 Ã— percentage / 100. (2) Fixed amount: The employer specifies a fixed rupee amount. (3) Number of months: Gross bonus = Monthly basic Ã— number of months. The actual amount depends on your employer's bonus policy and your performance rating.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>What types of bonuses are there?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Common types of bonuses include: performance bonus (linked to appraisal), festival bonus (Diwali, Eid), joining bonus (to attract talent), annual bonus (yearly company performance-based), retention bonus (to retain key employees), referral bonus (for hiring referrals), and profit-linked bonus (tied to company profits). Each type may have different tax treatments and payment schedules.</p>
@@ -631,7 +631,7 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>Is festival bonus taxable?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Yes, festival bonus is fully taxable. Whether it is a Diwali bonus, Eid bonus, or any other festival bonus, it is treated as salary income under the Income Tax Act. The amount is added to your total salary income and taxed at your applicable slab rate. There is no exemption available specifically for festival bonus.</p>
@@ -640,7 +640,7 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>What is performance bonus?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Performance bonus is additional compensation awarded based on an employee's work performance. It is typically determined by annual appraisal ratings, KPI achievement, or company performance metrics. In IT companies, performance bonuses range from 1-3 months of salary for average performers and can go up to 6+ months for exceptional performers. It is fully taxable as salary income.</p>
@@ -649,7 +649,7 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>How is TDS deducted on bonus?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>TDS on bonus is deducted under Section 192 of the Income Tax Act at the time of payment. The employer adds the bonus amount to your salary income and calculates TDS based on your applicable slab rate. If you receive a large bonus, your employer may deduct more tax in that month to account for the higher income. The TDS is reflected in Form 16 and Form 26AS.</p>
@@ -658,16 +658,16 @@ svg {
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>Can I claim exemption on bonus?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>No, you cannot claim a direct exemption on bonus income. However, you can reduce your overall tax liability by investing in tax-saving instruments. Under the old regime, deductions under Section 80C (₹1.5 lakh), 80CCD(1B) (₹50,000 for NPS), 80D (health insurance), and HRA exemption can reduce your taxable income, effectively lowering the tax impact on bonus income.</p>
+                    <p>No, you cannot claim a direct exemption on bonus income. However, you can reduce your overall tax liability by investing in tax-saving instruments. Under the old regime, deductions under Section 80C (â‚¹1.5 lakh), 80CCD(1B) (â‚¹50,000 for NPS), 80D (health insurance), and HRA exemption can reduce your taxable income, effectively lowering the tax impact on bonus income.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
                     <span>Is joining bonus taxable?</span>
-                    <span class="faq-icon">▼</span>
+                    <span class="faq-icon">â–¼</span>
                 </button>
                 <div class="faq-answer">
                     <p>Yes, joining bonus is fully taxable. It is treated as salary income under Section 17(1) of the Income Tax Act and taxed at your applicable slab rate. If you leave the company before a specified period, you may need to repay the joining bonus, and the tax implications of such repayment can be claimed as a deduction from salary income in the year of repayment.</p>
@@ -768,7 +768,7 @@ svg {
       
       <div class="ud-footer-bottom">
         <div class="ud-footer-copyright">
-          © 2026 UtilityDesk.in. All rights reserved.
+          Â© 2026 UtilityDesk.in. All rights reserved.
         </div>
         <ul class="ud-footer-legal">
           <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
@@ -802,12 +802,12 @@ svg {
         function updateLabel(){
             const t=bonusType.value;
             if(t==='percentage'){bonusValueLabel.textContent='Bonus Percentage (%)';bonusValue.placeholder='e.g. 100';}
-            else if(t==='fixed'){bonusValueLabel.textContent='Fixed Amount (₹)';bonusValue.placeholder='e.g. 50000';}
+            else if(t==='fixed'){bonusValueLabel.textContent='Fixed Amount (â‚¹)';bonusValue.placeholder='e.g. 50000';}
             else{bonusValueLabel.textContent='Number of Months';bonusValue.placeholder='e.g. 2';}
         }
 
         function fmt(n){
-            return '₹'+Math.round(n).toLocaleString('en-IN');
+            return 'â‚¹'+Math.round(n).toLocaleString('en-IN');
         }
 
         function calculateBonus(){
@@ -857,7 +857,7 @@ svg {
             breakdown+='<tr><td>Annual Basic Salary</td><td>'+fmt(annualSalary)+'</td></tr>';
             if(type==='percentage'){breakdown+='<tr><td>Bonus ('+val+'% of Annual Basic)</td><td>'+fmt(grossBonus)+'</td></tr>';}
             else if(type==='fixed'){breakdown+='<tr><td>Bonus (Fixed Amount)</td><td>'+fmt(grossBonus)+'</td></tr>';}
-            else{breakdown+='<tr><td>Bonus ('+val+' months × '+fmt(monthlyBasic)+')</td><td>'+fmt(grossBonus)+'</td></tr>';}
+            else{breakdown+='<tr><td>Bonus ('+val+' months Ã— '+fmt(monthlyBasic)+')</td><td>'+fmt(grossBonus)+'</td></tr>';}
             if(bonusCount>1){breakdown+='<tr><td>Bonus Per Payment</td><td>'+fmt(grossBonus/bonusCount)+'</td></tr>';}
             breakdown+='<tr><td>Tax Rate ('+regime+' regime)</td><td>'+slab+'%</td></tr>';
             breakdown+='<tr><td>TDS on Bonus</td><td>'+fmt(tds)+'</td></tr>';
@@ -890,3 +890,4 @@ svg {
   <script src="../../assistant.js"></script>
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -85,28 +85,28 @@ svg {
           </button>
           <div class="ud-nav-dropdown-menu">
             <a href="/calculators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📊</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“Š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Calculators</div>
                 <div class="ud-nav-dropdown-desc">100+ Financial Tools</div>
               </div>
             </a>
             <a href="/pdf-tools/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📄</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“„</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">PDF Tools</div>
                 <div class="ud-nav-dropdown-desc">Merge, Split, Convert</div>
               </div>
             </a>
             <a href="/document-generators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📑</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“‘</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Documents</div>
                 <div class="ud-nav-dropdown-desc">Professional Templates</div>
               </div>
             </a>
             <a href="/blog/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📚</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Blog</div>
                 <div class="ud-nav-dropdown-desc">Expert Guides</div>
@@ -149,8 +149,8 @@ svg {
 <div class="ud-tool">
 
   <div class="tab-nav">
-    <button class="tab-btn active" onclick="switchTab('input', this)">📋 Compare Offers</button>
-    <button class="tab-btn" onclick="switchTab('result', this)" id="tab-result" disabled style="opacity:.45;cursor:default">📊 Break-Even Result</button>
+    <button class="tab-btn active" onclick="switchTab('input', this)">ðŸ“‹ Compare Offers</button>
+    <button class="tab-btn" onclick="switchTab('result', this)" id="tab-result" disabled style="opacity:.45;cursor:default">ðŸ“Š Break-Even Result</button>
   </div>
 
   
@@ -161,14 +161,14 @@ svg {
       <div class="field">
         <label>Current Monthly In-Hand <span>*required</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="currentSalary" placeholder="80000">
         </div>
       </div>
       <div class="field">
         <label>Annual Bonus You'll Forfeit <span>if you leave now</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="forfeitBonus" placeholder="0">
         </div>
       </div>
@@ -182,7 +182,7 @@ svg {
       <div class="field">
         <label>Notice Buyout Cost <span>if serving early</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="noticeBuyout" placeholder="0">
         </div>
       </div>
@@ -192,7 +192,7 @@ svg {
       <div class="field">
         <label>Unvested ESOPs / RSUs <span>value lost</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="esopLoss" placeholder="0">
         </div>
       </div>
@@ -207,14 +207,14 @@ svg {
       <div class="field">
         <label>New Monthly In-Hand <span>*required</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="newSalary" placeholder="100000">
         </div>
       </div>
       <div class="field">
         <label>Joining Bonus Offered</label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="joiningBonus" placeholder="0">
         </div>
       </div>
@@ -224,14 +224,14 @@ svg {
       <div class="field">
         <label>New Job ESOP/RSU Value <span>1st year vested</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="newEsop" placeholder="0">
         </div>
       </div>
       <div class="field">
         <label>Relocation / One-Time Costs <span>you'll incur</span></label>
         <div class="input-wrap">
-          <span class="input-prefix">₹</span>
+          <span class="input-prefix">â‚¹</span>
           <input type="number" id="relocCost" placeholder="0">
         </div>
       </div>
@@ -239,7 +239,7 @@ svg {
 
     <div class="field-row single">
       <div class="field">
-        <label>Joining Bonus Clawback Period <span>months — if you must repay if you leave early</span></label>
+        <label>Joining Bonus Clawback Period <span>months â€” if you must repay if you leave early</span></label>
         <select id="clawback">
           <option value="0">No clawback clause</option>
           <option value="12">12 months</option>
@@ -249,7 +249,7 @@ svg {
       </div>
     </div>
 
-    <button class="btn-calc" onclick="calculate()">Calculate Break-Even →</button>
+    <button class="btn-calc" onclick="calculate()">Calculate Break-Even â†’</button>
   </div>
 
   
@@ -258,17 +258,17 @@ svg {
     <div class="result-cards">
       <div class="rcard highlight">
         <div class="rcard-label">Break-Even Time</div>
-        <div class="rcard-value" id="r-breakeven">—</div>
+        <div class="rcard-value" id="r-breakeven">â€”</div>
         <div class="rcard-sub" id="r-breakeven-sub">to recover switching costs</div>
       </div>
       <div class="rcard">
         <div class="rcard-label">Monthly Gain</div>
-        <div class="rcard-value" id="r-monthlygain">—</div>
+        <div class="rcard-value" id="r-monthlygain">â€”</div>
         <div class="rcard-sub">extra in-hand per month</div>
       </div>
       <div class="rcard">
         <div class="rcard-label">One-Time Net Cost</div>
-        <div class="rcard-value" id="r-netcost">—</div>
+        <div class="rcard-value" id="r-netcost">â€”</div>
         <div class="rcard-sub">total upfront loss</div>
       </div>
     </div>
@@ -295,13 +295,13 @@ svg {
     <div class="checks" id="checks"></div>
 
     <div class="reset-row">
-      <button class="reset-link" onclick="reset()">← Edit inputs</button>
+      <button class="reset-link" onclick="reset()">â† Edit inputs</button>
     </div>
   </div>
 
 </div>
 
-<script>function switchTab(name,el){document.querySelectorAll('.tab-btn').forEach(b=> b.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(p=> p.classList.remove('active'));if(el)el.classList.add('active');document.getElementById('panel-'+name).classList.add('active');}function fmt(n){return '₹'+Math.round(Math.abs(n)).toLocaleString('en-IN');}function calculate(){const currentSalary=parseFloat(document.getElementById('currentSalary').value)|| 0;const newSalary=parseFloat(document.getElementById('newSalary').value)|| 0;const forfeitBonus=parseFloat(document.getElementById('forfeitBonus').value)|| 0;const noticeDays=parseFloat(document.getElementById('noticeDays').value)|| 0;const noticeBuyout=parseFloat(document.getElementById('noticeBuyout').value)|| 0;const esopLoss=parseFloat(document.getElementById('esopLoss').value)|| 0;const yearsService=parseFloat(document.getElementById('yearsService').value)|| 0;const joiningBonus=parseFloat(document.getElementById('joiningBonus').value)|| 0;const newEsop=parseFloat(document.getElementById('newEsop').value)|| 0;const relocCost=parseFloat(document.getElementById('relocCost').value)|| 0;const clawback=parseFloat(document.getElementById('clawback').value)|| 0;if(!currentSalary || !newSalary){alert('Please enter both current and new monthly in-hand salary.');return;}const monthlyGain=newSalary-currentSalary;const totalLosses=forfeitBonus+noticeBuyout+esopLoss+relocCost;const totalGains=joiningBonus+newEsop;const netOneTimeCost=totalLosses-totalGains;let breakEvenMonths;if(monthlyGain <=0){breakEvenMonths=Infinity;}else if(netOneTimeCost <=0){breakEvenMonths=0;}else{breakEvenMonths=netOneTimeCost/monthlyGain;}document.getElementById('r-monthlygain').textContent=(monthlyGain >=0 ? '+' : '−')+fmt(monthlyGain);document.getElementById('r-netcost').textContent=netOneTimeCost >=0 ? fmt(netOneTimeCost): '₹0';let breakEvenText,breakEvenSub;if(monthlyGain <=0){breakEvenText='Never';breakEvenSub='new salary is not higher';}else if(breakEvenMonths===0){breakEvenText='Instant';breakEvenSub='gains exceed switching costs';}else if(breakEvenMonths < 1){breakEvenText='< 1 month';breakEvenSub='recovers almost immediately';}else{breakEvenText=breakEvenMonths.toFixed(1)+' mo';breakEvenSub='to recover one-time costs';}document.getElementById('r-breakeven').textContent=breakEvenText;document.getElementById('r-breakeven-sub').textContent=breakEvenSub;const vd=document.getElementById('verdict');if(monthlyGain <=0){vd.className='verdict low';vd.innerHTML=`🔴 <span>The new offer pays <strong>less or equal</strong> in-hand per month. Unless there's strong long-term upside(designation,learning,ESOPs vesting later),this switch doesn't pay for itself.</span>`;}else if(breakEvenMonths <=3){vd.className='verdict good';vd.innerHTML=`✅ <span>Strong move. You recover all switching costs in <strong>${breakEvenMonths < 1 ? 'under a month' : breakEvenMonths.toFixed(1)+' months'}</strong> — everything after that is pure gain.</span>`;}else if(breakEvenMonths <=8){vd.className='ok';vd.className='verdict ok';vd.innerHTML=`⚠️ <span>Reasonable,but not instant. Break-even in <strong>${breakEvenMonths.toFixed(1)}months</strong> — make sure you're confident you'll stay at least that long.</span>`;}else{vd.className='verdict low';vd.innerHTML=`🔴 <span>Slow recovery — <strong>${breakEvenMonths.toFixed(1)}months</strong> to break even. The raise barely covers what you're giving up. Consider negotiating harder or staying put.</span>`;}const maxMonths=monthlyGain <=0 ? 24 : Math.max(24,Math.ceil(breakEvenMonths*1.4));let markerPct=monthlyGain <=0 ? 100 :(breakEvenMonths/maxMonths)*100;markerPct=Math.min(94,Math.max(6,markerPct));document.getElementById('timeline-marker').style.left=markerPct+'%';document.getElementById('timeline-marker-label').style.left=markerPct+'%';document.getElementById('timeline-marker-label').textContent=monthlyGain <=0 ? 'Never' :(breakEvenMonths < 1 ? '<1 mo' : breakEvenMonths.toFixed(1)+' mo');document.getElementById('timeline-end').textContent='Month '+maxMonths;document.getElementById('timeline-fill').style.width='100%';const rows=[];if(forfeitBonus)rows.push({cls: 'loss',label: 'Forfeited Bonus',sub: 'lost by leaving before payout',val:-forfeitBonus});if(noticeBuyout)rows.push({cls: 'loss',label: 'Notice Period Buyout',sub: `${noticeDays}days notice bought out`,val:-noticeBuyout});if(esopLoss)rows.push({cls: 'loss',label: 'Unvested ESOPs Lost',sub: 'forfeited at current company',val:-esopLoss});if(relocCost)rows.push({cls: 'loss',label: 'Relocation/Setup Cost',sub: 'one-time expense',val:-relocCost});if(joiningBonus)rows.push({cls: 'gain',label: 'Joining Bonus',sub: clawback ? `clawback if you leave within ${clawback}months` : 'no clawback',val: joiningBonus});if(newEsop)rows.push({cls: 'gain',label: 'New ESOP/RSU Value',sub: 'first-year vested estimate',val: newEsop});rows.push({cls: 'total',label: 'Net One-Time Cost',sub: '',val: netOneTimeCost >=0 ?-netOneTimeCost :-netOneTimeCost});rows.push({cls: 'total',label: 'Monthly Salary Gain',sub: '',val: monthlyGain});let html='';rows.forEach(r=>{const valStr=r.val >=0 ? '+'+fmt(r.val): '−'+fmt(r.val);html+=`<tr class="${r.cls}"> <td>${r.label}${r.sub ? `<span class="sub">${r.sub}</span>` : ''}</td> <td>${valStr}</td> </tr>`;});document.getElementById('breakdown-table').innerHTML=html;const checks=[];if(clawback > 0 && joiningBonus > 0)checks.push({cls: 'warn',icon: '⚠️',text: `Joining bonus of ${fmt(joiningBonus)}has a ${clawback}-month clawback. If you leave before then,you'll have to repay it — factor this into your minimum stay commitment.`});if(esopLoss > 0)checks.push({cls: 'warn',icon: '⚠️',text: `You're forfeiting ${fmt(esopLoss)}in unvested equity. Confirm the exact vested amount with HR/Finance before resigning — partial vesting may apply.`});if(yearsService >=3)checks.push({cls: 'info',icon: 'ℹ️',text: `You have ${yearsService}+years at your current company — check gratuity eligibility(5-year mark)and any loyalty bonuses you might be close to.`});if(noticeDays > 30 && !document.getElementById('noticeBuyout').value)checks.push({cls: 'info',icon: 'ℹ️',text: `Your notice period is ${noticeDays}days. If the new company wants you sooner,negotiate who pays the buyout — don't assume you'll bear it.`});checks.push({cls: 'info',icon: 'ℹ️',text: `This calculator covers compensation only. Weigh non-financial factors too — role scope,manager quality,commute,work-life balance,and career trajectory.`});document.getElementById('checks').innerHTML=checks .map(c=> `<div class="check-item ${c.cls}"><span class="check-icon">${c.icon}</span><span>${c.text}</span></div>`).join('');const resultBtn=document.getElementById('tab-result');resultBtn.disabled=false;resultBtn.style.opacity='1';resultBtn.style.cursor='pointer';switchTab('result',resultBtn);window.scrollTo({top: 0,behavior: 'smooth'});}function reset(){switchTab('input',document.querySelector('.tab-btn'));document.getElementById('tab-result').disabled=true;document.getElementById('tab-result').style.opacity='.45';document.getElementById('tab-result').style.cursor='default';}</script>
+<script>function switchTab(name,el){document.querySelectorAll('.tab-btn').forEach(b=> b.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(p=> p.classList.remove('active'));if(el)el.classList.add('active');document.getElementById('panel-'+name).classList.add('active');}function fmt(n){return 'â‚¹'+Math.round(Math.abs(n)).toLocaleString('en-IN');}function calculate(){const currentSalary=parseFloat(document.getElementById('currentSalary').value)|| 0;const newSalary=parseFloat(document.getElementById('newSalary').value)|| 0;const forfeitBonus=parseFloat(document.getElementById('forfeitBonus').value)|| 0;const noticeDays=parseFloat(document.getElementById('noticeDays').value)|| 0;const noticeBuyout=parseFloat(document.getElementById('noticeBuyout').value)|| 0;const esopLoss=parseFloat(document.getElementById('esopLoss').value)|| 0;const yearsService=parseFloat(document.getElementById('yearsService').value)|| 0;const joiningBonus=parseFloat(document.getElementById('joiningBonus').value)|| 0;const newEsop=parseFloat(document.getElementById('newEsop').value)|| 0;const relocCost=parseFloat(document.getElementById('relocCost').value)|| 0;const clawback=parseFloat(document.getElementById('clawback').value)|| 0;if(!currentSalary || !newSalary){alert('Please enter both current and new monthly in-hand salary.');return;}const monthlyGain=newSalary-currentSalary;const totalLosses=forfeitBonus+noticeBuyout+esopLoss+relocCost;const totalGains=joiningBonus+newEsop;const netOneTimeCost=totalLosses-totalGains;let breakEvenMonths;if(monthlyGain <=0){breakEvenMonths=Infinity;}else if(netOneTimeCost <=0){breakEvenMonths=0;}else{breakEvenMonths=netOneTimeCost/monthlyGain;}document.getElementById('r-monthlygain').textContent=(monthlyGain >=0 ? '+' : 'âˆ’')+fmt(monthlyGain);document.getElementById('r-netcost').textContent=netOneTimeCost >=0 ? fmt(netOneTimeCost): 'â‚¹0';let breakEvenText,breakEvenSub;if(monthlyGain <=0){breakEvenText='Never';breakEvenSub='new salary is not higher';}else if(breakEvenMonths===0){breakEvenText='Instant';breakEvenSub='gains exceed switching costs';}else if(breakEvenMonths < 1){breakEvenText='< 1 month';breakEvenSub='recovers almost immediately';}else{breakEvenText=breakEvenMonths.toFixed(1)+' mo';breakEvenSub='to recover one-time costs';}document.getElementById('r-breakeven').textContent=breakEvenText;document.getElementById('r-breakeven-sub').textContent=breakEvenSub;const vd=document.getElementById('verdict');if(monthlyGain <=0){vd.className='verdict low';vd.innerHTML=`ðŸ”´ <span>The new offer pays <strong>less or equal</strong> in-hand per month. Unless there's strong long-term upside(designation,learning,ESOPs vesting later),this switch doesn't pay for itself.</span>`;}else if(breakEvenMonths <=3){vd.className='verdict good';vd.innerHTML=`âœ… <span>Strong move. You recover all switching costs in <strong>${breakEvenMonths < 1 ? 'under a month' : breakEvenMonths.toFixed(1)+' months'}</strong> â€” everything after that is pure gain.</span>`;}else if(breakEvenMonths <=8){vd.className='ok';vd.className='verdict ok';vd.innerHTML=`âš ï¸ <span>Reasonable,but not instant. Break-even in <strong>${breakEvenMonths.toFixed(1)}months</strong> â€” make sure you're confident you'll stay at least that long.</span>`;}else{vd.className='verdict low';vd.innerHTML=`ðŸ”´ <span>Slow recovery â€” <strong>${breakEvenMonths.toFixed(1)}months</strong> to break even. The raise barely covers what you're giving up. Consider negotiating harder or staying put.</span>`;}const maxMonths=monthlyGain <=0 ? 24 : Math.max(24,Math.ceil(breakEvenMonths*1.4));let markerPct=monthlyGain <=0 ? 100 :(breakEvenMonths/maxMonths)*100;markerPct=Math.min(94,Math.max(6,markerPct));document.getElementById('timeline-marker').style.left=markerPct+'%';document.getElementById('timeline-marker-label').style.left=markerPct+'%';document.getElementById('timeline-marker-label').textContent=monthlyGain <=0 ? 'Never' :(breakEvenMonths < 1 ? '<1 mo' : breakEvenMonths.toFixed(1)+' mo');document.getElementById('timeline-end').textContent='Month '+maxMonths;document.getElementById('timeline-fill').style.width='100%';const rows=[];if(forfeitBonus)rows.push({cls: 'loss',label: 'Forfeited Bonus',sub: 'lost by leaving before payout',val:-forfeitBonus});if(noticeBuyout)rows.push({cls: 'loss',label: 'Notice Period Buyout',sub: `${noticeDays}days notice bought out`,val:-noticeBuyout});if(esopLoss)rows.push({cls: 'loss',label: 'Unvested ESOPs Lost',sub: 'forfeited at current company',val:-esopLoss});if(relocCost)rows.push({cls: 'loss',label: 'Relocation/Setup Cost',sub: 'one-time expense',val:-relocCost});if(joiningBonus)rows.push({cls: 'gain',label: 'Joining Bonus',sub: clawback ? `clawback if you leave within ${clawback}months` : 'no clawback',val: joiningBonus});if(newEsop)rows.push({cls: 'gain',label: 'New ESOP/RSU Value',sub: 'first-year vested estimate',val: newEsop});rows.push({cls: 'total',label: 'Net One-Time Cost',sub: '',val: netOneTimeCost >=0 ?-netOneTimeCost :-netOneTimeCost});rows.push({cls: 'total',label: 'Monthly Salary Gain',sub: '',val: monthlyGain});let html='';rows.forEach(r=>{const valStr=r.val >=0 ? '+'+fmt(r.val): 'âˆ’'+fmt(r.val);html+=`<tr class="${r.cls}"> <td>${r.label}${r.sub ? `<span class="sub">${r.sub}</span>` : ''}</td> <td>${valStr}</td> </tr>`;});document.getElementById('breakdown-table').innerHTML=html;const checks=[];if(clawback > 0 && joiningBonus > 0)checks.push({cls: 'warn',icon: 'âš ï¸',text: `Joining bonus of ${fmt(joiningBonus)}has a ${clawback}-month clawback. If you leave before then,you'll have to repay it â€” factor this into your minimum stay commitment.`});if(esopLoss > 0)checks.push({cls: 'warn',icon: 'âš ï¸',text: `You're forfeiting ${fmt(esopLoss)}in unvested equity. Confirm the exact vested amount with HR/Finance before resigning â€” partial vesting may apply.`});if(yearsService >=3)checks.push({cls: 'info',icon: 'â„¹ï¸',text: `You have ${yearsService}+years at your current company â€” check gratuity eligibility(5-year mark)and any loyalty bonuses you might be close to.`});if(noticeDays > 30 && !document.getElementById('noticeBuyout').value)checks.push({cls: 'info',icon: 'â„¹ï¸',text: `Your notice period is ${noticeDays}days. If the new company wants you sooner,negotiate who pays the buyout â€” don't assume you'll bear it.`});checks.push({cls: 'info',icon: 'â„¹ï¸',text: `This calculator covers compensation only. Weigh non-financial factors too â€” role scope,manager quality,commute,work-life balance,and career trajectory.`});document.getElementById('checks').innerHTML=checks .map(c=> `<div class="check-item ${c.cls}"><span class="check-icon">${c.icon}</span><span>${c.text}</span></div>`).join('');const resultBtn=document.getElementById('tab-result');resultBtn.disabled=false;resultBtn.style.opacity='1';resultBtn.style.cursor='pointer';switchTab('result',resultBtn);window.scrollTo({top: 0,behavior: 'smooth'});}function reset(){switchTab('input',document.querySelector('.tab-btn'));document.getElementById('tab-result').disabled=true;document.getElementById('tab-result').style.opacity='.45';document.getElementById('tab-result').style.cursor='default';}</script>
 
   <!-- Footer -->
     <!-- Footer -->
@@ -381,7 +381,7 @@ svg {
       
       <div class="ud-footer-bottom">
         <div class="ud-footer-copyright">
-          © 2026 UtilityDesk.in. All rights reserved.
+          Â© 2026 UtilityDesk.in. All rights reserved.
         </div>
         <ul class="ud-footer-legal">
           <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
@@ -433,3 +433,4 @@ svg {
   <script src="../../shared/site-shell.js"></script>
 </body>
 </html>
+

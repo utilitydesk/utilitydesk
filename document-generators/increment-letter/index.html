@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -149,11 +149,11 @@ a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;b
 <div class="mobile-menu" id="mobileMenu">
   <a href="/">Home</a><a href="/calculators/">Calculators</a><a href="/pdf-tools/">PDF Tools</a>
   <a href="/document-generators/">Document Generators</a><a href="/hr/" class="active">HR Suite</a>
-  <a href="/hr/" style="background:var(--slate-900);color:var(--white);text-align:center;border-radius:10px;margin-top:8px;font-weight:600">HR Suite →</a>
+  <a href="/hr/" style="background:var(--slate-900);color:var(--white);text-align:center;border-radius:10px;margin-top:8px;font-weight:600">HR Suite â†’</a>
 </div>
 <header class="page-header">
   <div class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/hr/">HR Suite</a><span>/</span><span>Increment Letter Generator</span></div>
-  <h1>📈 Increment Letter Generator</h1><p>Generate a professional salary increment letter with current salary, revised salary, and effective date.</p>
+  <h1>ðŸ“ˆ Increment Letter Generator</h1><p>Generate a professional salary increment letter with current salary, revised salary, and effective date.</p>
 </header>
 <section class="generator-section"><div class="generator-container"><div class="generator-grid">
   <div class="panel"><h2>Enter Details</h2>
@@ -166,11 +166,11 @@ a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;b
       <div class="form-group"><label>Designation</label><input id="des" placeholder="Data Analyst"></div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label>Current Annual CTC (₹)</label><input type="number" id="curSal" placeholder="800000" oninput="calcInc()"></div>
+      <div class="form-group"><label>Current Annual CTC (â‚¹)</label><input type="number" id="curSal" placeholder="800000" oninput="calcInc()"></div>
       <div class="form-group"><label>Increment % (auto-calculates new CTC)</label><input type="number" id="pct" placeholder="15" oninput="calcInc()"></div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label>New Annual CTC (₹)</label><input type="number" id="newSal" placeholder="920000" oninput="generate()"></div>
+      <div class="form-group"><label>New Annual CTC (â‚¹)</label><input type="number" id="newSal" placeholder="920000" oninput="generate()"></div>
       <div class="form-group"><label>Effective Date</label><input type="date" id="ed"></div>
     </div>
     <div class="btn-group">
@@ -186,9 +186,9 @@ a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;b
     <p>Dear <span id="pSal"></span>,</p>
     <p>We are pleased to inform you that based on your performance review, your annual compensation has been revised with effect from <strong id="pEd">[Date]</strong>.</p>
     <table>
-      <tr><th>Component</th><th>Current CTC (₹/year)</th><th>Revised CTC (₹/year)</th></tr>
-      <tr><td>Annual Compensation</td><td id="pCur">—</td><td id="pNew">—</td></tr>
-      <tr class="tr-total"><td>Increment</td><td id="pPct">—</td><td id="pAmt">—</td></tr>
+      <tr><th>Component</th><th>Current CTC (â‚¹/year)</th><th>Revised CTC (â‚¹/year)</th></tr>
+      <tr><td>Annual Compensation</td><td id="pCur">â€”</td><td id="pNew">â€”</td></tr>
+      <tr class="tr-total"><td>Increment</td><td id="pPct">â€”</td><td id="pAmt">â€”</td></tr>
     </table>
     <p>Your performance and dedication to your work have been noted and valued. We look forward to your continued contributions.</p>
     <p>A revised salary breakup will be shared separately by HR.</p>
@@ -205,18 +205,18 @@ a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;b
   <div class="faq-a"><div class="faq-a-inner">Not legally required but it is standard practice and serves as documentary evidence of revised compensation.</div></div>
 </div><div class="faq-item">
   <div class="faq-q"><span>What is a typical increment in India?</span><div class="faq-icon">&#9662;</div></div>
-  <div class="faq-a"><div class="faq-a-inner">8–12% for average performers, 15–20% for high performers, 25–40% for promotions.</div></div>
+  <div class="faq-a"><div class="faq-a-inner">8â€“12% for average performers, 15â€“20% for high performers, 25â€“40% for promotions.</div></div>
 </div>
 </div></section>
 <section class="related-section"><div class="related-container">
   <h2>Related HR Tools</h2><p>More tools from the UtilityDesk HR Suite</p>
   <div class="related-grid"><a href="/hr/promotion-letter/" class="related-card">
   <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">HR Docs</span>
-  <h3>🎉 Promotion Letter</h3><p>Announce role change along with salary revision.</p></a><a href="/hr/salary-slip/" class="related-card">
+  <h3>ðŸŽ‰ Promotion Letter</h3><p>Announce role change along with salary revision.</p></a><a href="/hr/salary-slip/" class="related-card">
   <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">HR Docs</span>
-  <h3>💰 Salary Slip Generator</h3><p>Generate revised salary slips post-increment.</p></a><a href="/hr/appointment-letter/" class="related-card">
+  <h3>ðŸ’° Salary Slip Generator</h3><p>Generate revised salary slips post-increment.</p></a><a href="/hr/appointment-letter/" class="related-card">
   <span class="related-card-tag" style="background:var(--amber-100);color:var(--amber-600)">HR Docs</span>
-  <h3>📋 Appointment Letter</h3><p>Issue revised appointment letters.</p></a></div>
+  <h3>ðŸ“‹ Appointment Letter</h3><p>Issue revised appointment letters.</p></a></div>
 </div></section>
 <footer class="footer">
   <div class="footer-inner">
@@ -295,8 +295,8 @@ function generate(){
   document.getElementById('pEd').textContent=fD(gv('ed'));
   document.getElementById('pCur').textContent=fN(cur);
   document.getElementById('pNew').textContent=fN(newS);
-  document.getElementById('pPct').textContent=cur&&newS&&newS>cur?((newS-cur)/cur*100).toFixed(1)+'% increment':'—';
-  document.getElementById('pAmt').textContent=newS&&cur&&newS>cur?'+'+fN(newS-cur)+' p.a.':'—';
+  document.getElementById('pPct').textContent=cur&&newS&&newS>cur?((newS-cur)/cur*100).toFixed(1)+'% increment':'â€”';
+  document.getElementById('pAmt').textContent=newS&&cur&&newS>cur?'+'+fN(newS-cur)+' p.a.':'â€”';
   document.getElementById('pCo').textContent=co;
 }
 function resetForm(){
@@ -305,4 +305,5 @@ function resetForm(){
 generate();
 </script>
 </body></html>
+
 

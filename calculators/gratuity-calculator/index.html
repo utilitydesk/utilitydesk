@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <meta name="author" content="UtilityDesk.in">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://utilitydesk.in/calculators/gratuity-calculator/">
-  <meta property="og:title" content="Gratuity Calculator – Calculate Gratuity Amount Online">
+  <meta property="og:title" content="Gratuity Calculator â€“ Calculate Gratuity Amount Online">
   <meta property="og:description" content="Free gratuity calculator for Indian employees. Calculate gratuity eligibility and amount instantly.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://utilitydesk.in/calculators/gratuity-calculator/">
@@ -93,7 +93,7 @@
         "name": "How is gratuity calculated?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Gratuity is calculated using the formula: Gratuity = (Last Drawn Salary × 15 × Years of Service) / 26. Here, Last Drawn Salary includes Basic Salary + Dearness Allowance (DA). For every completed year of service, you get 15 days' salary. The denominator 26 represents the working days in a month."
+          "text": "Gratuity is calculated using the formula: Gratuity = (Last Drawn Salary Ã— 15 Ã— Years of Service) / 26. Here, Last Drawn Salary includes Basic Salary + Dearness Allowance (DA). For every completed year of service, you get 15 days' salary. The denominator 26 represents the working days in a month."
         }
       },
       {
@@ -101,7 +101,7 @@
         "name": "What is the maximum gratuity amount?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The maximum gratuity amount that can be paid is ₹30 lakhs as per the Payment of Gratuity (Amendment) Act, 2019. This limit was increased from ₹20 lakhs to ₹30 lakhs. Any amount above ₹30 lakhs is at the employer's discretion and is not mandated by law."
+          "text": "The maximum gratuity amount that can be paid is â‚¹30 lakhs as per the Payment of Gratuity (Amendment) Act, 2019. This limit was increased from â‚¹20 lakhs to â‚¹30 lakhs. Any amount above â‚¹30 lakhs is at the employer's discretion and is not mandated by law."
         }
       },
       {
@@ -109,7 +109,7 @@
         "name": "Is gratuity taxable?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Gratuity taxability depends on the employee type. For government employees, gratuity is fully exempt from tax. For non-government employees covered under the Payment of Gratuity Act, the lesser of ₹30 lakhs or actual gratuity received is exempt. For those not covered under the Act, the lesser of ₹30 lakhs, half month's salary for each year of service, or actual gratuity is exempt."
+          "text": "Gratuity taxability depends on the employee type. For government employees, gratuity is fully exempt from tax. For non-government employees covered under the Payment of Gratuity Act, the lesser of â‚¹30 lakhs or actual gratuity received is exempt. For those not covered under the Act, the lesser of â‚¹30 lakhs, half month's salary for each year of service, or actual gratuity is exempt."
         }
       },
       {
@@ -226,28 +226,28 @@ svg {
           </button>
           <div class="ud-nav-dropdown-menu">
             <a href="/calculators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📊</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“Š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Calculators</div>
                 <div class="ud-nav-dropdown-desc">100+ Financial Tools</div>
               </div>
             </a>
             <a href="/pdf-tools/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📄</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“„</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">PDF Tools</div>
                 <div class="ud-nav-dropdown-desc">Merge, Split, Convert</div>
               </div>
             </a>
             <a href="/document-generators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📑</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“‘</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Documents</div>
                 <div class="ud-nav-dropdown-desc">Professional Templates</div>
               </div>
             </a>
             <a href="/blog/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📚</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Blog</div>
                 <div class="ud-nav-dropdown-desc">Expert Guides</div>
@@ -307,12 +307,12 @@ svg {
         <div class="calc-grid">
           <div class="calc-inputs">
             <div class="input-group">
-              <label for="basicSalary">Last Drawn Basic Salary (₹ per month)</label>
+              <label for="basicSalary">Last Drawn Basic Salary (â‚¹ per month)</label>
               <input type="number" id="basicSalary" placeholder="e.g., 50000" min="0">
               <span class="input-hint">Your last drawn basic salary</span>
             </div>
             <div class="input-group">
-              <label for="da">Dearness Allowance (₹ per month)</label>
+              <label for="da">Dearness Allowance (â‚¹ per month)</label>
               <input type="number" id="da" placeholder="e.g., 10000" min="0">
               <span class="input-hint">Monthly DA component</span>
             </div>
@@ -331,17 +331,17 @@ svg {
           <div class="calc-results" id="results">
             <div class="result-card">
               <div class="result-label">Eligibility Status</div>
-              <div class="result-value" id="eligibility">—</div>
+              <div class="result-value" id="eligibility">â€”</div>
               <div class="result-sub" id="eligibilitySub">Minimum 5 years required</div>
             </div>
             <div class="result-card">
               <div class="result-label">Gratuity Amount</div>
-              <div class="result-value highlight" id="gratuityAmount">—</div>
+              <div class="result-value highlight" id="gratuityAmount">â€”</div>
               <div class="result-sub" id="gratuitySub">Based on your service and salary</div>
             </div>
             <div class="result-card">
               <div class="result-label">Formula Used</div>
-              <div class="result-sub" id="formulaUsed" style="font-family: var(--font-body); font-size: .9rem; line-height: 1.6;">(Basic + DA) × 15 × Years / 26</div>
+              <div class="result-sub" id="formulaUsed" style="font-family: var(--font-body); font-size: .9rem; line-height: 1.6;">(Basic + DA) Ã— 15 Ã— Years / 26</div>
             </div>
           </div>
         </div>
@@ -402,7 +402,7 @@ svg {
 
       <h3>The Gratuity Formula</h3>
       <p>For employees covered under the Payment of Gratuity Act, the formula is:</p>
-      <p><strong>Gratuity = (Last Drawn Salary × 15 × Years of Service) / 26</strong></p>
+      <p><strong>Gratuity = (Last Drawn Salary Ã— 15 Ã— Years of Service) / 26</strong></p>
       
       <p>Where:</p>
       <ul>
@@ -422,15 +422,15 @@ svg {
       <h3>Example Calculation</h3>
       <p>Let's understand with a practical example:</p>
       <ul>
-        <li>Last Drawn Basic Salary: ₹50,000 per month</li>
-        <li>Dearness Allowance: ₹10,000 per month</li>
+        <li>Last Drawn Basic Salary: â‚¹50,000 per month</li>
+        <li>Dearness Allowance: â‚¹10,000 per month</li>
         <li>Years of Service: 12 years and 8 months (counted as 13 years)</li>
       </ul>
       <p><strong>Calculation:</strong></p>
-      <p>Gratuity = (₹50,000 + ₹10,000) × 15 × 13 / 26</p>
-      <p>Gratuity = ₹60,000 × 15 × 13 / 26</p>
-      <p>Gratuity = ₹1,17,00,000 / 26</p>
-      <p><strong>Gratuity = ₹4,50,000</strong></p>
+      <p>Gratuity = (â‚¹50,000 + â‚¹10,000) Ã— 15 Ã— 13 / 26</p>
+      <p>Gratuity = â‚¹60,000 Ã— 15 Ã— 13 / 26</p>
+      <p>Gratuity = â‚¹1,17,00,000 / 26</p>
+      <p><strong>Gratuity = â‚¹4,50,000</strong></p>
 
       <h2>Tax on Gratuity</h2>
       <p>The tax treatment of gratuity varies based on the type of employee and the amount received. Understanding the tax implications helps in financial planning and ensures compliance with tax regulations.</p>
@@ -444,7 +444,7 @@ svg {
       <h4>Employees Covered Under the Act</h4>
       <p>The least of the following is exempt from tax:</p>
       <ul>
-        <li>₹30 lakhs (maximum exemption limit as per the 2019 amendment)</li>
+        <li>â‚¹30 lakhs (maximum exemption limit as per the 2019 amendment)</li>
         <li>Actual gratuity received</li>
         <li>Gratuity calculated as per the formula (15 days' salary for each year of service)</li>
       </ul>
@@ -452,7 +452,7 @@ svg {
       <h4>Employees Not Covered Under the Act</h4>
       <p>The least of the following is exempt from tax:</p>
       <ul>
-        <li>₹30 lakhs</li>
+        <li>â‚¹30 lakhs</li>
         <li>Actual gratuity received</li>
         <li>Half month's average salary for each completed year of service</li>
       </ul>
@@ -487,13 +487,13 @@ svg {
       <p>The Payment of Gratuity Act specifies a maximum limit on the gratuity amount that can be paid. This limit has been revised periodically to account for inflation and changing economic conditions.</p>
 
       <h3>Current Maximum Limit</h3>
-      <p>As per the Payment of Gratuity (Amendment) Act, 2019, the maximum gratuity amount is <strong>₹30 lakhs</strong>. This limit was increased from ₹20 lakhs to ₹30 lakhs to provide better benefits to employees.</p>
+      <p>As per the Payment of Gratuity (Amendment) Act, 2019, the maximum gratuity amount is <strong>â‚¹30 lakhs</strong>. This limit was increased from â‚¹20 lakhs to â‚¹30 lakhs to provide better benefits to employees.</p>
 
       <h3>Important Points About the Maximum Limit</h3>
       <ul>
-        <li>The ₹30 lakh limit applies to the tax-exempt portion of gratuity</li>
-        <li>Employers can pay gratuity above ₹30 lakhs at their discretion, but the excess amount is taxable</li>
-        <li>The limit is applicable across all employments - if an employee changes jobs, the aggregate gratuity received from all employers cannot exceed ₹30 lakhs for tax exemption purposes</li>
+        <li>The â‚¹30 lakh limit applies to the tax-exempt portion of gratuity</li>
+        <li>Employers can pay gratuity above â‚¹30 lakhs at their discretion, but the excess amount is taxable</li>
+        <li>The limit is applicable across all employments - if an employee changes jobs, the aggregate gratuity received from all employers cannot exceed â‚¹30 lakhs for tax exemption purposes</li>
         <li>For government employees, there is no maximum limit as their entire gratuity is tax-exempt</li>
       </ul>
 
@@ -570,7 +570,7 @@ svg {
       <ul>
         <li>The calculation is based on your last drawn salary, so future salary increments will increase your gratuity</li>
         <li>Each additional year of service adds 15 days' salary to your gratuity</li>
-        <li>The maximum tax-exempt amount is ₹30 lakhs</li>
+        <li>The maximum tax-exempt amount is â‚¹30 lakhs</li>
       </ul>
 
       <h3>Incorporating Gratuity into Retirement Planning</h3>
@@ -632,7 +632,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Gratuity is calculated using the formula: Gratuity = (Last Drawn Salary × 15 × Years of Service) / 26. Here, Last Drawn Salary includes Basic Salary + Dearness Allowance (DA). For every completed year of service, you get 15 days' salary. The denominator 26 represents the working days in a month.</div>
+          <div class="faq-answer-inner">Gratuity is calculated using the formula: Gratuity = (Last Drawn Salary Ã— 15 Ã— Years of Service) / 26. Here, Last Drawn Salary includes Basic Salary + Dearness Allowance (DA). For every completed year of service, you get 15 days' salary. The denominator 26 represents the working days in a month.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -643,7 +643,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">The maximum gratuity amount that can be paid is ₹30 lakhs as per the Payment of Gratuity (Amendment) Act, 2019. This limit was increased from ₹20 lakhs to ₹30 lakhs. Any amount above ₹30 lakhs is at the employer's discretion and is not mandated by law.</div>
+          <div class="faq-answer-inner">The maximum gratuity amount that can be paid is â‚¹30 lakhs as per the Payment of Gratuity (Amendment) Act, 2019. This limit was increased from â‚¹20 lakhs to â‚¹30 lakhs. Any amount above â‚¹30 lakhs is at the employer's discretion and is not mandated by law.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -654,7 +654,7 @@ svg {
           </div>
         </div>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Gratuity taxability depends on the employee type. For government employees, gratuity is fully exempt from tax. For non-government employees covered under the Payment of Gratuity Act, the lesser of ₹30 lakhs or actual gratuity received is exempt. For those not covered under the Act, the lesser of ₹30 lakhs, half month's salary for each year of service, or actual gratuity is exempt.</div>
+          <div class="faq-answer-inner">Gratuity taxability depends on the employee type. For government employees, gratuity is fully exempt from tax. For non-government employees covered under the Payment of Gratuity Act, the lesser of â‚¹30 lakhs or actual gratuity received is exempt. For those not covered under the Act, the lesser of â‚¹30 lakhs, half month's salary for each year of service, or actual gratuity is exempt.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -760,7 +760,7 @@ svg {
       <li><strong>Click Calculate</strong>
       View your gratuity amount, tax exemption status, and the formula applied.</li>
       <li><strong>Plan Your Finances</strong>
-      Use the gratuity figure for retirement planning. Remember the ₹20 lakh tax exemption limit.</li>
+      Use the gratuity figure for retirement planning. Remember the â‚¹20 lakh tax exemption limit.</li>
     </ol>
   </section>
 
@@ -770,12 +770,12 @@ svg {
       <span class="rules-badge">FY 2025-26 | AY 2026-27</span>
       <ul>
         <li><strong>Payment of Gratuity Act, 1972:</strong> Applies to establishments with 10 or more employees. Mandatory for factories, mines, oil fields, ports, railways, and shops.</li>
-        <li><strong>Tax Exemption Limit:</strong> ₹20 lakh under Section 10(10)(iii). This is the maximum tax-free gratuity for non-government employees.</li>
-        <li><strong>Minimum Eligibility:</strong> 5 years of continuous service. Exception: death or disability — gratuity payable regardless of service length.</li>
-        <li><strong>Calculation Formula:</strong> (15 × Last Drawn Salary × Years of Service) / 26 for covered employees. Last Drawn Salary = Basic + DA.</li>
+        <li><strong>Tax Exemption Limit:</strong> â‚¹20 lakh under Section 10(10)(iii). This is the maximum tax-free gratuity for non-government employees.</li>
+        <li><strong>Minimum Eligibility:</strong> 5 years of continuous service. Exception: death or disability â€” gratuity payable regardless of service length.</li>
+        <li><strong>Calculation Formula:</strong> (15 Ã— Last Drawn Salary Ã— Years of Service) / 26 for covered employees. Last Drawn Salary = Basic + DA.</li>
         <li><strong>Government Employees:</strong> Governed by Pension Rules. Gratuity fully exempt under Section 10(10)(i).</li>
         <li><strong>Forfeiture:</strong> Employer can forfeit gratuity if employee is terminated for misconduct, riotous behavior, or fraud.</li>
-        <li><strong>New Labour Codes:</strong> The Code on Social Security, 2020 may change gratuity provisions. Implementation pending — watch for updates on wage definition changes that may increase gratuity liability.</li>
+        <li><strong>New Labour Codes:</strong> The Code on Social Security, 2020 may change gratuity provisions. Implementation pending â€” watch for updates on wage definition changes that may increase gratuity liability.</li>
         <li><strong>Nomination:</strong> Employees must nominate a family member to receive gratuity in case of death.</li>
       </ul>
     </div>
@@ -859,7 +859,7 @@ svg {
       
       <div class="ud-footer-bottom">
         <div class="ud-footer-copyright">
-          © 2026 UtilityDesk.in. All rights reserved.
+          Â© 2026 UtilityDesk.in. All rights reserved.
         </div>
         <ul class="ud-footer-legal">
           <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
@@ -870,7 +870,7 @@ svg {
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY > 20);},{passive: true});const hamburger=document.getElementById('hamburger');const mobileMenu=document.getElementById('mobileMenu');hamburger.addEventListener('click',()=>{const isOpen=mobileMenu.classList.toggle('open');hamburger.setAttribute('aria-expanded',isOpen);const spans=hamburger.querySelectorAll('span');if(isOpen){spans[0].style.transform='rotate(45deg)translate(5px,5px)';spans[1].style.opacity='0';spans[2].style.transform='rotate(-45deg)translate(5px,-5px)';}else{spans[0].style.transform='';spans[1].style.opacity='';spans[2].style.transform='';}});document.querySelectorAll('.faq-question').forEach(question=>{question.addEventListener('click',()=>{const item=question.parentElement;const answer=item.querySelector('.faq-answer');const isActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(faq=>{faq.classList.remove('active');faq.querySelector('.faq-answer').style.maxHeight='0';});if(!isActive){item.classList.add('active');answer.style.maxHeight=answer.scrollHeight+'px';}});});const basicSalaryInput=document.getElementById('basicSalary');const daInput=document.getElementById('da');const yearsInput=document.getElementById('years');const monthsInput=document.getElementById('months');const calculateBtn=document.getElementById('calculateBtn');const eligibilityEl=document.getElementById('eligibility');const eligibilitySubEl=document.getElementById('eligibilitySub');const gratuityAmountEl=document.getElementById('gratuityAmount');const gratuitySubEl=document.getElementById('gratuitySub');const formulaUsedEl=document.getElementById('formulaUsed');function formatCurrency(amount){if(amount >=10000000){return '₹'+(amount/10000000).toFixed(2)+' Cr';}else if(amount >=100000){return '₹'+(amount/100000).toFixed(2)+' L';}else{return '₹'+amount.toLocaleString('en-IN');}}function calculateGratuity(){const basicSalary=parseFloat(basicSalaryInput.value);const da=parseFloat(daInput.value)|| 0;const years=parseFloat(yearsInput.value);const months=parseFloat(monthsInput.value)|| 0;if(!basicSalary || !years || basicSalary <=0 || years <=0){eligibilityEl.textContent='—';eligibilityEl.className='result-value';eligibilitySubEl.textContent='Please enter valid values';gratuityAmountEl.textContent='—';gratuityAmountEl.className='result-value';gratuitySubEl.textContent='Based on your service and salary';formulaUsedEl.textContent='(Basic+DA)× 15 × Years/26';return;}const totalYears=years+(months >=6 ? 1 : 0);const isEligible=totalYears >=5;if(isEligible){eligibilityEl.textContent='Eligible';eligibilityEl.className='result-value highlight';eligibilitySubEl.textContent=`You have completed ${totalYears}years of service`;}else{eligibilityEl.textContent='Not Eligible';eligibilityEl.className='result-value warning';eligibilitySubEl.textContent=`Minimum 5 years required. You have ${totalYears}years.`;}if(isEligible){const lastDrawnSalary=basicSalary+da;const gratuity=(lastDrawnSalary*15*totalYears)/26;const maxGratuity=3000000;const finalGratuity=Math.min(gratuity,maxGratuity);gratuityAmountEl.textContent=formatCurrency(finalGratuity);gratuityAmountEl.className='result-value highlight';if(gratuity > maxGratuity){gratuitySubEl.textContent=`Capped at ₹30 lakhs(calculated: ${formatCurrency(gratuity)})`;}else{gratuitySubEl.textContent=`Based on ${totalYears}years of service`;}formulaUsedEl.innerHTML=`(${formatCurrency(basicSalary)}+${formatCurrency(da)})× 15 × ${totalYears}/26=<strong>${formatCurrency(finalGratuity)}</strong>`;}else{gratuityAmountEl.textContent='₹0';gratuityAmountEl.className='result-value warning';gratuitySubEl.textContent='Complete 5 years to be eligible';formulaUsedEl.textContent='(Basic+DA)× 15 × Years/26';}}calculateBtn.addEventListener('click',calculateGratuity);[basicSalaryInput,daInput,yearsInput,monthsInput].forEach(input=>{input.addEventListener('keypress',(e)=>{if(e.key==='Enter')calculateGratuity();});});let debounceTimer;[basicSalaryInput,daInput,yearsInput,monthsInput].forEach(input=>{input.addEventListener('input',()=>{clearTimeout(debounceTimer);debounceTimer=setTimeout(calculateGratuity,500);});});</script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY > 20);},{passive: true});const hamburger=document.getElementById('hamburger');const mobileMenu=document.getElementById('mobileMenu');hamburger.addEventListener('click',()=>{const isOpen=mobileMenu.classList.toggle('open');hamburger.setAttribute('aria-expanded',isOpen);const spans=hamburger.querySelectorAll('span');if(isOpen){spans[0].style.transform='rotate(45deg)translate(5px,5px)';spans[1].style.opacity='0';spans[2].style.transform='rotate(-45deg)translate(5px,-5px)';}else{spans[0].style.transform='';spans[1].style.opacity='';spans[2].style.transform='';}});document.querySelectorAll('.faq-question').forEach(question=>{question.addEventListener('click',()=>{const item=question.parentElement;const answer=item.querySelector('.faq-answer');const isActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(faq=>{faq.classList.remove('active');faq.querySelector('.faq-answer').style.maxHeight='0';});if(!isActive){item.classList.add('active');answer.style.maxHeight=answer.scrollHeight+'px';}});});const basicSalaryInput=document.getElementById('basicSalary');const daInput=document.getElementById('da');const yearsInput=document.getElementById('years');const monthsInput=document.getElementById('months');const calculateBtn=document.getElementById('calculateBtn');const eligibilityEl=document.getElementById('eligibility');const eligibilitySubEl=document.getElementById('eligibilitySub');const gratuityAmountEl=document.getElementById('gratuityAmount');const gratuitySubEl=document.getElementById('gratuitySub');const formulaUsedEl=document.getElementById('formulaUsed');function formatCurrency(amount){if(amount >=10000000){return 'â‚¹'+(amount/10000000).toFixed(2)+' Cr';}else if(amount >=100000){return 'â‚¹'+(amount/100000).toFixed(2)+' L';}else{return 'â‚¹'+amount.toLocaleString('en-IN');}}function calculateGratuity(){const basicSalary=parseFloat(basicSalaryInput.value);const da=parseFloat(daInput.value)|| 0;const years=parseFloat(yearsInput.value);const months=parseFloat(monthsInput.value)|| 0;if(!basicSalary || !years || basicSalary <=0 || years <=0){eligibilityEl.textContent='â€”';eligibilityEl.className='result-value';eligibilitySubEl.textContent='Please enter valid values';gratuityAmountEl.textContent='â€”';gratuityAmountEl.className='result-value';gratuitySubEl.textContent='Based on your service and salary';formulaUsedEl.textContent='(Basic+DA)Ã— 15 Ã— Years/26';return;}const totalYears=years+(months >=6 ? 1 : 0);const isEligible=totalYears >=5;if(isEligible){eligibilityEl.textContent='Eligible';eligibilityEl.className='result-value highlight';eligibilitySubEl.textContent=`You have completed ${totalYears}years of service`;}else{eligibilityEl.textContent='Not Eligible';eligibilityEl.className='result-value warning';eligibilitySubEl.textContent=`Minimum 5 years required. You have ${totalYears}years.`;}if(isEligible){const lastDrawnSalary=basicSalary+da;const gratuity=(lastDrawnSalary*15*totalYears)/26;const maxGratuity=3000000;const finalGratuity=Math.min(gratuity,maxGratuity);gratuityAmountEl.textContent=formatCurrency(finalGratuity);gratuityAmountEl.className='result-value highlight';if(gratuity > maxGratuity){gratuitySubEl.textContent=`Capped at â‚¹30 lakhs(calculated: ${formatCurrency(gratuity)})`;}else{gratuitySubEl.textContent=`Based on ${totalYears}years of service`;}formulaUsedEl.innerHTML=`(${formatCurrency(basicSalary)}+${formatCurrency(da)})Ã— 15 Ã— ${totalYears}/26=<strong>${formatCurrency(finalGratuity)}</strong>`;}else{gratuityAmountEl.textContent='â‚¹0';gratuityAmountEl.className='result-value warning';gratuitySubEl.textContent='Complete 5 years to be eligible';formulaUsedEl.textContent='(Basic+DA)Ã— 15 Ã— Years/26';}}calculateBtn.addEventListener('click',calculateGratuity);[basicSalaryInput,daInput,yearsInput,monthsInput].forEach(input=>{input.addEventListener('keypress',(e)=>{if(e.key==='Enter')calculateGratuity();});});let debounceTimer;[basicSalaryInput,daInput,yearsInput,monthsInput].forEach(input=>{input.addEventListener('input',()=>{clearTimeout(debounceTimer);debounceTimer=setTimeout(calculateGratuity,500);});});</script>
   <div id="ud-widgets-container" class="ud-widgets"></div>
   <script src="../../shared/widgets.js"></script>
 
@@ -911,3 +911,4 @@ svg {
   <script src="../../shared/site-shell.js"></script>
 </body>
 </html>
+

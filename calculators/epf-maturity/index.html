@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -156,7 +156,7 @@ select{padding-left:12px;cursor:pointer}
 .section-title{font-size:13px;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;margin-top:20px}
 .section-title:first-of-type{margin-top:0}
 
-/* Growth chart — CSS bar chart */
+/* Growth chart â€” CSS bar chart */
 .growth-chart{margin-bottom:20px}
 .growth-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:13px}
 .growth-year{width:56px;color:var(--gray-500);flex-shrink:0;text-align:right}
@@ -243,28 +243,28 @@ svg {
           </button>
           <div class="ud-nav-dropdown-menu">
             <a href="/calculators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📊</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“Š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Calculators</div>
                 <div class="ud-nav-dropdown-desc">100+ Financial Tools</div>
               </div>
             </a>
             <a href="/pdf-tools/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📄</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“„</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">PDF Tools</div>
                 <div class="ud-nav-dropdown-desc">Merge, Split, Convert</div>
               </div>
             </a>
             <a href="/document-generators/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📑</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“‘</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Documents</div>
                 <div class="ud-nav-dropdown-desc">Professional Templates</div>
               </div>
             </a>
             <a href="/blog/" class="ud-nav-dropdown-item">
-              <div class="ud-nav-dropdown-icon">📚</div>
+              <div class="ud-nav-dropdown-icon">ðŸ“š</div>
               <div class="ud-nav-dropdown-content">
                 <div class="ud-nav-dropdown-title">Blog</div>
                 <div class="ud-nav-dropdown-desc">Expert Guides</div>
@@ -310,7 +310,7 @@ svg {
 
 <div class="breadcrumb-bar">
   <nav aria-label="Breadcrumb">
-    <a href="/">Home</a> › <a href="/calculators/">Calculators</a> › Offer Letter Decoder
+    <a href="/">Home</a> â€º <a href="/calculators/">Calculators</a> â€º Offer Letter Decoder
   </nav>
 </div>
 
@@ -318,8 +318,8 @@ svg {
 <div class="ud-tool">
 
   <div class="tab-nav">
-    <button class="tab-btn active" onclick="switchTab('input',this)">🏦 PF Details</button>
-    <button class="tab-btn" id="tab-result" disabled style="opacity:.45;cursor:default" onclick="switchTab('result',this)">📈 Corpus Projection</button>
+    <button class="tab-btn active" onclick="switchTab('input',this)">ðŸ¦ PF Details</button>
+    <button class="tab-btn" id="tab-result" disabled style="opacity:.45;cursor:default" onclick="switchTab('result',this)">ðŸ“ˆ Corpus Projection</button>
   </div>
 
   <!-- INPUT TAB -->
@@ -329,7 +329,7 @@ svg {
     <div class="field-row">
       <div class="field">
         <label for="basicSalary">Basic + DA (Monthly) <span>*PF is calculated on this</span></label>
-        <div class="input-wrap"><span class="input-prefix">₹</span>
+        <div class="input-wrap"><span class="input-prefix">â‚¹</span>
           <input type="number" id="basicSalary" class="with-prefix" placeholder="25000"></div>
       </div>
       <div class="field">
@@ -342,7 +342,7 @@ svg {
     <div class="field-row">
       <div class="field">
         <label for="currentBalance">Current EPF Balance <span>check EPFO passbook / UAN</span></label>
-        <div class="input-wrap"><span class="input-prefix">₹</span>
+        <div class="input-wrap"><span class="input-prefix">â‚¹</span>
           <input type="number" id="currentBalance" class="with-prefix" placeholder="150000"></div>
       </div>
       <div class="field">
@@ -362,26 +362,26 @@ svg {
       </div>
     </div>
 
-    <div class="section-label">Voluntary PF (VPF) — Optional</div>
+    <div class="section-label">Voluntary PF (VPF) â€” Optional</div>
     <div class="field-row">
       <div class="field">
         <label for="vpfMonthly">VPF Contribution (Monthly) <span>over and above mandatory 12%</span></label>
-        <div class="input-wrap"><span class="input-prefix">₹</span>
+        <div class="input-wrap"><span class="input-prefix">â‚¹</span>
           <input type="number" id="vpfMonthly" class="with-prefix" placeholder="0"></div>
       </div>
       <div class="field">
-        <label for="epfCap">PF Wage Cap <span>EPFO caps PF on ₹15,000 basic by default</span></label>
+        <label for="epfCap">PF Wage Cap <span>EPFO caps PF on â‚¹15,000 basic by default</span></label>
         <select id="epfCap">
-          <option value="capped">Capped at ₹15,000 basic (standard)</option>
+          <option value="capped">Capped at â‚¹15,000 basic (standard)</option>
           <option value="actual">On actual basic salary</option>
         </select>
       </div>
     </div>
 
-    <button class="btn-calc" onclick="calculate()">Project My EPF Corpus →</button>
+    <button class="btn-calc" onclick="calculate()">Project My EPF Corpus â†’</button>
 
     <div class="disclaimer-box" style="margin-top:14px">
-      <strong>How EPF works:</strong> You contribute 12% of basic+DA. Your employer contributes 12% — but 8.33% goes to EPS (pension scheme) and only 3.67% goes to your EPF account (capped at ₹1,250/month if basic ≤ ₹15,000). Interest is credited annually at the rate declared by EPFO.
+      <strong>How EPF works:</strong> You contribute 12% of basic+DA. Your employer contributes 12% â€” but 8.33% goes to EPS (pension scheme) and only 3.67% goes to your EPF account (capped at â‚¹1,250/month if basic â‰¤ â‚¹15,000). Interest is credited annually at the rate declared by EPFO.
     </div>
   </div>
 
@@ -391,17 +391,17 @@ svg {
     <div class="result-cards">
       <div class="rcard highlight">
         <div class="rcard-label">EPF Corpus at Retirement</div>
-        <div class="rcard-value" id="r-corpus">—</div>
+        <div class="rcard-value" id="r-corpus">â€”</div>
         <div class="rcard-sub" id="r-corpus-sub">total accumulated</div>
       </div>
       <div class="rcard green">
         <div class="rcard-label">Total Interest Earned</div>
-        <div class="rcard-value" id="r-interest">—</div>
-        <div class="rcard-sub" id="r-interest-pct">—</div>
+        <div class="rcard-value" id="r-interest">â€”</div>
+        <div class="rcard-sub" id="r-interest-pct">â€”</div>
       </div>
       <div class="rcard purple">
         <div class="rcard-label">EPS Monthly Pension</div>
-        <div class="rcard-value" id="r-pension">—</div>
+        <div class="rcard-value" id="r-pension">â€”</div>
         <div class="rcard-sub">estimated at retirement</div>
       </div>
     </div>
@@ -418,28 +418,28 @@ svg {
     <div class="checks" id="checks"></div>
 
     <div class="disclaimer-box">
-      <strong>Disclaimer:</strong> Projections assume a fixed interest rate and salary growth — actual returns will vary with EPFO's annual rate declaration and your career progression. EPS pension is estimated using the formula: (Pensionable Salary × Pensionable Service) ÷ 70. Consult your EPFO passbook and UAN portal for exact figures.
+      <strong>Disclaimer:</strong> Projections assume a fixed interest rate and salary growth â€” actual returns will vary with EPFO's annual rate declaration and your career progression. EPS pension is estimated using the formula: (Pensionable Salary Ã— Pensionable Service) Ã· 70. Consult your EPFO passbook and UAN portal for exact figures.
     </div>
-    <div class="reset-row"><button class="reset-link" onclick="reset()">← Edit PF details</button></div>
+    <div class="reset-row"><button class="reset-link" onclick="reset()">â† Edit PF details</button></div>
   </div>
 </div>
 
 <script>
-/* ── helpers ── */
+/* â”€â”€ helpers â”€â”€ */
 function switchTab(n,el){
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   if(el)el.classList.add('active');
   document.getElementById('panel-'+n).classList.add('active');
 }
-function fmt(n){return'₹'+Math.round(n).toLocaleString('en-IN')}
+function fmt(n){return'â‚¹'+Math.round(n).toLocaleString('en-IN')}
 function fmtCr(n){
-  if(n>=10000000)return'₹'+(n/10000000).toFixed(2)+' Cr';
-  if(n>=100000)return'₹'+(n/100000).toFixed(1)+' L';
-  return'₹'+Math.round(n).toLocaleString('en-IN');
+  if(n>=10000000)return'â‚¹'+(n/10000000).toFixed(2)+' Cr';
+  if(n>=100000)return'â‚¹'+(n/100000).toFixed(1)+' L';
+  return'â‚¹'+Math.round(n).toLocaleString('en-IN');
 }
 
-/* ── main ── */
+/* â”€â”€ main â”€â”€ */
 function calculate(){
   const basicRaw    = parseFloat(document.getElementById('basicSalary').value)||0;
   const salaryGrowth= (parseFloat(document.getElementById('salaryGrowth').value)||8)/100;
@@ -454,13 +454,13 @@ function calculate(){
     alert('Please enter Basic Salary and Years Left to Retirement.');return;
   }
 
-  /* ── EPF contribution rules ──────────────────────────────────
+  /* â”€â”€ EPF contribution rules â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      Employee: 12% of actual basic (no cap on employee side)
      Employer EPF: 3.67% of min(basic, 15000) [standard cap]
                    or 3.67% of actual basic [if cap=actual]
-     Employer EPS: 8.33% of min(basic, 15000) → goes to EPS, NOT EPF
-     If cap='actual' & basic>15000, employer EPF = 12% − 8.33% of 15000
-     ──────────────────────────────────────────────────────────── */
+     Employer EPS: 8.33% of min(basic, 15000) â†’ goes to EPS, NOT EPF
+     If cap='actual' & basic>15000, employer EPF = 12% âˆ’ 8.33% of 15000
+     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   const EPS_WAGE_CAP = 15000;
   const EMP_PCT      = 0.12;   // employee contribution rate
   const EPF_ER_PCT   = 0.0367; // employer EPF portion
@@ -475,7 +475,7 @@ function calculate(){
   let epsService       = epsYearsSoFar;
   let lastEPSWage      = 0;
 
-  const snapshots = []; // for chart — every 5 years
+  const snapshots = []; // for chart â€” every 5 years
   let basic = basicRaw;
 
   for(let y=1;y<=yearsLeft;y++){
@@ -485,7 +485,7 @@ function calculate(){
     const wageCap     = epfCap==='capped'?Math.min(basic,EPS_WAGE_CAP):basic;
     const empMonthly  = basic*EMP_PCT;
     const erEPFMonthly= wageCap*EPF_ER_PCT;
-    // EPS not added to EPF corpus — only erEPF goes to EPF
+    // EPS not added to EPF corpus â€” only erEPF goes to EPF
     const vpf         = vpfMonthly;
 
     const annualEmp   = empMonthly*12;
@@ -510,13 +510,13 @@ function calculate(){
   const totalContributions = currentBal + totalEmpContrib + totalErContrib + totalVPF;
   const interestPct = totalContributions>0?(totalInterest/totalContributions*100).toFixed(0):0;
 
-  // EPS pension formula: (Pensionable Salary × Pensionable Service) ÷ 70
+  // EPS pension formula: (Pensionable Salary Ã— Pensionable Service) Ã· 70
   // Pensionable salary = average of last 60 months EPS wage (capped at 15000)
   // We use last year's EPS wage as a proxy
   const pensionableSvc = Math.min(epsService, 35); // capped at 35 years for pension calc
   const monthlyPension = Math.round((lastEPSWage * pensionableSvc) / 70);
 
-  /* ── Render ── */
+  /* â”€â”€ Render â”€â”€ */
   document.getElementById('r-corpus').textContent  = fmtCr(corpus);
   document.getElementById('r-corpus-sub').textContent = 'over '+yearsLeft+' years';
   document.getElementById('r-interest').textContent = fmtCr(totalInterest);
@@ -527,10 +527,10 @@ function calculate(){
   const vd=document.getElementById('verdict');
   if(corpus>=10000000){
     vd.className='verdict ok';
-    vd.innerHTML=`✅ <span>Your EPF corpus projects to <strong>${fmtCr(corpus)}</strong> at retirement — a solid retirement foundation. At 4% safe withdrawal, this generates ~${fmt(corpus*0.04/12)}/month in addition to your EPS pension of ${fmt(monthlyPension)}/month.</span>`;
+    vd.innerHTML=`âœ… <span>Your EPF corpus projects to <strong>${fmtCr(corpus)}</strong> at retirement â€” a solid retirement foundation. At 4% safe withdrawal, this generates ~${fmt(corpus*0.04/12)}/month in addition to your EPS pension of ${fmt(monthlyPension)}/month.</span>`;
   } else {
     vd.className='verdict warn';
-    vd.innerHTML=`⚠️ <span>Projected corpus of <strong>${fmtCr(corpus)}</strong>. Consider increasing VPF contributions to build a larger retirement buffer — VPF earns the same tax-free EPF rate with no market risk.</span>`;
+    vd.innerHTML=`âš ï¸ <span>Projected corpus of <strong>${fmtCr(corpus)}</strong>. Consider increasing VPF contributions to build a larger retirement buffer â€” VPF earns the same tax-free EPF rate with no market risk.</span>`;
   }
 
   /* growth chart */
@@ -548,36 +548,36 @@ function calculate(){
   /* breakdown table */
   const rows=`
     <tr><td>Opening EPF Balance<span class="sub">current EPFO account balance</span></td><td>${fmt(currentBal)}</td></tr>
-    <tr class="emp-row"><td>Your Contributions (Employee)<span class="sub">12% of basic × ${yearsLeft} years with ${(salaryGrowth*100).toFixed(0)}% annual growth</span></td><td>${fmt(totalEmpContrib)}</td></tr>
+    <tr class="emp-row"><td>Your Contributions (Employee)<span class="sub">12% of basic Ã— ${yearsLeft} years with ${(salaryGrowth*100).toFixed(0)}% annual growth</span></td><td>${fmt(totalEmpContrib)}</td></tr>
     <tr class="employer-row"><td>Employer EPF Contributions<span class="sub">3.67% of ${epfCap==='capped'?'capped':'actual'} basic</span></td><td>${fmt(totalErContrib)}</td></tr>
     ${totalVPF>0?`<tr class="emp-row"><td>VPF Contributions<span class="sub">${fmt(vpfMonthly)}/month voluntary</span></td><td>${fmt(totalVPF)}</td></tr>`:''}
-    <tr class="interest-row"><td>Total Interest Earned<span class="sub">${(epfRate*100).toFixed(2)}% p.a. — entirely tax-free at withdrawal</span></td><td>${fmt(totalInterest)}</td></tr>
+    <tr class="interest-row"><td>Total Interest Earned<span class="sub">${(epfRate*100).toFixed(2)}% p.a. â€” entirely tax-free at withdrawal</span></td><td>${fmt(totalInterest)}</td></tr>
     <tr class="total-row"><td>EPF Corpus at Retirement</td><td>${fmtCr(corpus)}</td></tr>
-    <tr><td>EPS Monthly Pension (estimated)<span class="sub">(${fmt(lastEPSWage)} × ${pensionableSvc} yrs) ÷ 70</span></td><td>${fmt(monthlyPension)}/mo</td></tr>`;
+    <tr><td>EPS Monthly Pension (estimated)<span class="sub">(${fmt(lastEPSWage)} Ã— ${pensionableSvc} yrs) Ã· 70</span></td><td>${fmt(monthlyPension)}/mo</td></tr>`;
   document.getElementById('breakdown-body').innerHTML=rows;
 
   /* checks */
   const checks=[];
 
   if(basic>EPS_WAGE_CAP&&epfCap==='capped'){
-    checks.push({cls:'info',icon:'ℹ️',text:`Your basic salary (${fmt(basic)}) exceeds ₹15,000. Under the standard EPFO cap, employer's EPF contribution is calculated on ₹15,000 only. To increase employer contribution, your company would need to opt for contribution on actual salary.`});
+    checks.push({cls:'info',icon:'â„¹ï¸',text:`Your basic salary (${fmt(basic)}) exceeds â‚¹15,000. Under the standard EPFO cap, employer's EPF contribution is calculated on â‚¹15,000 only. To increase employer contribution, your company would need to opt for contribution on actual salary.`});
   }
 
   if(vpfMonthly===0){
     const vpfBoost = basic*0.12*12*yearsLeft*0.3; // rough estimate
-    checks.push({cls:'good',icon:'💡',text:`VPF (Voluntary PF) earns the same ${(epfRate*100).toFixed(2)}% tax-free rate as EPF. Even ₹${Math.round(basic*0.02).toLocaleString('en-IN')}/month extra (2% of basic) could add ₹${fmtCr(vpfBoost)} to your corpus over ${yearsLeft} years.`});
+    checks.push({cls:'good',icon:'ðŸ’¡',text:`VPF (Voluntary PF) earns the same ${(epfRate*100).toFixed(2)}% tax-free rate as EPF. Even â‚¹${Math.round(basic*0.02).toLocaleString('en-IN')}/month extra (2% of basic) could add â‚¹${fmtCr(vpfBoost)} to your corpus over ${yearsLeft} years.`});
   }
 
   if(epsService>=10){
-    checks.push({cls:'good',icon:'✅',text:`With ${Math.round(epsService)} years of EPS service, you're eligible for a monthly pension of ~${fmt(monthlyPension)} after retirement. EPS requires minimum 10 years of service for pension eligibility.`});
+    checks.push({cls:'good',icon:'âœ…',text:`With ${Math.round(epsService)} years of EPS service, you're eligible for a monthly pension of ~${fmt(monthlyPension)} after retirement. EPS requires minimum 10 years of service for pension eligibility.`});
   } else {
-    checks.push({cls:'warn',icon:'⚠️',text:`EPS pension requires minimum 10 years of qualifying service. With ${Math.round(epsYearsSoFar)} years so far and ${yearsLeft} years remaining, you'll ${epsYearsSoFar+yearsLeft>=10?'qualify':'may not qualify unless you continue contributing to EPS'}.`});
+    checks.push({cls:'warn',icon:'âš ï¸',text:`EPS pension requires minimum 10 years of qualifying service. With ${Math.round(epsYearsSoFar)} years so far and ${yearsLeft} years remaining, you'll ${epsYearsSoFar+yearsLeft>=10?'qualify':'may not qualify unless you continue contributing to EPS'}.`});
   }
 
-  checks.push({cls:'info',icon:'ℹ️',text:'EPF corpus withdrawn after 5 continuous years of service is fully tax-free. Withdrawal before 5 years attracts TDS and is added to your taxable income for that year.'});
+  checks.push({cls:'info',icon:'â„¹ï¸',text:'EPF corpus withdrawn after 5 continuous years of service is fully tax-free. Withdrawal before 5 years attracts TDS and is added to your taxable income for that year.'});
 
   if(corpus>5000000){
-    checks.push({cls:'warn',icon:'⚠️',text:'Interest on EPF contributions above ₹2.5 lakh/year (₹5 lakh for government employees) is taxable from FY 2021-22 onwards. If your annual PF contribution (including VPF) exceeds this, a portion of interest becomes taxable.'});
+    checks.push({cls:'warn',icon:'âš ï¸',text:'Interest on EPF contributions above â‚¹2.5 lakh/year (â‚¹5 lakh for government employees) is taxable from FY 2021-22 onwards. If your annual PF contribution (including VPF) exceeds this, a portion of interest becomes taxable.'});
   }
 
   document.getElementById('checks').innerHTML=checks.map(c=>`<div class="check-item ${c.cls}"><span class="check-icon">${c.icon}</span><span>${c.text}</span></div>`).join('');
@@ -697,7 +697,7 @@ function reset(){
       
       <div class="ud-footer-bottom">
         <div class="ud-footer-copyright">
-          © 2026 UtilityDesk.in. All rights reserved.
+          Â© 2026 UtilityDesk.in. All rights reserved.
         </div>
         <ul class="ud-footer-legal">
           <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
@@ -739,21 +739,21 @@ function reset(){
 </script>
 
 <script>
-/* ── helpers ── */
+/* â”€â”€ helpers â”€â”€ */
 function switchTab(n,el){
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   if(el)el.classList.add('active');
   document.getElementById('panel-'+n).classList.add('active');
 }
-function fmt(n){return'₹'+Math.round(n).toLocaleString('en-IN')}
+function fmt(n){return'â‚¹'+Math.round(n).toLocaleString('en-IN')}
 function fmtCr(n){
-  if(n>=10000000)return'₹'+(n/10000000).toFixed(2)+' Cr';
-  if(n>=100000)return'₹'+(n/100000).toFixed(1)+' L';
-  return'₹'+Math.round(n).toLocaleString('en-IN');
+  if(n>=10000000)return'â‚¹'+(n/10000000).toFixed(2)+' Cr';
+  if(n>=100000)return'â‚¹'+(n/100000).toFixed(1)+' L';
+  return'â‚¹'+Math.round(n).toLocaleString('en-IN');
 }
 
-/* ── main ── */
+/* â”€â”€ main â”€â”€ */
 function calculate(){
   const basicRaw    = parseFloat(document.getElementById('basicSalary').value)||0;
   const salaryGrowth= (parseFloat(document.getElementById('salaryGrowth').value)||8)/100;
@@ -768,13 +768,13 @@ function calculate(){
     alert('Please enter Basic Salary and Years Left to Retirement.');return;
   }
 
-  /* ── EPF contribution rules ──────────────────────────────────
+  /* â”€â”€ EPF contribution rules â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      Employee: 12% of actual basic (no cap on employee side)
      Employer EPF: 3.67% of min(basic, 15000) [standard cap]
                    or 3.67% of actual basic [if cap=actual]
-     Employer EPS: 8.33% of min(basic, 15000) → goes to EPS, NOT EPF
-     If cap='actual' & basic>15000, employer EPF = 12% − 8.33% of 15000
-     ──────────────────────────────────────────────────────────── */
+     Employer EPS: 8.33% of min(basic, 15000) â†’ goes to EPS, NOT EPF
+     If cap='actual' & basic>15000, employer EPF = 12% âˆ’ 8.33% of 15000
+     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   const EPS_WAGE_CAP = 15000;
   const EMP_PCT      = 0.12;   // employee contribution rate
   const EPF_ER_PCT   = 0.0367; // employer EPF portion
@@ -789,7 +789,7 @@ function calculate(){
   let epsService       = epsYearsSoFar;
   let lastEPSWage      = 0;
 
-  const snapshots = []; // for chart — every 5 years
+  const snapshots = []; // for chart â€” every 5 years
   let basic = basicRaw;
 
   for(let y=1;y<=yearsLeft;y++){
@@ -799,7 +799,7 @@ function calculate(){
     const wageCap     = epfCap==='capped'?Math.min(basic,EPS_WAGE_CAP):basic;
     const empMonthly  = basic*EMP_PCT;
     const erEPFMonthly= wageCap*EPF_ER_PCT;
-    // EPS not added to EPF corpus — only erEPF goes to EPF
+    // EPS not added to EPF corpus â€” only erEPF goes to EPF
     const vpf         = vpfMonthly;
 
     const annualEmp   = empMonthly*12;
@@ -824,13 +824,13 @@ function calculate(){
   const totalContributions = currentBal + totalEmpContrib + totalErContrib + totalVPF;
   const interestPct = totalContributions>0?(totalInterest/totalContributions*100).toFixed(0):0;
 
-  // EPS pension formula: (Pensionable Salary × Pensionable Service) ÷ 70
+  // EPS pension formula: (Pensionable Salary Ã— Pensionable Service) Ã· 70
   // Pensionable salary = average of last 60 months EPS wage (capped at 15000)
   // We use last year's EPS wage as a proxy
   const pensionableSvc = Math.min(epsService, 35); // capped at 35 years for pension calc
   const monthlyPension = Math.round((lastEPSWage * pensionableSvc) / 70);
 
-  /* ── Render ── */
+  /* â”€â”€ Render â”€â”€ */
   document.getElementById('r-corpus').textContent  = fmtCr(corpus);
   document.getElementById('r-corpus-sub').textContent = 'over '+yearsLeft+' years';
   document.getElementById('r-interest').textContent = fmtCr(totalInterest);
@@ -841,10 +841,10 @@ function calculate(){
   const vd=document.getElementById('verdict');
   if(corpus>=10000000){
     vd.className='verdict ok';
-    vd.innerHTML=`✅ <span>Your EPF corpus projects to <strong>${fmtCr(corpus)}</strong> at retirement — a solid retirement foundation. At 4% safe withdrawal, this generates ~${fmt(corpus*0.04/12)}/month in addition to your EPS pension of ${fmt(monthlyPension)}/month.</span>`;
+    vd.innerHTML=`âœ… <span>Your EPF corpus projects to <strong>${fmtCr(corpus)}</strong> at retirement â€” a solid retirement foundation. At 4% safe withdrawal, this generates ~${fmt(corpus*0.04/12)}/month in addition to your EPS pension of ${fmt(monthlyPension)}/month.</span>`;
   } else {
     vd.className='verdict warn';
-    vd.innerHTML=`⚠️ <span>Projected corpus of <strong>${fmtCr(corpus)}</strong>. Consider increasing VPF contributions to build a larger retirement buffer — VPF earns the same tax-free EPF rate with no market risk.</span>`;
+    vd.innerHTML=`âš ï¸ <span>Projected corpus of <strong>${fmtCr(corpus)}</strong>. Consider increasing VPF contributions to build a larger retirement buffer â€” VPF earns the same tax-free EPF rate with no market risk.</span>`;
   }
 
   /* growth chart */
@@ -862,36 +862,36 @@ function calculate(){
   /* breakdown table */
   const rows=`
     <tr><td>Opening EPF Balance<span class="sub">current EPFO account balance</span></td><td>${fmt(currentBal)}</td></tr>
-    <tr class="emp-row"><td>Your Contributions (Employee)<span class="sub">12% of basic × ${yearsLeft} years with ${(salaryGrowth*100).toFixed(0)}% annual growth</span></td><td>${fmt(totalEmpContrib)}</td></tr>
+    <tr class="emp-row"><td>Your Contributions (Employee)<span class="sub">12% of basic Ã— ${yearsLeft} years with ${(salaryGrowth*100).toFixed(0)}% annual growth</span></td><td>${fmt(totalEmpContrib)}</td></tr>
     <tr class="employer-row"><td>Employer EPF Contributions<span class="sub">3.67% of ${epfCap==='capped'?'capped':'actual'} basic</span></td><td>${fmt(totalErContrib)}</td></tr>
     ${totalVPF>0?`<tr class="emp-row"><td>VPF Contributions<span class="sub">${fmt(vpfMonthly)}/month voluntary</span></td><td>${fmt(totalVPF)}</td></tr>`:''}
-    <tr class="interest-row"><td>Total Interest Earned<span class="sub">${(epfRate*100).toFixed(2)}% p.a. — entirely tax-free at withdrawal</span></td><td>${fmt(totalInterest)}</td></tr>
+    <tr class="interest-row"><td>Total Interest Earned<span class="sub">${(epfRate*100).toFixed(2)}% p.a. â€” entirely tax-free at withdrawal</span></td><td>${fmt(totalInterest)}</td></tr>
     <tr class="total-row"><td>EPF Corpus at Retirement</td><td>${fmtCr(corpus)}</td></tr>
-    <tr><td>EPS Monthly Pension (estimated)<span class="sub">(${fmt(lastEPSWage)} × ${pensionableSvc} yrs) ÷ 70</span></td><td>${fmt(monthlyPension)}/mo</td></tr>`;
+    <tr><td>EPS Monthly Pension (estimated)<span class="sub">(${fmt(lastEPSWage)} Ã— ${pensionableSvc} yrs) Ã· 70</span></td><td>${fmt(monthlyPension)}/mo</td></tr>`;
   document.getElementById('breakdown-body').innerHTML=rows;
 
   /* checks */
   const checks=[];
 
   if(basic>EPS_WAGE_CAP&&epfCap==='capped'){
-    checks.push({cls:'info',icon:'ℹ️',text:`Your basic salary (${fmt(basic)}) exceeds ₹15,000. Under the standard EPFO cap, employer's EPF contribution is calculated on ₹15,000 only. To increase employer contribution, your company would need to opt for contribution on actual salary.`});
+    checks.push({cls:'info',icon:'â„¹ï¸',text:`Your basic salary (${fmt(basic)}) exceeds â‚¹15,000. Under the standard EPFO cap, employer's EPF contribution is calculated on â‚¹15,000 only. To increase employer contribution, your company would need to opt for contribution on actual salary.`});
   }
 
   if(vpfMonthly===0){
     const vpfBoost = basic*0.12*12*yearsLeft*0.3; // rough estimate
-    checks.push({cls:'good',icon:'💡',text:`VPF (Voluntary PF) earns the same ${(epfRate*100).toFixed(2)}% tax-free rate as EPF. Even ₹${Math.round(basic*0.02).toLocaleString('en-IN')}/month extra (2% of basic) could add ₹${fmtCr(vpfBoost)} to your corpus over ${yearsLeft} years.`});
+    checks.push({cls:'good',icon:'ðŸ’¡',text:`VPF (Voluntary PF) earns the same ${(epfRate*100).toFixed(2)}% tax-free rate as EPF. Even â‚¹${Math.round(basic*0.02).toLocaleString('en-IN')}/month extra (2% of basic) could add â‚¹${fmtCr(vpfBoost)} to your corpus over ${yearsLeft} years.`});
   }
 
   if(epsService>=10){
-    checks.push({cls:'good',icon:'✅',text:`With ${Math.round(epsService)} years of EPS service, you're eligible for a monthly pension of ~${fmt(monthlyPension)} after retirement. EPS requires minimum 10 years of service for pension eligibility.`});
+    checks.push({cls:'good',icon:'âœ…',text:`With ${Math.round(epsService)} years of EPS service, you're eligible for a monthly pension of ~${fmt(monthlyPension)} after retirement. EPS requires minimum 10 years of service for pension eligibility.`});
   } else {
-    checks.push({cls:'warn',icon:'⚠️',text:`EPS pension requires minimum 10 years of qualifying service. With ${Math.round(epsYearsSoFar)} years so far and ${yearsLeft} years remaining, you'll ${epsYearsSoFar+yearsLeft>=10?'qualify':'may not qualify unless you continue contributing to EPS'}.`});
+    checks.push({cls:'warn',icon:'âš ï¸',text:`EPS pension requires minimum 10 years of qualifying service. With ${Math.round(epsYearsSoFar)} years so far and ${yearsLeft} years remaining, you'll ${epsYearsSoFar+yearsLeft>=10?'qualify':'may not qualify unless you continue contributing to EPS'}.`});
   }
 
-  checks.push({cls:'info',icon:'ℹ️',text:'EPF corpus withdrawn after 5 continuous years of service is fully tax-free. Withdrawal before 5 years attracts TDS and is added to your taxable income for that year.'});
+  checks.push({cls:'info',icon:'â„¹ï¸',text:'EPF corpus withdrawn after 5 continuous years of service is fully tax-free. Withdrawal before 5 years attracts TDS and is added to your taxable income for that year.'});
 
   if(corpus>5000000){
-    checks.push({cls:'warn',icon:'⚠️',text:'Interest on EPF contributions above ₹2.5 lakh/year (₹5 lakh for government employees) is taxable from FY 2021-22 onwards. If your annual PF contribution (including VPF) exceeds this, a portion of interest becomes taxable.'});
+    checks.push({cls:'warn',icon:'âš ï¸',text:'Interest on EPF contributions above â‚¹2.5 lakh/year (â‚¹5 lakh for government employees) is taxable from FY 2021-22 onwards. If your annual PF contribution (including VPF) exceeds this, a portion of interest becomes taxable.'});
   }
 
   document.getElementById('checks').innerHTML=checks.map(c=>`<div class="check-item ${c.cls}"><span class="check-icon">${c.icon}</span><span>${c.text}</span></div>`).join('');
