@@ -1,12 +1,7 @@
 User-agent: *
+
 Allow: /
 
-# Block backup and draft files
-Disallow: /*.backup
-Disallow: /*.backup2
-Disallow: /premium-demo.html
-Disallow: /index-backup*.html
-Disallow: /index-before-*.html
-Disallow: /shared/
+Sitemap: https://utilitydesk.in/sitemap.xml
 
-Sitemap: https://www.utilitydesk.in/sitemap.xml
+Host: utilitydesk.in
