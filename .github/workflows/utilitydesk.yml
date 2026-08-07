@@ -1,4 +1,4 @@
-name: Submit Changed URLs to IndexNow
+name: UtilityDesk SEO Automation
 
 on:
   push:
@@ -6,21 +6,34 @@ on:
       - main
 
 jobs:
-  indexnow:
+  seo:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      - name: Get changed files
-        id: changed
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate Sitemap
+        run: node scripts/generate-sitemap.js
+
+      - name: Verify Sitemap
+        run: |
+          test -f sitemap.xml
+          echo "✅ Sitemap generated"
+
+      - name: Detect Changed HTML Files
+        shell: bash
         run: |
           git diff --name-only HEAD~1 HEAD > changed.txt
-          cat changed.txt
 
-      - name: Build URL list
+      - name: Build URL List
         shell: bash
         run: |
           echo "[" > urls.json
@@ -31,7 +44,6 @@ jobs:
             if [[ "$file" == *.html ]]; then
 
               url="https://utilitydesk.in/${file}"
-
               url="${url/index.html/}"
 
               if [ "$first" = true ]; then
@@ -53,6 +65,12 @@ jobs:
       - name: Submit to IndexNow
         shell: bash
         run: |
+
+          if [ "$(cat urls.json)" = "[]" ]; then
+            echo "No HTML pages changed."
+            exit 0
+          fi
+
           URLS=$(cat urls.json)
 
           curl -X POST https://api.indexnow.org/indexnow \
@@ -63,3 +81,9 @@ jobs:
             \"keyLocation\":\"https://utilitydesk.in/922a92cb14844b0abb11650b3397a8b0.txt\",
             \"urlList\":$URLS
           }"
+
+      - name: Upload Sitemap
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemap
+          path: sitemap.xml
