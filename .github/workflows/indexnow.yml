@@ -1,4 +1,4 @@
-name: Submit IndexNow
+name: Submit Changed URLs to IndexNow
 
 on:
   push:
@@ -10,15 +10,56 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Submit homepage to IndexNow
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed files
+        id: changed
         run: |
+          git diff --name-only HEAD~1 HEAD > changed.txt
+          cat changed.txt
+
+      - name: Build URL list
+        shell: bash
+        run: |
+          echo "[" > urls.json
+          first=true
+
+          while read file; do
+
+            if [[ "$file" == *.html ]]; then
+
+              url="https://utilitydesk.in/${file}"
+
+              url="${url/index.html/}"
+
+              if [ "$first" = true ]; then
+                first=false
+              else
+                echo "," >> urls.json
+              fi
+
+              echo "\"$url\"" >> urls.json
+
+            fi
+
+          done < changed.txt
+
+          echo "]" >> urls.json
+
+          cat urls.json
+
+      - name: Submit to IndexNow
+        shell: bash
+        run: |
+          URLS=$(cat urls.json)
+
           curl -X POST https://api.indexnow.org/indexnow \
           -H "Content-Type: application/json" \
-          -d '{
-            "host":"utilitydesk.in",
-            "key":"922a92cb14844b0abb11650b3397a8b0",
-            "keyLocation":"https://utilitydesk.in/922a92cb14844b0abb11650b3397a8b0.txt",
-            "urlList":[
-              "https://utilitydesk.in/"
-            ]
-          }'
+          -d "{
+            \"host\":\"utilitydesk.in\",
+            \"key\":\"922a92cb14844b0abb11650b3397a8b0\",
+            \"keyLocation\":\"https://utilitydesk.in/922a92cb14844b0abb11650b3397a8b0.txt\",
+            \"urlList\":$URLS
+          }"
