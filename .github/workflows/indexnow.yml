@@ -1,0 +1,24 @@
+name: Submit IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Submit homepage to IndexNow
+        run: |
+          curl -X POST https://api.indexnow.org/indexnow \
+          -H "Content-Type: application/json" \
+          -d '{
+            "host":"utilitydesk.in",
+            "key":"922a92cb14844b0abb11650b3397a8b0",
+            "keyLocation":"https://utilitydesk.in/922a92cb14844b0abb11650b3397a8b0.txt",
+            "urlList":[
+              "https://utilitydesk.in/"
+            ]
+          }'
