@@ -15,19 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+  - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
+  - name: Setup Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
 
-      - name: Install Dependencies
-        run: npm install
+  - name: Generate sitemap
+    run: node scripts/generate-sitemap.js
 
-      - name: Check Node Version
-        run: node -v
-
-      - name: Check NPM Version
-        run: npm -v
+  # Other steps...
