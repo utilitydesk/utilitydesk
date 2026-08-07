@@ -23,6 +23,9 @@ jobs:
       - name: Generate Sitemap
         run: node scripts/generate-sitemap.js
 
+	- name: Generate Robots
+ 	 run: node scripts/generate-robots.js
+
       - name: Verify Sitemap
         run: |
           test -f sitemap.xml
