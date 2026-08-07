@@ -23,13 +23,13 @@ jobs:
       - name: Generate Sitemap
         run: node scripts/generate-sitemap.js
 
-	- name: Generate Robots
+      - name: Generate Robots
  	 run: node scripts/generate-robots.js
 
       - name: Verify Sitemap
         run: |
           test -f sitemap.xml
-          echo "✅ Sitemap generated"
+          echo "Sitemap generated successfully"
 
       - name: Detect Changed HTML Files
         shell: bash
