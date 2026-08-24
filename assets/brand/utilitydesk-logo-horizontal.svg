@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+<title id="title">UtilityDesk.in</title>
+<desc id="desc">UtilityDesk.in — Productivity Tools for India</desc>
+<g transform="translate(10 20) scale(.82)">
+<path d="M120 34V111c0 25-18 40-40 40s-40-15-40-40V34" fill="none" stroke="#1A1F2E" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M112 34h36c31 0 52 19 52 58s-21 59-52 59h-36" fill="none" stroke="#F0A830" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="205" y="102" font-family="Inter,Arial,Helvetica,sans-serif" font-size="62" font-weight="700" fill="#1A1F2E">Utility<tspan fill="#F0A830">Desk</tspan><tspan fill="#1A1F2E">.in</tspan></text>
+<rect x="207" y="121" width="82" height="5" rx="2.5" fill="#F0A830"/>
+<text x="207" y="165" font-family="Inter,Arial,Helvetica,sans-serif" font-size="27" font-weight="500" fill="#64748B">Productivity Tools for India</text>
+</svg>
