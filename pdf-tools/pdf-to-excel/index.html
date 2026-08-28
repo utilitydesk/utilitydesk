@@ -1,300 +1,350 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-<title>PDF to Excel Converter | UtilityDesk.in</title>
-<meta content="Use the PDF to Excel Converter â€” Extract Tables from PDF to XLSX Free online in your browser. Process PDF files quickly with no signup required on..." name="description"/>
-<link href="../../assets/brand/utilitydesk-favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://utilitydesk.in/pdf-tools/pdf-to-excel/" rel="canonical"/>
-<rect fill="%231a1f2e" height="32" rx="6" width="32"></rect><text fill="%23f0a830" font-size="18" text-anchor="middle" x="16" y="22">U</text>"&gt;
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF to Excel &#8212; Convert PDF to XLSX | UtilityDesk.in</title>
+<meta name="description" content="Extract tables from PDF and convert to editable Excel spreadsheet.">
+<link rel="canonical" href="https://www.utilitydesk.in/pdf-tools/pdf-to-excel/">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/utilitydesk-favicon.svg">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-9104MGBHMF');</script>
-<style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --sl-950:#0f1219;--sl-900:#1a1f2e;--sl-800:#252b3d;--sl-700:#353d54;
-  --sl-600:#4a5270;--sl-400:#8891a8;--sl-300:#b0b7c8;--sl-200:#d1d5e0;
-  --sl-100:#ebedf3;--sl-50:#f5f6f9;--white:#fff;
-  --am-500:#f0a830;--am-600:#d4901a;--am-100:#fef3d6;
-  --em-500:#34b876;--em-100:#d6f5e6;
-  --bl-500:#4a7cf7;--bl-100:#dbe6fe;
-  --rs-500:#e85d6f;--rs-100:#fde2e6;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Instrument Serif',Georgia,serif;
-  --nav-h:72px;--max:1100px;
-  --sh-sm:0 1px 3px rgba(15,18,25,.06);--sh-md:0 4px 20px rgba(15,18,25,.10);
-  --t:.22s cubic-bezier(.4,0,.2,1);
-}
-html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:var(--font);color:var(--sl-900);background:var(--sl-50);line-height:1.6;overflow-x:hidden}
-a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(255,255,255,.93);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--sl-100);transition:box-shadow var(--t)}
-.nav.scrolled{box-shadow:var(--sh-sm)}
-.nav-in{max-width:var(--max);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
-.logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.45rem;color:var(--sl-900)}
-.logo-ic{width:36px;height:36px;background:var(--sl-900);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--am-500);font-size:1.1rem}
-.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
-.nav-links a{padding:7px 12px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--sl-600);transition:all var(--t)}
-.nav-links a:hover,.nav-links a.act{color:var(--sl-900);background:var(--sl-100)}
-.nav-btn{padding:8px 18px;border-radius:8px;font-size:.85rem;font-weight:600;background:var(--sl-900);color:var(--white);transition:all var(--t)}
-.nav-btn:hover{background:var(--sl-800);transform:translateY(-1px)}
-.hbg{display:none;flex-direction:column;gap:5px;padding:8px}
-.hbg span{display:block;width:22px;height:2px;background:var(--sl-900);border-radius:2px;transition:all .3s}
-.mob{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--white);z-index:99;padding:24px;flex-direction:column;gap:4px;overflow-y:auto}
-.mob.open{display:flex}
-.mob a{padding:13px 16px;border-radius:10px;font-size:1rem;font-weight:500;color:var(--sl-700)}
-.hero{padding:calc(var(--nav-h)+36px) 24px 32px;text-align:center;background:linear-gradient(175deg,var(--white) 0%,var(--sl-50) 100%);border-bottom:1px solid var(--sl-100)}
-.bc{display:flex;justify-content:center;gap:8px;margin-bottom:14px;font-size:.8rem;color:var(--sl-400)}
-.bc a{color:var(--sl-500)}.bc a:hover{color:var(--am-600)}
-.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:8px}
-.hero p{color:var(--sl-600);max-width:520px;margin:0 auto;font-size:.975rem}
-.body{max-width:780px;margin:32px auto 64px;padding:0 24px}
-.upload-z{border:2px dashed var(--sl-200);border-radius:14px;padding:36px 24px;text-align:center;background:var(--white);cursor:pointer;transition:all var(--t);position:relative}
-.upload-z:hover,.upload-z.dov{border-color:var(--bl-500);background:var(--bl-100)}
-.upload-z input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
-.upload-z .ic{font-size:2.5rem;margin-bottom:10px}
-.upload-z h3{font-size:.975rem;font-weight:600;margin-bottom:5px}
-.upload-z p{font-size:.82rem;color:var(--sl-400)}
-.flist{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.fitem{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--white);border:1.5px solid var(--sl-100);border-radius:8px;font-size:.82rem}
-.fitem-ic{font-size:1.1rem;flex-shrink:0}
-.fitem-name{flex:1;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.fitem-sz{color:var(--sl-400);font-size:.75rem;flex-shrink:0}
-.settings{background:var(--white);border:1.5px solid var(--sl-100);border-radius:12px;padding:20px;margin-top:14px}
-.settings h3{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--sl-400);margin-bottom:14px}
-.fg{margin-bottom:14px}
-.fg label{display:block;font-size:.85rem;font-weight:600;color:var(--sl-700);margin-bottom:6px}
-.fg select,.fg input{width:100%;padding:9px 12px;border:1.5px solid var(--sl-200);border-radius:8px;font-size:.875rem;font-family:var(--font);background:var(--white);outline:none;transition:border-color var(--t)}
-.fg select:focus,.fg input:focus{border-color:var(--am-500)}
-.fg-hint{font-size:.75rem;color:var(--sl-400);margin-top:4px}
-.btn-go{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px 24px;background:var(--sl-900);color:var(--white);border-radius:10px;font-size:1rem;font-weight:700;margin-top:18px;transition:all var(--t);border:none;cursor:pointer;font-family:var(--font)}
-.btn-go:hover:not(:disabled){background:var(--sl-800);transform:translateY(-1px);box-shadow:var(--sh-md)}
-.btn-go:disabled{opacity:.45;cursor:not-allowed;transform:none}
-.prog{display:none;margin-top:14px}
-.prog-bar{height:6px;background:var(--sl-100);border-radius:99px;overflow:hidden}
-.prog-fill{height:100%;background:linear-gradient(90deg,var(--am-500),var(--em-500));border-radius:99px;width:0%;transition:width .4s}
-.prog-lbl{font-size:.78rem;color:var(--sl-400);margin-top:6px;text-align:center}
-.result{display:none;margin-top:18px;padding:20px;background:var(--em-100);border:1.5px solid var(--em-500);border-radius:12px}
-.result h3{font-size:.95rem;font-weight:700;color:#0f5132;margin-bottom:8px}
-.result p{font-size:.875rem;color:#0f5132;margin-bottom:14px}
-.r-acts{display:flex;gap:10px;flex-wrap:wrap}
-.btn-dl{display:inline-flex;align-items:center;gap:7px;padding:10px 20px;background:var(--em-500);color:var(--white);border-radius:8px;font-size:.875rem;font-weight:600;border:none;cursor:pointer;transition:all var(--t);font-family:var(--font)}
-.btn-dl:hover{background:#2ca066;transform:translateY(-1px)}
-.btn-rst{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:var(--white);color:var(--sl-700);border:1.5px solid var(--sl-200);border-radius:8px;font-size:.875rem;font-weight:600;cursor:pointer;transition:all var(--t);font-family:var(--font)}
-.btn-rst:hover{border-color:var(--sl-400)}
-.err{display:none;margin-top:14px;padding:12px 16px;background:var(--rs-100);border:1.5px solid var(--rs-500);border-radius:8px;font-size:.85rem;color:#9f1239}
-.info{background:var(--bl-100);border:1.5px solid var(--bl-500);border-radius:10px;padding:14px 18px;margin-top:14px;font-size:.85rem;color:#1e40af}
-.info h4{font-weight:700;margin-bottom:4px;font-size:.875rem}
-.preview-box{background:var(--white);border:1.5px solid var(--sl-100);border-radius:10px;padding:16px;margin-top:14px;max-height:300px;overflow-y:auto;font-size:.85rem;line-height:1.8;color:var(--sl-700)}
-.related{background:var(--white);border-top:1px solid var(--sl-100);padding:48px 24px}
-.related-in{max-width:var(--max);margin:0 auto}
-.related-in h2{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin-bottom:18px}
-.rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
-.rel-card{display:flex;align-items:center;gap:12px;padding:14px;background:var(--sl-50);border:1.5px solid var(--sl-100);border-radius:10px;transition:all var(--t)}
-.rel-card:hover{background:var(--white);box-shadow:var(--sh-md);transform:translateY(-2px)}
-.rel-ic{font-size:1.4rem;flex-shrink:0}
-.rel-card h3{font-size:.875rem;font-weight:600;margin-bottom:2px}
-.rel-card p{font-size:.75rem;color:var(--sl-500)}
-.faq{padding:48px 24px 64px;max-width:780px;margin:0 auto}
-.faq h2{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin-bottom:20px}
-.faq-item{border-bottom:1px solid var(--sl-100);padding:14px 0}
-.faq-q{width:100%;text-align:left;font-size:.9rem;font-weight:600;color:var(--sl-900);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;background:none;border:none;padding:0}
-.faq-q::after{content:'+';font-size:1.1rem;color:var(--sl-400);flex-shrink:0}
-.faq-item.open .faq-q::after{content:'-'}
-.faq-a{display:none;font-size:.875rem;color:var(--sl-600);line-height:1.75;padding-top:10px}
-.faq-item.open .faq-a{display:block}
-.footer{background:var(--sl-950);color:var(--sl-400);padding:48px 24px 24px}
-.footer-in{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:28px}
-@media(max-width:860px){.footer-in{grid-template-columns:1fr 1fr 1fr}}
-@media(max-width:540px){.footer-in{grid-template-columns:1fr 1fr}}
-.fl{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-family:var(--serif);font-size:1.25rem;color:var(--white)}
-.fl-ic{width:28px;height:28px;background:var(--sl-800);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--am-500)}
-.fc h4{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--sl-300);margin-bottom:12px}
-.fc ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-.fc a{font-size:.82rem;transition:color var(--t)}.fc a:hover{color:var(--am-500)}
-.fb{max-width:var(--max);margin:32px auto 0;padding-top:18px;border-top:1px solid var(--sl-800);font-size:.76rem}
-@media(max-width:768px){.nav-links,.nav-btn{display:none}.hbg{display:flex}}
-</style>
-<link href="../../search.css" rel="stylesheet"/>
-<link href="../../assistant.css" rel="stylesheet"/>
-<link href="../../premium.css" rel="stylesheet"/>
-<link href="../../shared/design-system-v2.css" rel="stylesheet"/>
-<link href="../../shared/header-v2.css" rel="stylesheet"/>
-<link href="../../shared/footer-v2.css" rel="stylesheet"/>
-<link href="../../shared/ux.css" rel="stylesheet"/>
-<link href="../../shared/widgets.css" rel="stylesheet"/>
-<link href="../../shared/hero.css" rel="stylesheet"/>
-<link href="../../shared/categories.css" rel="stylesheet"/>
-<link href="../../shared/search-component.css" rel="stylesheet"/>
-<link href="../../shared/sitewide-v4.css" rel="stylesheet"/>
-<script defer="" src="../../shared/sitewide-v4.js"></script>
-<meta content="index, follow" name="robots"/><meta content="PDF to Excel Converter | UtilityDesk.in" property="og:title"/><meta content="Use the PDF to Excel Converter â€” Extract Tables from PDF to XLSX Free online in your browser. Process PDF files quickly with no signup required on..." property="og:description"/><meta content="website" property="og:type"/><meta content="UtilityDesk.in" property="og:site_name"/><meta content="https://utilitydesk.in/pdf-tools/pdf-to-excel/" property="og:url"/><meta content="summary" name="twitter:card"/><meta content="PDF to Excel Converter | UtilityDesk.in" name="twitter:title"/><meta content="Use the PDF to Excel Converter â€” Extract Tables from PDF to XLSX Free online in your browser. Process PDF files quickly with no signup required on..." name="twitter:description"/><style data-ud-seo="h1">.ud-seo-h1{font-size:clamp(1.75rem,3vw,2.35rem);line-height:1.2;font-weight:800;color:#1a1f2e;margin:0 0 24px;padding:0;}@media(max-width:768px){.ud-seo-h1{font-size:1.75rem;margin-bottom:18px;}}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"PDF to Excel Converter","description":"Use the PDF to Excel Converter â€” Extract Tables from PDF to XLSX Free online in your browser. Process PDF files quickly with no signup required on...","url":"https://utilitydesk.in/pdf-tools/pdf-to-excel/","isPartOf":{"@type":"WebSite","name":"UtilityDesk.in","url":"https://utilitydesk.in/"},"publisher":{"@type":"Organization","name":"UtilityDesk.in","url":"https://utilitydesk.in/"}}</script></head><body>
-<header class="ud-header" data-ud-header=""> <div class="ud-header-inner"> <a class="ud-brand" href="/"> <img alt="UtilityDesk.in â€” Productivity Tools for India" class="ud-brand-logo" src="../../assets/brand/utilitydesk-logo-horizontal.svg"/> </a> <nav class="ud-nav"> <ul class="ud-nav-links"> <li><a class="ud-nav-link" href="/">Home</a></li> <li><a class="ud-nav-link" href="/calculators/">Calculators</a></li> <li><a class="ud-nav-link" href="/pdf-tools/">PDF Tools</a></li> <li><a class="ud-nav-link" href="/hr/">HR Suite</a></li> <li><a class="ud-nav-link" href="/document-generators/">Documents</a></li> <li><a class="ud-nav-link" href="/blog/">Blog</a></li> <li><a class="ud-nav-link" href="/about/">About</a></li> <li><a class="ud-nav-link" href="/contact/">Contact</a></li> </ul> <div class="ud-nav-dropdown"> <button aria-expanded="false" aria-haspopup="true" class="ud-nav-dropdown-trigger" type="button">          Browse Tools          <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg> </button> <div class="ud-nav-dropdown-menu" role="menu"> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">Calculators</div> <a class="ud-nav-dropdown-item" href="/calculators/" role="menuitem">All Calculators</a> <a class="ud-nav-dropdown-item" href="/calculators/salary-hike/" role="menuitem">Salary &amp; HR</a> <a class="ud-nav-dropdown-item" href="/calculators/income-tax/" role="menuitem">Tax</a> <a class="ud-nav-dropdown-item" href="/calculators/emi/" role="menuitem">Loans &amp; EMI</a> <a class="ud-nav-dropdown-item" href="/calculators/sip-calculator/" role="menuitem">Investments</a> <a class="ud-nav-dropdown-item" href="/calculators/business-loan-calculator/" role="menuitem">Business</a> <a class="ud-nav-dropdown-item" href="/calculators/unit-converter/" role="menuitem">Utilities</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">PDF Tools</div> <a class="ud-nav-dropdown-item" href="/pdf-tools/" role="menuitem">All PDF Tools</a> <a class="ud-nav-dropdown-item" href="/pdf-tools/merge-pdf/" role="menuitem">Browser-Based PDF Tools</a> <a class="ud-nav-dropdown-item" href="/pdf-tools/ocr-pdf/" role="menuitem">Advanced PDF Tools</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">HR Suite</div> <a class="ud-nav-dropdown-item" href="/hr/" role="menuitem">All HR Tools</a> <a class="ud-nav-dropdown-item" href="/hr/offer-letter/" role="menuitem">HR Documents</a> <a class="ud-nav-dropdown-item" href="/hr/interview-questions/" role="menuitem">Career Tools</a> <a class="ud-nav-dropdown-item" href="/hr/resume-rewrite/" role="menuitem">AI Tools</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">Documents</div> <a class="ud-nav-dropdown-item" href="/document-generators/" role="menuitem">All Document Generators</a> <a class="ud-nav-dropdown-item" href="/document-generators/offer-letter-generator/" role="menuitem">HR Documents</a> <a class="ud-nav-dropdown-item" href="/document-generators/invoice/" role="menuitem">Business Documents</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">Other</div> <a class="ud-nav-dropdown-item" href="/blog/" role="menuitem">Blog</a> <a class="ud-nav-dropdown-item" href="/about/" role="menuitem">About</a> <a class="ud-nav-dropdown-item" href="/contact/" role="menuitem">Contact</a> </div> </div> </div> </nav> <button aria-expanded="false" aria-haspopup="true" aria-label="Toggle menu" class="ud-mobile-toggle" type="button"> <span></span><span></span><span></span> </button> </div> <div class="ud-mobile-menu"> <ul class="ud-mobile-menu-links"> <li><a class="ud-mobile-menu-link" href="/">Home</a></li> <li><a class="ud-mobile-menu-link" href="/calculators/">Calculators</a></li> <li><a class="ud-mobile-menu-link" href="/pdf-tools/">PDF Tools</a></li> <li><a class="ud-mobile-menu-link" href="/hr/">HR Suite</a></li> <li><a class="ud-mobile-menu-link" href="/document-generators/">Documents</a></li> <li><a class="ud-mobile-menu-link" href="/blog/">Blog</a></li> <li><a class="ud-mobile-menu-link" href="/about/">About</a></li> <li><a class="ud-mobile-menu-link" href="/contact/">Contact</a></li> </ul> <div class="ud-mobile-dropdown"> <button aria-expanded="false" aria-haspopup="true" class="ud-mobile-dropdown-trigger" type="button">Browse Tools â–¾</button> <div class="ud-mobile-dropdown-menu"> <a class="ud-mobile-dropdown-item" href="/calculators/">All Calculators</a> <a class="ud-mobile-dropdown-item" href="/calculators/salary-hike/">Salary &amp; HR</a> <a class="ud-mobile-dropdown-item" href="/calculators/income-tax/">Tax</a> <a class="ud-mobile-dropdown-item" href="/calculators/emi/">Loans &amp; EMI</a> <a class="ud-mobile-dropdown-item" href="/calculators/sip-calculator/">Investments</a> <a class="ud-mobile-dropdown-item" href="/pdf-tools/">All PDF Tools</a> <a class="ud-mobile-dropdown-item" href="/pdf-tools/merge-pdf/">Browser-Based PDF Tools</a> <a class="ud-mobile-dropdown-item" href="/pdf-tools/ocr-pdf/">Advanced PDF Tools</a> <a class="ud-mobile-dropdown-item" href="/hr/">All HR Tools</a> <a class="ud-mobile-dropdown-item" href="/hr/offer-letter/">HR Documents</a> <a class="ud-mobile-dropdown-item" href="/hr/interview-questions/">Career Tools</a> <a class="ud-mobile-dropdown-item" href="/hr/resume-rewrite/">AI Tools</a> <a class="ud-mobile-dropdown-item" href="/document-generators/">All Documents</a> <a class="ud-mobile-dropdown-item" href="/document-generators/offer-letter-generator/">HR Documents</a> <a class="ud-mobile-dropdown-item" href="/document-generators/invoice/">Business Documents</a> <a class="ud-mobile-dropdown-item" href="/blog/">Blog</a> <a class="ud-mobile-dropdown-item" href="/about/">About</a> <a class="ud-mobile-dropdown-item" href="/contact/">Contact</a> </div> </div> </div></header>
-<div class="hero">
-<div class="bc"><a href="/">Home</a><span>â€º</span><a href="/pdf-tools/">PDF Tools</a><span>â€º</span><span>ðŸ“Š PDF to Excel â€” Extract Tables to Spreadsheet</span></div>
-<h1>ðŸ“Š PDF to Excel â€” Extract Tables to Spreadsheet</h1><p>Extract structured data and tables from your PDF into a real Excel XLSX spreadsheet. Works in your browser.</p>
+
+  <link rel="stylesheet" href="/shared/header-v2.css">
+  <link rel="stylesheet" href="/shared/footer-v2.css">
+  <link rel="stylesheet" href="/shared/design-system-v2.css">
+    <link rel="apple-touch-icon" href="/assets/brand/utilitydesk-logo-icon.svg">`n  </head>
+<body>
+<header class="ud-header" data-ud-header>
+  <div class="ud-header-inner">
+    <a href="/" class="ud-brand">
+      <img src="/assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in — Productivity Tools for India" class="ud-brand-logo">
+    </a>
+    <nav class="ud-nav">
+      <ul class="ud-nav-links">
+        <li><a href="/" class="ud-nav-link">Home</a></li>
+        <li><a href="/calculators/" class="ud-nav-link">Calculators</a></li>
+        <li><a href="/pdf-tools/" class="ud-nav-link">PDF Tools</a></li>
+        <li><a href="/hr/" class="ud-nav-link">HR Suite</a></li>
+        <li><a href="/document-generators/" class="ud-nav-link">Documents</a></li>
+        <li><a href="/blog/" class="ud-nav-link">Blog</a></li>
+        <li><a href="/about/" class="ud-nav-link">About</a></li>
+        <li><a href="/contact/" class="ud-nav-link">Contact</a></li>
+      </ul>
+      <div class="ud-nav-dropdown">
+        <button class="ud-nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true" type="button">
+          Browse Tools
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="ud-nav-dropdown-menu" role="menu">
+          <div class="ud-nav-dropdown-group">
+            <div class="ud-nav-dropdown-group-title">Calculators</div>
+            <a href="/calculators/" class="ud-nav-dropdown-item" role="menuitem">All Calculators</a>
+            <a href="/calculators/salary-hike/" class="ud-nav-dropdown-item" role="menuitem">Salary &amp; HR</a>
+            <a href="/calculators/income-tax/" class="ud-nav-dropdown-item" role="menuitem">Tax</a>
+            <a href="/calculators/emi/" class="ud-nav-dropdown-item" role="menuitem">Loans &amp; EMI</a>
+            <a href="/calculators/sip-calculator/" class="ud-nav-dropdown-item" role="menuitem">Investments</a>
+            <a href="/calculators/business-loan-calculator/" class="ud-nav-dropdown-item" role="menuitem">Business</a>
+            <a href="/calculators/unit-converter/" class="ud-nav-dropdown-item" role="menuitem">Utilities</a>
+          </div>
+          <div class="ud-nav-dropdown-group">
+            <div class="ud-nav-dropdown-group-title">PDF Tools</div>
+            <a href="/pdf-tools/" class="ud-nav-dropdown-item" role="menuitem">All PDF Tools</a>
+            <a href="/pdf-tools/merge-pdf/" class="ud-nav-dropdown-item" role="menuitem">Browser-Based PDF Tools</a>
+            <a href="/pdf-tools/ocr-pdf/" class="ud-nav-dropdown-item" role="menuitem">Advanced PDF Tools</a>
+          </div>
+          <div class="ud-nav-dropdown-group">
+            <div class="ud-nav-dropdown-group-title">HR Suite</div>
+            <a href="/hr/" class="ud-nav-dropdown-item" role="menuitem">All HR Tools</a>
+            <a href="/hr/offer-letter/" class="ud-nav-dropdown-item" role="menuitem">HR Documents</a>
+            <a href="/hr/interview-questions/" class="ud-nav-dropdown-item" role="menuitem">Career Tools</a>
+            <a href="/hr/resume-rewrite/" class="ud-nav-dropdown-item" role="menuitem">AI Tools</a>
+          </div>
+          <div class="ud-nav-dropdown-group">
+            <div class="ud-nav-dropdown-group-title">Documents</div>
+            <a href="/document-generators/" class="ud-nav-dropdown-item" role="menuitem">All Document Generators</a>
+            <a href="/document-generators/offer-letter-generator/" class="ud-nav-dropdown-item" role="menuitem">HR Documents</a>
+            <a href="/document-generators/invoice/" class="ud-nav-dropdown-item" role="menuitem">Business Documents</a>
+          </div>
+          <div class="ud-nav-dropdown-group">
+            <div class="ud-nav-dropdown-group-title">Other</div>
+            <a href="/blog/" class="ud-nav-dropdown-item" role="menuitem">Blog</a>
+            <a href="/about/" class="ud-nav-dropdown-item" role="menuitem">About</a>
+            <a href="/contact/" class="ud-nav-dropdown-item" role="menuitem">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <button class="ud-mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-haspopup="true" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="ud-mobile-menu">
+    <ul class="ud-mobile-menu-links">
+      <li><a href="/" class="ud-mobile-menu-link">Home</a></li>
+      <li><a href="/calculators/" class="ud-mobile-menu-link">Calculators</a></li>
+      <li><a href="/pdf-tools/" class="ud-mobile-menu-link">PDF Tools</a></li>
+      <li><a href="/hr/" class="ud-mobile-menu-link">HR Suite</a></li>
+      <li><a href="/document-generators/" class="ud-mobile-menu-link">Documents</a></li>
+      <li><a href="/blog/" class="ud-mobile-menu-link">Blog</a></li>
+      <li><a href="/about/" class="ud-mobile-menu-link">About</a></li>
+      <li><a href="/contact/" class="ud-mobile-menu-link">Contact</a></li>
+    </ul>
+    <div class="ud-mobile-dropdown">
+      <button class="ud-mobile-dropdown-trigger" aria-expanded="false" aria-haspopup="true" type="button">Browse Tools &#x25BE;</button>
+      <div class="ud-mobile-dropdown-menu">
+        <a href="/calculators/" class="ud-mobile-dropdown-item">All Calculators</a>
+        <a href="/calculators/salary-hike/" class="ud-mobile-dropdown-item">Salary &amp; HR</a>
+        <a href="/calculators/income-tax/" class="ud-mobile-dropdown-item">Tax</a>
+        <a href="/calculators/emi/" class="ud-mobile-dropdown-item">Loans &amp; EMI</a>
+        <a href="/calculators/sip-calculator/" class="ud-mobile-dropdown-item">Investments</a>
+        <a href="/pdf-tools/" class="ud-mobile-dropdown-item">All PDF Tools</a>
+        <a href="/pdf-tools/merge-pdf/" class="ud-mobile-dropdown-item">Browser-Based PDF Tools</a>
+        <a href="/pdf-tools/ocr-pdf/" class="ud-mobile-dropdown-item">Advanced PDF Tools</a>
+        <a href="/hr/" class="ud-mobile-dropdown-item">All HR Tools</a>
+        <a href="/hr/offer-letter/" class="ud-mobile-dropdown-item">HR Documents</a>
+        <a href="/hr/interview-questions/" class="ud-mobile-dropdown-item">Career Tools</a>
+        <a href="/hr/resume-rewrite/" class="ud-mobile-dropdown-item">AI Tools</a>
+        <a href="/document-generators/" class="ud-mobile-dropdown-item">All Documents</a>
+        <a href="/document-generators/offer-letter-generator/" class="ud-mobile-dropdown-item">HR Documents</a>
+        <a href="/document-generators/invoice/" class="ud-mobile-dropdown-item">Business Documents</a>
+        <a href="/blog/" class="ud-mobile-dropdown-item">Blog</a>
+        <a href="/about/" class="ud-mobile-dropdown-item">About</a>
+        <a href="/contact/" class="ud-mobile-dropdown-item">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="breadcrumb-bar">
+  <nav aria-label="Breadcrumb">
+    <a href="/">Home</a> &#8250; <a href="/pdf-tools/">PDF Tools</a> &#8250; PDF to Excel
+  </nav>
 </div>
-<div class="body"><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script>if(typeof pdfjsLib!=='undefined')pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
-<div class="upload-z" id="uz">
-<input accept=".pdf" id="fi" type="file"/>
-<div class="ic">ðŸ“Š</div>
-<h3>Drop your PDF here</h3>
-<p>Max 30MB â€¢ Tables extracted to XLSX â€¢ No upload to servers</p>
+
+<div class="tool-hero">
+  <h1>&#128202; PDF to Excel</h1>
+  <p>Extract tables from PDF and convert to editable Excel spreadsheet.</p>
 </div>
-<div class="flist" id="fl"></div>
-<div class="settings" id="sp" style="display:none">
-<h3>Extraction Settings</h3>
-<div class="fg">
-<label>Data Layout</label>
-<select id="layout">
-<option selected="" value="grid">Grid (detect columns by position)</option>
-<option value="flat">Flat (one column, all text)</option>
-</select>
-<p class="fg-hint">Grid mode works best for PDFs with clear table structures. Flat mode for free-form text.</p>
+
+<div class="tool-body">
+  <div class="coming-card">
+    <div class="coming-icon">&#128679;</div>
+    <h2>Coming Soon</h2>
+    <p>This tool requires server-side processing and is currently being integrated. It will be available on UtilityDesk.in very soon &#8212; no signup required.</p>
+
+    <div style="background:var(--amber-100);border:1.5px solid var(--amber-500);border-radius:10px;padding:14px 16px;font-size:13px;color:#78350f;text-align:left;margin:16px 0">
+      <strong>Note:</strong> Table extraction accuracy depends on PDF structure. Text-based PDFs convert better than scanned ones. For complex sheets, manual cleanup may be needed.
+    </div>
+
+    <p style="font-size:.9rem;color:var(--slate-600);margin-top:16px"><strong>Meanwhile, try these free alternatives:</strong></p>
+    <div class="alt-list">
+      <div class="alt-item">&#127758; <a href="https://smallpdf.com" target="_blank" rel="noopener" style="color:var(--blue-500)">SmallPDF.com</a> &#8212; online, free tier available</div>
+      <div class="alt-item">&#127758; <a href="https://ilovepdf.com" target="_blank" rel="noopener" style="color:var(--blue-500)">iLovePDF.com</a> &#8212; free, no account needed</div>
+      <div class="alt-item">&#128421;&#65039; LibreOffice &#8212; free desktop app, works offline</div>
+    </div>
+
+    <div class="notify-form">
+      <input type="email" placeholder="Email for launch notification" id="notifyEmail">
+      <button onclick="document.getElementById('notifyEmail').value='';this.textContent='&#9989; Noted!';this.style.background='var(--emerald-500)'">Notify Me</button>
+    </div>
+  </div>
 </div>
-<div class="fg">
-<label>One sheet per page</label>
-<select id="sheetMode">
-<option selected="" value="single">Single sheet (all pages combined)</option>
-<option value="multi">Separate sheet per page</option>
-</select>
-</div>
-</div>
-<div class="info" id="inf" style="display:none">
-<h4>ðŸ’¡ Best results for</h4>
-<p>PDFs with clearly bordered tables, financial statements, invoices, and reports with tabular data. Complex merged cells and colour-coded tables may not convert perfectly.</p>
-</div>
-<button class="btn-go" disabled="" id="btn" onclick="convert()">ðŸ“Š Extract to Excel</button>
-<div class="prog" id="prog"><div class="prog-bar"><div class="prog-fill" id="pf"></div></div><div class="prog-lbl" id="pl">Extracting...</div></div>
-<div class="result" id="res">
-<h3>âœ… Extraction Complete</h3>
-<p id="res-info">Your Excel file is ready to download.</p>
-<div class="r-acts">
-<button class="btn-dl" onclick="dlResult()">â†“ Download XLSX</button>
-<button class="btn-rst" onclick="resetTool()">â†» Convert Another</button>
-</div>
-</div>
-<div class="err" id="err"></div>
+
+
 <script>
-let pdfFile=null,resultBlob=null;
-const uz=document.getElementById('uz');
-uz.addEventListener('dragover',e=>{e.preventDefault();uz.classList.add('dov')});
-uz.addEventListener('dragleave',()=>uz.classList.remove('dov'));
-uz.addEventListener('drop',e=>{e.preventDefault();uz.classList.remove('dov');handleFile(e.dataTransfer.files[0])});
-document.getElementById('fi').addEventListener('change',e=>handleFile(e.target.files[0]));
-function fmt(b){return b>1048576?(b/1048576).toFixed(1)+'MB':Math.round(b/1024)+'KB'}
-async function handleFile(f){
-  if(!f||f.type!=='application/pdf'){showErr('Please select a PDF file.');return}
-  if(f.size>31457280){showErr('File too large. Max 30MB.');return}
-  pdfFile=f;
-  document.getElementById('fl').innerHTML=`<div class="fitem"><span class="fitem-ic">&#128202;</span><span class="fitem-name">${f.name}</span><span class="fitem-sz">${fmt(f.size)}</span></div>`;
-  document.getElementById('sp').style.display='block';
-  document.getElementById('inf').style.display='block';
-  document.getElementById('btn').disabled=false;hideErr();
-}
-async function extractPageData(page, layout){
-  const tc=await page.getTextContent();
-  if(layout==='flat'){
-    return [tc.items.map(i=>i.str).filter(s=>s.trim()).join(' ')].map(s=>[s]);
-  }
-  // Grid: cluster items by Y position, then sort by X within each row
-  const rows={};
-  tc.items.forEach(item=>{
-    if(!item.str.trim())return;
-    const y=Math.round(item.transform[5]/5)*5; // snap to 5px grid
-    if(!rows[y])rows[y]={items:[]};
-    rows[y].items.push({x:item.transform[4],text:item.str});
-  });
-  const sortedRows=Object.keys(rows).map(Number).sort((a,b)=>b-a);
-  // Detect columns by X clustering
-  const allX=sortedRows.flatMap(y=>rows[y].items.map(i=>i.x)).sort((a,b)=>a-b);
-  const cols=[];let prev=-999;
-  allX.forEach(x=>{if(x-prev>20){cols.push(x);prev=x}});
-  return sortedRows.map(y=>{
-    const row=new Array(cols.length).fill('');
-    rows[y].items.forEach(item=>{
-      const ci=cols.findIndex((c,i)=>item.x>=c&&(i===cols.length-1||item.x<cols[i+1]-5));
-      if(ci>=0)row[ci]=(row[ci]?row[ci]+' ':'')+item.str;
-    });
-    return row.map(c=>c.trim());
-  }).filter(r=>r.some(c=>c));
-}
-async function convert(){
-  if(!pdfFile)return;
-  const btn=document.getElementById('btn');btn.disabled=true;btn.textContent='Extracting...';
-  setP(5,'Loading PDF...');
-  try{
-    const ab=await pdfFile.arrayBuffer();
-    const pdf=await pdfjsLib.getDocument({data:new Uint8Array(ab)}).promise;
-    const total=pdf.numPages;
-    const layout=document.getElementById('layout').value;
-    const sheetMode=document.getElementById('sheetMode').value;
-    const wb=XLSX.utils.book_new();
-    if(sheetMode==='multi'){
-      for(let i=1;i<=total;i++){
-        setP(5+Math.round((i/total)*85),`Processing page ${i}/${total}...`);
-        const page=await pdf.getPage(i);
-        const data=await extractPageData(page,layout);
-        const ws=XLSX.utils.aoa_to_sheet(data);
-        XLSX.utils.book_append_sheet(wb,ws,'Page '+i);
-      }
-    } else {
-      const allData=[];
-      for(let i=1;i<=total;i++){
-        setP(5+Math.round((i/total)*85),`Processing page ${i}/${total}...`);
-        const page=await pdf.getPage(i);
-        if(i>1)allData.push([]);// blank row between pages
-        const data=await extractPageData(page,layout);
-        allData.push(...data);
-      }
-      const ws=XLSX.utils.aoa_to_sheet(allData);
-      XLSX.utils.book_append_sheet(wb,ws,'Extracted Data');
-    }
-    setP(95,'Building XLSX...');
-    const buf=XLSX.write(wb,{type:'array',bookType:'xlsx'});
-    resultBlob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
-    setP(100,'Done!');
-    setTimeout(()=>{
-      document.getElementById('prog').style.display='none';
-      document.getElementById('res-info').textContent=total+' page'+(total!==1?'s':'')+' extracted &#8226; '+fmt(resultBlob.size);
-      document.getElementById('res').style.display='block';
-    },400);
-  }catch(e){showErr('Extraction failed: '+e.message);btn.disabled=false;btn.textContent='&#128202; Extract to Excel'}
-}
-function dlResult(){
-  const a=document.createElement('a');a.href=URL.createObjectURL(resultBlob);
-  a.download=pdfFile.name.replace('.pdf','.xlsx');a.click();
-}
-function resetTool(){pdfFile=null;resultBlob=null;document.getElementById('fl').innerHTML='';document.getElementById('sp').style.display='none';document.getElementById('inf').style.display='none';document.getElementById('res').style.display='none';document.getElementById('btn').disabled=true;document.getElementById('btn').textContent='&#128202; Extract to Excel';document.getElementById('fi').value='';}
-function setP(pct,lbl){document.getElementById('prog').style.display='block';document.getElementById('pf').style.width=pct+'%';document.getElementById('pl').textContent=lbl}
-function showErr(m){const e=document.getElementById('err');e.textContent=m;e.style.display='block'}
-function hideErr(){document.getElementById('err').style.display='none'}
-</script></div>
-<section class="related"><div class="related-in"><h2>Related PDF Tools</h2><div class="rel-grid"><a class="rel-card" href="/pdf-tools/pdf-to-word/"><span class="rel-ic">ðŸ“„</span><div><h3>PDF to Word</h3><p>Extract text to DOCX</p></div></a><a class="rel-card" href="/pdf-tools/ocr-pdf/"><span class="rel-ic">ðŸ”</span><div><h3>OCR PDF</h3><p>Extract text from scanned PDF</p></div></a><a class="rel-card" href="/pdf-tools/pdf-to-ppt/"><span class="rel-ic">ðŸ“‹</span><div><h3>PDF to PowerPoint</h3><p>Convert to slides</p></div></a><a class="rel-card" href="/document-generators/invoice/"><span class="rel-ic">ðŸ§¾</span><div><h3>Invoice Generator</h3><p>Generate GST invoices</p></div></a></div></div></section>
-<div class="faq"><h2>Frequently Asked Questions</h2><div class="faq-item"><button class="faq-q">What type of PDFs work best?</button><div class="faq-a">PDFs with clearly structured tables, financial statements, invoices, and reports with consistent columns extract best.</div></div><div class="faq-item"><button class="faq-q">Will formulas be included?</button><div class="faq-a">No. PDFs store only the calculated values, not Excel formulas. You will need to rebuild formulas after conversion.</div></div><div class="faq-item"><button class="faq-q">How does Grid mode vs Flat mode differ?</button><div class="faq-a">Grid mode detects column positions and places data in corresponding cells. Flat mode puts all text in one column â€” useful for unstructured PDFs.</div></div><div class="faq-item"><button class="faq-q">Can I choose which pages to extract?</button><div class="faq-a">Currently all pages are extracted. Use PDF Split or Extract Pages first to isolate specific pages before converting.</div></div><div class="faq-item"><button class="faq-q">Is the output compatible with Google Sheets?</button><div class="faq-a">Yes. The XLSX file opens directly in Google Sheets, Microsoft Excel 2010+, and LibreOffice Calc.</div></div></div>
-<script>
-const _n=document.getElementById('nav');
-window.addEventListener('scroll',()=>_n.classList.toggle('scrolled',scrollY>20),{passive:true});
-const _h=document.getElementById('hbg'),_m=document.getElementById('mob');
-_h.addEventListener('click',()=>{
-  const o=_m.classList.toggle('open');
-  const s=_h.querySelectorAll('span');
-  if(o){s[0].style.transform='rotate(45deg)translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg)translate(5px,-5px)'}
-  else{s.forEach(x=>{x.style.transform='';x.style.opacity=''})}
+const _nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{_nav.classList.toggle('scrolled',window.scrollY>20)},{passive:true});
+const _hbg=document.getElementById('hamburger');
+const _mm=document.getElementById('mobileMenu');
+_hbg.addEventListener('click',()=>{
+  const open=_mm.classList.toggle('open');
+  _hbg.setAttribute('aria-expanded',open);
+  const sp=_hbg.querySelectorAll('span');
+  if(open){sp[0].style.transform='rotate(45deg) translate(5px,5px)';sp[1].style.opacity='0';sp[2].style.transform='rotate(-45deg) translate(5px,-5px)'}
+  else{sp[0].style.transform='';sp[1].style.opacity='';sp[2].style.transform=''}
 });
-document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
-<footer class="ud-footer" data-ud-footer=""> <div class="ud-footer-inner"> <div class="ud-footer-grid"> <div class="ud-footer-brand"> <a class="ud-footer-logo" href="/"> <img alt="UtilityDesk.in" class="ud-footer-logo-img" src="../../assets/brand/utilitydesk-logo-icon.svg"/> <div class="ud-footer-logo-text"> <div class="ud-footer-logo-title">UtilityDesk.in</div> <div class="ud-footer-logo-tagline">Productivity Tools for India</div> </div> </a> <p class="ud-footer-description">Free calculators, PDF tools, HR tools and document generators for Indian professionals. No signup required.</p> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">Calculators</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/calculators/income-tax/">Income Tax</a></li> <li><a class="ud-footer-link" href="/calculators/salary-hike/">Salary Hike</a></li> <li><a class="ud-footer-link" href="/calculators/in-hand-salary/">In-Hand Salary</a></li> <li><a class="ud-footer-link" href="/calculators/emi/">EMI Calculator</a></li> <li><a class="ud-footer-link" href="/calculators/pf-calculator/">PF Calculator</a></li> <li><a class="ud-footer-link" href="/calculators/">All Calculators â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">PDF Tools</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/pdf-tools/jpg-to-pdf/">JPG to PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/protect-pdf/">Protect PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/watermark-pdf/">Watermark PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/delete-pages/">Delete Pages</a></li> <li><a class="ud-footer-link" href="/pdf-tools/merge-pdf/">Merge PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/">All PDF Tools â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">HR Suite</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/hr/resume-builder/">Resume Builder</a></li> <li><a class="ud-footer-link" href="/hr/ats-checker/">ATS Checker AI</a></li> <li><a class="ud-footer-link" href="/hr/offer-letter/">Offer Letter</a></li> <li><a class="ud-footer-link" href="/hr/salary-slip/">Salary Slip</a></li> <li><a class="ud-footer-link" href="/hr/hr-policy-generator/">HR Policy AI</a></li> <li><a class="ud-footer-link" href="/hr/">All HR Tools â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">Document Generators</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/document-generators/offer-letter-generator/">Offer Letter</a></li> <li><a class="ud-footer-link" href="/document-generators/appointment-letter/">Appointment Letter</a></li> <li><a class="ud-footer-link" href="/document-generators/invoice/">Invoice</a></li> <li><a class="ud-footer-link" href="/document-generators/nda/">NDA Generator</a></li> <li><a class="ud-footer-link" href="/document-generators/salary-slip/">Salary Slip</a></li> <li><a class="ud-footer-link" href="/document-generators/">All Documents â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">Company</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/about/">About</a></li> <li><a class="ud-footer-link" href="/contact/">Contact</a></li> <li><a class="ud-footer-link" href="/blog/">Blog</a></li> <li><a class="ud-footer-link" href="/privacy-policy/">Privacy Policy</a></li> <li><a class="ud-footer-link" href="/terms-and-conditions/">Terms &amp; Conditions</a></li> <li><a class="ud-footer-link" href="/disclaimer/">Disclaimer</a></li> <li><a class="ud-footer-link" href="/sitemap.xml">Sitemap</a></li> </ul> </div> </div> <div class="ud-footer-bottom"> <div class="ud-footer-copyright">Â© 2026 UtilityDesk.in. All rights reserved.</div> <ul class="ud-footer-legal"> <li><a class="ud-footer-legal-link" href="/privacy-policy/">Privacy</a></li> <li><a class="ud-footer-legal-link" href="/terms-and-conditions/">Terms</a></li> <li><a class="ud-footer-legal-link" href="/disclaimer/">Disclaimer</a></li> </ul> </div> </div></footer>
-<script src="../../search.js"></script>
-<script src="../../assistant.js"></script>
-<script src="../../shared/widgets.js"></script>
-<script src="../../premium.js"></script>
-<script src="../../shared/social.js"></script>
-<script src="../../shared/newsletter.js"></script>
-<script src="../../shared/site-shell.js"></script>
-<script src="../../shared/brand-shell.js"></script>
-<script src="../../shared/functional-repair-v6.js"></script>
-</body></html>
+
+<!-- Floating Search Widget -->
+<div id="floatSearch" style="position:fixed;bottom:24px;right:24px;z-index:200;font-family:'Plus Jakarta Sans',system-ui,sans-serif">
+  <div id="floatPanel" style="display:none;width:320px;background:#fff;border:1.5px solid #d1d5e0;border-radius:16px;box-shadow:0 8px 32px rgba(15,18,25,.12);overflow:hidden;margin-bottom:10px">
+    <div style="padding:12px 14px;border-bottom:1px solid #ebedf3;display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:.8rem;font-weight:700;color:#353d54;text-transform:uppercase;letter-spacing:.06em">Search 153+ Tools</span>
+      <button onclick="toggleFloat()" style="background:none;border:none;cursor:pointer;color:#8891a8;font-size:18px;padding:0;line-height:1">&times;</button>
+    </div>
+    <div style="padding:10px 12px;position:relative">
+      <input id="fsi" type="search" placeholder="income tax, salary slip, PDF merge&#8230;" autocomplete="off"
+        style="width:100%;padding:9px 36px 9px 12px;border:1.5px solid #d1d5e0;border-radius:8px;font-size:.875rem;font-family:inherit;outline:none;transition:border-color .2s"
+        onfocus="this.style.borderColor='#f0a830'" onblur="this.style.borderColor='#d1d5e0'">
+      <svg style="position:absolute;right:20px;top:50%;transform:translateY(-50%);color:#8891a8;pointer-events:none" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </div>
+    <div id="fsr" style="max-height:260px;overflow-y:auto"></div>
+  </div>
+  <button onclick="toggleFloat()" id="floatBtn"
+    style="width:52px;height:52px;background:#1a1f2e;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.3rem;box-shadow:0 4px 16px rgba(15,18,25,.25);transition:all .2s;display:flex;align-items:center;justify-content:center;margin-left:auto"
+    title="Search all tools" aria-label="Search tools">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  const TOOLS=[
+    {t:'Income Tax Calculator',u:'/calculators/income-tax/',i:'&#129534;',c:'Calc'},
+    {t:'Salary Hike Calculator',u:'/calculators/salary-hike/',i:'&#128176;',c:'Calc'},
+    {t:'In-Hand Salary',u:'/calculators/in-hand-salary/',i:'&#128179;',c:'Calc'},
+    {t:'EMI Calculator',u:'/calculators/emi/',i:'&#127958;',c:'Calc'},
+    {t:'PF Calculator',u:'/calculators/pf-calculator/',i:'&#127963;&#65039;',c:'Calc'},
+    {t:'HRA Exemption',u:'/calculators/hra-exemption/',i:'&#127968;',c:'Calc'},
+    {t:'GST Calculator',u:'/calculators/gst/',i:'&#129534;',c:'Calc'},
+    {t:'SIP Calculator',u:'/calculators/sip-calculator/',i:'&#128200;',c:'Calc'},
+    {t:'Gratuity Calculator',u:'/calculators/gratuity-calculator/',i:'&#127873;',c:'Calc'},
+    {t:'NPS Calculator',u:'/calculators/nps/',i:'&#127963;&#65039;',c:'Calc'},
+    {t:'Home Loan Calculator',u:'/calculators/home-loan-calculator/',i:'&#127968;',c:'Calc'},
+    {t:'FD Calculator',u:'/calculators/fd-calculator/',i:'&#128274;',c:'Calc'},
+    {t:'PPF Calculator',u:'/calculators/ppf-calculator/',i:'&#127963;&#65039;',c:'Calc'},
+    {t:'Offer Letter Decoder',u:'/calculators/offer-letter-decoder/',i:'&#128196;',c:'Calc'},
+    {t:'JPG to PDF',u:'/pdf-tools/jpg-to-pdf/',i:'&#128444;&#65039;',c:'PDF'},
+    {t:'Protect PDF',u:'/pdf-tools/protect-pdf/',i:'&#128274;',c:'PDF'},
+    {t:'Merge PDF',u:'/pdf-tools/merge-pdf/',i:'&#128279;',c:'PDF'},
+    {t:'Watermark PDF',u:'/pdf-tools/watermark-pdf/',i:'&#128167;',c:'PDF'},
+    {t:'Split PDF',u:'/pdf-tools/split-pdf/',i:'&#9986;&#65039;',c:'PDF'},
+    {t:'Compress PDF',u:'/pdf-tools/compress-pdf/',i:'&#128230;',c:'PDF'},
+    {t:'Delete Pages PDF',u:'/pdf-tools/delete-pages/',i:'&#128465;&#65039;',c:'PDF'},
+    {t:'Extract Pages PDF',u:'/pdf-tools/extract-pages/',i:'&#9986;&#65039;',c:'PDF'},
+    {t:'Offer Letter',u:'/hr/offer-letter/',i:'&#128196;',c:'HR'},
+    {t:'Appointment Letter',u:'/hr/appointment-letter/',i:'&#128203;',c:'HR'},
+    {t:'Experience Letter',u:'/hr/experience-letter/',i:'&#127894;',c:'HR'},
+    {t:'Relieving Letter',u:'/hr/relieving-letter/',i:'&#128228;',c:'HR'},
+    {t:'Salary Slip Generator',u:'/hr/salary-slip/',i:'&#128176;',c:'HR'},
+    {t:'Increment Letter',u:'/hr/increment-letter/',i:'&#128200;',c:'HR'},
+    {t:'Warning Letter',u:'/hr/warning-letter/',i:'&#9888;&#65039;',c:'HR'},
+    {t:'Resume Builder',u:'/hr/resume-builder/',i:'&#128196;',c:'HR'},
+    {t:'Cover Letter',u:'/hr/cover-letter/',i:'&#9993;&#65039;',c:'HR'},
+    {t:'Exit Checklist',u:'/hr/exit-checklist/',i:'&#9989;',c:'HR'},
+    {t:'Resume Rewrite AI',u:'/hr/resume-rewrite/',i:'&#10024;',c:'AI'},
+    {t:'ATS Checker AI',u:'/hr/ats-checker/',i:'&#9989;',c:'AI'},
+    {t:'ATS Score AI',u:'/hr/ats-score/',i:'&#127919;',c:'AI'},
+    {t:'Grammar Check AI',u:'/hr/grammar-check/',i:'&#10003;',c:'AI'},
+    {t:'HR Policy Generator AI',u:'/hr/hr-policy-generator/',i:'&#128203;',c:'AI'},
+    {t:'Interview Questions AI',u:'/hr/interview-questions/',i:'&#10067;',c:'AI'},
+    {t:'Job Description AI',u:'/hr/job-description/',i:'&#128188;',c:'AI'},
+    {t:'Resume Analyzer AI',u:'/hr/resume-analyzer/',i:'&#128269;',c:'AI'},
+    {t:'Invoice Generator',u:'/document-generators/invoice/',i:'&#129534;',c:'Doc'},
+    {t:'Purchase Order',u:'/document-generators/purchase-order/',i:'&#128722;',c:'Doc'},
+    {t:'Quotation Generator',u:'/document-generators/quotation/',i:'&#128188;',c:'Doc'},
+    {t:'NDA Generator',u:'/document-generators/nda/',i:'&#128274;',c:'Doc'},
+    {t:'Resignation Letter',u:'/document-generators/resignation-letter/',i:'&#128221;',c:'Doc'},
+  ];
+  const catBg={'Calc':'#dbe6fe','PDF':'#d6f5e6','HR':'#fef3d6','AI':'#ede9fe','Doc':'#fde2e6'};
+  const catTx={'Calc':'#1d4ed8','PDF':'#15803d','HR':'#92400e','AI':'#6d28d9','Doc':'#9f1239'};
+  let open=false;
+  window.toggleFloat=function(){
+    open=!open;
+    document.getElementById('floatPanel').style.display=open?'block':'none';
+    const btn=document.getElementById('floatBtn');
+    btn.style.background=open?'#f0a830':'#1a1f2e';
+    btn.innerHTML=open?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>':'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
+    if(open)setTimeout(()=>document.getElementById('fsi').focus(),50);
+  };
+  document.getElementById('fsi').addEventListener('input',function(){
+    const q=this.value.toLowerCase().trim();
+    const sr=document.getElementById('fsr');
+    if(!q){sr.innerHTML='';return}
+    const m=TOOLS.filter(t=>t.t.toLowerCase().includes(q)).slice(0,7);
+    if(!m.length){sr.innerHTML='<div style="padding:14px 16px;font-size:.825rem;color:#8891a8;text-align:center">No results &#8212; <a href="/calculators/" style="color:#4a7cf7">browse all</a></div>';return}
+    sr.innerHTML=m.map(t=>`<a href="${t.u}" style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #ebedf3;transition:background .15s;text-decoration:none;color:#1a1f2e" onmouseover="this.style.background='#f5f6f9'" onmouseout="this.style.background=''">
+      <span style="font-size:1.1rem;width:28px;text-align:center">${t.i}</span>
+      <span style="flex:1;font-size:.85rem;font-weight:600">${t.t}</span>
+      <span style="font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;background:${catBg[t.c]};color:${catTx[t.c]}">${t.c}</span>
+    </a>`).join('');
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)toggleFloat()});
+})();
+</script>
+<footer class="ud-footer" data-ud-footer>
+  <div class="ud-footer-inner">
+    <div class="ud-footer-grid">
+      <div class="ud-footer-brand">
+        <a href="/" class="ud-footer-logo">
+          <img src="/assets/brand/utilitydesk-logo-icon.svg" alt="UtilityDesk.in" class="ud-footer-logo-img">
+          <div class="ud-footer-logo-text">
+            <div class="ud-footer-logo-title">UtilityDesk.in</div>
+            <div class="ud-footer-logo-tagline">Productivity Tools for India</div>
+          </div>
+        </a>
+        <p class="ud-footer-description">Free calculators, PDF tools, HR tools and document generators for Indian professionals. No signup required.</p>
+      </div>
+      <div class="ud-footer-column">
+        <h4 class="ud-footer-title">Calculators</h4>
+        <ul class="ud-footer-links">
+          <li><a href="/calculators/income-tax/" class="ud-footer-link">Income Tax</a></li>
+          <li><a href="/calculators/salary-hike/" class="ud-footer-link">Salary Hike</a></li>
+          <li><a href="/calculators/in-hand-salary/" class="ud-footer-link">In-Hand Salary</a></li>
+          <li><a href="/calculators/emi/" class="ud-footer-link">EMI Calculator</a></li>
+          <li><a href="/calculators/pf-calculator/" class="ud-footer-link">PF Calculator</a></li>
+          <li><a href="/calculators/" class="ud-footer-link">All Calculators &#8594;</a></li>
+        </ul>
+      </div>
+      <div class="ud-footer-column">
+        <h4 class="ud-footer-title">PDF Tools</h4>
+        <ul class="ud-footer-links">
+          <li><a href="/pdf-tools/jpg-to-pdf/" class="ud-footer-link">JPG to PDF</a></li>
+          <li><a href="/pdf-tools/protect-pdf/" class="ud-footer-link">Protect PDF</a></li>
+          <li><a href="/pdf-tools/watermark-pdf/" class="ud-footer-link">Watermark PDF</a></li>
+          <li><a href="/pdf-tools/delete-pages/" class="ud-footer-link">Delete Pages</a></li>
+          <li><a href="/pdf-tools/merge-pdf/" class="ud-footer-link">Merge PDF</a></li>
+          <li><a href="/pdf-tools/" class="ud-footer-link">All PDF Tools &#8594;</a></li>
+        </ul>
+      </div>
+      <div class="ud-footer-column">
+        <h4 class="ud-footer-title">HR Suite</h4>
+        <ul class="ud-footer-links">
+          <li><a href="/hr/resume-builder/" class="ud-footer-link">Resume Builder</a></li>
+          <li><a href="/hr/ats-checker/" class="ud-footer-link">ATS Checker AI</a></li>
+          <li><a href="/hr/offer-letter/" class="ud-footer-link">Offer Letter</a></li>
+          <li><a href="/hr/salary-slip/" class="ud-footer-link">Salary Slip</a></li>
+          <li><a href="/hr/hr-policy-generator/" class="ud-footer-link">HR Policy AI</a></li>
+          <li><a href="/hr/" class="ud-footer-link">All HR Tools &#8594;</a></li>
+        </ul>
+      </div>
+      <div class="ud-footer-column">
+        <h4 class="ud-footer-title">Document Generators</h4>
+        <ul class="ud-footer-links">
+          <li><a href="/document-generators/offer-letter-generator/" class="ud-footer-link">Offer Letter</a></li>
+          <li><a href="/document-generators/appointment-letter/" class="ud-footer-link">Appointment Letter</a></li>
+          <li><a href="/document-generators/invoice/" class="ud-footer-link">Invoice</a></li>
+          <li><a href="/document-generators/nda/" class="ud-footer-link">NDA Generator</a></li>
+          <li><a href="/document-generators/salary-slip/" class="ud-footer-link">Salary Slip</a></li>
+          <li><a href="/document-generators/" class="ud-footer-link">All Documents &#8594;</a></li>
+        </ul>
+      </div>
+      <div class="ud-footer-column">
+        <h4 class="ud-footer-title">Company</h4>
+        <ul class="ud-footer-links">
+          <li><a href="/about/" class="ud-footer-link">About</a></li>
+          <li><a href="/contact/" class="ud-footer-link">Contact</a></li>
+          <li><a href="/blog/" class="ud-footer-link">Blog</a></li>
+          <li><a href="/privacy-policy/" class="ud-footer-link">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions/" class="ud-footer-link">Terms &amp; Conditions</a></li>
+          <li><a href="/disclaimer/" class="ud-footer-link">Disclaimer</a></li>
+          <li><a href="/sitemap.xml" class="ud-footer-link">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ud-footer-bottom">
+      <div class="ud-footer-copyright">&#169; 2026 UtilityDesk.in. All rights reserved.</div>
+      <ul class="ud-footer-legal">
+        <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
+        <li><a href="/terms-and-conditions/" class="ud-footer-legal-link">Terms</a></li>
+        <li><a href="/disclaimer/" class="ud-footer-legal-link">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="/shared/brand-shell.js"></script>
+</body>
+</html>

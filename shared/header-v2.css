@@ -266,7 +266,7 @@
   .ud-nav-links {
     gap: var(--ud-space-0);
   }
-
+  
   .ud-nav-link {
     padding: var(--ud-space-2);
     font-size: var(--ud-text-xs);
@@ -277,45 +277,16 @@
   .ud-nav {
     display: none;
   }
-
+  
   .ud-mobile-toggle {
     display: flex;
   }
-
+  
   .ud-logo-tagline {
     display: none;
   }
-
+  
   .ud-header-inner {
     height: 64px;
-  }
-}
-
-/* ============================================================
-   V6 GLOBAL BRAND SCALE
-   Canonical UtilityDesk header logo Ã¢â‚¬â€ enlarged sitewide.
-   Applied to every page using the shared header architecture.
-   ============================================================ */
-.ud-brand-logo{
-  height: 54px !important;
-  width: auto !important;
-  max-width: 300px !important;
-  display: block !important;
-  object-fit: contain !important;
-}
-
-.ud-header,
-.ud-header-inner{
-  min-height: 80px;
-}
-
-@media (max-width: 768px){
-  .ud-brand-logo{
-    height: 46px !important;
-    max-width: 240px !important;
-  }
-  .ud-header,
-  .ud-header-inner{
-    min-height: 68px;
   }
 }
