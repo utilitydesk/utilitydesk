@@ -1,6 +1,6 @@
 /* UtilityDesk.in - Search Component */
 
-.ud-search, .search-wrap {
+.ud-search {
   padding: var(--ud-spacing-2xl) 0;
   background: white;
 }
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.ud-search-input-wrapper, .search-wrap {
+.ud-search-input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
   pointer-events: none;
 }
 
-.ud-search-input, .search-wrap input {
+.ud-search-input {
   width: 100%;
   padding: 18px 60px 18px 56px;
   font-size: 1rem;
@@ -153,7 +153,7 @@
   text-align: center;
 }
 
-.ud-popular-title, .search-count {
+.ud-popular-title {
   font-size: 0.9rem;
   color: var(--ud-text-secondary);
   margin-bottom: var(--ud-spacing-md);
@@ -187,7 +187,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .ud-search-input, .search-wrap input {
+  .ud-search-input {
     padding: 16px 50px 16px 48px;
     font-size: 0.95rem;
   }
@@ -195,13 +195,4 @@
   .ud-search-results {
     max-height: 300px;
   }
-}
-
-
-/* Legacy class alias for search-count */
-.search-count {
-  margin-top: 10px;
-  font-size: 0.85rem;
-  color: var(--ud-text-secondary);
-  text-align: center;
 }

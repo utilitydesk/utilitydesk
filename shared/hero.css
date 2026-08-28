@@ -1,6 +1,6 @@
 /* UtilityDesk.in - Hero Section Component */
 
-.ud-hero, .hero {
+.ud-hero {
   padding: calc(72px + var(--ud-spacing-3xl)) 0 var(--ud-spacing-3xl);
   background: linear-gradient(135deg, #F8F9FC 0%, #FFFFFF 100%);
   position: relative;
@@ -154,7 +154,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .ud-hero, .hero {
+  .ud-hero {
     padding: calc(64px + var(--ud-spacing-2xl)) 0 var(--ud-spacing-2xl);
   }
 
@@ -172,21 +172,4 @@
   .ud-hero-trust {
     gap: var(--ud-spacing-lg);
   }
-}
-
-
-/* Legacy class alias for breadcrumb */
-.breadcrumb {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 20px;
-  font-size: 0.82rem;
-  color: var(--slate-400);
-}
-.breadcrumb a {
-  color: var(--slate-600);
-}
-.breadcrumb a:hover {
-  color: var(--amber-600);
 }

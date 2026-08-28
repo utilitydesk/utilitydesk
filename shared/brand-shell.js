@@ -1,4 +1,4 @@
-/* UtilityDesk.in — Global Navigation Interactions v3.0
+/* UtilityDesk.in â€” Global Navigation Interactions v3.0
    Single responsibility: dropdown, mobile menu, active nav, scroll.
    Static pages should already contain canonical <header data-ud-header>
    and <footer data-ud-footer>. This script only adds interaction behavior.
@@ -9,14 +9,14 @@
   'use strict';
 
   const BRAND = {
-    favicon: '/assets/brand/utilitydesk-favicon.svg'
+    favicon: '../assets/brand/utilitydesk-favicon.svg'
   };
 
   const CANONICAL_HEADER = [
     '<header class="ud-header" data-ud-header>',
     '  <div class="ud-header-inner">',
     '    <a href="/" class="ud-brand">',
-    '      <img src="/assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in — Productivity Tools for India" class="ud-brand-logo">',
+    '      <img src="../assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in â€” Productivity Tools for India" class="ud-brand-logo">',
     '    </a>',
     '    <nav class="ud-nav">',
     '      <ul class="ud-nav-links">',
@@ -121,7 +121,7 @@
     '    <div class="ud-footer-grid">',
     '      <div class="ud-footer-brand">',
     '        <a href="/" class="ud-footer-logo">',
-    '          <img src="/assets/brand/utilitydesk-logo-icon.svg" alt="UtilityDesk.in" class="ud-footer-logo-img">',
+    '          <img src="../assets/brand/utilitydesk-logo-icon.svg" alt="UtilityDesk.in" class="ud-footer-logo-img">',
     '          <div class="ud-footer-logo-text">',
     '            <div class="ud-footer-logo-title">UtilityDesk.in</div>',
     '            <div class="ud-footer-logo-tagline">Productivity Tools for India</div>',

@@ -1,4 +1,369 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Protect PDF &#8212; Add Password to PDF | UtilityDesk.in</title><meta name="description" content="Add password protection to your PDF files. Encrypted locally in your browser &#8212; file never leaves your device."><link rel="canonical" href="https://www.utilitydesk.in/pdf-tools/protect-pdf/"><link rel="icon" type="image/svg+xml" href="/assets/brand/utilitydesk-favicon.svg"><!-- GA4 --><script async src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-9104MGBHMF');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>  <link rel="stylesheet" href="/shared/header-v2.css">
-  <link rel="stylesheet" href="/shared/footer-v2.css">
-  <link rel="stylesheet" href="/shared/design-system-v2.css">
-    <link rel="apple-touch-icon" href="/assets/brand/utilitydesk-logo-icon.svg">`n  </head><body><header class="ud-header" data-ud-header>  <div class="ud-header-inner">    <a href="/" class="ud-brand">      <img src="/assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in — Productivity Tools for India" class="ud-brand-logo">    </a>    <nav class="ud-nav">      <ul class="ud-nav-links">        <li><a href="/" class="ud-nav-link">Home</a></li>        <li><a href="/calculators/" class="ud-nav-link">Calculators</a></li>        <li><a href="/pdf-tools/" class="ud-nav-link">PDF Tools</a></li>        <li><a href="/hr/" class="ud-nav-link">HR Suite</a></li>        <li><a href="/document-generators/" class="ud-nav-link">Documents</a></li>        <li><a href="/blog/" class="ud-nav-link">Blog</a></li>        <li><a href="/about/" class="ud-nav-link">About</a></li>        <li><a href="/contact/" class="ud-nav-link">Contact</a></li>      </ul>      <div class="ud-nav-dropdown">        <button class="ud-nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true" type="button">          Browse Tools          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>        </button>        <div class="ud-nav-dropdown-menu" role="menu">          <div class="ud-nav-dropdown-group">            <div class="ud-nav-dropdown-group-title">Calculators</div>            <a href="/calculators/" class="ud-nav-dropdown-item" role="menuitem">All Calculators</a>            <a href="/calculators/salary-hike/" class="ud-nav-dropdown-item" role="menuitem">Salary &amp; HR</a>            <a href="/calculators/income-tax/" class="ud-nav-dropdown-item" role="menuitem">Tax</a>            <a href="/calculators/emi/" class="ud-nav-dropdown-item" role="menuitem">Loans &amp; EMI</a>            <a href="/calculators/sip-calculator/" class="ud-nav-dropdown-item" role="menuitem">Investments</a>            <a href="/calculators/business-loan-calculator/" class="ud-nav-dropdown-item" role="menuitem">Business</a>            <a href="/calculators/unit-converter/" class="ud-nav-dropdown-item" role="menuitem">Utilities</a>          </div>          <div class="ud-nav-dropdown-group">            <div class="ud-nav-dropdown-group-title">PDF Tools</div>            <a href="/pdf-tools/" class="ud-nav-dropdown-item" role="menuitem">All PDF Tools</a>            <a href="/pdf-tools/merge-pdf/" class="ud-nav-dropdown-item" role="menuitem">Browser-Based PDF Tools</a>            <a href="/pdf-tools/ocr-pdf/" class="ud-nav-dropdown-item" role="menuitem">Advanced PDF Tools</a>          </div>          <div class="ud-nav-dropdown-group">            <div class="ud-nav-dropdown-group-title">HR Suite</div>            <a href="/hr/" class="ud-nav-dropdown-item" role="menuitem">All HR Tools</a>            <a href="/hr/offer-letter/" class="ud-nav-dropdown-item" role="menuitem">HR Documents</a>            <a href="/hr/interview-questions/" class="ud-nav-dropdown-item" role="menuitem">Career Tools</a>            <a href="/hr/resume-rewrite/" class="ud-nav-dropdown-item" role="menuitem">AI Tools</a>          </div>          <div class="ud-nav-dropdown-group">            <div class="ud-nav-dropdown-group-title">Documents</div>            <a href="/document-generators/" class="ud-nav-dropdown-item" role="menuitem">All Document Generators</a>            <a href="/document-generators/offer-letter-generator/" class="ud-nav-dropdown-item" role="menuitem">HR Documents</a>            <a href="/document-generators/invoice/" class="ud-nav-dropdown-item" role="menuitem">Business Documents</a>          </div>          <div class="ud-nav-dropdown-group">            <div class="ud-nav-dropdown-group-title">Other</div>            <a href="/blog/" class="ud-nav-dropdown-item" role="menuitem">Blog</a>            <a href="/about/" class="ud-nav-dropdown-item" role="menuitem">About</a>            <a href="/contact/" class="ud-nav-dropdown-item" role="menuitem">Contact</a>          </div>        </div>      </div>    </nav>    <button class="ud-mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-haspopup="true" type="button">      <span></span><span></span><span></span>    </button>  </div>  <div class="ud-mobile-menu">    <ul class="ud-mobile-menu-links">      <li><a href="/" class="ud-mobile-menu-link">Home</a></li>      <li><a href="/calculators/" class="ud-mobile-menu-link">Calculators</a></li>      <li><a href="/pdf-tools/" class="ud-mobile-menu-link">PDF Tools</a></li>      <li><a href="/hr/" class="ud-mobile-menu-link">HR Suite</a></li>      <li><a href="/document-generators/" class="ud-mobile-menu-link">Documents</a></li>      <li><a href="/blog/" class="ud-mobile-menu-link">Blog</a></li>      <li><a href="/about/" class="ud-mobile-menu-link">About</a></li>      <li><a href="/contact/" class="ud-mobile-menu-link">Contact</a></li>    </ul>    <div class="ud-mobile-dropdown">      <button class="ud-mobile-dropdown-trigger" aria-expanded="false" aria-haspopup="true" type="button">Browse Tools &#x25BE;</button>      <div class="ud-mobile-dropdown-menu">        <a href="/calculators/" class="ud-mobile-dropdown-item">All Calculators</a>        <a href="/calculators/salary-hike/" class="ud-mobile-dropdown-item">Salary &amp; HR</a>        <a href="/calculators/income-tax/" class="ud-mobile-dropdown-item">Tax</a>        <a href="/calculators/emi/" class="ud-mobile-dropdown-item">Loans &amp; EMI</a>        <a href="/calculators/sip-calculator/" class="ud-mobile-dropdown-item">Investments</a>        <a href="/pdf-tools/" class="ud-mobile-dropdown-item">All PDF Tools</a>        <a href="/pdf-tools/merge-pdf/" class="ud-mobile-dropdown-item">Browser-Based PDF Tools</a>        <a href="/pdf-tools/ocr-pdf/" class="ud-mobile-dropdown-item">Advanced PDF Tools</a>        <a href="/hr/" class="ud-mobile-dropdown-item">All HR Tools</a>        <a href="/hr/offer-letter/" class="ud-mobile-dropdown-item">HR Documents</a>        <a href="/hr/interview-questions/" class="ud-mobile-dropdown-item">Career Tools</a>        <a href="/hr/resume-rewrite/" class="ud-mobile-dropdown-item">AI Tools</a>        <a href="/document-generators/" class="ud-mobile-dropdown-item">All Documents</a>        <a href="/document-generators/offer-letter-generator/" class="ud-mobile-dropdown-item">HR Documents</a>        <a href="/document-generators/invoice/" class="ud-mobile-dropdown-item">Business Documents</a>        <a href="/blog/" class="ud-mobile-dropdown-item">Blog</a>        <a href="/about/" class="ud-mobile-dropdown-item">About</a>        <a href="/contact/" class="ud-mobile-dropdown-item">Contact</a>      </div>    </div>  </div></header><div class="breadcrumb-bar">  <nav aria-label="Breadcrumb">    <a href="/">Home</a> &#8250; <a href="/pdf-tools/">PDF Tools</a> &#8250; Protect PDF  </nav></div><div class="tool-hero">  <h1>&#128274; Protect PDF</h1>  <p>Add password protection to your PDF files. Encrypted locally in your browser &#8212; file never leaves your device.</p></div><div class="tool-body">  <div class="upload-zone" id="uploadZone">    <div class="upload-icon">&#128274;</div>    <h3 id="uploadTitle">Upload file</h3>    <p id="uploadSubtitle">Click or drag &amp; drop</p>    <input type="file" id="fileInput">  </div>  <div class="file-list" id="fileList"></div>  <div class="error-box" id="errorBox"></div>  <div class="settings-panel" id="settingsPanel" style="display:none">    <h3>Password Settings</h3>    <div class="form-group"><label class="form-label">Password</label>      <input type="password" class="form-input" id="pdfPassword" placeholder="Enter password" autocomplete="new-password"></div>    <div class="form-group"><label class="form-label">Confirm Password</label>      <input type="password" class="form-input" id="pdfPasswordConfirm" placeholder="Confirm password" autocomplete="new-password"></div>  </div>  <div class="notice-box"><strong>Note:</strong> pdf-lib applies owner-level encryption. For the highest-security user password encryption, use Adobe Acrobat or LibreOffice. This tool adds basic protection suitable for most use cases.</div>  <button class="btn-process" id="processBtn" disabled>Protect PDF</button>  <div class="progress-wrap" id="progressWrap">    <div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill"></div></div>    <div class="progress-text" id="progressText">Processing&#8230;</div>  </div>  <div class="result-box" id="resultBox">    <h3 id="resultTitle">&#9989; Done!</h3>    <a href="#" id="downloadLink" class="btn-download" download>&#11015; Download</a>  </div></div><script>const _nav=document.getElementById('nav');window.addEventListener('scroll',()=>{_nav.classList.toggle('scrolled',window.scrollY>20)},{passive:true});const _hbg=document.getElementById('hamburger');const _mm=document.getElementById('mobileMenu');_hbg.addEventListener('click',()=>{  const open=_mm.classList.toggle('open');  _hbg.setAttribute('aria-expanded',open);  const sp=_hbg.querySelectorAll('span');  if(open){sp[0].style.transform='rotate(45deg) translate(5px,5px)';sp[1].style.opacity='0';sp[2].style.transform='rotate(-45deg) translate(5px,-5px)'}  else{sp[0].style.transform='';sp[1].style.opacity='';sp[2].style.transform=''}});</script><script>// &#9472;&#9472; shared UI helpers &#9472;&#9472;const uploadZone=document.getElementById('uploadZone');const fileInput=document.getElementById('fileInput');const fileList=document.getElementById('fileList');const settingsPanel=document.getElementById('settingsPanel');const processBtn=document.getElementById('processBtn');const progressWrap=document.getElementById('progressWrap');const progressFill=document.getElementById('progressFill');const progressText=document.getElementById('progressText');const resultBox=document.getElementById('resultBox');const downloadLink=document.getElementById('downloadLink');const errorBox=document.getElementById('errorBox');let selectedFiles=[];function showError(msg){errorBox.textContent=msg;errorBox.style.display='block';setTimeout(()=>errorBox.style.display='none',5000)}function fmtSize(b){return b>1048576?(b/1048576).toFixed(1)+' MB':Math.round(b/1024)+' KB'}function setProgress(pct,msg){progressFill.style.width=pct+'%';if(msg)progressText.textContent=msg}function showResult(blob,filename){  const url=URL.createObjectURL(blob);  downloadLink.href=url;downloadLink.download=filename;  resultBox.style.display='block';  document.getElementById('resultTitle').textContent='&#9989; Ready &#8212; '+filename;  resultBox.scrollIntoView({behavior:'smooth'});}function renderFileList(){  fileList.innerHTML=selectedFiles.map((f,i)=>`    <div class="file-item">      <span class="file-item-icon">&#128196;</span>      <span class="file-item-name">${f.name}</span>      <span class="file-item-size">${fmtSize(f.size)}</span>      <button class="file-item-remove" onclick="removeFile(${i})">&#215;</button>    </div>`).join('');}function removeFile(i){selectedFiles.splice(i,1);renderFileList();if(selectedFiles.length===0){processBtn.disabled=true;settingsPanel.style.display='none';resultBox.style.display='none'}}function handleFiles(files){  const f=[...files].filter(f=>f.type==='application/pdf'||f.name.endsWith('.pdf'));  if(!f.length){showError('Please upload a PDF file.');return}  selectedFiles=[f[0]];renderFileList();processBtn.disabled=false;settingsPanel.style.display='block';}uploadZone.addEventListener('dragover',e=>{e.preventDefault();uploadZone.classList.add('drag-over')});uploadZone.addEventListener('dragleave',()=>uploadZone.classList.remove('drag-over'));uploadZone.addEventListener('drop',e=>{e.preventDefault();uploadZone.classList.remove('drag-over');handleFiles(e.dataTransfer.files)});fileInput.addEventListener('change',()=>handleFiles(fileInput.files));processBtn.addEventListener('click',async()=>{  processBtn.disabled=true;resultBox.style.display='none';  progressWrap.style.display='block';setProgress(10,'Processing&#8230;');  try{  const pw=document.getElementById('pdfPassword').value;  const pw2=document.getElementById('pdfPasswordConfirm').value;  if(!pw){showError('Please enter a password.');return}  if(pw!==pw2){showError('Passwords do not match.');return}  setProgress(30,'Loading PDF&#8230;');  const {PDFDocument}=PDFLib;  const bytes=await selectedFiles[0].arrayBuffer();  const pdfDoc=await PDFDocument.load(bytes,{ignoreEncryption:true});  setProgress(70,'Encrypting&#8230;');  // pdf-lib encrypts at save time &#8212; we embed a note in metadata  pdfDoc.setTitle(pdfDoc.getTitle()||'Protected Document');  pdfDoc.setProducer('UtilityDesk.in &#8212; PDF Protect');  const outBytes=await pdfDoc.save({userPassword:pw,ownerPassword:pw,permissions:{printing:'highResolution',copying:false,modifying:false}});  setProgress(95,'Done&#8230;');  const name=selectedFiles[0].name.replace('.pdf','-protected.pdf');  showResult(new Blob([outBytes],{type:'application/pdf'}),name);  }catch(e){showError('Error: '+e.message);}  finally{progressWrap.style.display='none';processBtn.disabled=false;}});</script><!-- Floating Search Widget --><div id="floatSearch" style="position:fixed;bottom:24px;right:24px;z-index:200;font-family:'Plus Jakarta Sans',system-ui,sans-serif">  <div id="floatPanel" style="display:none;width:320px;background:#fff;border:1.5px solid #d1d5e0;border-radius:16px;box-shadow:0 8px 32px rgba(15,18,25,.12);overflow:hidden;margin-bottom:10px">    <div style="padding:12px 14px;border-bottom:1px solid #ebedf3;display:flex;justify-content:space-between;align-items:center">      <span style="font-size:.8rem;font-weight:700;color:#353d54;text-transform:uppercase;letter-spacing:.06em">Search 153+ Tools</span>      <button onclick="toggleFloat()" style="background:none;border:none;cursor:pointer;color:#8891a8;font-size:18px;padding:0;line-height:1">&times;</button>    </div>    <div style="padding:10px 12px;position:relative">      <input id="fsi" type="search" placeholder="income tax, salary slip, PDF merge&#8230;" autocomplete="off"        style="width:100%;padding:9px 36px 9px 12px;border:1.5px solid #d1d5e0;border-radius:8px;font-size:.875rem;font-family:inherit;outline:none;transition:border-color .2s"        onfocus="this.style.borderColor='#f0a830'" onblur="this.style.borderColor='#d1d5e0'">      <svg style="position:absolute;right:20px;top:50%;transform:translateY(-50%);color:#8891a8;pointer-events:none" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>    </div>    <div id="fsr" style="max-height:260px;overflow-y:auto"></div>  </div>  <button onclick="toggleFloat()" id="floatBtn"    style="width:52px;height:52px;background:#1a1f2e;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.3rem;box-shadow:0 4px 16px rgba(15,18,25,.25);transition:all .2s;display:flex;align-items:center;justify-content:center;margin-left:auto"    title="Search all tools" aria-label="Search tools">    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>  </button></div><script>(function(){  const TOOLS=[    {t:'Income Tax Calculator',u:'/calculators/income-tax/',i:'&#129534;',c:'Calc'},    {t:'Salary Hike Calculator',u:'/calculators/salary-hike/',i:'&#128176;',c:'Calc'},    {t:'In-Hand Salary',u:'/calculators/in-hand-salary/',i:'&#128179;',c:'Calc'},    {t:'EMI Calculator',u:'/calculators/emi/',i:'&#127958;',c:'Calc'},    {t:'PF Calculator',u:'/calculators/pf-calculator/',i:'&#127963;&#65039;',c:'Calc'},    {t:'HRA Exemption',u:'/calculators/hra-exemption/',i:'&#127968;',c:'Calc'},    {t:'GST Calculator',u:'/calculators/gst/',i:'&#129534;',c:'Calc'},    {t:'SIP Calculator',u:'/calculators/sip-calculator/',i:'&#128200;',c:'Calc'},    {t:'Gratuity Calculator',u:'/calculators/gratuity-calculator/',i:'&#127873;',c:'Calc'},    {t:'NPS Calculator',u:'/calculators/nps/',i:'&#127963;&#65039;',c:'Calc'},    {t:'Home Loan Calculator',u:'/calculators/home-loan-calculator/',i:'&#127968;',c:'Calc'},    {t:'FD Calculator',u:'/calculators/fd-calculator/',i:'&#128274;',c:'Calc'},    {t:'PPF Calculator',u:'/calculators/ppf-calculator/',i:'&#127963;&#65039;',c:'Calc'},    {t:'Offer Letter Decoder',u:'/calculators/offer-letter-decoder/',i:'&#128196;',c:'Calc'},    {t:'JPG to PDF',u:'/pdf-tools/jpg-to-pdf/',i:'&#128444;&#65039;',c:'PDF'},    {t:'Protect PDF',u:'/pdf-tools/protect-pdf/',i:'&#128274;',c:'PDF'},    {t:'Merge PDF',u:'/pdf-tools/merge-pdf/',i:'&#128279;',c:'PDF'},    {t:'Watermark PDF',u:'/pdf-tools/watermark-pdf/',i:'&#128167;',c:'PDF'},    {t:'Split PDF',u:'/pdf-tools/split-pdf/',i:'&#9986;&#65039;',c:'PDF'},    {t:'Compress PDF',u:'/pdf-tools/compress-pdf/',i:'&#128230;',c:'PDF'},    {t:'Delete Pages PDF',u:'/pdf-tools/delete-pages/',i:'&#128465;&#65039;',c:'PDF'},    {t:'Extract Pages PDF',u:'/pdf-tools/extract-pages/',i:'&#9986;&#65039;',c:'PDF'},    {t:'Offer Letter',u:'/hr/offer-letter/',i:'&#128196;',c:'HR'},    {t:'Appointment Letter',u:'/hr/appointment-letter/',i:'&#128203;',c:'HR'},    {t:'Experience Letter',u:'/hr/experience-letter/',i:'&#127894;',c:'HR'},    {t:'Relieving Letter',u:'/hr/relieving-letter/',i:'&#128228;',c:'HR'},    {t:'Salary Slip Generator',u:'/hr/salary-slip/',i:'&#128176;',c:'HR'},    {t:'Increment Letter',u:'/hr/increment-letter/',i:'&#128200;',c:'HR'},    {t:'Warning Letter',u:'/hr/warning-letter/',i:'&#9888;&#65039;',c:'HR'},    {t:'Resume Builder',u:'/hr/resume-builder/',i:'&#128196;',c:'HR'},    {t:'Cover Letter',u:'/hr/cover-letter/',i:'&#9993;&#65039;',c:'HR'},    {t:'Exit Checklist',u:'/hr/exit-checklist/',i:'&#9989;',c:'HR'},    {t:'Resume Rewrite AI',u:'/hr/resume-rewrite/',i:'&#10024;',c:'AI'},    {t:'ATS Checker AI',u:'/hr/ats-checker/',i:'&#9989;',c:'AI'},    {t:'ATS Score AI',u:'/hr/ats-score/',i:'&#127919;',c:'AI'},    {t:'Grammar Check AI',u:'/hr/grammar-check/',i:'&#10003;',c:'AI'},    {t:'HR Policy Generator AI',u:'/hr/hr-policy-generator/',i:'&#128203;',c:'AI'},    {t:'Interview Questions AI',u:'/hr/interview-questions/',i:'&#10067;',c:'AI'},    {t:'Job Description AI',u:'/hr/job-description/',i:'&#128188;',c:'AI'},    {t:'Resume Analyzer AI',u:'/hr/resume-analyzer/',i:'&#128269;',c:'AI'},    {t:'Invoice Generator',u:'/document-generators/invoice/',i:'&#129534;',c:'Doc'},    {t:'Purchase Order',u:'/document-generators/purchase-order/',i:'&#128722;',c:'Doc'},    {t:'Quotation Generator',u:'/document-generators/quotation/',i:'&#128188;',c:'Doc'},    {t:'NDA Generator',u:'/document-generators/nda/',i:'&#128274;',c:'Doc'},    {t:'Resignation Letter',u:'/document-generators/resignation-letter/',i:'&#128221;',c:'Doc'},  ];  const catBg={'Calc':'#dbe6fe','PDF':'#d6f5e6','HR':'#fef3d6','AI':'#ede9fe','Doc':'#fde2e6'};  const catTx={'Calc':'#1d4ed8','PDF':'#15803d','HR':'#92400e','AI':'#6d28d9','Doc':'#9f1239'};  let open=false;  window.toggleFloat=function(){    open=!open;    document.getElementById('floatPanel').style.display=open?'block':'none';    const btn=document.getElementById('floatBtn');    btn.style.background=open?'#f0a830':'#1a1f2e';    btn.innerHTML=open?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>':'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';    if(open)setTimeout(()=>document.getElementById('fsi').focus(),50);  };  document.getElementById('fsi').addEventListener('input',function(){    const q=this.value.toLowerCase().trim();    const sr=document.getElementById('fsr');    if(!q){sr.innerHTML='';return}    const m=TOOLS.filter(t=>t.t.toLowerCase().includes(q)).slice(0,7);    if(!m.length){sr.innerHTML='<div style="padding:14px 16px;font-size:.825rem;color:#8891a8;text-align:center">No results &#8212; <a href="/calculators/" style="color:#4a7cf7">browse all</a></div>';return}    sr.innerHTML=m.map(t=>`<a href="${t.u}" style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #ebedf3;transition:background .15s;text-decoration:none;color:#1a1f2e" onmouseover="this.style.background='#f5f6f9'" onmouseout="this.style.background=''">      <span style="font-size:1.1rem;width:28px;text-align:center">${t.i}</span>      <span style="flex:1;font-size:.85rem;font-weight:600">${t.t}</span>      <span style="font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;background:${catBg[t.c]};color:${catTx[t.c]}">${t.c}</span>    </a>`).join('');  });  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)toggleFloat()});})();</script><footer class="ud-footer" data-ud-footer>  <div class="ud-footer-inner">    <div class="ud-footer-grid">      <div class="ud-footer-brand">        <a href="/" class="ud-footer-logo">          <img src="/assets/brand/utilitydesk-logo-icon.svg" alt="UtilityDesk.in" class="ud-footer-logo-img">          <div class="ud-footer-logo-text">            <div class="ud-footer-logo-title">UtilityDesk.in</div>            <div class="ud-footer-logo-tagline">Productivity Tools for India</div>          </div>        </a>        <p class="ud-footer-description">Free calculators, PDF tools, HR tools and document generators for Indian professionals. No signup required.</p>      </div>      <div class="ud-footer-column">        <h4 class="ud-footer-title">Calculators</h4>        <ul class="ud-footer-links">          <li><a href="/calculators/income-tax/" class="ud-footer-link">Income Tax</a></li>          <li><a href="/calculators/salary-hike/" class="ud-footer-link">Salary Hike</a></li>          <li><a href="/calculators/in-hand-salary/" class="ud-footer-link">In-Hand Salary</a></li>          <li><a href="/calculators/emi/" class="ud-footer-link">EMI Calculator</a></li>          <li><a href="/calculators/pf-calculator/" class="ud-footer-link">PF Calculator</a></li>          <li><a href="/calculators/" class="ud-footer-link">All Calculators &#8594;</a></li>        </ul>      </div>      <div class="ud-footer-column">        <h4 class="ud-footer-title">PDF Tools</h4>        <ul class="ud-footer-links">          <li><a href="/pdf-tools/jpg-to-pdf/" class="ud-footer-link">JPG to PDF</a></li>          <li><a href="/pdf-tools/protect-pdf/" class="ud-footer-link">Protect PDF</a></li>          <li><a href="/pdf-tools/watermark-pdf/" class="ud-footer-link">Watermark PDF</a></li>          <li><a href="/pdf-tools/delete-pages/" class="ud-footer-link">Delete Pages</a></li>          <li><a href="/pdf-tools/merge-pdf/" class="ud-footer-link">Merge PDF</a></li>          <li><a href="/pdf-tools/" class="ud-footer-link">All PDF Tools &#8594;</a></li>        </ul>      </div>      <div class="ud-footer-column">        <h4 class="ud-footer-title">HR Suite</h4>        <ul class="ud-footer-links">          <li><a href="/hr/resume-builder/" class="ud-footer-link">Resume Builder</a></li>          <li><a href="/hr/ats-checker/" class="ud-footer-link">ATS Checker AI</a></li>          <li><a href="/hr/offer-letter/" class="ud-footer-link">Offer Letter</a></li>          <li><a href="/hr/salary-slip/" class="ud-footer-link">Salary Slip</a></li>          <li><a href="/hr/hr-policy-generator/" class="ud-footer-link">HR Policy AI</a></li>          <li><a href="/hr/" class="ud-footer-link">All HR Tools &#8594;</a></li>        </ul>      </div>      <div class="ud-footer-column">        <h4 class="ud-footer-title">Document Generators</h4>        <ul class="ud-footer-links">          <li><a href="/document-generators/offer-letter-generator/" class="ud-footer-link">Offer Letter</a></li>          <li><a href="/document-generators/appointment-letter/" class="ud-footer-link">Appointment Letter</a></li>          <li><a href="/document-generators/invoice/" class="ud-footer-link">Invoice</a></li>          <li><a href="/document-generators/nda/" class="ud-footer-link">NDA Generator</a></li>          <li><a href="/document-generators/salary-slip/" class="ud-footer-link">Salary Slip</a></li>          <li><a href="/document-generators/" class="ud-footer-link">All Documents &#8594;</a></li>        </ul>      </div>      <div class="ud-footer-column">        <h4 class="ud-footer-title">Company</h4>        <ul class="ud-footer-links">          <li><a href="/about/" class="ud-footer-link">About</a></li>          <li><a href="/contact/" class="ud-footer-link">Contact</a></li>          <li><a href="/blog/" class="ud-footer-link">Blog</a></li>          <li><a href="/privacy-policy/" class="ud-footer-link">Privacy Policy</a></li>          <li><a href="/terms-and-conditions/" class="ud-footer-link">Terms &amp; Conditions</a></li>          <li><a href="/disclaimer/" class="ud-footer-link">Disclaimer</a></li>          <li><a href="/sitemap.xml" class="ud-footer-link">Sitemap</a></li>        </ul>      </div>    </div>    <div class="ud-footer-bottom">      <div class="ud-footer-copyright">&#169; 2026 UtilityDesk.in. All rights reserved.</div>      <ul class="ud-footer-legal">        <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>        <li><a href="/terms-and-conditions/" class="ud-footer-legal-link">Terms</a></li>        <li><a href="/disclaimer/" class="ud-footer-legal-link">Disclaimer</a></li>      </ul>    </div>  </div></footer><script src="/shared/brand-shell.js"></script></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Protect PDF â€” Add Password to PDF | UtilityDesk.in</title>
+<meta content="Use the Protect PDF â€” Add Password to PDF online in your browser. Process PDF files quickly with no signup required on UtilityDesk.in." name="description"/>
+<link href="../../assets/brand/utilitydesk-favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://utilitydesk.in/pdf-tools/protect-pdf/" rel="canonical"/>
+<rect fill="%231a1f2e" height="32" rx="6" width="32"></rect><text fill="%23f0a830" font-size="18" text-anchor="middle" x="16" y="22">U</text>"&gt;
+<!-- GA4 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-9104MGBHMF');</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --slate-950:#0f1219;--slate-900:#1a1f2e;--slate-800:#252b3d;--slate-700:#353d54;
+  --slate-600:#4a5270;--slate-400:#8891a8;--slate-300:#b0b7c8;--slate-200:#d1d5e0;
+  --slate-100:#ebedf3;--slate-50:#f5f6f9;--white:#ffffff;
+  --amber-500:#f0a830;--amber-400:#f5bc54;--amber-600:#d4901a;--amber-100:#fef3d6;
+  --emerald-500:#34b876;--emerald-100:#d6f5e6;--blue-500:#4a7cf7;--blue-100:#dbe6fe;
+  --rose-500:#e85d6f;--rose-100:#fde2e6;--purple-500:#8b5cf6;--purple-100:#ede9fe;
+  --font-body:'Inter',system-ui,sans-serif;
+  --nav-h:72px;--max-w:1200px;--radius:12px;
+  --shadow-sm:0 1px 3px rgba(15,18,25,.06),0 1px 2px rgba(15,18,25,.04);
+  --shadow-md:0 4px 16px rgba(15,18,25,.08),0 2px 4px rgba(15,18,25,.04);
+  --transition:.25s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-body);color:var(--slate-900);background:var(--slate-50);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(255,255,255,.92);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--slate-100);transition:box-shadow var(--transition)}
+.nav.scrolled{box-shadow:var(--shadow-sm)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Instrument Serif',Georgia,serif;font-size:1.5rem;color:var(--slate-900)}
+.nav-logo-icon{width:36px;height:36px;background:var(--slate-900);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--amber-500);font-family:'Instrument Serif',Georgia,serif;font-size:1.25rem}
+.nav-links{display:flex;align-items:center;gap:4px;list-style:none}
+.nav-links a{padding:8px 14px;border-radius:8px;font-size:.875rem;font-weight:500;color:var(--slate-600);transition:all var(--transition)}
+.nav-links a:hover,.nav-links a.active{color:var(--slate-900);background:var(--slate-100)}
+.nav-cta{padding:9px 20px;border-radius:8px;font-size:.875rem;font-weight:600;background:var(--slate-900);color:var(--white);transition:all var(--transition)}
+.nav-cta:hover{background:var(--slate-800);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--slate-900);border-radius:2px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--white);z-index:99;padding:24px;flex-direction:column;gap:4px;overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:14px 16px;border-radius:10px;font-size:1.05rem;font-weight:500;color:var(--slate-700);transition:all var(--transition)}
+.mobile-menu a:hover{background:var(--slate-50);color:var(--slate-900)}
+/* BREADCRUMB */
+.breadcrumb-bar{padding:calc(var(--nav-h) + 20px) 24px 0;max-width:var(--max-w);margin:0 auto}
+.breadcrumb-bar nav{font-size:13px;color:var(--slate-400)}
+.breadcrumb-bar a{color:var(--slate-500)}.breadcrumb-bar a:hover{color:var(--amber-600)}
+/* HERO */
+.tool-hero{padding:32px 24px 0;max-width:var(--max-w);margin:0 auto}
+.tool-hero h1{font-size:1.75rem;font-weight:700;color:var(--slate-900);margin-bottom:8px}
+.tool-hero p{font-size:1rem;color:var(--slate-600);max-width:560px}
+/* TOOL AREA */
+.tool-body{max-width:760px;margin:32px auto 64px;padding:0 24px}
+/* Upload zone */
+.upload-zone{border:2px dashed var(--slate-200);border-radius:var(--radius);padding:40px 24px;text-align:center;background:var(--white);cursor:pointer;transition:all var(--transition);position:relative}
+.upload-zone:hover,.upload-zone.drag-over{border-color:var(--blue-500);background:var(--blue-100)}
+.upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-icon{font-size:2.5rem;margin-bottom:12px}
+.upload-zone h3{font-size:1rem;font-weight:600;color:var(--slate-800);margin-bottom:6px}
+.upload-zone p{font-size:.875rem;color:var(--slate-400)}
+/* File list */
+.file-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.file-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:8px;font-size:13px}
+.file-item-icon{font-size:18px;flex-shrink:0}
+.file-item-name{flex:1;font-weight:500;color:var(--slate-800);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file-item-size{color:var(--slate-400);font-size:12px;flex-shrink:0}
+.file-item-remove{color:var(--slate-400);cursor:pointer;padding:2px 6px;border-radius:4px;font-size:16px;flex-shrink:0}
+.file-item-remove:hover{color:var(--rose-500);background:var(--rose-100)}
+/* Settings panel */
+.settings-panel{background:var(--white);border:1.5px solid var(--slate-100);border-radius:var(--radius);padding:20px;margin-top:16px}
+.settings-panel h3{font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--slate-400);margin-bottom:14px}
+.form-group{margin-bottom:14px}
+.form-group:last-child{margin-bottom:0}
+.form-label{display:block;font-size:13px;font-weight:500;color:var(--slate-700);margin-bottom:6px}
+.form-label span{font-weight:400;color:var(--slate-400);font-size:12px}
+.form-input,.form-select{width:100%;padding:9px 12px;font-size:14px;font-family:inherit;border:1.5px solid var(--slate-200);border-radius:8px;color:var(--slate-800);background:var(--slate-50);transition:border-color var(--transition)}
+.form-input:focus,.form-select:focus{outline:none;border-color:var(--blue-500);background:#fff;box-shadow:0 0 0 3px rgba(74,124,247,.10)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.form-row{grid-template-columns:1fr}}
+/* Process button */
+.btn-process{width:100%;padding:13px;background:var(--slate-900);color:var(--white);border-radius:10px;font-size:15px;font-weight:600;margin-top:20px;transition:all var(--transition)}
+.btn-process:hover:not(:disabled){background:var(--slate-800);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-process:disabled{opacity:.45;cursor:not-allowed;transform:none}
+/* Progress */
+.progress-wrap{margin-top:20px;display:none}
+.progress-bar-track{height:6px;background:var(--slate-100);border-radius:3px;overflow:hidden;margin-bottom:8px}
+.progress-bar-fill{height:100%;background:var(--blue-500);border-radius:3px;transition:width .3s ease;width:0%}
+.progress-text{font-size:13px;color:var(--slate-500);text-align:center}
+/* Result */
+.result-box{margin-top:20px;background:var(--emerald-100);border:1.5px solid var(--emerald-500);border-radius:var(--radius);padding:20px;text-align:center;display:none}
+.result-box h3{font-size:1rem;font-weight:600;color:#14532d;margin-bottom:12px}
+.btn-download{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:var(--emerald-500);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-download:hover{background:#15803d;transform:translateY(-1px)}
+/* Notice box */
+.notice-box{margin-top:20px;background:var(--amber-100);border:1.5px solid var(--amber-500);border-radius:var(--radius);padding:14px 16px;font-size:13px;color:#78350f;line-height:1.6}
+.notice-box strong{color:#92400e}
+/* Error */
+.error-box{margin-top:16px;background:var(--rose-100);border:1.5px solid var(--rose-500);border-radius:8px;padding:12px 14px;font-size:13px;color:#7f1d1d;display:none}
+/* FOOTER */
+.footer{background:var(--slate-950);color:var(--slate-400);padding:64px 24px 32px}
+.footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1.5fr repeat(5,1fr);gap:40px}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:var(--white)}
+.footer-logo-icon{width:32px;height:32px;background:var(--slate-800);border-radius:7px;display:flex;align-items:center;justify-content:center;color:var(--amber-500);font-size:1.1rem}
+.footer-brand p{font-size:.85rem;line-height:1.7;max-width:260px}
+.footer-col h4{font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--slate-300);margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col a{font-size:.86rem;transition:color var(--transition)}.footer-col a:hover{color:var(--amber-500)}
+.footer-bottom{max-width:var(--max-w);margin:48px auto 0;padding-top:24px;border-top:1px solid var(--slate-800);display:flex;justify-content:space-between;align-items:center;font-size:.8rem}
+.footer-social{display:flex;gap:12px}
+.footer-social a{width:36px;height:36px;border-radius:8px;background:var(--slate-800);display:flex;align-items:center;justify-content:center;transition:all var(--transition)}
+.footer-social a:hover{background:var(--amber-500);color:var(--slate-950)}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}.footer-inner{grid-template-columns:1fr 1fr;gap:32px}.footer-bottom{flex-direction:column;gap:16px;text-align:center}}
+@media(max-width:480px){.footer-inner{grid-template-columns:1fr}}
+</style>
+<link href="../../search.css" rel="stylesheet"/>
+<link href="../../assistant.css" rel="stylesheet"/>
+<link href="../../premium.css" rel="stylesheet"/>
+<link href="../../shared/design-system-v2.css" rel="stylesheet"/>
+<link href="../../shared/header-v2.css" rel="stylesheet"/>
+<link href="../../shared/footer-v2.css" rel="stylesheet"/>
+<link href="../../shared/ux.css" rel="stylesheet"/>
+<link href="../../shared/widgets.css" rel="stylesheet"/>
+<link href="../../shared/hero.css" rel="stylesheet"/>
+<link href="../../shared/categories.css" rel="stylesheet"/>
+<link href="../../shared/search-component.css" rel="stylesheet"/>
+<link href="../../shared/sitewide-v4.css" rel="stylesheet"/>
+<script defer="" src="../../shared/sitewide-v4.js"></script>
+<meta content="index, follow" name="robots"/><meta content="Protect PDF â€” Add Password to PDF | UtilityDesk.in" property="og:title"/><meta content="Use the Protect PDF â€” Add Password to PDF online in your browser. Process PDF files quickly with no signup required on UtilityDesk.in." property="og:description"/><meta content="website" property="og:type"/><meta content="UtilityDesk.in" property="og:site_name"/><meta content="https://utilitydesk.in/pdf-tools/protect-pdf/" property="og:url"/><meta content="summary" name="twitter:card"/><meta content="Protect PDF â€” Add Password to PDF | UtilityDesk.in" name="twitter:title"/><meta content="Use the Protect PDF â€” Add Password to PDF online in your browser. Process PDF files quickly with no signup required on UtilityDesk.in." name="twitter:description"/><style data-ud-seo="h1">.ud-seo-h1{font-size:clamp(1.75rem,3vw,2.35rem);line-height:1.2;font-weight:800;color:#1a1f2e;margin:0 0 24px;padding:0;}@media(max-width:768px){.ud-seo-h1{font-size:1.75rem;margin-bottom:18px;}}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Protect PDF â€” Add Password to PDF","description":"Use the Protect PDF â€” Add Password to PDF online in your browser. Process PDF files quickly with no signup required on UtilityDesk.in.","url":"https://utilitydesk.in/pdf-tools/protect-pdf/","isPartOf":{"@type":"WebSite","name":"UtilityDesk.in","url":"https://utilitydesk.in/"},"publisher":{"@type":"Organization","name":"UtilityDesk.in","url":"https://utilitydesk.in/"}}</script></head>
+<body>
+<header class="ud-header" data-ud-header=""> <div class="ud-header-inner"> <a class="ud-brand" href="/"> <img alt="UtilityDesk.in â€” Productivity Tools for India" class="ud-brand-logo" src="../../assets/brand/utilitydesk-logo-horizontal.svg"/> </a> <nav class="ud-nav"> <ul class="ud-nav-links"> <li><a class="ud-nav-link" href="/">Home</a></li> <li><a class="ud-nav-link" href="/calculators/">Calculators</a></li> <li><a class="ud-nav-link" href="/pdf-tools/">PDF Tools</a></li> <li><a class="ud-nav-link" href="/hr/">HR Suite</a></li> <li><a class="ud-nav-link" href="/document-generators/">Documents</a></li> <li><a class="ud-nav-link" href="/blog/">Blog</a></li> <li><a class="ud-nav-link" href="/about/">About</a></li> <li><a class="ud-nav-link" href="/contact/">Contact</a></li> </ul> <div class="ud-nav-dropdown"> <button aria-expanded="false" aria-haspopup="true" class="ud-nav-dropdown-trigger" type="button">          Browse Tools          <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg> </button> <div class="ud-nav-dropdown-menu" role="menu"> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">Calculators</div> <a class="ud-nav-dropdown-item" href="/calculators/" role="menuitem">All Calculators</a> <a class="ud-nav-dropdown-item" href="/calculators/salary-hike/" role="menuitem">Salary &amp; HR</a> <a class="ud-nav-dropdown-item" href="/calculators/income-tax/" role="menuitem">Tax</a> <a class="ud-nav-dropdown-item" href="/calculators/emi/" role="menuitem">Loans &amp; EMI</a> <a class="ud-nav-dropdown-item" href="/calculators/sip-calculator/" role="menuitem">Investments</a> <a class="ud-nav-dropdown-item" href="/calculators/business-loan-calculator/" role="menuitem">Business</a> <a class="ud-nav-dropdown-item" href="/calculators/unit-converter/" role="menuitem">Utilities</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">PDF Tools</div> <a class="ud-nav-dropdown-item" href="/pdf-tools/" role="menuitem">All PDF Tools</a> <a class="ud-nav-dropdown-item" href="/pdf-tools/merge-pdf/" role="menuitem">Browser-Based PDF Tools</a> <a class="ud-nav-dropdown-item" href="/pdf-tools/ocr-pdf/" role="menuitem">Advanced PDF Tools</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">HR Suite</div> <a class="ud-nav-dropdown-item" href="/hr/" role="menuitem">All HR Tools</a> <a class="ud-nav-dropdown-item" href="/hr/offer-letter/" role="menuitem">HR Documents</a> <a class="ud-nav-dropdown-item" href="/hr/interview-questions/" role="menuitem">Career Tools</a> <a class="ud-nav-dropdown-item" href="/hr/resume-rewrite/" role="menuitem">AI Tools</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">Documents</div> <a class="ud-nav-dropdown-item" href="/document-generators/" role="menuitem">All Document Generators</a> <a class="ud-nav-dropdown-item" href="/document-generators/offer-letter-generator/" role="menuitem">HR Documents</a> <a class="ud-nav-dropdown-item" href="/document-generators/invoice/" role="menuitem">Business Documents</a> </div> <div class="ud-nav-dropdown-group"> <div class="ud-nav-dropdown-group-title">Other</div> <a class="ud-nav-dropdown-item" href="/blog/" role="menuitem">Blog</a> <a class="ud-nav-dropdown-item" href="/about/" role="menuitem">About</a> <a class="ud-nav-dropdown-item" href="/contact/" role="menuitem">Contact</a> </div> </div> </div> </nav> <button aria-expanded="false" aria-haspopup="true" aria-label="Toggle menu" class="ud-mobile-toggle" type="button"> <span></span><span></span><span></span> </button> </div> <div class="ud-mobile-menu"> <ul class="ud-mobile-menu-links"> <li><a class="ud-mobile-menu-link" href="/">Home</a></li> <li><a class="ud-mobile-menu-link" href="/calculators/">Calculators</a></li> <li><a class="ud-mobile-menu-link" href="/pdf-tools/">PDF Tools</a></li> <li><a class="ud-mobile-menu-link" href="/hr/">HR Suite</a></li> <li><a class="ud-mobile-menu-link" href="/document-generators/">Documents</a></li> <li><a class="ud-mobile-menu-link" href="/blog/">Blog</a></li> <li><a class="ud-mobile-menu-link" href="/about/">About</a></li> <li><a class="ud-mobile-menu-link" href="/contact/">Contact</a></li> </ul> <div class="ud-mobile-dropdown"> <button aria-expanded="false" aria-haspopup="true" class="ud-mobile-dropdown-trigger" type="button">Browse Tools â–¾</button> <div class="ud-mobile-dropdown-menu"> <a class="ud-mobile-dropdown-item" href="/calculators/">All Calculators</a> <a class="ud-mobile-dropdown-item" href="/calculators/salary-hike/">Salary &amp; HR</a> <a class="ud-mobile-dropdown-item" href="/calculators/income-tax/">Tax</a> <a class="ud-mobile-dropdown-item" href="/calculators/emi/">Loans &amp; EMI</a> <a class="ud-mobile-dropdown-item" href="/calculators/sip-calculator/">Investments</a> <a class="ud-mobile-dropdown-item" href="/pdf-tools/">All PDF Tools</a> <a class="ud-mobile-dropdown-item" href="/pdf-tools/merge-pdf/">Browser-Based PDF Tools</a> <a class="ud-mobile-dropdown-item" href="/pdf-tools/ocr-pdf/">Advanced PDF Tools</a> <a class="ud-mobile-dropdown-item" href="/hr/">All HR Tools</a> <a class="ud-mobile-dropdown-item" href="/hr/offer-letter/">HR Documents</a> <a class="ud-mobile-dropdown-item" href="/hr/interview-questions/">Career Tools</a> <a class="ud-mobile-dropdown-item" href="/hr/resume-rewrite/">AI Tools</a> <a class="ud-mobile-dropdown-item" href="/document-generators/">All Documents</a> <a class="ud-mobile-dropdown-item" href="/document-generators/offer-letter-generator/">HR Documents</a> <a class="ud-mobile-dropdown-item" href="/document-generators/invoice/">Business Documents</a> <a class="ud-mobile-dropdown-item" href="/blog/">Blog</a> <a class="ud-mobile-dropdown-item" href="/about/">About</a> <a class="ud-mobile-dropdown-item" href="/contact/">Contact</a> </div> </div> </div></header>
+<div class="breadcrumb-bar">
+<nav aria-label="Breadcrumb">
+<a href="/">Home</a> â€º <a href="/pdf-tools/">PDF Tools</a> â€º Protect PDF
+  </nav>
+</div>
+<div class="tool-hero">
+<h1>ðŸ”’ Protect PDF</h1>
+<p>Add password protection to your PDF files. Encrypted locally in your browser â€” file never leaves your device.</p>
+</div>
+<div class="tool-body">
+<div class="upload-zone" id="uploadZone">
+<div class="upload-icon">ðŸ”’</div>
+<h3 id="uploadTitle">Upload file</h3>
+<p id="uploadSubtitle">Click or drag &amp; drop</p>
+<input id="fileInput" type="file"/>
+</div>
+<div class="file-list" id="fileList"></div>
+<div class="error-box" id="errorBox"></div>
+<div class="settings-panel" id="settingsPanel" style="display:none">
+<h3>Password Settings</h3>
+<div class="form-group"><label class="form-label">Password</label>
+<input autocomplete="new-password" class="form-input" id="pdfPassword" placeholder="Enter password" type="password"/></div>
+<div class="form-group"><label class="form-label">Confirm Password</label>
+<input autocomplete="new-password" class="form-input" id="pdfPasswordConfirm" placeholder="Confirm password" type="password"/></div>
+</div>
+<div class="notice-box"><strong>Note:</strong> pdf-lib applies owner-level encryption. For the highest-security user password encryption, use Adobe Acrobat or LibreOffice. This tool adds basic protection suitable for most use cases.</div>
+<button class="btn-process" disabled="" id="processBtn">Protect PDF</button>
+<div class="progress-wrap" id="progressWrap">
+<div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill"></div></div>
+<div class="progress-text" id="progressText">Processingâ€¦</div>
+</div>
+<div class="result-box" id="resultBox">
+<h3 id="resultTitle">âœ… Done!</h3>
+<a class="btn-download" download="" href="#" id="downloadLink">â¬‡ Download</a>
+</div>
+</div>
+<script>
+const _nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{_nav.classList.toggle('scrolled',window.scrollY>20)},{passive:true});
+const _hbg=document.getElementById('hamburger');
+const _mm=document.getElementById('mobileMenu');
+_hbg.addEventListener('click',()=>{
+  const open=_mm.classList.toggle('open');
+  _hbg.setAttribute('aria-expanded',open);
+  const sp=_hbg.querySelectorAll('span');
+  if(open){sp[0].style.transform='rotate(45deg) translate(5px,5px)';sp[1].style.opacity='0';sp[2].style.transform='rotate(-45deg) translate(5px,-5px)'}
+  else{sp[0].style.transform='';sp[1].style.opacity='';sp[2].style.transform=''}
+});
+</script>
+<script>
+// &#9472;&#9472; shared UI helpers &#9472;&#9472;
+const uploadZone=document.getElementById('uploadZone');
+const fileInput=document.getElementById('fileInput');
+const fileList=document.getElementById('fileList');
+const settingsPanel=document.getElementById('settingsPanel');
+const processBtn=document.getElementById('processBtn');
+const progressWrap=document.getElementById('progressWrap');
+const progressFill=document.getElementById('progressFill');
+const progressText=document.getElementById('progressText');
+const resultBox=document.getElementById('resultBox');
+const downloadLink=document.getElementById('downloadLink');
+const errorBox=document.getElementById('errorBox');
+
+let selectedFiles=[];
+
+function showError(msg){errorBox.textContent=msg;errorBox.style.display='block';setTimeout(()=>errorBox.style.display='none',5000)}
+function fmtSize(b){return b>1048576?(b/1048576).toFixed(1)+' MB':Math.round(b/1024)+' KB'}
+function setProgress(pct,msg){progressFill.style.width=pct+'%';if(msg)progressText.textContent=msg}
+function showResult(blob,filename){
+  const url=URL.createObjectURL(blob);
+  downloadLink.href=url;downloadLink.download=filename;
+  resultBox.style.display='block';
+  document.getElementById('resultTitle').textContent='&#9989; Ready &#8212; '+filename;
+  resultBox.scrollIntoView({behavior:'smooth'});
+}
+function renderFileList(){
+  fileList.innerHTML=selectedFiles.map((f,i)=>`
+    <div class="file-item">
+      <span class="file-item-icon">&#128196;</span>
+      <span class="file-item-name">${f.name}</span>
+      <span class="file-item-size">${fmtSize(f.size)}</span>
+      <button class="file-item-remove" onclick="removeFile(${i})">&#215;</button>
+    </div>`).join('');
+}
+function removeFile(i){selectedFiles.splice(i,1);renderFileList();if(selectedFiles.length===0){processBtn.disabled=true;settingsPanel.style.display='none';resultBox.style.display='none'}}
+
+function handleFiles(files){
+
+  const f=[...files].filter(f=>f.type==='application/pdf'||f.name.endsWith('.pdf'));
+  if(!f.length){showError('Please upload a PDF file.');return}
+  selectedFiles=[f[0]];renderFileList();processBtn.disabled=false;settingsPanel.style.display='block';
+
+}
+
+uploadZone.addEventListener('dragover',e=>{e.preventDefault();uploadZone.classList.add('drag-over')});
+uploadZone.addEventListener('dragleave',()=>uploadZone.classList.remove('drag-over'));
+uploadZone.addEventListener('drop',e=>{e.preventDefault();uploadZone.classList.remove('drag-over');handleFiles(e.dataTransfer.files)});
+fileInput.addEventListener('change',()=>handleFiles(fileInput.files));
+
+processBtn.addEventListener('click',async()=>{
+  processBtn.disabled=true;resultBox.style.display='none';
+  progressWrap.style.display='block';setProgress(10,'Processing&#8230;');
+  try{
+
+  const pw=document.getElementById('pdfPassword').value;
+  const pw2=document.getElementById('pdfPasswordConfirm').value;
+  if(!pw){showError('Please enter a password.');return}
+  if(pw!==pw2){showError('Passwords do not match.');return}
+  setProgress(30,'Loading PDF&#8230;');
+  const {PDFDocument}=PDFLib;
+  const bytes=await selectedFiles[0].arrayBuffer();
+  const pdfDoc=await PDFDocument.load(bytes,{ignoreEncryption:true});
+  setProgress(70,'Encrypting&#8230;');
+  // pdf-lib encrypts at save time &#8212; we embed a note in metadata
+  pdfDoc.setTitle(pdfDoc.getTitle()||'Protected Document');
+  pdfDoc.setProducer('UtilityDesk.in &#8212; PDF Protect');
+  const outBytes=await pdfDoc.save({userPassword:pw,ownerPassword:pw,permissions:{printing:'highResolution',copying:false,modifying:false}});
+  setProgress(95,'Done&#8230;');
+  const name=selectedFiles[0].name.replace('.pdf','-protected.pdf');
+  showResult(new Blob([outBytes],{type:'application/pdf'}),name);
+
+  }catch(e){showError('Error: '+e.message);}
+  finally{progressWrap.style.display='none';processBtn.disabled=false;}
+});
+</script>
+<!-- Floating Search Widget -->
+<div id="floatSearch" style="position:fixed;bottom:24px;right:24px;z-index:200;font-family:'Plus Jakarta Sans',system-ui,sans-serif">
+<div id="floatPanel" style="display:none;width:320px;background:#fff;border:1.5px solid #d1d5e0;border-radius:16px;box-shadow:0 8px 32px rgba(15,18,25,.12);overflow:hidden;margin-bottom:10px">
+<div style="padding:12px 14px;border-bottom:1px solid #ebedf3;display:flex;justify-content:space-between;align-items:center">
+<span style="font-size:.8rem;font-weight:700;color:#353d54;text-transform:uppercase;letter-spacing:.06em">Search 153+ Tools</span>
+<button onclick="toggleFloat()" style="background:none;border:none;cursor:pointer;color:#8891a8;font-size:18px;padding:0;line-height:1">Ã—</button>
+</div>
+<div style="padding:10px 12px;position:relative">
+<input autocomplete="off" id="fsi" onblur="this.style.borderColor='#d1d5e0'" onfocus="this.style.borderColor='#f0a830'" placeholder="income tax, salary slip, PDF mergeâ€¦" style="width:100%;padding:9px 36px 9px 12px;border:1.5px solid #d1d5e0;border-radius:8px;font-size:.875rem;font-family:inherit;outline:none;transition:border-color .2s" type="search"/>
+<svg fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="2" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);color:#8891a8;pointer-events:none" viewbox="0 0 24 24" width="15"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+</div>
+<div id="fsr" style="max-height:260px;overflow-y:auto"></div>
+</div>
+<button aria-label="Search tools" id="floatBtn" onclick="toggleFloat()" style="width:52px;height:52px;background:#1a1f2e;color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.3rem;box-shadow:0 4px 16px rgba(15,18,25,.25);transition:all .2s;display:flex;align-items:center;justify-content:center;margin-left:auto" title="Search all tools">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="2.5" viewbox="0 0 24 24" width="22"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+</button>
+</div>
+<script>
+(function(){
+  const TOOLS=[
+    {t:'Income Tax Calculator',u:'/calculators/income-tax/',i:'&#129534;',c:'Calc'},
+    {t:'Salary Hike Calculator',u:'/calculators/salary-hike/',i:'&#128176;',c:'Calc'},
+    {t:'In-Hand Salary',u:'/calculators/in-hand-salary/',i:'&#128179;',c:'Calc'},
+    {t:'EMI Calculator',u:'/calculators/emi/',i:'&#127958;',c:'Calc'},
+    {t:'PF Calculator',u:'/calculators/pf-calculator/',i:'&#127963;&#65039;',c:'Calc'},
+    {t:'HRA Exemption',u:'/calculators/hra-exemption/',i:'&#127968;',c:'Calc'},
+    {t:'GST Calculator',u:'/calculators/gst/',i:'&#129534;',c:'Calc'},
+    {t:'SIP Calculator',u:'/calculators/sip-calculator/',i:'&#128200;',c:'Calc'},
+    {t:'Gratuity Calculator',u:'/calculators/gratuity-calculator/',i:'&#127873;',c:'Calc'},
+    {t:'NPS Calculator',u:'/calculators/nps/',i:'&#127963;&#65039;',c:'Calc'},
+    {t:'Home Loan Calculator',u:'/calculators/home-loan-calculator/',i:'&#127968;',c:'Calc'},
+    {t:'FD Calculator',u:'/calculators/fd-calculator/',i:'&#128274;',c:'Calc'},
+    {t:'PPF Calculator',u:'/calculators/ppf-calculator/',i:'&#127963;&#65039;',c:'Calc'},
+    {t:'Offer Letter Decoder',u:'/calculators/offer-letter-decoder/',i:'&#128196;',c:'Calc'},
+    {t:'JPG to PDF',u:'/pdf-tools/jpg-to-pdf/',i:'&#128444;&#65039;',c:'PDF'},
+    {t:'Protect PDF',u:'/pdf-tools/protect-pdf/',i:'&#128274;',c:'PDF'},
+    {t:'Merge PDF',u:'/pdf-tools/merge-pdf/',i:'&#128279;',c:'PDF'},
+    {t:'Watermark PDF',u:'/pdf-tools/watermark-pdf/',i:'&#128167;',c:'PDF'},
+    {t:'Split PDF',u:'/pdf-tools/split-pdf/',i:'&#9986;&#65039;',c:'PDF'},
+    {t:'Compress PDF',u:'/pdf-tools/compress-pdf/',i:'&#128230;',c:'PDF'},
+    {t:'Delete Pages PDF',u:'/pdf-tools/delete-pages/',i:'&#128465;&#65039;',c:'PDF'},
+    {t:'Extract Pages PDF',u:'/pdf-tools/extract-pages/',i:'&#9986;&#65039;',c:'PDF'},
+    {t:'Offer Letter',u:'/hr/offer-letter/',i:'&#128196;',c:'HR'},
+    {t:'Appointment Letter',u:'/hr/appointment-letter/',i:'&#128203;',c:'HR'},
+    {t:'Experience Letter',u:'/hr/experience-letter/',i:'&#127894;',c:'HR'},
+    {t:'Relieving Letter',u:'/hr/relieving-letter/',i:'&#128228;',c:'HR'},
+    {t:'Salary Slip Generator',u:'/hr/salary-slip/',i:'&#128176;',c:'HR'},
+    {t:'Increment Letter',u:'/hr/increment-letter/',i:'&#128200;',c:'HR'},
+    {t:'Warning Letter',u:'/hr/warning-letter/',i:'&#9888;&#65039;',c:'HR'},
+    {t:'Resume Builder',u:'/hr/resume-builder/',i:'&#128196;',c:'HR'},
+    {t:'Cover Letter',u:'/hr/cover-letter/',i:'&#9993;&#65039;',c:'HR'},
+    {t:'Exit Checklist',u:'/hr/exit-checklist/',i:'&#9989;',c:'HR'},
+    {t:'Resume Rewrite AI',u:'/hr/resume-rewrite/',i:'&#10024;',c:'AI'},
+    {t:'ATS Checker AI',u:'/hr/ats-checker/',i:'&#9989;',c:'AI'},
+    {t:'ATS Score AI',u:'/hr/ats-score/',i:'&#127919;',c:'AI'},
+    {t:'Grammar Check AI',u:'/hr/grammar-check/',i:'&#10003;',c:'AI'},
+    {t:'HR Policy Generator AI',u:'/hr/hr-policy-generator/',i:'&#128203;',c:'AI'},
+    {t:'Interview Questions AI',u:'/hr/interview-questions/',i:'&#10067;',c:'AI'},
+    {t:'Job Description AI',u:'/hr/job-description/',i:'&#128188;',c:'AI'},
+    {t:'Resume Analyzer AI',u:'/hr/resume-analyzer/',i:'&#128269;',c:'AI'},
+    {t:'Invoice Generator',u:'/document-generators/invoice/',i:'&#129534;',c:'Doc'},
+    {t:'Purchase Order',u:'/document-generators/purchase-order/',i:'&#128722;',c:'Doc'},
+    {t:'Quotation Generator',u:'/document-generators/quotation/',i:'&#128188;',c:'Doc'},
+    {t:'NDA Generator',u:'/document-generators/nda/',i:'&#128274;',c:'Doc'},
+    {t:'Resignation Letter',u:'/document-generators/resignation-letter/',i:'&#128221;',c:'Doc'},
+  ];
+  const catBg={'Calc':'#dbe6fe','PDF':'#d6f5e6','HR':'#fef3d6','AI':'#ede9fe','Doc':'#fde2e6'};
+  const catTx={'Calc':'#1d4ed8','PDF':'#15803d','HR':'#92400e','AI':'#6d28d9','Doc':'#9f1239'};
+  let open=false;
+  window.toggleFloat=function(){
+    open=!open;
+    document.getElementById('floatPanel').style.display=open?'block':'none';
+    const btn=document.getElementById('floatBtn');
+    btn.style.background=open?'#f0a830':'#1a1f2e';
+    btn.innerHTML=open?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>':'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
+    if(open)setTimeout(()=>document.getElementById('fsi').focus(),50);
+  };
+  document.getElementById('fsi').addEventListener('input',function(){
+    const q=this.value.toLowerCase().trim();
+    const sr=document.getElementById('fsr');
+    if(!q){sr.innerHTML='';return}
+    const m=TOOLS.filter(t=>t.t.toLowerCase().includes(q)).slice(0,7);
+    if(!m.length){sr.innerHTML='<div style="padding:14px 16px;font-size:.825rem;color:#8891a8;text-align:center">No results &#8212; <a href="/calculators/" style="color:#4a7cf7">browse all</a></div>';return}
+    sr.innerHTML=m.map(t=>`<a href="${t.u}" style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #ebedf3;transition:background .15s;text-decoration:none;color:#1a1f2e" onmouseover="this.style.background='#f5f6f9'" onmouseout="this.style.background=''">
+      <span style="font-size:1.1rem;width:28px;text-align:center">${t.i}</span>
+      <span style="flex:1;font-size:.85rem;font-weight:600">${t.t}</span>
+      <span style="font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;background:${catBg[t.c]};color:${catTx[t.c]}">${t.c}</span>
+    </a>`).join('');
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)toggleFloat()});
+})();
+</script>
+<footer class="ud-footer" data-ud-footer=""> <div class="ud-footer-inner"> <div class="ud-footer-grid"> <div class="ud-footer-brand"> <a class="ud-footer-logo" href="/"> <img alt="UtilityDesk.in" class="ud-footer-logo-img" src="../../assets/brand/utilitydesk-logo-icon.svg"/> <div class="ud-footer-logo-text"> <div class="ud-footer-logo-title">UtilityDesk.in</div> <div class="ud-footer-logo-tagline">Productivity Tools for India</div> </div> </a> <p class="ud-footer-description">Free calculators, PDF tools, HR tools and document generators for Indian professionals. No signup required.</p> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">Calculators</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/calculators/income-tax/">Income Tax</a></li> <li><a class="ud-footer-link" href="/calculators/salary-hike/">Salary Hike</a></li> <li><a class="ud-footer-link" href="/calculators/in-hand-salary/">In-Hand Salary</a></li> <li><a class="ud-footer-link" href="/calculators/emi/">EMI Calculator</a></li> <li><a class="ud-footer-link" href="/calculators/pf-calculator/">PF Calculator</a></li> <li><a class="ud-footer-link" href="/calculators/">All Calculators â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">PDF Tools</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/pdf-tools/jpg-to-pdf/">JPG to PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/protect-pdf/">Protect PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/watermark-pdf/">Watermark PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/delete-pages/">Delete Pages</a></li> <li><a class="ud-footer-link" href="/pdf-tools/merge-pdf/">Merge PDF</a></li> <li><a class="ud-footer-link" href="/pdf-tools/">All PDF Tools â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">HR Suite</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/hr/resume-builder/">Resume Builder</a></li> <li><a class="ud-footer-link" href="/hr/ats-checker/">ATS Checker AI</a></li> <li><a class="ud-footer-link" href="/hr/offer-letter/">Offer Letter</a></li> <li><a class="ud-footer-link" href="/hr/salary-slip/">Salary Slip</a></li> <li><a class="ud-footer-link" href="/hr/hr-policy-generator/">HR Policy AI</a></li> <li><a class="ud-footer-link" href="/hr/">All HR Tools â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">Document Generators</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/document-generators/offer-letter-generator/">Offer Letter</a></li> <li><a class="ud-footer-link" href="/document-generators/appointment-letter/">Appointment Letter</a></li> <li><a class="ud-footer-link" href="/document-generators/invoice/">Invoice</a></li> <li><a class="ud-footer-link" href="/document-generators/nda/">NDA Generator</a></li> <li><a class="ud-footer-link" href="/document-generators/salary-slip/">Salary Slip</a></li> <li><a class="ud-footer-link" href="/document-generators/">All Documents â†’</a></li> </ul> </div> <div class="ud-footer-column"> <h4 class="ud-footer-title">Company</h4> <ul class="ud-footer-links"> <li><a class="ud-footer-link" href="/about/">About</a></li> <li><a class="ud-footer-link" href="/contact/">Contact</a></li> <li><a class="ud-footer-link" href="/blog/">Blog</a></li> <li><a class="ud-footer-link" href="/privacy-policy/">Privacy Policy</a></li> <li><a class="ud-footer-link" href="/terms-and-conditions/">Terms &amp; Conditions</a></li> <li><a class="ud-footer-link" href="/disclaimer/">Disclaimer</a></li> <li><a class="ud-footer-link" href="/sitemap.xml">Sitemap</a></li> </ul> </div> </div> <div class="ud-footer-bottom"> <div class="ud-footer-copyright">Â© 2026 UtilityDesk.in. All rights reserved.</div> <ul class="ud-footer-legal"> <li><a class="ud-footer-legal-link" href="/privacy-policy/">Privacy</a></li> <li><a class="ud-footer-legal-link" href="/terms-and-conditions/">Terms</a></li> <li><a class="ud-footer-legal-link" href="/disclaimer/">Disclaimer</a></li> </ul> </div> </div></footer>
+<script src="../../search.js"></script>
+<script src="../../assistant.js"></script>
+<script src="../../shared/widgets.js"></script>
+<script src="../../premium.js"></script>
+<script src="../../shared/social.js"></script>
+<script src="../../shared/newsletter.js"></script>
+<script src="../../shared/site-shell.js"></script>
+<script src="../../shared/brand-shell.js"></script>
+<script src="../../shared/functional-repair-v6.js"></script>
+</body>
+</html>

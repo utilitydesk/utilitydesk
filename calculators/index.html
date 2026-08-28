@@ -1,466 +1,556 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Free Online Calculators for Indian Professionals | UtilityDesk.in</title>
-<meta name="description" content="95+ free calculators for salary, tax, loans, investments and HR. Built for Indian professionals. No signup required.">
-<link rel="canonical" href="https://www.utilitydesk.in/calculators/">
-<link rel="icon" type="image/svg+xml" href="/assets/brand/utilitydesk-favicon.svg">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-9104MGBHMF");</script>
-
-  <link rel="stylesheet" href="/shared/header-v2.css">
-  <link rel="stylesheet" href="/shared/footer-v2.css">
-  <link rel="stylesheet" href="/shared/design-system-v2.css">
-    <link rel="apple-touch-icon" href="/assets/brand/utilitydesk-logo-icon.svg">
-    <link rel="stylesheet" href="/shared/hero.css">
-  <link rel="stylesheet" href="/shared/widgets.css">
-  <link rel="stylesheet" href="/shared/categories.css">
-  <link rel="stylesheet" href="/shared/search-component.css">
-  </head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Online Calculators for India | UtilityDesk.in</title>
+<meta content="Use free online calculators for salary, tax, loans, investments, business and everyday calculations in India." name="description"/>
+<link href="https://utilitydesk.in/calculators/" rel="canonical"/>
+<link href="../assets/brand/utilitydesk-favicon.svg" rel="icon" type="image/svg+xml"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9104MGBHMF"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-9104MGBHMF");</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --slate-950:#0f1219;--slate-900:#1a1f2e;--slate-800:#252b3d;--slate-700:#353d54;
+  --slate-600:#4a5270;--slate-400:#8891a8;--slate-300:#b0b7c8;--slate-200:#d1d5e0;
+  --slate-100:#ebedf3;--slate-50:#f5f6f9;--white:#fff;
+  --amber-500:#f0a830;--amber-600:#d4901a;--amber-100:#fef3d6;
+  --emerald-500:#34b876;--emerald-100:#d6f5e6;
+  --blue-500:#4a7cf7;--blue-100:#dbe6fe;
+  --rose-500:#e85d6f;--rose-100:#fde2e6;
+  --violet-500:#8b5cf6;--violet-100:#ede9fe;
+  --font-d:'Instrument Serif',Georgia,serif;
+  --font-b:'Plus Jakarta Sans',system-ui,sans-serif;
+  --nav-h:72px;--max-w:1200px;--radius:12px;
+  --sh-sm:0 1px 3px rgba(15,18,25,.06);--sh-md:0 4px 16px rgba(15,18,25,.08);
+  --t:.25s cubic-bezier(.4,0,.2,1)
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-b);color:var(--slate-900);background:var(--slate-50);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(255,255,255,.93);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--slate-100);transition:box-shadow var(--t)}
+.nav.scrolled{box-shadow:var(--sh-sm)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--font-d);font-size:1.5rem;color:var(--slate-900)}
+.nav-logo-icon{width:36px;height:36px;background:var(--slate-900);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--amber-500);font-size:1.2rem;font-family:var(--font-d)}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{padding:7px 13px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--slate-600);transition:all var(--t)}
+.nav-links a:hover,.nav-links a.active{color:var(--slate-900);background:var(--slate-100)}
+.nav-cta{padding:8px 18px;border-radius:8px;font-size:.85rem;font-weight:600;background:var(--slate-900);color:var(--white);transition:all var(--t)}
+.nav-cta:hover{background:var(--slate-800);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--slate-900);border-radius:2px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--white);z-index:99;padding:24px;flex-direction:column;gap:4px;overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:14px 16px;border-radius:10px;font-size:1rem;font-weight:500;color:var(--slate-700);transition:all var(--t)}
+.mobile-menu a:hover{background:var(--slate-50)}
+/* HERO */
+.hero{padding:calc(var(--nav-h)+52px) 24px 40px;text-align:center;background:linear-gradient(175deg,var(--white) 0%,var(--slate-50) 100%);border-bottom:1px solid var(--slate-100)}
+.breadcrumb{display:flex;justify-content:center;gap:8px;margin-bottom:20px;font-size:.82rem;color:var(--slate-400)}
+.breadcrumb a{color:var(--slate-600)}.breadcrumb a:hover{color:var(--amber-600)}
+.hero h1{font-family:var(--font-d);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);color:var(--slate-950);margin-bottom:12px}
+.hero p{font-size:1.05rem;color:var(--slate-600);max-width:600px;margin:0 auto 28px}
+/* SEARCH */
+.search-wrap{max-width:520px;margin:0 auto;position:relative}
+.search-wrap input{width:100%;padding:14px 50px 14px 20px;border:2px solid var(--slate-200);border-radius:50px;font-size:1rem;font-family:var(--font-b);background:var(--white);color:var(--slate-900);outline:none;transition:border-color var(--t);box-shadow:var(--sh-md)}
+.search-wrap input:focus{border-color:var(--amber-500)}
+.search-wrap svg{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--slate-400);pointer-events:none}
+.search-count{margin-top:10px;font-size:.85rem;color:var(--slate-400);text-align:center}
+/* FILTER TABS */
+.filter-bar{max-width:var(--max-w);margin:32px auto 0;padding:0 24px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.filter-btn{padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:600;border:1.5px solid var(--slate-200);background:var(--white);color:var(--slate-600);cursor:pointer;transition:all var(--t)}
+.filter-btn:hover{border-color:var(--amber-500);color:var(--amber-600)}
+.filter-btn.active{background:var(--slate-900);color:var(--white);border-color:var(--slate-900)}
+/* TOOLS GRID */
+.tools-section{padding:36px 24px 64px;max-width:var(--max-w);margin:0 auto}
+.category-block{margin-bottom:40px}
+.category-block h2{font-size:1.1rem;font-weight:700;color:var(--slate-900);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--slate-100);display:flex;align-items:center;gap:10px}
+.cat-count{font-size:.75rem;font-weight:600;background:var(--slate-100);color:var(--slate-600);padding:3px 10px;border-radius:20px}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.tool-card{display:flex;align-items:flex-start;gap:14px;padding:16px;background:var(--white);border:1.5px solid var(--slate-100);border-radius:12px;transition:all var(--t);cursor:pointer}
+.tool-card:hover{box-shadow:var(--sh-md);border-color:transparent;transform:translateY(-2px)}
+.tool-card.hidden{display:none}
+.tool-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+.tool-card-body{flex:1;min-width:0}
+.tool-card-body h3{font-size:.9rem;font-weight:700;color:var(--slate-900);margin-bottom:4px;line-height:1.3}
+.tool-card-body p{font-size:.78rem;color:var(--slate-500);line-height:1.5}
+.tool-badge{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:5px;margin-top:5px}
+.badge-ai{background:var(--violet-100);color:var(--violet-500)}
+.badge-new{background:var(--emerald-100);color:var(--emerald-500)}
+.badge-pdf{background:var(--blue-100);color:var(--blue-500)}
+/* NO RESULTS */
+.no-results{text-align:center;padding:60px 24px;color:var(--slate-400);display:none}
+.no-results h3{font-size:1.1rem;margin-bottom:8px;color:var(--slate-600)}
+/* FOOTER */
+.footer{background:var(--slate-950);color:var(--slate-400);padding:52px 24px 28px}
+.footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1.5fr repeat(5,1fr);gap:32px}
+@media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:600px){.footer-inner{grid-template-columns:1fr 1fr}}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-family:var(--font-d);font-size:1.3rem;color:var(--white)}
+.footer-logo-icon{width:30px;height:30px;background:var(--slate-800);border-radius:7px;display:flex;align-items:center;justify-content:center;color:var(--amber-500)}
+.footer-brand p{font-size:.82rem;line-height:1.7;max-width:220px}
+.footer-col h4{font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--slate-300);margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col a{font-size:.82rem;transition:color var(--t)}.footer-col a:hover{color:var(--amber-500)}
+.footer-bottom{max-width:var(--max-w);margin:36px auto 0;padding-top:20px;border-top:1px solid var(--slate-800);display:flex;justify-content:space-between;align-items:center;font-size:.76rem}
+@media(max-width:640px){.footer-bottom{flex-direction:column;gap:12px;text-align:center}}
+.footer-social{display:flex;gap:10px}
+.footer-social a{width:32px;height:32px;border-radius:7px;background:var(--slate-800);display:flex;align-items:center;justify-content:center;transition:all var(--t)}
+.footer-social a:hover{background:var(--amber-500);color:var(--slate-950)}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}.tools-grid{grid-template-columns:1fr}}
+</style>
+<link href="../shared/design-system-v2.css" rel="stylesheet"/>
+<link href="../shared/header-v2.css" rel="stylesheet"/>
+<link href="../shared/footer-v2.css" rel="stylesheet"/>
+<link href="../shared/ux.css" rel="stylesheet"/>
+<link href="../shared/widgets.css" rel="stylesheet"/>
+<link href="../shared/hero.css" rel="stylesheet"/>
+<link href="../shared/categories.css" rel="stylesheet"/>
+<link href="../shared/search-component.css" rel="stylesheet"/>
+<link href="../shared/sitewide-v4.css" rel="stylesheet"/>
+<script defer="" src="../shared/sitewide-v4.js"></script><meta content="index, follow" name="robots"/><meta content="Online Calculators for India | UtilityDesk.in" property="og:title"/><meta content="Use free online calculators for salary, tax, loans, investments, business and everyday calculations in India." property="og:description"/><meta content="website" property="og:type"/><meta content="UtilityDesk.in" property="og:site_name"/><meta content="https://utilitydesk.in/calculators/" property="og:url"/><meta content="summary" name="twitter:card"/><meta content="Online Calculators for India | UtilityDesk.in" name="twitter:title"/><meta content="Use free online calculators for salary, tax, loans, investments, business and everyday calculations in India." name="twitter:description"/><style data-ud-seo="h1">.ud-seo-h1{font-size:clamp(1.75rem,3vw,2.35rem);line-height:1.2;font-weight:800;color:#1a1f2e;margin:0 0 24px;padding:0;}@media(max-width:768px){.ud-seo-h1{font-size:1.75rem;margin-bottom:18px;}}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Online Calculators for India","description":"Use free online calculators for salary, tax, loans, investments, business and everyday calculations in India.","url":"https://utilitydesk.in/calculators/","isPartOf":{"@type":"WebSite","name":"UtilityDesk.in","url":"https://utilitydesk.in/"},"publisher":{"@type":"Organization","name":"UtilityDesk.in","url":"https://utilitydesk.in/"}}</script></head>
 <body>
-<header class="ud-header" data-ud-header>
-  <div class="ud-header-inner">
-    <a href="/" class="ud-brand">
-      <img src="/assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in Ã¢â‚¬â€ Productivity Tools for India" class="ud-brand-logo">
-    </a>
-    <nav class="ud-nav">
-      <ul class="ud-nav-links">
-        <li><a href="/" class="ud-nav-link">Home</a></li>
-        <li><a href="/calculators/" class="ud-nav-link">Calculators</a></li>
-        <li><a href="/pdf-tools/" class="ud-nav-link">PDF Tools</a></li>
-        <li><a href="/hr/" class="ud-nav-link">HR Suite</a></li>
-        <li><a href="/document-generators/" class="ud-nav-link">Documents</a></li>
-        <li><a href="/blog/" class="ud-nav-link">Blog</a></li>
-        <li><a href="/about/" class="ud-nav-link">About</a></li>
-        <li><a href="/contact/" class="ud-nav-link">Contact</a></li>
-      </ul>
-      <div class="ud-nav-dropdown">
-        <button class="ud-nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true" type="button">
+<header class="ud-header" data-ud-header="">
+<div class="ud-header-inner">
+<a class="ud-brand" href="/">
+<img alt="UtilityDesk.in â€” Productivity Tools for India" class="ud-brand-logo" src="../assets/brand/utilitydesk-logo-horizontal.svg"/>
+</a>
+<nav class="ud-nav">
+<ul class="ud-nav-links">
+<li><a class="ud-nav-link" href="/">Home</a></li>
+<li><a class="ud-nav-link" href="/calculators/">Calculators</a></li>
+<li><a class="ud-nav-link" href="/pdf-tools/">PDF Tools</a></li>
+<li><a class="ud-nav-link" href="/hr/">HR Suite</a></li>
+<li><a class="ud-nav-link" href="/document-generators/">Documents</a></li>
+<li><a class="ud-nav-link" href="/blog/">Blog</a></li>
+<li><a class="ud-nav-link" href="/about/">About</a></li>
+<li><a class="ud-nav-link" href="/contact/">Contact</a></li>
+</ul>
+<div class="ud-nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="ud-nav-dropdown-trigger" type="button">
           Browse Tools
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="ud-nav-dropdown-menu" role="menu">
-          <div class="ud-nav-dropdown-group">
-            <div class="ud-nav-dropdown-group-title">Calculators</div>
-            <a href="/calculators/" class="ud-nav-dropdown-item" role="menuitem">All Calculators</a>
-            <a href="/calculators/salary-hike/" class="ud-nav-dropdown-item" role="menuitem">Salary &amp; HR</a>
-            <a href="/calculators/income-tax/" class="ud-nav-dropdown-item" role="menuitem">Tax</a>
-            <a href="/calculators/emi/" class="ud-nav-dropdown-item" role="menuitem">Loans &amp; EMI</a>
-            <a href="/calculators/sip-calculator/" class="ud-nav-dropdown-item" role="menuitem">Investments</a>
-            <a href="/calculators/business-loan-calculator/" class="ud-nav-dropdown-item" role="menuitem">Business</a>
-            <a href="/calculators/unit-converter/" class="ud-nav-dropdown-item" role="menuitem">Utilities</a>
-          </div>
-          <div class="ud-nav-dropdown-group">
-            <div class="ud-nav-dropdown-group-title">PDF Tools</div>
-            <a href="/pdf-tools/" class="ud-nav-dropdown-item" role="menuitem">All PDF Tools</a>
-            <a href="/pdf-tools/merge-pdf/" class="ud-nav-dropdown-item" role="menuitem">Browser-Based PDF Tools</a>
-            <a href="/pdf-tools/ocr-pdf/" class="ud-nav-dropdown-item" role="menuitem">Advanced PDF Tools</a>
-          </div>
-          <div class="ud-nav-dropdown-group">
-            <div class="ud-nav-dropdown-group-title">HR Suite</div>
-            <a href="/hr/" class="ud-nav-dropdown-item" role="menuitem">All HR Tools</a>
-            <a href="/hr/offer-letter/" class="ud-nav-dropdown-item" role="menuitem">HR Documents</a>
-            <a href="/hr/interview-questions/" class="ud-nav-dropdown-item" role="menuitem">Career Tools</a>
-            <a href="/hr/resume-rewrite/" class="ud-nav-dropdown-item" role="menuitem">AI Tools</a>
-          </div>
-          <div class="ud-nav-dropdown-group">
-            <div class="ud-nav-dropdown-group-title">Documents</div>
-            <a href="/document-generators/" class="ud-nav-dropdown-item" role="menuitem">All Document Generators</a>
-            <a href="/document-generators/offer-letter-generator/" class="ud-nav-dropdown-item" role="menuitem">HR Documents</a>
-            <a href="/document-generators/invoice/" class="ud-nav-dropdown-item" role="menuitem">Business Documents</a>
-          </div>
-          <div class="ud-nav-dropdown-group">
-            <div class="ud-nav-dropdown-group-title">Other</div>
-            <a href="/blog/" class="ud-nav-dropdown-item" role="menuitem">Blog</a>
-            <a href="/about/" class="ud-nav-dropdown-item" role="menuitem">About</a>
-            <a href="/contact/" class="ud-nav-dropdown-item" role="menuitem">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <button class="ud-mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-haspopup="true" type="button">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="ud-mobile-menu">
-    <ul class="ud-mobile-menu-links">
-      <li><a href="/" class="ud-mobile-menu-link">Home</a></li>
-      <li><a href="/calculators/" class="ud-mobile-menu-link">Calculators</a></li>
-      <li><a href="/pdf-tools/" class="ud-mobile-menu-link">PDF Tools</a></li>
-      <li><a href="/hr/" class="ud-mobile-menu-link">HR Suite</a></li>
-      <li><a href="/document-generators/" class="ud-mobile-menu-link">Documents</a></li>
-      <li><a href="/blog/" class="ud-mobile-menu-link">Blog</a></li>
-      <li><a href="/about/" class="ud-mobile-menu-link">About</a></li>
-      <li><a href="/contact/" class="ud-mobile-menu-link">Contact</a></li>
-    </ul>
-    <div class="ud-mobile-dropdown">
-      <button class="ud-mobile-dropdown-trigger" aria-expanded="false" aria-haspopup="true" type="button">Browse Tools &#x25BE;</button>
-      <div class="ud-mobile-dropdown-menu">
-        <a href="/calculators/" class="ud-mobile-dropdown-item">All Calculators</a>
-        <a href="/calculators/salary-hike/" class="ud-mobile-dropdown-item">Salary &amp; HR</a>
-        <a href="/calculators/income-tax/" class="ud-mobile-dropdown-item">Tax</a>
-        <a href="/calculators/emi/" class="ud-mobile-dropdown-item">Loans &amp; EMI</a>
-        <a href="/calculators/sip-calculator/" class="ud-mobile-dropdown-item">Investments</a>
-        <a href="/pdf-tools/" class="ud-mobile-dropdown-item">All PDF Tools</a>
-        <a href="/pdf-tools/merge-pdf/" class="ud-mobile-dropdown-item">Browser-Based PDF Tools</a>
-        <a href="/pdf-tools/ocr-pdf/" class="ud-mobile-dropdown-item">Advanced PDF Tools</a>
-        <a href="/hr/" class="ud-mobile-dropdown-item">All HR Tools</a>
-        <a href="/hr/offer-letter/" class="ud-mobile-dropdown-item">HR Documents</a>
-        <a href="/hr/interview-questions/" class="ud-mobile-dropdown-item">Career Tools</a>
-        <a href="/hr/resume-rewrite/" class="ud-mobile-dropdown-item">AI Tools</a>
-        <a href="/document-generators/" class="ud-mobile-dropdown-item">All Documents</a>
-        <a href="/document-generators/offer-letter-generator/" class="ud-mobile-dropdown-item">HR Documents</a>
-        <a href="/document-generators/invoice/" class="ud-mobile-dropdown-item">Business Documents</a>
-        <a href="/blog/" class="ud-mobile-dropdown-item">Blog</a>
-        <a href="/about/" class="ud-mobile-dropdown-item">About</a>
-        <a href="/contact/" class="ud-mobile-dropdown-item">Contact</a>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-<div class="hero">
-  <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Calculators</span></div>
-  <h1>&#129518; Calculators</h1>
-  <p>101+ free calculators for salary, tax, loans, investments and HR &#8212; built for Indian professionals.</p>
-  <div class="search-wrap">
-    <input type="search" id="searchInput" placeholder="Search 101+ tools..." autocomplete="off" aria-label="Search tools">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-  </div>
-  <p class="search-count" id="searchCount">101 tools available</p>
+          <svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div class="ud-nav-dropdown-menu" role="menu">
+<div class="ud-nav-dropdown-group">
+<div class="ud-nav-dropdown-group-title">Calculators</div>
+<a class="ud-nav-dropdown-item" href="/calculators/" role="menuitem">All Calculators</a>
+<a class="ud-nav-dropdown-item" href="/calculators/salary-hike/" role="menuitem">Salary &amp; HR</a>
+<a class="ud-nav-dropdown-item" href="/calculators/income-tax/" role="menuitem">Tax</a>
+<a class="ud-nav-dropdown-item" href="/calculators/emi/" role="menuitem">Loans &amp; EMI</a>
+<a class="ud-nav-dropdown-item" href="/calculators/sip-calculator/" role="menuitem">Investments</a>
+<a class="ud-nav-dropdown-item" href="/calculators/business-loan-calculator/" role="menuitem">Business</a>
+<a class="ud-nav-dropdown-item" href="/calculators/unit-converter/" role="menuitem">Utilities</a>
 </div>
-<div class="filter-bar"><button class="filter-btn active" data-cat="all">All Tools</button><button class="filter-btn" data-cat="salary">Salary & HR</button><button class="filter-btn" data-cat="tax">Tax</button><button class="filter-btn" data-cat="loans">Loans & EMI</button><button class="filter-btn" data-cat="investments">Investments</button><button class="filter-btn" data-cat="business">Business</button><button class="filter-btn" data-cat="utilities">Utilities</button></div>
+<div class="ud-nav-dropdown-group">
+<div class="ud-nav-dropdown-group-title">PDF Tools</div>
+<a class="ud-nav-dropdown-item" href="/pdf-tools/" role="menuitem">All PDF Tools</a>
+<a class="ud-nav-dropdown-item" href="/pdf-tools/merge-pdf/" role="menuitem">Browser-Based PDF Tools</a>
+<a class="ud-nav-dropdown-item" href="/pdf-tools/ocr-pdf/" role="menuitem">Advanced PDF Tools</a>
+</div>
+<div class="ud-nav-dropdown-group">
+<div class="ud-nav-dropdown-group-title">HR Suite</div>
+<a class="ud-nav-dropdown-item" href="/hr/" role="menuitem">All HR Tools</a>
+<a class="ud-nav-dropdown-item" href="/hr/offer-letter/" role="menuitem">HR Documents</a>
+<a class="ud-nav-dropdown-item" href="/hr/interview-questions/" role="menuitem">Career Tools</a>
+<a class="ud-nav-dropdown-item" href="/hr/resume-rewrite/" role="menuitem">AI Tools</a>
+</div>
+<div class="ud-nav-dropdown-group">
+<div class="ud-nav-dropdown-group-title">Documents</div>
+<a class="ud-nav-dropdown-item" href="/document-generators/" role="menuitem">All Document Generators</a>
+<a class="ud-nav-dropdown-item" href="/document-generators/offer-letter-generator/" role="menuitem">HR Documents</a>
+<a class="ud-nav-dropdown-item" href="/document-generators/invoice/" role="menuitem">Business Documents</a>
+</div>
+<div class="ud-nav-dropdown-group">
+<div class="ud-nav-dropdown-group-title">Other</div>
+<a class="ud-nav-dropdown-item" href="/blog/" role="menuitem">Blog</a>
+<a class="ud-nav-dropdown-item" href="/about/" role="menuitem">About</a>
+<a class="ud-nav-dropdown-item" href="/contact/" role="menuitem">Contact</a>
+</div>
+</div>
+</div>
+</nav>
+<button aria-expanded="false" aria-haspopup="true" aria-label="Toggle menu" class="ud-mobile-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div class="ud-mobile-menu">
+<ul class="ud-mobile-menu-links">
+<li><a class="ud-mobile-menu-link" href="/">Home</a></li>
+<li><a class="ud-mobile-menu-link" href="/calculators/">Calculators</a></li>
+<li><a class="ud-mobile-menu-link" href="/pdf-tools/">PDF Tools</a></li>
+<li><a class="ud-mobile-menu-link" href="/hr/">HR Suite</a></li>
+<li><a class="ud-mobile-menu-link" href="/document-generators/">Documents</a></li>
+<li><a class="ud-mobile-menu-link" href="/blog/">Blog</a></li>
+<li><a class="ud-mobile-menu-link" href="/about/">About</a></li>
+<li><a class="ud-mobile-menu-link" href="/contact/">Contact</a></li>
+</ul>
+<div class="ud-mobile-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="ud-mobile-dropdown-trigger" type="button">Browse Tools â–¾</button>
+<div class="ud-mobile-dropdown-menu">
+<a class="ud-mobile-dropdown-item" href="/calculators/">All Calculators</a>
+<a class="ud-mobile-dropdown-item" href="/calculators/salary-hike/">Salary &amp; HR</a>
+<a class="ud-mobile-dropdown-item" href="/calculators/income-tax/">Tax</a>
+<a class="ud-mobile-dropdown-item" href="/calculators/emi/">Loans &amp; EMI</a>
+<a class="ud-mobile-dropdown-item" href="/calculators/sip-calculator/">Investments</a>
+<a class="ud-mobile-dropdown-item" href="/pdf-tools/">All PDF Tools</a>
+<a class="ud-mobile-dropdown-item" href="/pdf-tools/merge-pdf/">Browser-Based PDF Tools</a>
+<a class="ud-mobile-dropdown-item" href="/pdf-tools/ocr-pdf/">Advanced PDF Tools</a>
+<a class="ud-mobile-dropdown-item" href="/hr/">All HR Tools</a>
+<a class="ud-mobile-dropdown-item" href="/hr/offer-letter/">HR Documents</a>
+<a class="ud-mobile-dropdown-item" href="/hr/interview-questions/">Career Tools</a>
+<a class="ud-mobile-dropdown-item" href="/hr/resume-rewrite/">AI Tools</a>
+<a class="ud-mobile-dropdown-item" href="/document-generators/">All Documents</a>
+<a class="ud-mobile-dropdown-item" href="/document-generators/offer-letter-generator/">HR Documents</a>
+<a class="ud-mobile-dropdown-item" href="/document-generators/invoice/">Business Documents</a>
+<a class="ud-mobile-dropdown-item" href="/blog/">Blog</a>
+<a class="ud-mobile-dropdown-item" href="/about/">About</a>
+<a class="ud-mobile-dropdown-item" href="/contact/">Contact</a>
+</div>
+</div>
+</div>
+</header>
+<div class="hero">
+<div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Calculators</span></div>
+<h1>ðŸ§® Calculators</h1>
+<p>101+ free calculators for salary, tax, loans, investments and HR â€” built for Indian professionals.</p>
+<div class="search-wrap">
+<input aria-label="Search tools" autocomplete="off" id="searchInput" placeholder="Search 101+ tools..." type="search"/>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+</div>
+<p class="search-count" id="searchCount">101 tools available</p>
+</div>
+<div class="filter-bar"><button class="filter-btn active" data-cat="all">All Tools</button><button class="filter-btn" data-cat="salary">Salary &amp; HR</button><button class="filter-btn" data-cat="tax">Tax</button><button class="filter-btn" data-cat="loans">Loans &amp; EMI</button><button class="filter-btn" data-cat="investments">Investments</button><button class="filter-btn" data-cat="business">Business</button><button class="filter-btn" data-cat="utilities">Utilities</button></div>
 <div class="tools-section">
-  <div class="category-block" data-cat="salary">
-  <h2>&#128188; Salary & HR <span class="cat-count">29</span></h2>
-  <div class="tools-grid"><a href="/calculators/salary-hike/" class="tool-card" data-title="salary hike calculator" data-desc="calculate your new salary after a hike percentage">
-  <div class="tool-icon" style="background:#fef3d6">&#128176;</div>
-  <div class="tool-card-body"><h3>Salary Hike Calculator</h3><p>Calculate your new salary after a hike percentage</p></div>
-</a><a href="/calculators/in-hand-salary/" class="tool-card" data-title="in-hand salary calculator" data-desc="ctc to monthly take-home with all deductions">
-  <div class="tool-icon" style="background:#fef3d6">&#128179;</div>
-  <div class="tool-card-body"><h3>In-Hand Salary Calculator</h3><p>CTC to monthly take-home with all deductions</p></div>
-</a><a href="/calculators/income-tax/" class="tool-card" data-title="income tax calculator" data-desc="old vs new regime tax comparison fy 2026-27">
-  <div class="tool-icon" style="background:#fef3d6">&#129534;</div>
-  <div class="tool-card-body"><h3>Income Tax Calculator</h3><p>Old vs New regime tax comparison FY 2026-27</p></div>
-</a><a href="/calculators/pf-calculator/" class="tool-card" data-title="pf / epf calculator" data-desc="employee provident fund monthly and maturity amount">
-  <div class="tool-icon" style="background:#fef3d6">&#127958;</div>
-  <div class="tool-card-body"><h3>PF / EPF Calculator</h3><p>Employee provident fund monthly and maturity amount</p></div>
-</a><a href="/calculators/epf-maturity/" class="tool-card" data-title="epf maturity calculator" data-desc="total corpus at retirement with interest">
-  <div class="tool-icon" style="background:#fef3d6">&#128200;</div>
-  <div class="tool-card-body"><h3>EPF Maturity Calculator</h3><p>Total corpus at retirement with interest</p></div>
-</a><a href="/calculators/hra-exemption/" class="tool-card" data-title="hra exemption calculator" data-desc="compute hra tax exemption under section 10(13a)">
-  <div class="tool-icon" style="background:#fef3d6">&#127968;</div>
-  <div class="tool-card-body"><h3>HRA Exemption Calculator</h3><p>Compute HRA tax exemption under Section 10(13A)</p></div>
-</a><a href="/calculators/gratuity-calculator/" class="tool-card" data-title="gratuity calculator" data-desc="gratuity amount as per payment of gratuity act">
-  <div class="tool-icon" style="background:#fef3d6">&#127873;</div>
-  <div class="tool-card-body"><h3>Gratuity Calculator</h3><p>Gratuity amount as per Payment of Gratuity Act</p></div>
-</a><a href="/calculators/leave-encashment-calculator/" class="tool-card" data-title="leave encashment calculator" data-desc="encash earned leaves at basic salary rate">
-  <div class="tool-icon" style="background:#fef3d6">&#128211;</div>
-  <div class="tool-card-body"><h3>Leave Encashment Calculator</h3><p>Encash earned leaves at basic salary rate</p></div>
-</a><a href="/calculators/notice-period-buyout/" class="tool-card" data-title="notice period buyout" data-desc="cost to buy out notice period from employer">
-  <div class="tool-icon" style="background:#fef3d6">&#128203;</div>
-  <div class="tool-card-body"><h3>Notice Period Buyout</h3><p>Cost to buy out notice period from employer</p></div>
-</a><a href="/calculators/notice-period-calculator/" class="tool-card" data-title="notice period calculator" data-desc="calculate your last working day from notice date">
-  <div class="tool-icon" style="background:#fef3d6">&#9201;&#65039;</div>
-  <div class="tool-card-body"><h3>Notice Period Calculator</h3><p>Calculate your last working day from notice date</p></div>
-</a><a href="/calculators/offer-letter-decoder/" class="tool-card" data-title="offer letter decoder" data-desc="decode ctc structure and actual take-home">
-  <div class="tool-icon" style="background:#fef3d6">&#128196;</div>
-  <div class="tool-card-body"><h3>Offer Letter Decoder</h3><p>Decode CTC structure and actual take-home</p></div>
-</a><a href="/calculators/job-switch-breakeven-calculator/" class="tool-card" data-title="job switch break-even" data-desc="how long to break even after switching jobs">
-  <div class="tool-icon" style="background:#fef3d6">&#9878;&#65039;</div>
-  <div class="tool-card-body"><h3>Job Switch Break-Even</h3><p>How long to break even after switching jobs</p></div>
-</a><a href="/calculators/overtime/" class="tool-card" data-title="overtime calculator" data-desc="calculate overtime wages per labour law">
-  <div class="tool-icon" style="background:#fef3d6">&#9200;</div>
-  <div class="tool-card-body"><h3>Overtime Calculator</h3><p>Calculate overtime wages per labour law</p></div>
-</a><a href="/calculators/overtime-hours-calculator/" class="tool-card" data-title="overtime hours calculator" data-desc="track and compute total overtime hours">
-  <div class="tool-icon" style="background:#fef3d6">&#128336;</div>
-  <div class="tool-card-body"><h3>Overtime Hours Calculator</h3><p>Track and compute total overtime hours</p></div>
-</a><a href="/calculators/variable-pay-bonus-tax/" class="tool-card" data-title="variable pay & bonus tax" data-desc="tax on performance bonus and variable pay">
-  <div class="tool-icon" style="background:#fef3d6">&#128181;</div>
-  <div class="tool-card-body"><h3>Variable Pay & Bonus Tax</h3><p>Tax on performance bonus and variable pay</p></div>
-</a><a href="/calculators/attendance-percentage-calculator/" class="tool-card" data-title="attendance % calculator" data-desc="calculate attendance percentage for any period">
-  <div class="tool-icon" style="background:#fef3d6">&#9989;</div>
-  <div class="tool-card-body"><h3>Attendance % Calculator</h3><p>Calculate attendance percentage for any period</p></div>
-</a><a href="/calculators/experience-calculator/" class="tool-card" data-title="experience calculator" data-desc="compute total work experience in years and months">
-  <div class="tool-icon" style="background:#fef3d6">&#128197;</div>
-  <div class="tool-card-body"><h3>Experience Calculator</h3><p>Compute total work experience in years and months</p></div>
-</a><a href="/calculators/joining-date-calculator/" class="tool-card" data-title="joining date calculator" data-desc="calculate joining date from offer acceptance">
-  <div class="tool-icon" style="background:#fef3d6">&#128198;</div>
-  <div class="tool-card-body"><h3>Joining Date Calculator</h3><p>Calculate joining date from offer acceptance</p></div>
-</a><a href="/calculators/compliance-calendar-generator/" class="tool-card" data-title="compliance calendar" data-desc="generate statutory compliance calendar for fy">
-  <div class="tool-icon" style="background:#fef3d6">&#128193;</div>
-  <div class="tool-card-body"><h3>Compliance Calendar</h3><p>Generate statutory compliance calendar for FY</p></div>
-</a><a href="/calculators/shift-hours-calculator/" class="tool-card" data-title="shift hours calculator" data-desc="compute hours worked per shift">
-  <div class="tool-icon" style="background:#fef3d6">&#127769;</div>
-  <div class="tool-card-body"><h3>Shift Hours Calculator</h3><p>Compute hours worked per shift</p></div>
-</a><a href="/calculators/working-days-calculator/" class="tool-card" data-title="working days calculator" data-desc="count working days between two dates">
-  <div class="tool-icon" style="background:#fef3d6">&#128197;</div>
-  <div class="tool-card-body"><h3>Working Days Calculator</h3><p>Count working days between two dates</p></div>
-</a><a href="/calculators/business-days-calculator/" class="tool-card" data-title="business days calculator" data-desc="calculate business days excluding holidays">
-  <div class="tool-icon" style="background:#fef3d6">&#128211;</div>
-  <div class="tool-card-body"><h3>Business Days Calculator</h3><p>Calculate business days excluding holidays</p></div>
-</a><a href="/calculators/nps/" class="tool-card" data-title="nps calculator" data-desc="national pension system corpus calculator">
-  <div class="tool-icon" style="background:#fef3d6">&#127963;&#65039;</div>
-  <div class="tool-card-body"><h3>NPS Calculator</h3><p>National Pension System corpus calculator</p></div>
-</a><a href="/calculators/annual-increment/" class="tool-card" data-title="annual increment calculator" data-desc="calculate revised salary after annual increment">
-  <div class="tool-icon" style="background:#fef3d6">&#128200;</div>
-  <div class="tool-card-body"><h3>Annual Increment Calculator</h3><p>Calculate revised salary after annual increment</p></div>
-</a><a href="/calculators/bonus-calculator/" class="tool-card" data-title="bonus calculator" data-desc="compute statutory and performance bonus amount">
-  <div class="tool-icon" style="background:#fef3d6">&#127919;</div>
-  <div class="tool-card-body"><h3>Bonus Calculator</h3><p>Compute statutory and performance bonus amount</p></div>
-</a><a href="/calculators/ctc-calculator/" class="tool-card" data-title="ctc calculator" data-desc="break down ctc into all components">
-  <div class="tool-icon" style="background:#fef3d6">&#128188;</div>
-  <div class="tool-card-body"><h3>CTC Calculator</h3><p>Break down CTC into all components</p></div>
-</a><a href="/calculators/professional-tax-calculator/" class="tool-card" data-title="professional tax calculator" data-desc="pt deduction by state and salary bracket">
-  <div class="tool-icon" style="background:#fef3d6">&#127962;</div>
-  <div class="tool-card-body"><h3>Professional Tax Calculator</h3><p>PT deduction by state and salary bracket</p></div>
-</a><a href="/calculators/salary-structure/" class="tool-card" data-title="salary structure planner" data-desc="design optimum salary structure to minimise tax">
-  <div class="tool-icon" style="background:#fef3d6">&#128202;</div>
-  <div class="tool-card-body"><h3>Salary Structure Planner</h3><p>Design optimum salary structure to minimise tax</p></div>
-</a><a href="/calculators/take-home-salary/" class="tool-card" data-title="take-home salary calculator" data-desc="monthly in-hand after all deductions">
-  <div class="tool-icon" style="background:#fef3d6">&#127969;</div>
-  <div class="tool-card-body"><h3>Take-Home Salary Calculator</h3><p>Monthly in-hand after all deductions</p></div>
+<div class="category-block" data-cat="salary">
+<h2>ðŸ’¼ Salary &amp; HR <span class="cat-count">29</span></h2>
+<div class="tools-grid"><a class="tool-card" data-desc="calculate your new salary after a hike percentage" data-title="salary hike calculator" href="/calculators/salary-hike/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ’°</div>
+<div class="tool-card-body"><h3>Salary Hike Calculator</h3><p>Calculate your new salary after a hike percentage</p></div>
+</a><a class="tool-card" data-desc="ctc to monthly take-home with all deductions" data-title="in-hand salary calculator" href="/calculators/in-hand-salary/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ’³</div>
+<div class="tool-card-body"><h3>In-Hand Salary Calculator</h3><p>CTC to monthly take-home with all deductions</p></div>
+</a><a class="tool-card" data-desc="old vs new regime tax comparison fy 2026-27" data-title="income tax calculator" href="/calculators/income-tax/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ§¾</div>
+<div class="tool-card-body"><h3>Income Tax Calculator</h3><p>Old vs New regime tax comparison FY 2026-27</p></div>
+</a><a class="tool-card" data-desc="employee provident fund monthly and maturity amount" data-title="pf / epf calculator" href="/calculators/pf-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ–</div>
+<div class="tool-card-body"><h3>PF / EPF Calculator</h3><p>Employee provident fund monthly and maturity amount</p></div>
+</a><a class="tool-card" data-desc="total corpus at retirement with interest" data-title="epf maturity calculator" href="/calculators/epf-maturity/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>EPF Maturity Calculator</h3><p>Total corpus at retirement with interest</p></div>
+</a><a class="tool-card" data-desc="compute hra tax exemption under section 10(13a)" data-title="hra exemption calculator" href="/calculators/hra-exemption/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ </div>
+<div class="tool-card-body"><h3>HRA Exemption Calculator</h3><p>Compute HRA tax exemption under Section 10(13A)</p></div>
+</a><a class="tool-card" data-desc="gratuity amount as per payment of gratuity act" data-title="gratuity calculator" href="/calculators/gratuity-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸŽ</div>
+<div class="tool-card-body"><h3>Gratuity Calculator</h3><p>Gratuity amount as per Payment of Gratuity Act</p></div>
+</a><a class="tool-card" data-desc="encash earned leaves at basic salary rate" data-title="leave encashment calculator" href="/calculators/leave-encashment-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ““</div>
+<div class="tool-card-body"><h3>Leave Encashment Calculator</h3><p>Encash earned leaves at basic salary rate</p></div>
+</a><a class="tool-card" data-desc="cost to buy out notice period from employer" data-title="notice period buyout" href="/calculators/notice-period-buyout/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“‹</div>
+<div class="tool-card-body"><h3>Notice Period Buyout</h3><p>Cost to buy out notice period from employer</p></div>
+</a><a class="tool-card" data-desc="calculate your last working day from notice date" data-title="notice period calculator" href="/calculators/notice-period-calculator/">
+<div class="tool-icon" style="background:#fef3d6">â±ï¸</div>
+<div class="tool-card-body"><h3>Notice Period Calculator</h3><p>Calculate your last working day from notice date</p></div>
+</a><a class="tool-card" data-desc="decode ctc structure and actual take-home" data-title="offer letter decoder" href="/calculators/offer-letter-decoder/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“„</div>
+<div class="tool-card-body"><h3>Offer Letter Decoder</h3><p>Decode CTC structure and actual take-home</p></div>
+</a><a class="tool-card" data-desc="how long to break even after switching jobs" data-title="job switch break-even" href="/calculators/job-switch-breakeven-calculator/">
+<div class="tool-icon" style="background:#fef3d6">âš–ï¸</div>
+<div class="tool-card-body"><h3>Job Switch Break-Even</h3><p>How long to break even after switching jobs</p></div>
+</a><a class="tool-card" data-desc="calculate overtime wages per labour law" data-title="overtime calculator" href="/calculators/overtime/">
+<div class="tool-icon" style="background:#fef3d6">â°</div>
+<div class="tool-card-body"><h3>Overtime Calculator</h3><p>Calculate overtime wages per labour law</p></div>
+</a><a class="tool-card" data-desc="track and compute total overtime hours" data-title="overtime hours calculator" href="/calculators/overtime-hours-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ•</div>
+<div class="tool-card-body"><h3>Overtime Hours Calculator</h3><p>Track and compute total overtime hours</p></div>
+</a><a class="tool-card" data-desc="tax on performance bonus and variable pay" data-title="variable pay &amp; bonus tax" href="/calculators/variable-pay-bonus-tax/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ’µ</div>
+<div class="tool-card-body"><h3>Variable Pay &amp; Bonus Tax</h3><p>Tax on performance bonus and variable pay</p></div>
+</a><a class="tool-card" data-desc="calculate attendance percentage for any period" data-title="attendance % calculator" href="/calculators/attendance-percentage-calculator/">
+<div class="tool-icon" style="background:#fef3d6">âœ…</div>
+<div class="tool-card-body"><h3>Attendance % Calculator</h3><p>Calculate attendance percentage for any period</p></div>
+</a><a class="tool-card" data-desc="compute total work experience in years and months" data-title="experience calculator" href="/calculators/experience-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“…</div>
+<div class="tool-card-body"><h3>Experience Calculator</h3><p>Compute total work experience in years and months</p></div>
+</a><a class="tool-card" data-desc="calculate joining date from offer acceptance" data-title="joining date calculator" href="/calculators/joining-date-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“†</div>
+<div class="tool-card-body"><h3>Joining Date Calculator</h3><p>Calculate joining date from offer acceptance</p></div>
+</a><a class="tool-card" data-desc="generate statutory compliance calendar for fy" data-title="compliance calendar" href="/calculators/compliance-calendar-generator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“</div>
+<div class="tool-card-body"><h3>Compliance Calendar</h3><p>Generate statutory compliance calendar for FY</p></div>
+</a><a class="tool-card" data-desc="compute hours worked per shift" data-title="shift hours calculator" href="/calculators/shift-hours-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸŒ™</div>
+<div class="tool-card-body"><h3>Shift Hours Calculator</h3><p>Compute hours worked per shift</p></div>
+</a><a class="tool-card" data-desc="count working days between two dates" data-title="working days calculator" href="/calculators/working-days-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“…</div>
+<div class="tool-card-body"><h3>Working Days Calculator</h3><p>Count working days between two dates</p></div>
+</a><a class="tool-card" data-desc="calculate business days excluding holidays" data-title="business days calculator" href="/calculators/business-days-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ““</div>
+<div class="tool-card-body"><h3>Business Days Calculator</h3><p>Calculate business days excluding holidays</p></div>
+</a><a class="tool-card" data-desc="national pension system corpus calculator" data-title="nps calculator" href="/calculators/nps/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ›ï¸</div>
+<div class="tool-card-body"><h3>NPS Calculator</h3><p>National Pension System corpus calculator</p></div>
+</a><a class="tool-card" data-desc="calculate revised salary after annual increment" data-title="annual increment calculator" href="/calculators/annual-increment/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>Annual Increment Calculator</h3><p>Calculate revised salary after annual increment</p></div>
+</a><a class="tool-card" data-desc="compute statutory and performance bonus amount" data-title="bonus calculator" href="/calculators/bonus-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸŽ¯</div>
+<div class="tool-card-body"><h3>Bonus Calculator</h3><p>Compute statutory and performance bonus amount</p></div>
+</a><a class="tool-card" data-desc="break down ctc into all components" data-title="ctc calculator" href="/calculators/ctc-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ’¼</div>
+<div class="tool-card-body"><h3>CTC Calculator</h3><p>Break down CTC into all components</p></div>
+</a><a class="tool-card" data-desc="pt deduction by state and salary bracket" data-title="professional tax calculator" href="/calculators/professional-tax-calculator/">
+<div class="tool-icon" style="background:#fef3d6">ðŸš</div>
+<div class="tool-card-body"><h3>Professional Tax Calculator</h3><p>PT deduction by state and salary bracket</p></div>
+</a><a class="tool-card" data-desc="design optimum salary structure to minimise tax" data-title="salary structure planner" href="/calculators/salary-structure/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ“Š</div>
+<div class="tool-card-body"><h3>Salary Structure Planner</h3><p>Design optimum salary structure to minimise tax</p></div>
+</a><a class="tool-card" data-desc="monthly in-hand after all deductions" data-title="take-home salary calculator" href="/calculators/take-home-salary/">
+<div class="tool-icon" style="background:#fef3d6">ðŸ¡</div>
+<div class="tool-card-body"><h3>Take-Home Salary Calculator</h3><p>Monthly in-hand after all deductions</p></div>
 </a></div>
 </div><div class="category-block" data-cat="tax">
-  <h2>&#129534; Tax Calculators <span class="cat-count">18</span></h2>
-  <div class="tools-grid"><a href="/calculators/old-vs-new-regime-calculator/" class="tool-card" data-title="old vs new regime" data-desc="side-by-side tax comparison for both regimes">
-  <div class="tool-icon" style="background:#dbe6fe">&#9878;&#65039;</div>
-  <div class="tool-card-body"><h3>Old vs New Regime</h3><p>Side-by-side tax comparison for both regimes</p></div>
-</a><a href="/calculators/tds-calculator/" class="tool-card" data-title="tds calculator" data-desc="tax deducted at source on salary and payments">
-  <div class="tool-icon" style="background:#dbe6fe">&#128203;</div>
-  <div class="tool-card-body"><h3>TDS Calculator</h3><p>Tax deducted at source on salary and payments</p></div>
-</a><a href="/calculators/advance-tax-calculator/" class="tool-card" data-title="advance tax calculator" data-desc="quarterly advance tax installment calculator">
-  <div class="tool-icon" style="background:#dbe6fe">&#128211;</div>
-  <div class="tool-card-body"><h3>Advance Tax Calculator</h3><p>Quarterly advance tax installment calculator</p></div>
-</a><a href="/calculators/capital-gains-tax-calculator/" class="tool-card" data-title="capital gains tax" data-desc="stcg and ltcg tax on stocks, mf and property">
-  <div class="tool-icon" style="background:#dbe6fe">&#128200;</div>
-  <div class="tool-card-body"><h3>Capital Gains Tax</h3><p>STCG and LTCG tax on stocks, MF and property</p></div>
-</a><a href="/calculators/crypto-tax-calculator/" class="tool-card" data-title="crypto tax calculator" data-desc="30% flat tax on cryptocurrency gains in india">
-  <div class="tool-icon" style="background:#dbe6fe">&#8383;</div>
-  <div class="tool-card-body"><h3>Crypto Tax Calculator</h3><p>30% flat tax on cryptocurrency gains in India</p></div>
-</a><a href="/calculators/dividend-tax-calculator/" class="tool-card" data-title="dividend tax calculator" data-desc="tax on dividend income at applicable slab rate">
-  <div class="tool-icon" style="background:#dbe6fe">&#128185;</div>
-  <div class="tool-card-body"><h3>Dividend Tax Calculator</h3><p>Tax on dividend income at applicable slab rate</p></div>
-</a><a href="/calculators/gst/" class="tool-card" data-title="gst calculator" data-desc="inclusive and exclusive gst calculation">
-  <div class="tool-icon" style="background:#dbe6fe">&#129534;</div>
-  <div class="tool-card-body"><h3>GST Calculator</h3><p>Inclusive and exclusive GST calculation</p></div>
-</a><a href="/calculators/gst-profit-calculator/" class="tool-card" data-title="gst profit calculator" data-desc="profit margin after gst on products">
-  <div class="tool-icon" style="background:#dbe6fe">&#128202;</div>
-  <div class="tool-card-body"><h3>GST Profit Calculator</h3><p>Profit margin after GST on products</p></div>
-</a><a href="/calculators/gst-split-calculator/" class="tool-card" data-title="gst split calculator" data-desc="split cgst and sgst or igst amounts">
-  <div class="tool-icon" style="background:#dbe6fe">&#9986;&#65039;</div>
-  <div class="tool-card-body"><h3>GST Split Calculator</h3><p>Split CGST and SGST or IGST amounts</p></div>
-</a><a href="/calculators/sales-tax-calculator/" class="tool-card" data-title="sales tax calculator" data-desc="legacy sales tax computation">
-  <div class="tool-icon" style="background:#dbe6fe">&#127991;&#65039;</div>
-  <div class="tool-card-body"><h3>Sales Tax Calculator</h3><p>Legacy sales tax computation</p></div>
-</a><a href="/calculators/property-tax-calculator/" class="tool-card" data-title="property tax calculator" data-desc="annual property tax estimation">
-  <div class="tool-icon" style="background:#dbe6fe">&#127960;&#65039;</div>
-  <div class="tool-card-body"><h3>Property Tax Calculator</h3><p>Annual property tax estimation</p></div>
-</a><a href="/calculators/payroll-tax-calculator/" class="tool-card" data-title="payroll tax calculator" data-desc="total payroll tax liability for employers">
-  <div class="tool-icon" style="background:#dbe6fe">&#128188;</div>
-  <div class="tool-card-body"><h3>Payroll Tax Calculator</h3><p>Total payroll tax liability for employers</p></div>
-</a><a href="/calculators/tax-saving-calculator/" class="tool-card" data-title="tax saving calculator" data-desc="maximise deductions under 80c, 80d, nps">
-  <div class="tool-icon" style="background:#dbe6fe">&#128161;</div>
-  <div class="tool-card-body"><h3>Tax Saving Calculator</h3><p>Maximise deductions under 80C, 80D, NPS</p></div>
-</a><a href="/calculators/80d-calculator/" class="tool-card" data-title="80d medical insurance" data-desc="deduction on health insurance premiums">
-  <div class="tool-icon" style="background:#dbe6fe">&#127973;</div>
-  <div class="tool-card-body"><h3>80D Medical Insurance</h3><p>Deduction on health insurance premiums</p></div>
-</a><a href="/calculators/section-80c-planner/" class="tool-card" data-title="section 80c planner" data-desc="plan investments to claim &#8377;1.5l deduction">
-  <div class="tool-icon" style="background:#dbe6fe">&#128273;</div>
-  <div class="tool-card-body"><h3>Section 80C Planner</h3><p>Plan investments to claim &#8377;1.5L deduction</p></div>
-</a><a href="/calculators/rebate-calculator/" class="tool-card" data-title="87a rebate calculator" data-desc="tax rebate for income up to &#8377;12 lakh">
-  <div class="tool-icon" style="background:#dbe6fe">&#127873;</div>
-  <div class="tool-card-body"><h3>87A Rebate Calculator</h3><p>Tax rebate for income up to &#8377;12 lakh</p></div>
-</a><a href="/calculators/stamp-duty-calculator/" class="tool-card" data-title="stamp duty calculator" data-desc="stamp duty on property registration by state">
-  <div class="tool-icon" style="background:#dbe6fe">&#128278;</div>
-  <div class="tool-card-body"><h3>Stamp Duty Calculator</h3><p>Stamp duty on property registration by state</p></div>
-</a><a href="/calculators/registration-charges-calculator/" class="tool-card" data-title="registration charges" data-desc="property registration charges by state">
-  <div class="tool-icon" style="background:#dbe6fe">&#128221;</div>
-  <div class="tool-card-body"><h3>Registration Charges</h3><p>Property registration charges by state</p></div>
+<h2>ðŸ§¾ Tax Calculators <span class="cat-count">18</span></h2>
+<div class="tools-grid"><a class="tool-card" data-desc="side-by-side tax comparison for both regimes" data-title="old vs new regime" href="/calculators/old-vs-new-regime-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">âš–ï¸</div>
+<div class="tool-card-body"><h3>Old vs New Regime</h3><p>Side-by-side tax comparison for both regimes</p></div>
+</a><a class="tool-card" data-desc="tax deducted at source on salary and payments" data-title="tds calculator" href="/calculators/tds-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ“‹</div>
+<div class="tool-card-body"><h3>TDS Calculator</h3><p>Tax deducted at source on salary and payments</p></div>
+</a><a class="tool-card" data-desc="quarterly advance tax installment calculator" data-title="advance tax calculator" href="/calculators/advance-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ““</div>
+<div class="tool-card-body"><h3>Advance Tax Calculator</h3><p>Quarterly advance tax installment calculator</p></div>
+</a><a class="tool-card" data-desc="stcg and ltcg tax on stocks, mf and property" data-title="capital gains tax" href="/calculators/capital-gains-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>Capital Gains Tax</h3><p>STCG and LTCG tax on stocks, MF and property</p></div>
+</a><a class="tool-card" data-desc="30% flat tax on cryptocurrency gains in india" data-title="crypto tax calculator" href="/calculators/crypto-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">â‚¿</div>
+<div class="tool-card-body"><h3>Crypto Tax Calculator</h3><p>30% flat tax on cryptocurrency gains in India</p></div>
+</a><a class="tool-card" data-desc="tax on dividend income at applicable slab rate" data-title="dividend tax calculator" href="/calculators/dividend-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ’¹</div>
+<div class="tool-card-body"><h3>Dividend Tax Calculator</h3><p>Tax on dividend income at applicable slab rate</p></div>
+</a><a class="tool-card" data-desc="inclusive and exclusive gst calculation" data-title="gst calculator" href="/calculators/gst/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ§¾</div>
+<div class="tool-card-body"><h3>GST Calculator</h3><p>Inclusive and exclusive GST calculation</p></div>
+</a><a class="tool-card" data-desc="profit margin after gst on products" data-title="gst profit calculator" href="/calculators/gst-profit-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ“Š</div>
+<div class="tool-card-body"><h3>GST Profit Calculator</h3><p>Profit margin after GST on products</p></div>
+</a><a class="tool-card" data-desc="split cgst and sgst or igst amounts" data-title="gst split calculator" href="/calculators/gst-split-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">âœ‚ï¸</div>
+<div class="tool-card-body"><h3>GST Split Calculator</h3><p>Split CGST and SGST or IGST amounts</p></div>
+</a><a class="tool-card" data-desc="legacy sales tax computation" data-title="sales tax calculator" href="/calculators/sales-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ·ï¸</div>
+<div class="tool-card-body"><h3>Sales Tax Calculator</h3><p>Legacy sales tax computation</p></div>
+</a><a class="tool-card" data-desc="annual property tax estimation" data-title="property tax calculator" href="/calculators/property-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ˜ï¸</div>
+<div class="tool-card-body"><h3>Property Tax Calculator</h3><p>Annual property tax estimation</p></div>
+</a><a class="tool-card" data-desc="total payroll tax liability for employers" data-title="payroll tax calculator" href="/calculators/payroll-tax-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ’¼</div>
+<div class="tool-card-body"><h3>Payroll Tax Calculator</h3><p>Total payroll tax liability for employers</p></div>
+</a><a class="tool-card" data-desc="maximise deductions under 80c, 80d, nps" data-title="tax saving calculator" href="/calculators/tax-saving-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ’¡</div>
+<div class="tool-card-body"><h3>Tax Saving Calculator</h3><p>Maximise deductions under 80C, 80D, NPS</p></div>
+</a><a class="tool-card" data-desc="deduction on health insurance premiums" data-title="80d medical insurance" href="/calculators/80d-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ¥</div>
+<div class="tool-card-body"><h3>80D Medical Insurance</h3><p>Deduction on health insurance premiums</p></div>
+</a><a class="tool-card" data-desc="plan investments to claim â‚¹1.5l deduction" data-title="section 80c planner" href="/calculators/section-80c-planner/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ”‘</div>
+<div class="tool-card-body"><h3>Section 80C Planner</h3><p>Plan investments to claim â‚¹1.5L deduction</p></div>
+</a><a class="tool-card" data-desc="tax rebate for income up to â‚¹12 lakh" data-title="87a rebate calculator" href="/calculators/rebate-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸŽ</div>
+<div class="tool-card-body"><h3>87A Rebate Calculator</h3><p>Tax rebate for income up to â‚¹12 lakh</p></div>
+</a><a class="tool-card" data-desc="stamp duty on property registration by state" data-title="stamp duty calculator" href="/calculators/stamp-duty-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ”–</div>
+<div class="tool-card-body"><h3>Stamp Duty Calculator</h3><p>Stamp duty on property registration by state</p></div>
+</a><a class="tool-card" data-desc="property registration charges by state" data-title="registration charges" href="/calculators/registration-charges-calculator/">
+<div class="tool-icon" style="background:#dbe6fe">ðŸ“</div>
+<div class="tool-card-body"><h3>Registration Charges</h3><p>Property registration charges by state</p></div>
 </a></div>
 </div><div class="category-block" data-cat="loans">
-  <h2>&#127958; Loans & EMI <span class="cat-count">12</span></h2>
-  <div class="tools-grid"><a href="/calculators/emi/" class="tool-card" data-title="emi calculator" data-desc="monthly emi for any loan amount, rate and tenure">
-  <div class="tool-icon" style="background:#d6f5e6">&#127958;</div>
-  <div class="tool-card-body"><h3>EMI Calculator</h3><p>Monthly EMI for any loan amount, rate and tenure</p></div>
-</a><a href="/calculators/home-loan-calculator/" class="tool-card" data-title="home loan calculator" data-desc="home loan emi, total interest and amortisation">
-  <div class="tool-icon" style="background:#d6f5e6">&#127968;</div>
-  <div class="tool-card-body"><h3>Home Loan Calculator</h3><p>Home loan EMI, total interest and amortisation</p></div>
-</a><a href="/calculators/home-affordability-calculator/" class="tool-card" data-title="home affordability" data-desc="maximum home loan you can afford on your salary">
-  <div class="tool-icon" style="background:#d6f5e6">&#128273;</div>
-  <div class="tool-card-body"><h3>Home Affordability</h3><p>Maximum home loan you can afford on your salary</p></div>
-</a><a href="/calculators/personal-loan-calculator/" class="tool-card" data-title="personal loan calculator" data-desc="personal loan emi and total repayment">
-  <div class="tool-icon" style="background:#d6f5e6">&#128179;</div>
-  <div class="tool-card-body"><h3>Personal Loan Calculator</h3><p>Personal loan EMI and total repayment</p></div>
-</a><a href="/calculators/car-loan-calculator/" class="tool-card" data-title="car loan calculator" data-desc="car loan emi with on-road price breakdown">
-  <div class="tool-icon" style="background:#d6f5e6">&#128663;</div>
-  <div class="tool-card-body"><h3>Car Loan Calculator</h3><p>Car loan EMI with on-road price breakdown</p></div>
-</a><a href="/calculators/education-loan-calculator/" class="tool-card" data-title="education loan calculator" data-desc="education loan emi with moratorium period">
-  <div class="tool-icon" style="background:#d6f5e6">&#127891;</div>
-  <div class="tool-card-body"><h3>Education Loan Calculator</h3><p>Education loan EMI with moratorium period</p></div>
-</a><a href="/calculators/business-loan-calculator/" class="tool-card" data-title="business loan calculator" data-desc="business loan emi and total cost">
-  <div class="tool-icon" style="background:#d6f5e6">&#127962;</div>
-  <div class="tool-card-body"><h3>Business Loan Calculator</h3><p>Business loan EMI and total cost</p></div>
-</a><a href="/calculators/balance-transfer-calculator/" class="tool-card" data-title="balance transfer calculator" data-desc="savings from transferring loan to lower rate">
-  <div class="tool-icon" style="background:#d6f5e6">&#128260;</div>
-  <div class="tool-card-body"><h3>Balance Transfer Calculator</h3><p>Savings from transferring loan to lower rate</p></div>
-</a><a href="/calculators/loan-prepayment-calculator/" class="tool-card" data-title="loan prepayment calculator" data-desc="interest saved by making early partial payments">
-  <div class="tool-icon" style="background:#d6f5e6">&#9889;</div>
-  <div class="tool-card-body"><h3>Loan Prepayment Calculator</h3><p>Interest saved by making early partial payments</p></div>
-</a><a href="/calculators/loan-affordability-calculator/" class="tool-card" data-title="loan affordability" data-desc="max loan based on income and existing emis">
-  <div class="tool-icon" style="background:#d6f5e6">&#128202;</div>
-  <div class="tool-card-body"><h3>Loan Affordability</h3><p>Max loan based on income and existing EMIs</p></div>
-</a><a href="/calculators/loan-eligibility-calculator/" class="tool-card" data-title="loan eligibility" data-desc="check eligibility based on salary and foir">
-  <div class="tool-icon" style="background:#d6f5e6">&#9989;</div>
-  <div class="tool-card-body"><h3>Loan Eligibility</h3><p>Check eligibility based on salary and FOIR</p></div>
-</a><a href="/calculators/interest-vs-principal-calculator/" class="tool-card" data-title="interest vs principal" data-desc="see interest vs principal split over loan tenure">
-  <div class="tool-icon" style="background:#d6f5e6">&#128200;</div>
-  <div class="tool-card-body"><h3>Interest vs Principal</h3><p>See interest vs principal split over loan tenure</p></div>
+<h2>ðŸ– Loans &amp; EMI <span class="cat-count">12</span></h2>
+<div class="tools-grid"><a class="tool-card" data-desc="monthly emi for any loan amount, rate and tenure" data-title="emi calculator" href="/calculators/emi/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ–</div>
+<div class="tool-card-body"><h3>EMI Calculator</h3><p>Monthly EMI for any loan amount, rate and tenure</p></div>
+</a><a class="tool-card" data-desc="home loan emi, total interest and amortisation" data-title="home loan calculator" href="/calculators/home-loan-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ </div>
+<div class="tool-card-body"><h3>Home Loan Calculator</h3><p>Home loan EMI, total interest and amortisation</p></div>
+</a><a class="tool-card" data-desc="maximum home loan you can afford on your salary" data-title="home affordability" href="/calculators/home-affordability-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ”‘</div>
+<div class="tool-card-body"><h3>Home Affordability</h3><p>Maximum home loan you can afford on your salary</p></div>
+</a><a class="tool-card" data-desc="personal loan emi and total repayment" data-title="personal loan calculator" href="/calculators/personal-loan-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ’³</div>
+<div class="tool-card-body"><h3>Personal Loan Calculator</h3><p>Personal loan EMI and total repayment</p></div>
+</a><a class="tool-card" data-desc="car loan emi with on-road price breakdown" data-title="car loan calculator" href="/calculators/car-loan-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸš—</div>
+<div class="tool-card-body"><h3>Car Loan Calculator</h3><p>Car loan EMI with on-road price breakdown</p></div>
+</a><a class="tool-card" data-desc="education loan emi with moratorium period" data-title="education loan calculator" href="/calculators/education-loan-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸŽ“</div>
+<div class="tool-card-body"><h3>Education Loan Calculator</h3><p>Education loan EMI with moratorium period</p></div>
+</a><a class="tool-card" data-desc="business loan emi and total cost" data-title="business loan calculator" href="/calculators/business-loan-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸš</div>
+<div class="tool-card-body"><h3>Business Loan Calculator</h3><p>Business loan EMI and total cost</p></div>
+</a><a class="tool-card" data-desc="savings from transferring loan to lower rate" data-title="balance transfer calculator" href="/calculators/balance-transfer-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ”„</div>
+<div class="tool-card-body"><h3>Balance Transfer Calculator</h3><p>Savings from transferring loan to lower rate</p></div>
+</a><a class="tool-card" data-desc="interest saved by making early partial payments" data-title="loan prepayment calculator" href="/calculators/loan-prepayment-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">âš¡</div>
+<div class="tool-card-body"><h3>Loan Prepayment Calculator</h3><p>Interest saved by making early partial payments</p></div>
+</a><a class="tool-card" data-desc="max loan based on income and existing emis" data-title="loan affordability" href="/calculators/loan-affordability-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ“Š</div>
+<div class="tool-card-body"><h3>Loan Affordability</h3><p>Max loan based on income and existing EMIs</p></div>
+</a><a class="tool-card" data-desc="check eligibility based on salary and foir" data-title="loan eligibility" href="/calculators/loan-eligibility-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">âœ…</div>
+<div class="tool-card-body"><h3>Loan Eligibility</h3><p>Check eligibility based on salary and FOIR</p></div>
+</a><a class="tool-card" data-desc="see interest vs principal split over loan tenure" data-title="interest vs principal" href="/calculators/interest-vs-principal-calculator/">
+<div class="tool-icon" style="background:#d6f5e6">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>Interest vs Principal</h3><p>See interest vs principal split over loan tenure</p></div>
 </a></div>
 </div><div class="category-block" data-cat="investments">
-  <h2>&#128200; Investments & Savings <span class="cat-count">15</span></h2>
-  <div class="tools-grid"><a href="/calculators/sip-calculator/" class="tool-card" data-title="sip calculator" data-desc="wealth from monthly sip investment with cagr">
-  <div class="tool-icon" style="background:#ede9fe">&#128200;</div>
-  <div class="tool-card-body"><h3>SIP Calculator</h3><p>Wealth from monthly SIP investment with CAGR</p></div>
-</a><a href="/calculators/lumpsum-calculator/" class="tool-card" data-title="lumpsum calculator" data-desc="returns from one-time mutual fund investment">
-  <div class="tool-icon" style="background:#ede9fe">&#128176;</div>
-  <div class="tool-card-body"><h3>Lumpsum Calculator</h3><p>Returns from one-time mutual fund investment</p></div>
-</a><a href="/calculators/ppf-calculator/" class="tool-card" data-title="ppf calculator" data-desc="public provident fund maturity with interest">
-  <div class="tool-icon" style="background:#ede9fe">&#127963;&#65039;</div>
-  <div class="tool-card-body"><h3>PPF Calculator</h3><p>Public Provident Fund maturity with interest</p></div>
-</a><a href="/calculators/fd-calculator/" class="tool-card" data-title="fd calculator" data-desc="fixed deposit maturity amount and interest">
-  <div class="tool-icon" style="background:#ede9fe">&#128274;</div>
-  <div class="tool-card-body"><h3>FD Calculator</h3><p>Fixed deposit maturity amount and interest</p></div>
-</a><a href="/calculators/rd-calculator/" class="tool-card" data-title="rd calculator" data-desc="recurring deposit maturity amount">
-  <div class="tool-icon" style="background:#ede9fe">&#127975;</div>
-  <div class="tool-card-body"><h3>RD Calculator</h3><p>Recurring deposit maturity amount</p></div>
-</a><a href="/calculators/compound-interest-calculator/" class="tool-card" data-title="compound interest" data-desc="compound interest with flexible compounding">
-  <div class="tool-icon" style="background:#ede9fe">&#128202;</div>
-  <div class="tool-card-body"><h3>Compound Interest</h3><p>Compound interest with flexible compounding</p></div>
-</a><a href="/calculators/simple-interest-calculator/" class="tool-card" data-title="simple interest" data-desc="simple interest on any principal amount">
-  <div class="tool-icon" style="background:#ede9fe">&#129518;</div>
-  <div class="tool-card-body"><h3>Simple Interest</h3><p>Simple interest on any principal amount</p></div>
-</a><a href="/calculators/inflation-calculator/" class="tool-card" data-title="inflation calculator" data-desc="future value of money adjusted for inflation">
-  <div class="tool-icon" style="background:#ede9fe">&#128201;</div>
-  <div class="tool-card-body"><h3>Inflation Calculator</h3><p>Future value of money adjusted for inflation</p></div>
-</a><a href="/calculators/retirement-calculator/" class="tool-card" data-title="retirement calculator" data-desc="corpus needed to retire at target age">
-  <div class="tool-icon" style="background:#ede9fe">&#127958;&#65039;</div>
-  <div class="tool-card-body"><h3>Retirement Calculator</h3><p>Corpus needed to retire at target age</p></div>
-</a><a href="/calculators/fires-calculator/" class="tool-card" data-title="fire calculator" data-desc="financial independence retire early planning">
-  <div class="tool-icon" style="background:#ede9fe">&#128293;</div>
-  <div class="tool-card-body"><h3>FIRE Calculator</h3><p>Financial Independence Retire Early planning</p></div>
-</a><a href="/calculators/net-worth-calculator/" class="tool-card" data-title="net worth calculator" data-desc="total net worth from assets and liabilities">
-  <div class="tool-icon" style="background:#ede9fe">&#128142;</div>
-  <div class="tool-card-body"><h3>Net Worth Calculator</h3><p>Total net worth from assets and liabilities</p></div>
-</a><a href="/calculators/roi-calculator/" class="tool-card" data-title="roi calculator" data-desc="return on investment percentage">
-  <div class="tool-icon" style="background:#ede9fe">&#128200;</div>
-  <div class="tool-card-body"><h3>ROI Calculator</h3><p>Return on investment percentage</p></div>
-</a><a href="/calculators/rental-yield-calculator/" class="tool-card" data-title="rental yield calculator" data-desc="annual rental yield on property investment">
-  <div class="tool-icon" style="background:#ede9fe">&#127960;&#65039;</div>
-  <div class="tool-card-body"><h3>Rental Yield Calculator</h3><p>Annual rental yield on property investment</p></div>
-</a><a href="/calculators/rent-vs-buy-calculator/" class="tool-card" data-title="rent vs buy" data-desc="is it better to rent or buy property now?">
-  <div class="tool-icon" style="background:#ede9fe">&#128273;</div>
-  <div class="tool-card-body"><h3>Rent vs Buy</h3><p>Is it better to rent or buy property now?</p></div>
-</a><a href="/calculators/property-appreciation-calculator/" class="tool-card" data-title="property appreciation" data-desc="future property value at appreciation rate">
-  <div class="tool-icon" style="background:#ede9fe">&#127959;&#65039;</div>
-  <div class="tool-card-body"><h3>Property Appreciation</h3><p>Future property value at appreciation rate</p></div>
+<h2>ðŸ“ˆ Investments &amp; Savings <span class="cat-count">15</span></h2>
+<div class="tools-grid"><a class="tool-card" data-desc="wealth from monthly sip investment with cagr" data-title="sip calculator" href="/calculators/sip-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>SIP Calculator</h3><p>Wealth from monthly SIP investment with CAGR</p></div>
+</a><a class="tool-card" data-desc="returns from one-time mutual fund investment" data-title="lumpsum calculator" href="/calculators/lumpsum-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ’°</div>
+<div class="tool-card-body"><h3>Lumpsum Calculator</h3><p>Returns from one-time mutual fund investment</p></div>
+</a><a class="tool-card" data-desc="public provident fund maturity with interest" data-title="ppf calculator" href="/calculators/ppf-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ›ï¸</div>
+<div class="tool-card-body"><h3>PPF Calculator</h3><p>Public Provident Fund maturity with interest</p></div>
+</a><a class="tool-card" data-desc="fixed deposit maturity amount and interest" data-title="fd calculator" href="/calculators/fd-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ”’</div>
+<div class="tool-card-body"><h3>FD Calculator</h3><p>Fixed deposit maturity amount and interest</p></div>
+</a><a class="tool-card" data-desc="recurring deposit maturity amount" data-title="rd calculator" href="/calculators/rd-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ§</div>
+<div class="tool-card-body"><h3>RD Calculator</h3><p>Recurring deposit maturity amount</p></div>
+</a><a class="tool-card" data-desc="compound interest with flexible compounding" data-title="compound interest" href="/calculators/compound-interest-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ“Š</div>
+<div class="tool-card-body"><h3>Compound Interest</h3><p>Compound interest with flexible compounding</p></div>
+</a><a class="tool-card" data-desc="simple interest on any principal amount" data-title="simple interest" href="/calculators/simple-interest-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ§®</div>
+<div class="tool-card-body"><h3>Simple Interest</h3><p>Simple interest on any principal amount</p></div>
+</a><a class="tool-card" data-desc="future value of money adjusted for inflation" data-title="inflation calculator" href="/calculators/inflation-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ“‰</div>
+<div class="tool-card-body"><h3>Inflation Calculator</h3><p>Future value of money adjusted for inflation</p></div>
+</a><a class="tool-card" data-desc="corpus needed to retire at target age" data-title="retirement calculator" href="/calculators/retirement-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ–ï¸</div>
+<div class="tool-card-body"><h3>Retirement Calculator</h3><p>Corpus needed to retire at target age</p></div>
+</a><a class="tool-card" data-desc="financial independence retire early planning" data-title="fire calculator" href="/calculators/fires-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ”¥</div>
+<div class="tool-card-body"><h3>FIRE Calculator</h3><p>Financial Independence Retire Early planning</p></div>
+</a><a class="tool-card" data-desc="total net worth from assets and liabilities" data-title="net worth calculator" href="/calculators/net-worth-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ’Ž</div>
+<div class="tool-card-body"><h3>Net Worth Calculator</h3><p>Total net worth from assets and liabilities</p></div>
+</a><a class="tool-card" data-desc="return on investment percentage" data-title="roi calculator" href="/calculators/roi-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>ROI Calculator</h3><p>Return on investment percentage</p></div>
+</a><a class="tool-card" data-desc="annual rental yield on property investment" data-title="rental yield calculator" href="/calculators/rental-yield-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ˜ï¸</div>
+<div class="tool-card-body"><h3>Rental Yield Calculator</h3><p>Annual rental yield on property investment</p></div>
+</a><a class="tool-card" data-desc="is it better to rent or buy property now?" data-title="rent vs buy" href="/calculators/rent-vs-buy-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ”‘</div>
+<div class="tool-card-body"><h3>Rent vs Buy</h3><p>Is it better to rent or buy property now?</p></div>
+</a><a class="tool-card" data-desc="future property value at appreciation rate" data-title="property appreciation" href="/calculators/property-appreciation-calculator/">
+<div class="tool-icon" style="background:#ede9fe">ðŸ—ï¸</div>
+<div class="tool-card-body"><h3>Property Appreciation</h3><p>Future property value at appreciation rate</p></div>
 </a></div>
 </div><div class="category-block" data-cat="business">
-  <h2>&#128185; Business & Finance <span class="cat-count">8</span></h2>
-  <div class="tools-grid"><a href="/calculators/profit-margin-calculator/" class="tool-card" data-title="profit margin calculator" data-desc="gross, net and operating profit margin">
-  <div class="tool-icon" style="background:#fde2e6">&#128185;</div>
-  <div class="tool-card-body"><h3>Profit Margin Calculator</h3><p>Gross, net and operating profit margin</p></div>
-</a><a href="/calculators/markup-calculator/" class="tool-card" data-title="markup calculator" data-desc="selling price from cost and desired markup">
-  <div class="tool-icon" style="background:#fde2e6">&#127991;&#65039;</div>
-  <div class="tool-card-body"><h3>Markup Calculator</h3><p>Selling price from cost and desired markup</p></div>
-</a><a href="/calculators/commission-calculator/" class="tool-card" data-title="commission calculator" data-desc="sales commission amount at any rate">
-  <div class="tool-icon" style="background:#fde2e6">&#128184;</div>
-  <div class="tool-card-body"><h3>Commission Calculator</h3><p>Sales commission amount at any rate</p></div>
-</a><a href="/calculators/discount-calculator/" class="tool-card" data-title="discount calculator" data-desc="price after discount and amount saved">
-  <div class="tool-icon" style="background:#fde2e6">&#9986;&#65039;</div>
-  <div class="tool-card-body"><h3>Discount Calculator</h3><p>Price after discount and amount saved</p></div>
-</a><a href="/calculators/break-even-calculator/" class="tool-card" data-title="break-even calculator" data-desc="units and revenue needed to break even">
-  <div class="tool-icon" style="background:#fde2e6">&#9878;&#65039;</div>
-  <div class="tool-card-body"><h3>Break-Even Calculator</h3><p>Units and revenue needed to break even</p></div>
-</a><a href="/calculators/business-growth-calculator/" class="tool-card" data-title="business growth" data-desc="revenue and growth rate projections">
-  <div class="tool-icon" style="background:#fde2e6">&#128640;</div>
-  <div class="tool-card-body"><h3>Business Growth</h3><p>Revenue and growth rate projections</p></div>
-</a><a href="/calculators/invoice-total-calculator/" class="tool-card" data-title="invoice total calculator" data-desc="quick invoice total with gst">
-  <div class="tool-icon" style="background:#fde2e6">&#129534;</div>
-  <div class="tool-card-body"><h3>Invoice Total Calculator</h3><p>Quick invoice total with GST</p></div>
-</a><a href="/calculators/construction-cost-calculator/" class="tool-card" data-title="construction cost" data-desc="estimate construction cost per sq ft">
-  <div class="tool-icon" style="background:#fde2e6">&#127959;&#65039;</div>
-  <div class="tool-card-body"><h3>Construction Cost</h3><p>Estimate construction cost per sq ft</p></div>
+<h2>ðŸ’¹ Business &amp; Finance <span class="cat-count">8</span></h2>
+<div class="tools-grid"><a class="tool-card" data-desc="gross, net and operating profit margin" data-title="profit margin calculator" href="/calculators/profit-margin-calculator/">
+<div class="tool-icon" style="background:#fde2e6">ðŸ’¹</div>
+<div class="tool-card-body"><h3>Profit Margin Calculator</h3><p>Gross, net and operating profit margin</p></div>
+</a><a class="tool-card" data-desc="selling price from cost and desired markup" data-title="markup calculator" href="/calculators/markup-calculator/">
+<div class="tool-icon" style="background:#fde2e6">ðŸ·ï¸</div>
+<div class="tool-card-body"><h3>Markup Calculator</h3><p>Selling price from cost and desired markup</p></div>
+</a><a class="tool-card" data-desc="sales commission amount at any rate" data-title="commission calculator" href="/calculators/commission-calculator/">
+<div class="tool-icon" style="background:#fde2e6">ðŸ’¸</div>
+<div class="tool-card-body"><h3>Commission Calculator</h3><p>Sales commission amount at any rate</p></div>
+</a><a class="tool-card" data-desc="price after discount and amount saved" data-title="discount calculator" href="/calculators/discount-calculator/">
+<div class="tool-icon" style="background:#fde2e6">âœ‚ï¸</div>
+<div class="tool-card-body"><h3>Discount Calculator</h3><p>Price after discount and amount saved</p></div>
+</a><a class="tool-card" data-desc="units and revenue needed to break even" data-title="break-even calculator" href="/calculators/break-even-calculator/">
+<div class="tool-icon" style="background:#fde2e6">âš–ï¸</div>
+<div class="tool-card-body"><h3>Break-Even Calculator</h3><p>Units and revenue needed to break even</p></div>
+</a><a class="tool-card" data-desc="revenue and growth rate projections" data-title="business growth" href="/calculators/business-growth-calculator/">
+<div class="tool-icon" style="background:#fde2e6">ðŸš€</div>
+<div class="tool-card-body"><h3>Business Growth</h3><p>Revenue and growth rate projections</p></div>
+</a><a class="tool-card" data-desc="quick invoice total with gst" data-title="invoice total calculator" href="/calculators/invoice-total-calculator/">
+<div class="tool-icon" style="background:#fde2e6">ðŸ§¾</div>
+<div class="tool-card-body"><h3>Invoice Total Calculator</h3><p>Quick invoice total with GST</p></div>
+</a><a class="tool-card" data-desc="estimate construction cost per sq ft" data-title="construction cost" href="/calculators/construction-cost-calculator/">
+<div class="tool-icon" style="background:#fde2e6">ðŸ—ï¸</div>
+<div class="tool-card-body"><h3>Construction Cost</h3><p>Estimate construction cost per sq ft</p></div>
 </a></div>
 </div><div class="category-block" data-cat="utilities">
-  <h2>&#128736;&#65039; General Utilities <span class="cat-count">19</span></h2>
-  <div class="tools-grid"><a href="/calculators/age-calculator/" class="tool-card" data-title="age calculator" data-desc="exact age in years, months and days">
-  <div class="tool-icon" style="background:#ebedf3">&#127874;</div>
-  <div class="tool-card-body"><h3>Age Calculator</h3><p>Exact age in years, months and days</p></div>
-</a><a href="/calculators/bmi-calculator/" class="tool-card" data-title="bmi calculator" data-desc="body mass index with healthy range">
-  <div class="tool-icon" style="background:#ebedf3">&#9878;&#65039;</div>
-  <div class="tool-card-body"><h3>BMI Calculator</h3><p>Body mass index with healthy range</p></div>
-</a><a href="/calculators/percentage-calculator/" class="tool-card" data-title="percentage calculator" data-desc="calculate percentage of any number">
-  <div class="tool-icon" style="background:#ebedf3">%</div>
-  <div class="tool-card-body"><h3>Percentage Calculator</h3><p>Calculate percentage of any number</p></div>
-</a><a href="/calculators/percentage-increase-calculator/" class="tool-card" data-title="percentage increase" data-desc="compute % increase between two values">
-  <div class="tool-icon" style="background:#ebedf3">&#128200;</div>
-  <div class="tool-card-body"><h3>Percentage Increase</h3><p>Compute % increase between two values</p></div>
-</a><a href="/calculators/percentage-decrease-calculator/" class="tool-card" data-title="percentage decrease" data-desc="compute % decrease between two values">
-  <div class="tool-icon" style="background:#ebedf3">&#128201;</div>
-  <div class="tool-card-body"><h3>Percentage Decrease</h3><p>Compute % decrease between two values</p></div>
-</a><a href="/calculators/currency-converter/" class="tool-card" data-title="currency converter" data-desc="live currency conversion for major pairs">
-  <div class="tool-icon" style="background:#ebedf3">&#128177;</div>
-  <div class="tool-card-body"><h3>Currency Converter</h3><p>Live currency conversion for major pairs</p></div>
-</a><a href="/calculators/unit-converter/" class="tool-card" data-title="unit converter" data-desc="convert length, weight, temperature and more">
-  <div class="tool-icon" style="background:#ebedf3">&#128208;</div>
-  <div class="tool-card-body"><h3>Unit Converter</h3><p>Convert length, weight, temperature and more</p></div>
-</a><a href="/calculators/area-calculator/" class="tool-card" data-title="area calculator" data-desc="area of square, circle, triangle and more">
-  <div class="tool-icon" style="background:#ebedf3">&#128207;</div>
-  <div class="tool-card-body"><h3>Area Calculator</h3><p>Area of square, circle, triangle and more</p></div>
-</a><a href="/calculators/volume-calculator/" class="tool-card" data-title="volume calculator" data-desc="volume for common 3d shapes">
-  <div class="tool-icon" style="background:#ebedf3">&#128230;</div>
-  <div class="tool-card-body"><h3>Volume Calculator</h3><p>Volume for common 3D shapes</p></div>
-</a><a href="/calculators/speed-calculator/" class="tool-card" data-title="speed calculator" data-desc="speed, distance and time calculator">
-  <div class="tool-icon" style="background:#ebedf3">&#128640;</div>
-  <div class="tool-card-body"><h3>Speed Calculator</h3><p>Speed, distance and time calculator</p></div>
-</a><a href="/calculators/time-calculator/" class="tool-card" data-title="time calculator" data-desc="add, subtract and convert time">
-  <div class="tool-icon" style="background:#ebedf3">&#9200;</div>
-  <div class="tool-card-body"><h3>Time Calculator</h3><p>Add, subtract and convert time</p></div>
-</a><a href="/calculators/date-difference-calculator/" class="tool-card" data-title="date difference" data-desc="days, weeks, months between two dates">
-  <div class="tool-icon" style="background:#ebedf3">&#128197;</div>
-  <div class="tool-card-body"><h3>Date Difference</h3><p>Days, weeks, months between two dates</p></div>
-</a><a href="/calculators/mileage-calculator/" class="tool-card" data-title="mileage calculator" data-desc="vehicle fuel efficiency and running cost">
-  <div class="tool-icon" style="background:#ebedf3">&#9981;</div>
-  <div class="tool-card-body"><h3>Mileage Calculator</h3><p>Vehicle fuel efficiency and running cost</p></div>
-</a><a href="/calculators/fuel-cost-calculator/" class="tool-card" data-title="fuel cost calculator" data-desc="trip fuel cost at current petrol prices">
-  <div class="tool-icon" style="background:#ebedf3">&#128663;</div>
-  <div class="tool-card-body"><h3>Fuel Cost Calculator</h3><p>Trip fuel cost at current petrol prices</p></div>
-</a><a href="/calculators/electricity-bill-calculator/" class="tool-card" data-title="electricity bill" data-desc="monthly electricity bill from units consumed">
-  <div class="tool-icon" style="background:#ebedf3">&#9889;</div>
-  <div class="tool-card-body"><h3>Electricity Bill</h3><p>Monthly electricity bill from units consumed</p></div>
-</a><a href="/calculators/power-consumption-calculator/" class="tool-card" data-title="power consumption" data-desc="device power usage and running cost">
-  <div class="tool-icon" style="background:#ebedf3">&#128268;</div>
-  <div class="tool-card-body"><h3>Power Consumption</h3><p>Device power usage and running cost</p></div>
-</a><a href="/calculators/data-storage-converter/" class="tool-card" data-title="data storage converter" data-desc="convert between kb, mb, gb, tb">
-  <div class="tool-icon" style="background:#ebedf3">&#128190;</div>
-  <div class="tool-card-body"><h3>Data Storage Converter</h3><p>Convert between KB, MB, GB, TB</p></div>
-</a><a href="/calculators/internet-speed-converter/" class="tool-card" data-title="internet speed converter" data-desc="mbps to mb/s and download time calculator">
-  <div class="tool-icon" style="background:#ebedf3">&#127758;</div>
-  <div class="tool-card-body"><h3>Internet Speed Converter</h3><p>Mbps to MB/s and download time calculator</p></div>
-</a><a href="/calculators/ratio-calculator/" class="tool-card" data-title="ratio calculator" data-desc="simplify and compare ratios">
-  <div class="tool-icon" style="background:#ebedf3">&#128290;</div>
-  <div class="tool-card-body"><h3>Ratio Calculator</h3><p>Simplify and compare ratios</p></div>
+<h2>ðŸ› ï¸ General Utilities <span class="cat-count">19</span></h2>
+<div class="tools-grid"><a class="tool-card" data-desc="exact age in years, months and days" data-title="age calculator" href="/calculators/age-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸŽ‚</div>
+<div class="tool-card-body"><h3>Age Calculator</h3><p>Exact age in years, months and days</p></div>
+</a><a class="tool-card" data-desc="body mass index with healthy range" data-title="bmi calculator" href="/calculators/bmi-calculator/">
+<div class="tool-icon" style="background:#ebedf3">âš–ï¸</div>
+<div class="tool-card-body"><h3>BMI Calculator</h3><p>Body mass index with healthy range</p></div>
+</a><a class="tool-card" data-desc="calculate percentage of any number" data-title="percentage calculator" href="/calculators/percentage-calculator/">
+<div class="tool-icon" style="background:#ebedf3">%</div>
+<div class="tool-card-body"><h3>Percentage Calculator</h3><p>Calculate percentage of any number</p></div>
+</a><a class="tool-card" data-desc="compute % increase between two values" data-title="percentage increase" href="/calculators/percentage-increase-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ“ˆ</div>
+<div class="tool-card-body"><h3>Percentage Increase</h3><p>Compute % increase between two values</p></div>
+</a><a class="tool-card" data-desc="compute % decrease between two values" data-title="percentage decrease" href="/calculators/percentage-decrease-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ“‰</div>
+<div class="tool-card-body"><h3>Percentage Decrease</h3><p>Compute % decrease between two values</p></div>
+</a><a class="tool-card" data-desc="live currency conversion for major pairs" data-title="currency converter" href="/calculators/currency-converter/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ’±</div>
+<div class="tool-card-body"><h3>Currency Converter</h3><p>Live currency conversion for major pairs</p></div>
+</a><a class="tool-card" data-desc="convert length, weight, temperature and more" data-title="unit converter" href="/calculators/unit-converter/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ“</div>
+<div class="tool-card-body"><h3>Unit Converter</h3><p>Convert length, weight, temperature and more</p></div>
+</a><a class="tool-card" data-desc="area of square, circle, triangle and more" data-title="area calculator" href="/calculators/area-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ“</div>
+<div class="tool-card-body"><h3>Area Calculator</h3><p>Area of square, circle, triangle and more</p></div>
+</a><a class="tool-card" data-desc="volume for common 3d shapes" data-title="volume calculator" href="/calculators/volume-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ“¦</div>
+<div class="tool-card-body"><h3>Volume Calculator</h3><p>Volume for common 3D shapes</p></div>
+</a><a class="tool-card" data-desc="speed, distance and time calculator" data-title="speed calculator" href="/calculators/speed-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸš€</div>
+<div class="tool-card-body"><h3>Speed Calculator</h3><p>Speed, distance and time calculator</p></div>
+</a><a class="tool-card" data-desc="add, subtract and convert time" data-title="time calculator" href="/calculators/time-calculator/">
+<div class="tool-icon" style="background:#ebedf3">â°</div>
+<div class="tool-card-body"><h3>Time Calculator</h3><p>Add, subtract and convert time</p></div>
+</a><a class="tool-card" data-desc="days, weeks, months between two dates" data-title="date difference" href="/calculators/date-difference-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ“…</div>
+<div class="tool-card-body"><h3>Date Difference</h3><p>Days, weeks, months between two dates</p></div>
+</a><a class="tool-card" data-desc="vehicle fuel efficiency and running cost" data-title="mileage calculator" href="/calculators/mileage-calculator/">
+<div class="tool-icon" style="background:#ebedf3">â›½</div>
+<div class="tool-card-body"><h3>Mileage Calculator</h3><p>Vehicle fuel efficiency and running cost</p></div>
+</a><a class="tool-card" data-desc="trip fuel cost at current petrol prices" data-title="fuel cost calculator" href="/calculators/fuel-cost-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸš—</div>
+<div class="tool-card-body"><h3>Fuel Cost Calculator</h3><p>Trip fuel cost at current petrol prices</p></div>
+</a><a class="tool-card" data-desc="monthly electricity bill from units consumed" data-title="electricity bill" href="/calculators/electricity-bill-calculator/">
+<div class="tool-icon" style="background:#ebedf3">âš¡</div>
+<div class="tool-card-body"><h3>Electricity Bill</h3><p>Monthly electricity bill from units consumed</p></div>
+</a><a class="tool-card" data-desc="device power usage and running cost" data-title="power consumption" href="/calculators/power-consumption-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ”Œ</div>
+<div class="tool-card-body"><h3>Power Consumption</h3><p>Device power usage and running cost</p></div>
+</a><a class="tool-card" data-desc="convert between kb, mb, gb, tb" data-title="data storage converter" href="/calculators/data-storage-converter/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ’¾</div>
+<div class="tool-card-body"><h3>Data Storage Converter</h3><p>Convert between KB, MB, GB, TB</p></div>
+</a><a class="tool-card" data-desc="mbps to mb/s and download time calculator" data-title="internet speed converter" href="/calculators/internet-speed-converter/">
+<div class="tool-icon" style="background:#ebedf3">ðŸŒŽ</div>
+<div class="tool-card-body"><h3>Internet Speed Converter</h3><p>Mbps to MB/s and download time calculator</p></div>
+</a><a class="tool-card" data-desc="simplify and compare ratios" data-title="ratio calculator" href="/calculators/ratio-calculator/">
+<div class="tool-icon" style="background:#ebedf3">ðŸ”¢</div>
+<div class="tool-card-body"><h3>Ratio Calculator</h3><p>Simplify and compare ratios</p></div>
 </a></div>
 </div>
-  <div class="no-results" id="noResults">
-    <h3>No tools found</h3>
-    <p>Try a different search term or browse all categories</p>
-  </div>
+<div class="no-results" id="noResults">
+<h3>No tools found</h3>
+<p>Try a different search term or browse all categories</p>
 </div>
-
+</div>
 <script>
 const _n=document.getElementById('nav');
 window.addEventListener('scroll',()=>_n.classList.toggle('scrolled',scrollY>20),{passive:true});
@@ -508,86 +598,88 @@ document.querySelectorAll('.filter-btn').forEach(btn=>{
 input.addEventListener('input',filterTools);
 filterTools();
 </script>
-<footer class="ud-footer" data-ud-footer>
-  <div class="ud-footer-inner">
-    <div class="ud-footer-grid">
-      <div class="ud-footer-brand">
-        <a href="/" class="ud-footer-logo">
-          <img src="/assets/brand/utilitydesk-logo-icon.svg" alt="UtilityDesk.in" class="ud-footer-logo-img">
-          <div class="ud-footer-logo-text">
-            <div class="ud-footer-logo-title">UtilityDesk.in</div>
-            <div class="ud-footer-logo-tagline">Productivity Tools for India</div>
-          </div>
-        </a>
-        <p class="ud-footer-description">Free calculators, PDF tools, HR tools and document generators for Indian professionals. No signup required.</p>
-      </div>
-      <div class="ud-footer-column">
-        <h4 class="ud-footer-title">Calculators</h4>
-        <ul class="ud-footer-links">
-          <li><a href="/calculators/income-tax/" class="ud-footer-link">Income Tax</a></li>
-          <li><a href="/calculators/salary-hike/" class="ud-footer-link">Salary Hike</a></li>
-          <li><a href="/calculators/in-hand-salary/" class="ud-footer-link">In-Hand Salary</a></li>
-          <li><a href="/calculators/emi/" class="ud-footer-link">EMI Calculator</a></li>
-          <li><a href="/calculators/pf-calculator/" class="ud-footer-link">PF Calculator</a></li>
-          <li><a href="/calculators/" class="ud-footer-link">All Calculators &#8594;</a></li>
-        </ul>
-      </div>
-      <div class="ud-footer-column">
-        <h4 class="ud-footer-title">PDF Tools</h4>
-        <ul class="ud-footer-links">
-          <li><a href="/pdf-tools/jpg-to-pdf/" class="ud-footer-link">JPG to PDF</a></li>
-          <li><a href="/pdf-tools/protect-pdf/" class="ud-footer-link">Protect PDF</a></li>
-          <li><a href="/pdf-tools/watermark-pdf/" class="ud-footer-link">Watermark PDF</a></li>
-          <li><a href="/pdf-tools/delete-pages/" class="ud-footer-link">Delete Pages</a></li>
-          <li><a href="/pdf-tools/merge-pdf/" class="ud-footer-link">Merge PDF</a></li>
-          <li><a href="/pdf-tools/" class="ud-footer-link">All PDF Tools &#8594;</a></li>
-        </ul>
-      </div>
-      <div class="ud-footer-column">
-        <h4 class="ud-footer-title">HR Suite</h4>
-        <ul class="ud-footer-links">
-          <li><a href="/hr/resume-builder/" class="ud-footer-link">Resume Builder</a></li>
-          <li><a href="/hr/ats-checker/" class="ud-footer-link">ATS Checker AI</a></li>
-          <li><a href="/hr/offer-letter/" class="ud-footer-link">Offer Letter</a></li>
-          <li><a href="/hr/salary-slip/" class="ud-footer-link">Salary Slip</a></li>
-          <li><a href="/hr/hr-policy-generator/" class="ud-footer-link">HR Policy AI</a></li>
-          <li><a href="/hr/" class="ud-footer-link">All HR Tools &#8594;</a></li>
-        </ul>
-      </div>
-      <div class="ud-footer-column">
-        <h4 class="ud-footer-title">Document Generators</h4>
-        <ul class="ud-footer-links">
-          <li><a href="/document-generators/offer-letter-generator/" class="ud-footer-link">Offer Letter</a></li>
-          <li><a href="/document-generators/appointment-letter/" class="ud-footer-link">Appointment Letter</a></li>
-          <li><a href="/document-generators/invoice/" class="ud-footer-link">Invoice</a></li>
-          <li><a href="/document-generators/nda/" class="ud-footer-link">NDA Generator</a></li>
-          <li><a href="/document-generators/salary-slip/" class="ud-footer-link">Salary Slip</a></li>
-          <li><a href="/document-generators/" class="ud-footer-link">All Documents &#8594;</a></li>
-        </ul>
-      </div>
-      <div class="ud-footer-column">
-        <h4 class="ud-footer-title">Company</h4>
-        <ul class="ud-footer-links">
-          <li><a href="/about/" class="ud-footer-link">About</a></li>
-          <li><a href="/contact/" class="ud-footer-link">Contact</a></li>
-          <li><a href="/blog/" class="ud-footer-link">Blog</a></li>
-          <li><a href="/privacy-policy/" class="ud-footer-link">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions/" class="ud-footer-link">Terms &amp; Conditions</a></li>
-          <li><a href="/disclaimer/" class="ud-footer-link">Disclaimer</a></li>
-          <li><a href="/sitemap.xml" class="ud-footer-link">Sitemap</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="ud-footer-bottom">
-      <div class="ud-footer-copyright">&#169; 2026 UtilityDesk.in. All rights reserved.</div>
-      <ul class="ud-footer-legal">
-        <li><a href="/privacy-policy/" class="ud-footer-legal-link">Privacy</a></li>
-        <li><a href="/terms-and-conditions/" class="ud-footer-legal-link">Terms</a></li>
-        <li><a href="/disclaimer/" class="ud-footer-legal-link">Disclaimer</a></li>
-      </ul>
-    </div>
-  </div>
+<footer class="ud-footer" data-ud-footer="">
+<div class="ud-footer-inner">
+<div class="ud-footer-grid">
+<div class="ud-footer-brand">
+<a class="ud-footer-logo" href="/">
+<img alt="UtilityDesk.in" class="ud-footer-logo-img" src="../assets/brand/utilitydesk-logo-icon.svg"/>
+<div class="ud-footer-logo-text">
+<div class="ud-footer-logo-title">UtilityDesk.in</div>
+<div class="ud-footer-logo-tagline">Productivity Tools for India</div>
+</div>
+</a>
+<p class="ud-footer-description">Free calculators, PDF tools, HR tools and document generators for Indian professionals. No signup required.</p>
+</div>
+<div class="ud-footer-column">
+<h4 class="ud-footer-title">Calculators</h4>
+<ul class="ud-footer-links">
+<li><a class="ud-footer-link" href="/calculators/income-tax/">Income Tax</a></li>
+<li><a class="ud-footer-link" href="/calculators/salary-hike/">Salary Hike</a></li>
+<li><a class="ud-footer-link" href="/calculators/in-hand-salary/">In-Hand Salary</a></li>
+<li><a class="ud-footer-link" href="/calculators/emi/">EMI Calculator</a></li>
+<li><a class="ud-footer-link" href="/calculators/pf-calculator/">PF Calculator</a></li>
+<li><a class="ud-footer-link" href="/calculators/">All Calculators â†’</a></li>
+</ul>
+</div>
+<div class="ud-footer-column">
+<h4 class="ud-footer-title">PDF Tools</h4>
+<ul class="ud-footer-links">
+<li><a class="ud-footer-link" href="/pdf-tools/jpg-to-pdf/">JPG to PDF</a></li>
+<li><a class="ud-footer-link" href="/pdf-tools/protect-pdf/">Protect PDF</a></li>
+<li><a class="ud-footer-link" href="/pdf-tools/watermark-pdf/">Watermark PDF</a></li>
+<li><a class="ud-footer-link" href="/pdf-tools/delete-pages/">Delete Pages</a></li>
+<li><a class="ud-footer-link" href="/pdf-tools/merge-pdf/">Merge PDF</a></li>
+<li><a class="ud-footer-link" href="/pdf-tools/">All PDF Tools â†’</a></li>
+</ul>
+</div>
+<div class="ud-footer-column">
+<h4 class="ud-footer-title">HR Suite</h4>
+<ul class="ud-footer-links">
+<li><a class="ud-footer-link" href="/hr/resume-builder/">Resume Builder</a></li>
+<li><a class="ud-footer-link" href="/hr/ats-checker/">ATS Checker AI</a></li>
+<li><a class="ud-footer-link" href="/hr/offer-letter/">Offer Letter</a></li>
+<li><a class="ud-footer-link" href="/hr/salary-slip/">Salary Slip</a></li>
+<li><a class="ud-footer-link" href="/hr/hr-policy-generator/">HR Policy AI</a></li>
+<li><a class="ud-footer-link" href="/hr/">All HR Tools â†’</a></li>
+</ul>
+</div>
+<div class="ud-footer-column">
+<h4 class="ud-footer-title">Document Generators</h4>
+<ul class="ud-footer-links">
+<li><a class="ud-footer-link" href="/document-generators/offer-letter-generator/">Offer Letter</a></li>
+<li><a class="ud-footer-link" href="/document-generators/appointment-letter/">Appointment Letter</a></li>
+<li><a class="ud-footer-link" href="/document-generators/invoice/">Invoice</a></li>
+<li><a class="ud-footer-link" href="/document-generators/nda/">NDA Generator</a></li>
+<li><a class="ud-footer-link" href="/document-generators/salary-slip/">Salary Slip</a></li>
+<li><a class="ud-footer-link" href="/document-generators/">All Documents â†’</a></li>
+</ul>
+</div>
+<div class="ud-footer-column">
+<h4 class="ud-footer-title">Company</h4>
+<ul class="ud-footer-links">
+<li><a class="ud-footer-link" href="/about/">About</a></li>
+<li><a class="ud-footer-link" href="/contact/">Contact</a></li>
+<li><a class="ud-footer-link" href="/blog/">Blog</a></li>
+<li><a class="ud-footer-link" href="/privacy-policy/">Privacy Policy</a></li>
+<li><a class="ud-footer-link" href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+<li><a class="ud-footer-link" href="/disclaimer/">Disclaimer</a></li>
+<li><a class="ud-footer-link" href="/sitemap.xml">Sitemap</a></li>
+</ul>
+</div>
+</div>
+<div class="ud-footer-bottom">
+<div class="ud-footer-copyright">Â© 2026 UtilityDesk.in. All rights reserved.</div>
+<ul class="ud-footer-legal">
+<li><a class="ud-footer-legal-link" href="/privacy-policy/">Privacy</a></li>
+<li><a class="ud-footer-legal-link" href="/terms-and-conditions/">Terms</a></li>
+<li><a class="ud-footer-legal-link" href="/disclaimer/">Disclaimer</a></li>
+</ul>
+</div>
+</div>
 </footer>
-<script src="/shared/brand-shell.js"></script>
+<script src="../shared/site-shell.js"></script>
+<script src="../shared/brand-shell.js"></script>
+<script src="../shared/functional-repair-v6.js"></script>
 </body>
 </html>

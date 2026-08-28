@@ -1,0 +1,105 @@
+/* UtilityDesk V6 — Generator Workspace Layout
+   Shared responsive layout for HR + Document Generator tools.
+   Intentionally scoped to generator workspaces only. */
+
+.generator-section {
+  width: 100%;
+  padding: 40px 24px 56px;
+  box-sizing: border-box;
+}
+
+.generator-container {
+  width: min(100%, 1560px) !important;
+  max-width: 1560px !important;
+  margin-inline: auto !important;
+  box-sizing: border-box;
+}
+
+.generator-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 32px !important;
+  width: 100%;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.generator-grid > * {
+  min-width: 0 !important;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+.generator-grid .panel {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.generator-grid .panel input,
+.generator-grid .panel textarea,
+.generator-grid .panel select {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Keep two-column form rows usable instead of allowing nested controls to collapse. */
+.generator-grid .form-row {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+/* Output/preview gets the same visual weight as the input workspace. */
+.generator-grid .preview-panel {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.generator-grid .ai-output,
+.generator-grid .doc-preview {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* AI result area should feel like a real workspace, not a small text box. */
+.generator-grid .ai-output {
+  min-height: 360px;
+  overflow-wrap: anywhere;
+}
+
+/* Document preview should use the full available output column. */
+.generator-grid .doc-preview {
+  min-height: 640px;
+}
+
+@media (max-width: 1100px) {
+  .generator-section { padding-inline: 20px; }
+  .generator-grid { gap: 24px !important; }
+}
+
+@media (max-width: 900px) {
+  .generator-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .generator-grid .preview-panel {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .generator-grid .ai-output {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .generator-section { padding: 24px 14px 40px; }
+  .generator-grid .form-row { grid-template-columns: 1fr; }
+  .generator-grid .panel { padding: 20px; }
+}
