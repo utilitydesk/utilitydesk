@@ -7,7 +7,7 @@
     margin-bottom: 3rem;
 }
 
-.category-card, .category-block {
+.category-card {
     background: var(--card-bg, #ffffff);
     border: 2px solid var(--border-color, #e2e8f0);
     border-radius: 12px;
@@ -84,6 +84,16 @@
 }
 
 /* Filter Bar */
+.tools-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+}
+
+.category-block {
+    margin: 0 0 48px;
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +170,7 @@
         grid-template-columns: 1fr;
     }
 
-    .category-card, .category-block {
+    .category-card {
         padding: 1.5rem;
     }
 
@@ -176,7 +186,7 @@
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    .category-card, .category-block {
+    .category-card {
         background: var(--card-bg-dark, #1e293b);
         border-color: var(--border-color-dark, #334155);
     }

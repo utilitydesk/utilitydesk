@@ -22,7 +22,7 @@
 <header class="ud-header" data-ud-header>
   <div class="ud-header-inner">
     <a href="/" class="ud-brand">
-      <img src="/assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in Ã¢â‚¬â€ Productivity Tools for India" class="ud-brand-logo">
+      <img src="/assets/brand/utilitydesk-logo-horizontal.svg" alt="UtilityDesk.in ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Productivity Tools for India" class="ud-brand-logo">
     </a>
     <nav class="ud-nav">
       <ul class="ud-nav-links">
@@ -461,18 +461,7 @@
   </div>
 </div>
 
-<script>
-const _n=document.getElementById('nav');
-window.addEventListener('scroll',()=>_n.classList.toggle('scrolled',scrollY>20),{passive:true});
-const _h=document.getElementById('hbg'),_m=document.getElementById('mm');
-_h.addEventListener('click',()=>{
-  const o=_m.classList.toggle('open');_h.setAttribute('aria-expanded',o);
-  const s=_h.querySelectorAll('span');
-  if(o){s[0].style.transform='rotate(45deg)translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg)translate(5px,-5px)'}
-  else{s[0].style.transform='';s[1].style.opacity='';s[2].style.transform=''}
-});
-</script>
-<script>
+<script src="/shared/header-v2.js"></script>
 const cats=["salary","tax","loans","investments","business","utilities"];
 const input=document.getElementById('searchInput');
 const count=document.getElementById('searchCount');
