@@ -1,0 +1,25 @@
+/* UtilityDesk V6.68 functional recovery layer */
+:root{--ud-header-offset:72px}
+html,body{max-width:100%;overflow-x:hidden}
+*,*:before,*:after{box-sizing:border-box}
+button,input,select,textarea{max-width:100%}
+img,svg,video,canvas,iframe{max-width:100%}
+:focus-visible{outline:3px solid rgba(240,168,48,.72)!important;outline-offset:2px!important}
+.error-box,.err,.error,.error-message{display:none}
+.error-box:not(:empty),.err:not(:empty),.error:not(:empty),.error-message:not(:empty){display:block}
+.error-box[hidden],.err[hidden],.error[hidden],.error-message[hidden]{display:none!important}
+.download-link[hidden],.download-btn[hidden],a[download][hidden]{display:none!important}
+.result a[download],.result-box a[download],.result-panel a[download],#downloadLink[download]{visibility:visible!important;opacity:1!important}
+.faq-item .faq-answer,.faq-item .faq-a{display:block;max-height:0;overflow:hidden;visibility:hidden}
+.faq-item.active .faq-answer,.faq-item.active .faq-a,.faq-item.open .faq-a{max-height:1200px;visibility:visible}
+.faq-question[role=button],.faq-q[role=button]{cursor:pointer;user-select:none}
+@media print{
+ body{background:#fff!important}
+ header,.ud-header,.ud-footer,footer,.faq-section,.related-section,.breadcrumb-bar,.ud-tool-hero,.tool-hero,.content-section,.site-footer,.ads,.ad-container{display:none!important}
+ .generator-section,.tool-wrapper,.tool-section,.calc-section{padding:0!important;margin:0!important;background:#fff!important}
+ .generator-container,.tool-container,.calc-container{width:100%!important;max-width:none!important;padding:0!important;margin:0!important;box-shadow:none!important;border:0!important}
+ .generator-grid{display:block!important}.generator-grid>.panel:first-child{display:none!important}.preview-panel{display:block!important;border:0!important;box-shadow:none!important;padding:0!important}
+ .preview-panel h2,.btn-group,#copyRow{display:none!important}.ai-output,.doc-preview{min-height:0!important;border:0!important;background:#fff!important;padding:0!important;color:#111!important}
+}
+@media(max-width:900px){.generator-grid,.calc-grid{grid-template-columns:1fr!important}.tool-container,.calc-card{padding:24px!important}}
+@media(max-width:640px){.ud-tool,.tool-container,.calc-card{padding:18px!important}.button-row,.action-row,.action-buttons{flex-direction:column}.button-row>*,.action-row>*,.action-buttons>*{width:100%;min-height:44px}}
