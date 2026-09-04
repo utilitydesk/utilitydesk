@@ -1,6 +1,6 @@
 // UtilityDesk.in Service Worker
-// Version: 6.68.0
-const CACHE_VERSION='v6.68.0';
+// Version: 6.69.0
+const CACHE_VERSION='v6.69.0';
 const CACHE_NAME=`utilitydesk-${CACHE_VERSION}`;
 const RUNTIME_CACHE=`utilitydesk-runtime-${CACHE_VERSION}`;
 const PRECACHE_ASSETS=['/','/index.html','/manifest.json','/search-index.json','/calculators/','/calculators/index.html','/blog/','/blog/index.html','/offline.html'];
