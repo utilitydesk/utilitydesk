@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   seo:
     runs-on: ubuntu-latest
@@ -24,66 +27,75 @@ jobs:
         run: node scripts/generate-sitemap.js
 
       - name: Generate Robots
- 	 run: node scripts/generate-robots.js
+        run: node scripts/generate-robots.js
 
       - name: Verify Sitemap
+        shell: bash
         run: |
-          test -f sitemap.xml
+          set -euo pipefail
+          test -s sitemap.xml
+          grep -q '<urlset' sitemap.xml
+          grep -q '</urlset>' sitemap.xml
           echo "Sitemap generated successfully"
 
       - name: Detect Changed HTML Files
         shell: bash
         run: |
-          git diff --name-only HEAD~1 HEAD > changed.txt
+          set -euo pipefail
+          if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            git diff --name-only HEAD~1 HEAD -- '*.html' > changed.txt
+          else
+            git ls-files '*.html' > changed.txt
+          fi
 
       - name: Build URL List
         shell: bash
         run: |
-          echo "[" > urls.json
-          first=true
+          set -euo pipefail
+          node - <<'NODE'
+          const fs = require('fs');
+          const files = fs.readFileSync('changed.txt', 'utf8')
+            .split(/\r?\n/)
+            .map(s => s.trim())
+            .filter(Boolean);
 
-          while read file; do
+          const urls = [...new Set(files.map(file => {
+            const normalized = file.replace(/\\/g, '/');
+            const route = normalized.endsWith('/index.html')
+              ? normalized.slice(0, -'index.html'.length)
+              : normalized;
+            return `https://utilitydesk.in/${route}`;
+          }))];
 
-            if [[ "$file" == *.html ]]; then
-
-              url="https://utilitydesk.in/${file}"
-              url="${url/index.html/}"
-
-              if [ "$first" = true ]; then
-                first=false
-              else
-                echo "," >> urls.json
-              fi
-
-              echo "\"$url\"" >> urls.json
-
-            fi
-
-          done < changed.txt
-
-          echo "]" >> urls.json
-
-          cat urls.json
+          fs.writeFileSync('urls.json', JSON.stringify(urls, null, 2) + '\n');
+          console.log(JSON.stringify(urls, null, 2));
+          NODE
 
       - name: Submit to IndexNow
         shell: bash
         run: |
+          set -euo pipefail
 
-          if [ "$(cat urls.json)" = "[]" ]; then
+          if [ "$(node -e "console.log(JSON.parse(require('fs').readFileSync('urls.json','utf8')).length)")" -eq 0 ]; then
             echo "No HTML pages changed."
             exit 0
           fi
 
-          URLS=$(cat urls.json)
+          node - <<'NODE' > indexnow.json
+          const fs = require('fs');
+          const urlList = JSON.parse(fs.readFileSync('urls.json', 'utf8'));
+          process.stdout.write(JSON.stringify({
+            host: 'utilitydesk.in',
+            key: '922a92cb14844b0abb11650b3397a8b0',
+            keyLocation: 'https://utilitydesk.in/922a92cb14844b0abb11650b3397a8b0.txt',
+            urlList
+          }));
+          NODE
 
-          curl -X POST https://api.indexnow.org/indexnow \
-          -H "Content-Type: application/json" \
-          -d "{
-            \"host\":\"utilitydesk.in\",
-            \"key\":\"922a92cb14844b0abb11650b3397a8b0\",
-            \"keyLocation\":\"https://utilitydesk.in/922a92cb14844b0abb11650b3397a8b0.txt\",
-            \"urlList\":$URLS
-          }"
+          curl --fail-with-body --retry 3 --retry-delay 2 --max-time 30 \
+            -X POST 'https://api.indexnow.org/indexnow' \
+            -H 'Content-Type: application/json' \
+            --data-binary @indexnow.json
 
       - name: Upload Sitemap
         uses: actions/upload-artifact@v4
