@@ -23,7 +23,13 @@ function json(data, status = 200, extraHeaders = {}) {
 }
 
 function clientKey(req) {
-  return req.headers.get('x-vercel-id') || req.headers.get('x-real-ip') || 'anonymous';
+  const realIp = req.headers.get('x-real-ip');
+  if (realIp) return realIp.trim().slice(0, 128);
+
+  const forwarded = req.headers.get('x-forwarded-for');
+  if (forwarded) return forwarded.split(',')[0].trim().slice(0, 128);
+
+  return 'anonymous';
 }
 
 function checkRateLimit(key) {
@@ -33,13 +39,13 @@ function checkRateLimit(key) {
     rateBuckets.set(key, { startedAt: now, count: 1 });
     return { allowed: true, retryAfter: 0 };
   }
-  bucket.count += 1;
-  if (bucket.count > RATE_LIMIT) {
+  if (bucket.count >= RATE_LIMIT) {
     return {
       allowed: false,
       retryAfter: Math.max(1, Math.ceil((RATE_WINDOW_MS - (now - bucket.startedAt)) / 1000))
     };
   }
+  bucket.count += 1;
   return { allowed: true, retryAfter: 0 };
 }
 
