@@ -6,20 +6,61 @@ const MAX_MESSAGES = 40;
 const MAX_MESSAGE_CHARS = 24000;
 const MAX_TOKENS = 2000;
 const MAX_TOTAL_MESSAGE_CHARS = 60000;
+const RATE_WINDOW_MS = 60_000;
+const RATE_LIMIT = 10;
+const RATE_BUCKET_TTL_MS = 10 * 60_000;
+const rateBuckets = new Map();
 
-function json(data, status = 200) {
+function json(data, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(data), {
     status,
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
-      'Cache-Control': 'no-store'
+      'Cache-Control': 'no-store',
+      ...extraHeaders
     }
   });
 }
 
+function clientKey(req) {
+  return req.headers.get('x-vercel-id') || req.headers.get('x-real-ip') || 'anonymous';
+}
+
+function checkRateLimit(key) {
+  const now = Date.now();
+  const bucket = rateBuckets.get(key);
+  if (!bucket || now - bucket.startedAt >= RATE_WINDOW_MS) {
+    rateBuckets.set(key, { startedAt: now, count: 1 });
+    return { allowed: true, retryAfter: 0 };
+  }
+  bucket.count += 1;
+  if (bucket.count > RATE_LIMIT) {
+    return {
+      allowed: false,
+      retryAfter: Math.max(1, Math.ceil((RATE_WINDOW_MS - (now - bucket.startedAt)) / 1000))
+    };
+  }
+  return { allowed: true, retryAfter: 0 };
+}
+
+function pruneRateBuckets() {
+  const cutoff = Date.now() - RATE_BUCKET_TTL_MS;
+  for (const [key, bucket] of rateBuckets) {
+    if (bucket.startedAt < cutoff) rateBuckets.delete(key);
+  }
+}
+
 export default async function handler(req) {
   if (req.method === 'OPTIONS') return new Response(null, { status: 204 });
-  if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
+  if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405, { Allow: 'POST' });
+
+  pruneRateBuckets();
+  const limit = checkRateLimit(clientKey(req));
+  if (!limit.allowed) {
+    return json({ error: 'Too many AI requests. Please try again shortly.' }, 429, {
+      'Retry-After': String(limit.retryAfter)
+    });
+  }
 
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) return json({ error: 'AI service is not configured.' }, 503);
@@ -80,16 +121,21 @@ export default async function handler(req) {
       clearTimeout(timer);
     }
 
+    if (!response.ok) {
+      return json({ error: 'AI provider request failed. Please try again.' }, response.status >= 400 && response.status < 600 ? response.status : 502);
+    }
+
     const text = await response.text();
     let data;
-    try { data = JSON.parse(text); }
-    catch { data = { error: 'AI provider returned an invalid response.' }; }
-
-    if (!response.ok) {
-      return json({ error: data?.error?.message || data?.error || 'AI provider request failed.' }, response.status >= 400 && response.status < 600 ? response.status : 502);
+    try {
+      data = JSON.parse(text);
+    } catch {
+      return json({ error: 'AI provider returned an invalid response.' }, 502);
     }
+
     return json(data, 200);
   } catch (err) {
-    return json({ error: err instanceof Error ? err.message : 'Unexpected AI service error.' }, 500);
+    console.error('AI endpoint error:', err);
+    return json({ error: 'Unexpected AI service error.' }, 500);
   }
 }
