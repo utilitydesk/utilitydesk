@@ -1,0 +1,307 @@
+/* Legacy tool pages: consistent layout and accessible form controls.
+   Scoped to generator and PDF tool components to avoid changing other pages. */
+.generator-section {
+  padding: clamp(2rem, 5vw, 4rem) 1.25rem;
+}
+.generator-container {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+}
+.generator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+.form-section, .panel, .preview-section, .preview-panel {
+  min-width: 0;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(26, 31, 46, .06);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.form-group { min-width: 0; margin-bottom: 1rem; }
+.form-group label, .form-label {
+  display: block;
+  margin-bottom: .45rem;
+  color: #334155;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.form-group input, .form-group textarea, .form-group select,
+.form-input, .form-select, .upload-zone input[type="file"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+  padding: .7rem .8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1f2e;
+  font: inherit;
+}
+.form-group textarea { min-height: 88px; resize: vertical; }
+.form-select { cursor: pointer; }
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus,
+.form-input:focus, .form-select:focus {
+  outline: 3px solid rgba(59, 130, 246, .16);
+  border-color: #3b82f6;
+}
+.btn-group, .form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.25rem;
+}
+.generator-section .btn, .btn-process, .btn-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  min-height: 44px;
+  padding: .7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.generator-section .btn-primary, .generator-section .btn-success,
+.btn-process, .btn-download {
+  background: #1a1f2e;
+  color: #fff;
+}
+.generator-section .btn-secondary, .generator-section .btn-light {
+  background: #f1f5f9;
+  color: #1a1f2e;
+  border-color: #cbd5e1;
+}
+.generator-section .btn-dark { background: #334155; color: #fff; }
+.doc-preview {
+  min-height: 420px;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  overflow-wrap: anywhere;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px rgba(226,232,240,.35);
+}
+.preview-section > h2, .preview-panel > h2 { margin-bottom: 1rem; }
+.faq-section, .related-section {
+  padding: 2.5rem 1.25rem;
+}
+.faq-container, .related-container {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+}
+.faq-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.tool-hero {
+  width: min(1000px, calc(100% - 2rem));
+  margin: 2rem auto 1rem;
+  text-align: center;
+}
+.tool-body {
+  width: min(900px, calc(100% - 2rem));
+  margin: 0 auto 3rem;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(26, 31, 46, .06);
+}
+.upload-zone {
+  display: grid;
+  place-items: center;
+  gap: .75rem;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+.settings-panel {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.notice-box, .error-box, .result-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.notice-box { background: #eff6ff; color: #1e40af; }
+.error-box { background: #fff1f2; color: #9f1239; }
+.result-box { background: #ecfdf5; color: #065f46; }
+.progress-wrap { margin-top: 1rem; }
+.progress-bar-track { height: 8px; overflow: hidden; border-radius: 999px; background: #e2e8f0; }
+.progress-bar-fill { height: 100%; border-radius: inherit; background: #2563eb; transition: width .2s ease; }
+.btn-process:disabled { opacity: .5; cursor: not-allowed; }
+.file-list { display: grid; gap: .5rem; margin-top: 1rem; }
+.file-item { display: flex; align-items: center; gap: .75rem; padding: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; }
+.file-item-name { min-width: 0; overflow-wrap: anywhere; flex: 1; }
+.file-item-remove { border: 0; background: transparent; color: #be123c; cursor: pointer; font-size: 1.25rem; }
+@media (max-width: 760px) {
+  .generator-grid { grid-template-columns: minmax(0, 1fr); }
+  .form-row { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .generator-section { padding-inline: .75rem; }
+  .form-section, .panel, .preview-section, .preview-panel { padding: 1rem; }
+  .doc-preview { min-height: 320px; padding: 1rem; }
+}
+@media print {
+  body { background: #fff !important; }
+  .ud-header, .ud-footer, .form-section, .panel:not(.preview-panel), .btn-group, .faq-section, .related-section { display: none !important; }
+  .generator-section { padding: 0 !important; }
+  .generator-grid { display: block !important; }
+  .preview-section, .preview-panel, .doc-preview { border: 0 !important; box-shadow: none !important; padding: 0 !important; }
+}
+
+/* Merge-PDF legacy layout compatibility */
+.tool-section { padding: clamp(2rem, 5vw, 4rem) 1.25rem; }
+.tool-container { width: min(1000px, 100%); margin-inline: auto; }
+.upload-area {
+  display: grid;
+  place-items: center;
+  gap: .75rem;
+  padding: clamp(1.5rem, 4vw, 3rem) 1.25rem;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+.drop-zone-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .7rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #1a1f2e;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.file-list-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
+@media (max-width: 760px) {
+  .tool-section { padding-inline: .75rem; }
+}
+
+
+/* Income-tax calculator layout repair; scoped to the calculator's existing markup. */
+.calc-section {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 2rem auto 3rem;
+}
+.calc-card {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(26, 31, 46, .06);
+}
+.calc-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+.input-section { min-width: 0; }
+.collapsible-section {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: #f8fafc;
+  color: #1a1f2e;
+  font-weight: 700;
+  cursor: pointer;
+}
+.collapsible-content { padding: 1rem 1.1rem; }
+.collapsible-inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.input-group { min-width: 0; margin-bottom: .25rem; }
+.input-group > label {
+  display: block;
+  margin-bottom: .4rem;
+  color: #334155;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.input-wrapper { display: flex; align-items: center; min-width: 0; }
+.input-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  min-height: 44px;
+  border: 1px solid #cbd5e1;
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+  background: #f8fafc;
+  color: #475569;
+}
+.input-wrapper input, .input-wrapper select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: .65rem .8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1f2e;
+  font: inherit;
+}
+.input-wrapper .input-icon + input { border-radius: 0 8px 8px 0; }
+.input-hint { display: block; margin-top: .35rem; color: #64748b; font-size: .8rem; line-height: 1.45; }
+.results-section { display: grid; gap: 1rem; min-width: 0; }
+.result-card {
+  display: flex;
+  align-items: flex-start;
+  gap: .9rem;
+  min-width: 0;
+  padding: 1.1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+.result-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 2.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 10px;
+  font-weight: 800;
+}
+.result-label { color: #64748b; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.result-value { margin-top: .3rem; color: #1a1f2e; font-size: clamp(1.25rem, 2vw, 1.75rem); font-weight: 800; overflow-wrap: anywhere; }
+.result-details { display: grid; gap: .35rem; margin-top: .6rem; color: #475569; }
+.comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.charts-section { margin-top: 2rem; }
+@media (max-width: 800px) {
+  .calc-grid { grid-template-columns: minmax(0, 1fr); }
+  .collapsible-inner, .comparison-grid { grid-template-columns: minmax(0, 1fr); }
+}
