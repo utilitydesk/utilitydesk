@@ -164,3 +164,35 @@
   .generator-grid { display: block !important; }
   .preview-section, .preview-panel, .doc-preview { border: 0 !important; box-shadow: none !important; padding: 0 !important; }
 }
+
+/* Merge-PDF legacy layout compatibility */
+.tool-section { padding: clamp(2rem, 5vw, 4rem) 1.25rem; }
+.tool-container { width: min(1000px, 100%); margin-inline: auto; }
+.upload-area {
+  display: grid;
+  place-items: center;
+  gap: .75rem;
+  padding: clamp(1.5rem, 4vw, 3rem) 1.25rem;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+.drop-zone-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .7rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #1a1f2e;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.file-list-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
+@media (max-width: 760px) {
+  .tool-section { padding-inline: .75rem; }
+}
